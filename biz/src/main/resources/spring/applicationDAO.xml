@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd"
+	default-autowire="byName" default-lazy-init="false">
+
+	<!-- baseDAO -->
+	<bean id="baseDAO" class="com.abbcc.dao.impl.BaseDAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient" />
+		</property>
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!-- adminDAO -->
+	<bean id="adminDAO" class="com.abbcc.dao.impl.AdminDAOImpl">
+		<property name="sqlMapClient">
+			<ref bean="sqlMapClient" />
+		</property>
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+
+	<!--userDAO-->
+	<bean id="userDAO" class="com.abbcc.dao.impl.UserDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--enterpriseDAO-->
+	<bean id="enterpriseDAO" class="com.abbcc.dao.impl.EnterpriseDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--adminprivilegeDAO-->
+	<bean id="adminprivilegeDAO" class="com.abbcc.dao.impl.AdminprivilegeDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--AdminuserprivDAO-->
+	<bean id="adminuserprivDAO" class="com.abbcc.dao.impl.AdminuserprivDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--albumDAO-->
+	<bean id="albumDAO" class="com.abbcc.dao.impl.AlbumDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--attachmentDAO-->
+	<bean id="attachmentDAO" class="com.abbcc.dao.impl.AttachmentDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--brandDAO-->
+	<bean id="brandDAO" class="com.abbcc.dao.impl.BrandDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--categoryDAO-->
+	<bean id="categoryDAO" class="com.abbcc.dao.impl.CategoryDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--cellbindDAO-->
+	<bean id="cellbindDAO" class="com.abbcc.dao.impl.CellbindDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--cellserverDAO-->
+	<bean id="cellserverDAO" class="com.abbcc.dao.impl.CellserverDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--certificateDAO-->
+	<bean id="certificateDAO" class="com.abbcc.dao.impl.CertificateDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--commentDAO-->
+	<bean id="commentDAO" class="com.abbcc.dao.impl.CommentDAOImpl"/>
+	<!--domainbindDAO-->
+	<bean id="domainbindDAO" class="com.abbcc.dao.impl.DomainbindDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--domainregDAO-->
+	<bean id="domainregDAO" class="com.abbcc.dao.impl.DomainregDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--enterpcontactDAO-->
+	<bean id="enterpcontactDAO" class="com.abbcc.dao.impl.EnterpcontactDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--favouriteDAO-->
+	<bean id="favouriteDAO" class="com.abbcc.dao.impl.FavouriteDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--jobDAO-->
+	<bean id="jobDAO" class="com.abbcc.dao.impl.JobDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--layoutDAO-->
+	<bean id="layoutDAO" class="com.abbcc.dao.impl.LayoutDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--layoutmoduleDAO-->
+	<bean id="layoutmoduleDAO" class="com.abbcc.dao.impl.LayoutmoduleDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--linkDAO-->
+	<bean id="linkDAO" class="com.abbcc.dao.impl.LinkDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--logDAO-->
+	<bean id="logDAO" class="com.abbcc.dao.impl.LogDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--mailDAO-->
+	<bean id="mailDAO" class="com.abbcc.dao.impl.MailDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--mailsendDAO-->
+	<bean id="mailsendDAO" class="com.abbcc.dao.impl.MailsendDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--mailtemplateDAO-->
+	<bean id="mailtemplateDAO" class="com.abbcc.dao.impl.MailtemplateDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--layoutmoduleDAO-->
+	<bean id="messageDAO" class="com.abbcc.dao.impl.MessageDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--moduleDAO-->
+	<bean id="moduleDAO" class="com.abbcc.dao.impl.ModuleDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--newsDAO-->
+	<bean id="newsDAO" class="com.abbcc.dao.impl.NewsDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--paylogDAO-->
+	<bean id="paylogDAO" class="com.abbcc.dao.impl.PaylogDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--payuserDAO-->
+	<bean id="payuserDAO" class="com.abbcc.dao.impl.PayuserDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--productDAO-->
+	<bean id="productDAO" class="com.abbcc.dao.impl.ProductDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--recycleDAO-->
+	<bean id="recycleDAO" class="com.abbcc.dao.impl.RecycleDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--supplyDAO-->
+	<bean id="supplyDAO" class="com.abbcc.dao.impl.SupplyDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--syscodeDAO-->
+	<bean id="syscodeDAO" class="com.abbcc.dao.impl.SyscodeDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--upgradelogDAO-->
+	<bean id="upgradelogDAO" class="com.abbcc.dao.impl.UpgradelogDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--usergroupDAO-->
+	<bean id="usergroupDAO" class="com.abbcc.dao.impl.UsergroupDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--viewlogDAO-->
+	<bean id="viewlogDAO" class="com.abbcc.dao.impl.ViewlogDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--userprivilegeDAO-->
+	<bean id="userprivilegeDAO" class="com.abbcc.dao.impl.UserprivilegeDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--UserprivDAO-->
+	<bean id="userprivDAO" class="com.abbcc.dao.impl.UserprivDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="orderDAO" class="com.abbcc.dao.impl.OrderDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="statDAO" class="com.abbcc.dao.impl.StatDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!--GroupmemberDAO-->
+	<bean id="groupmemberDAO" class="com.abbcc.dao.impl.GroupmemberDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<!--menuDAO-->
+	<bean id="menuDAO" class="com.abbcc.dao.impl.MenuDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<!--customDAO-->
+	<bean id="customDAO" class="com.abbcc.dao.impl.CustomDAOImpl">
+		<property name="sessionFactory">
+			<ref bean="sessionFactory" />
+		</property>
+	</bean>
+	<bean id="themeDAO" class="com.abbcc.dao.impl.ThemeDAOImpl"/>
+	<bean id="laythemeDAO" class="com.abbcc.dao.impl.LaythemeDAOImpl"/>
+	<bean id="bindDAO" class="com.abbcc.dao.impl.BindDAOImpl"/>
+	<bean id="PopularizeDAO" class="com.abbcc.dao.impl.PopularizeDAOImpl"/>
+	<bean id="soaWebserverDAO" class="com.abbcc.dao.impl.SoaWebserverDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="soaUserDAO" class="com.abbcc.dao.impl.SoaUserDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="soaTemplateDAO" class="com.abbcc.dao.impl.SoaTemplateDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="soaTemplateCriteriaDAO" class="com.abbcc.dao.impl.SoaTemplateCriteriaDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	<bean id="soaLogDAO" class="com.abbcc.dao.impl.SoaLogDAOImpl">
+		<property name="sessionFactory" ref="sessionFactory" />
+	</bean>
+	
+	<bean id="newsClassDAO" class="com.abbcc.news.dao.impl.NewsClassDAOImpl"/>
+	<bean id="newsGenusDAO" class="com.abbcc.news.dao.impl.NewsGenusDAOImpl"/>
+	<bean id="newsNewsDAO" class="com.abbcc.news.dao.impl.NewsNewsDAOImpl"/>
+	<bean id="merchantsDAO" class="com.abbcc.merchants.dao.impl.MerchantsDAOImpl"/>
+	<bean id="ChannelsClassDAO" class="com.abbcc.merchants.dao.impl.ChannelsClassDAOImpl"/>
+	<bean id="ChannelsInfoDAO" class="com.abbcc.merchants.dao.impl.ChannelsInfoDAOImpl"/>
+	<bean id="DoorVipDAO" class="com.abbcc.merchants.dao.impl.DoorVipDAOImpl"/>
+</beans>

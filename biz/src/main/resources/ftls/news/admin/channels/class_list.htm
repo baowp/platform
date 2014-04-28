@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>频道列表</title>
+
+<script type="text/javascript" src="http://abbcc.net/js/jquery.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/common.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/jquery/dialog/jquery.jmodal.js"></script>
+<link rel="stylesheet" type="text/css" href="http://abbcc.net/css/jquery/dialog/jquery.jmodal.css">
+<link rel="stylesheet" type="text/css" href="http://abbcc.net/news/css/comm.css">
+
+<script type="text/javascript">
+$().ready(function() {
+    $('a.appaly').click(function() {
+        $.fn.jmodal({
+            title: '添加频道',
+            content: function(e) {
+                e.html('loading...');
+                e.load('/channels/add');
+            },
+            buttonText: { ok: '确定', cancel: '取消' },
+            okEvent: function(obj, args) {
+            	if($("#name").val()==''){
+            		alert('请输入频道名称!')
+            		return false;
+            	}else{
+					$("#form1").submit();
+            	}
+                
+            }
+        });
+    });
+})
+    </script>
+</head>
+<body>
+<a href="javascript:void(0)" class="appaly">添加频道</a>
+<table cellspacing="1" class="tablesorter">
+<thead>
+		<tr>
+			<th>频道名称</th>
+			<th>操作</th>
+		</tr>
+</thead>
+<tbody>
+	<@s.iterator value="pageList.items" status="st">
+	<tr>
+		<td>
+		<@s.property value="name"/>
+		</td>
+
+		<td><a href="/channels/info/entlist?cId=${channelsId}">查看企业</a>/<a href="remove?id=${channelsId}" class="remove">删除</a></td>
+	</tr>
+</@s.iterator>
+</tbody>
+</table>
+</body>
+</html>

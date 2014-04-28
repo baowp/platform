@@ -1,0 +1,134 @@
+addFavourite Add To My favorite
+setHomepage Set As My Home Page
+login Login
+register Register
+welcome	Welcome
+exit Exit
+hideToolbar Hide Toolbar
+more More
+valiCode Validation Code
+requiredValiCode Require Validation Code
+valiCodeError Validation Code Error
+submit Submit
+reset Reset
+price Price
+unit Unit
+address Address:
+support Support:
+close Close
+
+topbar.hello Hello,
+topbar.welcome Welcome To Visit!
+topbar.login Login
+topbar.register Register
+
+leave.name Name
+leave.email Email
+leave.mobile Mobile
+leave.sendLeave Send
+leave.sendPrompt Confirm
+leave.yourLeave Commit
+leave.requiredLeave Input Message
+leave.requiredName Name
+leave.requiredEmail Email
+leave.matchEmail Email Again
+leave.success Success
+leave.valiCodeError Validation Code Error
+
+dolog.name Name
+dolog.requiredName Required Name
+dolog.password Password
+dolog.requiredPassword Required Password
+dolog.confirmPassword Confirm Password
+dolog.requiredCPassword Confirm Password Again
+dolog.matchPassword Password Matched
+dolog.email Email
+dolog.requiredEmail Required Email
+dolog.confirmEmail Confirmed Email
+dolog.matchEmail Email Matched
+dolog.loginError Login Error
+dolog.username Username
+dolog.requiredUsername Username Required
+
+contact.name Name:
+contact.phone Phone:
+contact.cellphone Mobile:
+contact.fax Fax:
+contact.entUrl Site:
+contact.email Email:
+
+cert.pic Picture
+cert.name Name
+cert.organize Organize
+
+contacts.name Name:
+contacts.position Position:
+contacts.phone Phone:
+contacts.cellphone Mobile:
+contacts.fax Fax:
+contacts.email Email:
+contacts.entUrl Site:
+contacts.address Address:
+contacts.collect collect
+contacts.moods moods
+contacts.collectByEnt collect
+contacts.collectByPro collect
+
+message.forbid Please <a href=javascript: class=loginLink>login</a> first
+message.title Title
+message.requiredTitle Title Required
+message.content Content
+message.requiredContent Content Required
+message.send Send
+message.yourname Your Name
+message.email E-mail
+message.phone M.T.
+message.anonymous anonymous
+message.introduction If you are interested in our products,your inquiries are warmly welcome.if you have any comments or feedback,please kindly inform us.We will improve our products based on the suggestions, please fill in the following form and press "Submit" to send,we will reply to you as soon as possible.
+
+news.top Top News
+news.origin Origin
+news.author Author
+news.addTime Add Time
+news.format yyyy-MM-dd hh:mm:ss
+news.share To Share
+
+recruit.duty Duty
+recruit.sum Sum
+recruit.addTime Add Time
+recruit.requirement Requirement
+
+supplies.pic Picture
+supplies.info Information
+supplies.price Price
+supplies.publishTime Publish Time
+supplies.format yyyy\MM\dd\ hh:mm
+
+product.address Address
+product.unpublishTime Unpublish Time
+product.format yyyy\MM\dd\ hh:mm
+product.contact Contact
+product.detail Detail
+product.prodtype Item NO.
+product.hits Hits
+
+pagination.prev Prev
+pagination.next Next
+pagination.page Page
+pagination.to To
+pagination.agree Go
+
+var.displayToolbar Show Toolbar
+var.hideToolbar Hide Toolbar
+var.vipRegister Register
+var.vipLogin Login
+var.regSuccess Register Success
+var.userExist User Has Exist
+var.messageSuccess Message Success
+var.reject This feature requires \\'signed.applets.codebase_principal_support=true\\' at about:config
+
+search.productName Product
+search.price Price
+search.to To
+
+domain.home easthardware

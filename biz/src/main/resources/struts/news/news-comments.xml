@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="news_comment" extends="news-default" namespace="/news/comment">
+		<action name="*" method="{1}" class="com.abbcc.news.action.admin.CommentsAction">
+			<result name="{1}">/main/{1}.comment.htm</result>
+			<result type="redirect">list?newsId=${newsId}</result>
+			<result name="index">/main/index.htm</result>
+			<result name="json" type="json"><param name="root">result</param></result>
+		</action>
+	</package>
+</struts>

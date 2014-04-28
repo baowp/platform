@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="com.abbcc.module.help" namespace="/user/help"
+		extends="abbcc-default">
+		<!--拦截器-->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+
+		<!--全局跳转-->
+		<global-results>
+			<result name="error">/user/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+
+		<action name="*" class="com.abbcc.module.help.HelpCenterAction"
+			method="{1}">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="show">/user/help/help.jsp
+			</result>
+		</action>
+		
+	</package>
+<package name="kefu" namespace="/kefu"
+		extends="abbcc-default">
+		<action name="*Menu" class="com.abbcc.module.help.HelpCenterAction"
+			method="{1}">
+			<result name="tree">/kefu/action/tree.jsp
+			</result>
+		</action>
+		
+	</package>
+
+
+</struts>
+

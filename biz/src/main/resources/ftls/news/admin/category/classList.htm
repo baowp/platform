@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" type="text/css" href="http://abbcc.net/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="http://abbcc.net/user/abbcc/css/common.css">
+<link rel="stylesheet" type="text/css" href="http://abbcc.net/news/css/category.css">
+<link type="text/css" rel="stylesheet" href="http://abbcc.net/css/jquery/jquery_dialog.css" />
+<script type="text/javascript" src="http://abbcc.net/js/jquery.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/jquery/validate.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/jquery/form.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/jquery/bgiframe.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/jquery-ui.min.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/common.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/news/js/category.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/jquery/dialog/jquery_dialog.js"></script>
+</head>
+<body>
+<div>
+	<a href="#" onclick="JqueryDialog.Open('添加分类', '<@s.url value="/news/admin/class/addPage"/>', 300, 300);">添加</a>
+</div>
+<@s.form action="saveAll" cssClass="jform">
+	<div class="category">
+		<ol class="title"><li class="sign">分类标示</li><li class="name">分类名称</li>
+			<li class="sort">次序</li><li class="display">是否可见</li>
+			<li class="operator">操作</li></ol>
+		<@s.iterator value="classResults" status="st">
+			<ol class="main">
+				<@s.hidden name="entities[%{#st.index}].classId" value="%{classId}"/>
+				<@s.hidden name="entities[%{#st.index}].sign" value="%{sign}"/>
+				<li class="sign"><@s.property value="sign"/></li>
+				<li class="name"><@s.textfield name="entities[%{#st.index}].name" value="%{name}"/></li>
+				<li class="sort"><@s.textfield name="entities[%{#st.index}].sort" value="%{sort}" size="6"/></li>
+				<li class="display"><@s.select name="entities[%{#st.index}].display" list="@com.abbcc.news.enums.Visibility@values()" 
+					listKey="name()" value="display.name()"/></li>
+				<li class="operator"><a href="javascript:remove()" class="remove">删除</a></li>
+			</ol>
+		</@s.iterator>
+	</div>
+	<div class="buttonDiv"><@s.reset value="重置"/><@s.submit value="提交"/></div>
+</@s.form>
+</body>
+</html>

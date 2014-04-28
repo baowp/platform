@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modules>
+	<module>
+		<moduleid>001</moduleid>
+		<type>1</type>
+		<grade>1</grade>
+		<name>系统管理</name>
+		<desc>管理员后台管理</desc>
+		<url>/admin</url>
+	</module>
+	<module>
+		<moduleid>002</moduleid>
+		<type>1</type>
+		<grade>1</grade>
+		<name>用户界面</name>
+		<desc>用户后台管理</desc>
+		<url>/user</url>
+	</module>
+</modules>

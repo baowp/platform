@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>vip注册用户</title>
+
+<script type="text/javascript" src="http://abbcc.net/js/jquery.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/common.js"/></script>
+<link rel="stylesheet" href="http://abbcc.net/css/jquery/style.css" type="text/css" id="" media="print, projection, screen" />
+<link rel="stylesheet" type="text/css" href="http://abbcc.net/news/css/comm.css">
+<script type="text/javascript" src="http://abbcc.net/js/jquery/jquery-latest.js"></script>
+<script type="text/javascript" src="http://abbcc.net/js/jquery/jquery.tablesorter.js"></script>
+<script type="text/javascript" id="js">
+	$(document).ready(function() { 
+    $("table").tablesorter({widthFixed: true, widgets: ['zebra']}); 
+});
+	function setState(obj) {
+		$.getJSON("/merchants/vip/setState?randomNumber="+Math.random(), {
+			id:obj.getAttribute('mId'),
+		}, function(result) {
+			if(result){
+					obj.innerHTML=result;
+			}
+		});
+	}
+</script>
+</head>
+<body>
+<table cellspacing="1" class="tablesorter">
+<thead>
+		<tr>
+			<th>手机</th>
+			<th>留言内容</th>
+			<th>留言时间</th>
+			<th>操作</th>
+		</tr>
+</thead>
+<tbody>
+	<@s.iterator value="pageList.items" status="st">
+	<tr>
+		<td>
+		<@s.property value="title"/>
+		</td>
+		<td>
+		<@s.textarea cols="20" value="%{content}"/>
+		</td>
+				<td>
+		<@s.date name="addTime" format="yyyy-MM-dd hh:mm:ss"/>
+		</td>				
+		<td><a href="remove?id=${messageId}" class="remove">删除</a></td>
+	</tr>
+</@s.iterator>
+</tbody>
+	<tfoot>
+		<tr>
+			<td colspan="9">
+			<div class="paging">
+			<@s.include
+			value="/common/page.jsp">
+		</@s.include>
+			</div>
+			</td>
+		</tr>
+	</tfoot>
+</table>
+</body>
+</html>

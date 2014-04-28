@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>news</title>
+<link rel="stylesheet" type="text/css" href="/user/abbcc/css/common.css">
+<script type="text/javascript" src="/js/jquery.js"/></script>
+<script type="text/javascript" src="/js/common.js"/></script>
+<script type="text/javascript" src="/news/js/news.maintain.js"></script>
+<script type="text/javascript" src="/news/js/news.js"></script>
+<script type="text/javascript" src="/js/xheditor/xheditor-zh-cn.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(".ckeditor")
+				.xheditor(
+						{
+							tools : 'full',
+							skin : 'vista',
+							layerShadow : 2,
+							html5Upload : false,
+							upBtnText : '浏览',
+							upLinkExt : 'jpg,png,bmp',
+							upImgUrl : '/fileUpload/uploadByJson'
+						})
+	})
+</script>
+<script type="text/javascript">
+function forNkey(obj){
+	$("#key").val($("#title").val());
+	
+}
+</script>
+</head>
+<body>
+<@s.form action="save" enctype="multipart/form-data">
+	<@s.hidden name="id"/>
+	<@s.action var="req" name="categoryList"/>
+	<div class="editGrid">
+		<dl>
+			<dt>一级分类<font color="red">*</font> </dt>
+			<dd><@s.select name="classSign" value="classSign" list="#req.classList" listKey="sign" listValue="name"
+				onchange="fetchGenus(this)"/>&nbsp&nbsp二级分类<font class="hidden">*</font><@s.select name="genusSign" value="genusSign" list="#req.genusList" listKey="sign" listValue="name"
+				headerKey="" headerValue=""/><span class="errorSpan">${(errors.classSign[0])!''}</span></dd>
+		</dl>
+		<dl>
+			<dt>标题<font color="red">*</font> </dt>
+			<dd><@s.textfield name="title" id="title" onkeyup="forNkey(this)"  maxlength="100"/><span class="errorSpan">${(errors.title[0])!''}</span></dd>
+		</dl>
+		<dl>
+			<dt>关键字 </dt>
+			<dd><@s.textfield name="key" id="key"  maxlength="100"/><span class="errorSpan">${(errors.key[0])!''}</span></dd>
+		</dl>
+		<dl>
+			<dt>文章属性</dt>
+			<dd><@s.checkbox name="type" id="isImagenews" label="图片" theme="xhtml" value="%{type=='picture'?01:''}"/>&nbsp<@s.checkbox name="priority" label="置顶" theme="xhtml" value="%{priority=='top'?01:''}"/><div id="pic" class="<@s.property value="%{type=='picture'?'category':'category none'}"/>"><@s.textfield  name="filePath" id="filePath" value="%{#request['picPath']}"/><@s.file name="upload" id="chooseFile" cssClass="category none"/><input type=button value=删除 onclick="$(this).prev().val('')" /><input type="button" css="category none" id="qx" value="取消"/></div></dd>
+		</dl>
+		<dl>
+			<dt>点击数<font class="hidden">*</font> </dt>
+			<dd><input type="text" name="viewTimes" value="${viewTimes}"  onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"/></dd>
+		</dl>
+		<dl>
+			<dt>来源<font class="hidden">*</font> </dt>
+			<dd><@s.textfield name="origin"/>&nbsp&nbsp作者<font class="hidden">*</font><@s.textfield name="author"/></dd>
+		</dl>
+		<dl>
+			<dt>内容<font class="hidden">*</font> </dt>
+			<dd><@s.textarea rows="12" cols="95" cssStyle="width: 100%" name="content" cssClass="ckeditor"/></dd>
+		</dl>
+		<dl>
+			<dt>&nbsp;</dt><dd><@s.submit value="提交"/></dd>
+		</dl>
+	</div>	
+</@s.form>
+</body>
+</html>

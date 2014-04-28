@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="com.abbcc.module.inquiry" extends="json-default"
+		namespace="/inquiry">
+		<action name="*" class="com.abbcc.module.inquiry.InquiryAction"
+			method="{1}">
+			<result name="input">/home/action/inquiry.jsp</result>
+			<result name="view">/user/inquiry/view.jsp</result>
+			<result name="viewInfo">/user/inquiry/view_info.jsp</result>
+			<result name="inquiryPage">/user/inquiry/inquiry.jsp</result>
+			<result>/user/inquiry/inquirySuccess.jsp</result>
+			<result name="json" type="json">
+				<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">result</param>
+			</result>
+		</action>		
+	</package>
+
+
+
+</struts>
+

@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<!-- 管理员action -->
+	<package name="admin" extends="abbcc-default" namespace="/admin">
+		<result-types>
+			<result-type name="chart"
+				class="org.apache.struts2.dispatcher.ChartResult"></result-type>
+		</result-types>
+
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/admin/error.jsp</result>
+			<result name="result">/admin/result.jsp</result>
+			<result name="login">/admin/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+		<!--管理员登录和注销 -->
+		<action name="login" method="login"
+			class="com.abbcc.module.admin.AdminLoginAction">
+			<result name="input">/admin/login.jsp</result>
+			<result name="admin_index" type="redirect">
+				/admin/index.html
+			</result>
+		</action>
+
+
+		<action name="logout" method="logout"
+			class="com.abbcc.module.admin.AdminLoginAction">
+			<result name="logout" type="redirect">
+				/admin/login.jsp
+			</result>
+			<result name="admin_index" type="redirect">
+				/admin/index.html
+			</result>
+		</action>
+		<!--管理员管理 -->
+		<action name="*Admin" method="{1}"
+			class="com.abbcc.module.admin.AdminManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="list">
+				/admin/sysSettings/admin_list.jsp
+			</result>
+			<result name="listAdmin" type="redirect">
+				listAdmin?result=${result}
+			</result>
+			<result name="add_input">
+				/admin/sysSettings/add_admin.jsp
+			</result>
+			<result name="view">
+				/admin/sysSettings/edit_admin.jsp
+			</result>
+			<result name="input">
+				/admin/sysSettings/admin_list.jsp
+			</result>
+		</action>
+		<action name="addAdmin" method="add"
+			class="com.abbcc.module.admin.AdminManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="list">
+				/admin/sysSettings/admin_list.jsp
+			</result>
+			<result name="listAdmin" type="redirect">
+				listAdmin?result=${result}
+			</result>
+			<result name="add_input">
+				/admin/sysSettings/add_admin.jsp
+			</result>
+			<result name="view">
+				/admin/sysSettings/edit_admin.jsp
+			</result>
+			<result name="input">
+				/admin/sysSettings/add_admin.jsp
+			</result>
+		</action>
+		<action name="editAdmin" method="edit"
+			class="com.abbcc.module.admin.AdminManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="list">
+				/admin/sysSettings/admin_list.jsp
+			</result>
+			<result name="listAdmin" type="redirect">
+				listAdmin?result=${result}
+			</result>
+			<result name="add_input">
+				/admin/sysSettings/add_admin.jsp
+			</result>
+			<result name="view">
+				/admin/sysSettings/edit_admin.jsp
+			</result>
+			<result name="input">
+				/admin/sysSettings/edit_admin.jsp
+			</result>
+		</action>
+		<!--管理员权限管理 -->
+		<action name="*Adminpriv" method="{1}"
+			class="com.abbcc.module.adminpriv.AdminPrivAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="view">
+				/admin/sysSettings/view_adminpriv.jsp
+			</result>
+			<result name="input">
+				/admin/sysSettings/view_adminpriv.jsp
+			</result>
+			<result name="listAdmin" type="redirect">
+				listAdmin?result=${result}
+			</result>
+			<result name="json" type="json"></result>
+		</action>
+		<!--管理员个人维护 -->
+		<action name="updateMyAccountInfo" method="updateMyAccountInfo"
+			class="com.abbcc.module.admin.AdminAccountAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/mySettings/edit_myInfo.jsp
+			</result>
+		</action>
+		<action name="updateMyPassword" method="updateMyPassword"
+			class="com.abbcc.module.admin.AdminAccountAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/mySettings/edit_myPassword.jsp
+			</result>
+		</action>
+		<!-- 修改站点信息 -->
+		<action name="*SiteInfo" method="{1}"
+			class="com.abbcc.module.site.SiteInfoAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/sysSettings/site_info.jsp
+			</result>
+			<result name="json" type="json" />
+		</action>
+		<action name="editCountSiteInfo" method="editCount"
+			class="com.abbcc.module.site.SiteInfoAction">
+			<result name="json" type="json" />
+		</action>
+		<!-- 修改站点验证信息 -->
+		<action name="*AuditInfo" method="{1}"
+			class="com.abbcc.module.site.AuditManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/sysSettings/audit_manage.jsp
+			</result>
+		</action>
+		<!-- 地区管理息 -->
+		<action name="*District" method="{1}"
+			class="com.abbcc.module.syscode.DistrictManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/sysSettings/district_manage.jsp
+			</result>
+			<result name="list" type="redirect">
+				viewDistrict?result=${result}
+			</result>
+		</action>
+		<!-- 行业管理息 -->
+		<action name="*Industry" method="{1}"
+			class="com.abbcc.module.syscode.IndustryManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/sysSettings/industry_manage.jsp
+			</result>
+			<result name="list" type="redirect">
+				viewIndustry?result=${result}
+			</result>
+		</action>
+		<!-- 产品分类管理 -->
+		<action name="*Prodcata" method="{1}"
+			class="com.abbcc.module.syscode.ProdcataManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/sysSettings/prodcata_manage.jsp
+			</result>
+			<result name="list" type="redirect">
+				viewProdcata?result=${result}
+			</result>
+			<result type="json">
+				<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">result</param>
+			</result>
+		</action>
+		<!-- 关键字管理 -->
+		<action name="*Bannedkey" method="{1}"
+			class="com.abbcc.module.syscode.BannedkeyManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/sysSettings/bannedkey_manage.jsp
+			</result>
+			<result name="json" type="json"></result>
+		</action>
+		<!--会员管理 -->
+		<action name="*Member" method="{1}"
+			class="com.abbcc.module.member.MemberManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/memberManage/member_list.jsp
+			</result>
+			<result name="info">
+				/admin/memberManage/enterprise_show.jsp
+			</result>
+			<result name="payMemberList">
+				/admin/memberManage/pay_list.jsp
+			</result>
+			<result name="returnShow" type="redirect">
+				/admin/viewMember
+			</result>
+			<result name="returnPayend" type="redirect">
+				/admin/payEnd?payendType=-1
+			</result>
+		</action>
+		<!-- 检查过期付费用户 -->
+		<action name="closeUser" method="closeUser"
+			class="com.abbcc.module.member.MemberManageAction">
+			<result name="payMemberList">
+				/admin/memberManage/pay_list.jsp
+			</result>
+		</action>
+		<!-- 会员旺铺还原 -->
+		<action name="revertLayout" method="revertLayout"
+			class="com.abbcc.module.member.MemberManageAction">
+			<result name="payMemberList">
+				/admin/memberManage/pay_list.jsp
+			</result>
+		</action>
+		<!--付费会员审核 -->
+		<action name="*MemberAudit" method="{1}"
+			class="com.abbcc.module.pay.MemberAuditManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/memberManage/member_list.jsp
+			</result>
+			<result name="showMemberAuditList">
+				/admin/memberManage/pay_audit_list.jsp
+			</result>
+			<result name="returnMemberShow">
+				/admin/memberManage/member_list.jsp
+			</result>
+			<result name="returnShow" type="redirect">showMemberAudit</result>
+			<result name="viewMember" type="redirect">${pageType}?state=01&amp;page=${page}</result>
+		</action>
+		<!--会员付费管理 -->
+		<action name="*Paylog" method="{1}"
+			class="com.abbcc.module.pay.PaylogManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/memberManage/add_paylog.jsp
+			</result>
+			<result name="list">
+				/admin/memberManage/paylog_list.jsp?payuserId=${payuserId}
+			</result>
+			<result name="listUserPaylog" type="chain">
+				viewPaylog
+			</result>
+		</action>
+		<!--付费到期查看 -->
+		<action name="payEnd" method="viewPayend"
+			class="com.abbcc.module.pay.PaylogManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/memberManage/search_paylog_list.jsp
+			</result>
+			<result name="payendList">
+				/admin/memberManage/search_paylog_list.jsp
+			</result>
+		</action>
+
+		<action name="delPayend" method="delPayend"
+			class="com.abbcc.module.pay.PaylogManageAction">
+			<result name="payendList">
+				/admin/memberManage/search_paylog_list.jsp
+			</result>
+		</action>
+
+		<!--付费到期邮件发送 -->
+		<action name="viewSendPayendRemind" method="viewSendPayendRemind"
+			class="com.abbcc.module.pay.PayendRemindAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/memberManage/payend_list.jsp
+			</result>
+			<result name="view">
+				/admin/memberManage/send_payend_remind.jsp
+			</result>
+		</action>
+		<action name="sendPayendRemind" method="sendPayendRemind"
+			class="com.abbcc.module.pay.PayendRemindAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/memberManage/send_payend_remind.jsp
+			</result>
+		</action>
+		<!-- 二级会员管理 -->
+		<action name="viewEnterprises" method="viewEnterprises"
+			class="com.abbcc.module.member.SubmemberManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="viewenterprise">
+				/admin/memberManage/enterprise_list.jsp
+			</result>
+			<result name="input">
+				/admin/memberManage/enterprise_list.jsp
+			</result>
+		</action>
+		<action name="viewSubmembers" method="viewSubmembers"
+			class="com.abbcc.module.member.SubmemberManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="view">
+				/admin/memberManage/submember_list.jsp
+			</result>
+			<result name="input">
+				/admin/memberManage/submember_list.jsp
+			</result>
+		</action>
+		<action name="viewSendUpgradeInvite" method="viewSendUpgradeInvite"
+			class="com.abbcc.module.member.SubmemberManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/memberManage/send_upgrade_invite.jsp
+			</result>
+			<result name="sendupgradeinvite">
+				/admin/memberManage/send_upgrade_invite.jsp
+			</result>
+		</action>
+		<action name="sendUpgradeInvite" method="sendUpgradeInvite"
+			class="com.abbcc.module.member.SubmemberManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/memberManage/send_upgrade_invite.jsp
+			</result>
+		</action>
+		<!--会员付费管理 -->
+		<action name="*Memberservice" method="{1}"
+			class="com.abbcc.module.member.MemberServiceAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/memberManage/add_memberservice.jsp
+			</result>
+			<result name="list">
+				/admin/memberManage/memberservice_list.jsp
+			</result>
+		</action>
+		<!--会员分组 -->
+		<action name="*Membergroup" method="{1}"
+			class="com.abbcc.module.membergroup.MembergroupAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/memberManage/usergroup_list.jsp
+			</result>
+			<result name="view">
+				/admin/memberManage/usergroup_list.jsp
+			</result>
+			<result name="viewGroups" type="redirect">
+				viewMembergroup?result=${result}
+			</result>
+			<result name="list">
+				/admin/memberManage/groupmembers_list.jsp
+			</result>
+			<result name="editsuccess" type="redirect">
+				listMembergroup?usergroupId=${usergroupId}&amp;result=${result}
+			</result>
+			<result type="json">
+				<param name="root">result</param>
+			</result>
+		</action>
+		<!--邮件群发 -->
+		<action name="*GroupMail" method="{1}"
+			class="com.abbcc.module.groupmail.SendGroupMailAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/memberManage/send_groupmail.jsp
+			</result>
+		</action>
+		<!--招聘审核 -->
+		<action name="*RecuitAudit" method="{1}"
+			class="com.abbcc.module.entManage.RecuitAuditManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/entManage/recuit_audit.jsp
+			</result>
+			<result name="view" type="redirect">
+				viewRecuitAudit?result=${result}
+			</result>
+		</action>
+		<!--招聘管理 -->
+		<action name="*RecuitManage" method="{1}"
+			class="com.abbcc.module.entManage.RecuitManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/entManage/recuit_list.jsp
+			</result>
+			<result name="view" type="redirect">
+				viewRecuitManage?result=${result}
+			</result>
+		</action>
+		<!-- 证书管理 -->
+		<action name="*Cert" method="{1}"
+			class="com.abbcc.module.entManage.CertificateManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/entManage/cert_audit.jsp
+			</result>
+			<result name="view" type="redirect">
+				viewAuditCert?result=${result}
+			</result>
+			<result name="list">
+				/admin/entManage/cert_search.jsp
+			</result>
+		</action>
+		<!-- 修改用户资料、企业信息、简介、技术实力的审核 -->
+		<action name="*UpdateAudit" method="{1}"
+			class="com.abbcc.module.entManage.UpdateAuditAction">
+			<result name="user">/admin/entManage/user_audit.jsp</result>
+			<result name="userpage">/admin/entManage/user_page.jsp</result>
+			<result name="entpage">/admin/entManage/ent_page.jsp</result>
+			<result name="entInfoOrTechnic">/admin/entManage/entInfoOrTechnic.jsp</result>
+		</action>
+
+		<!-- 企业查询 -->
+		<action name="*SearchEnterprise" method="{1}"
+			class="com.abbcc.module.enterprise.EnterpriseSearchAction">
+			<result type="json">
+				<!-- 因为要将nameSet的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">nameSet</param>
+			</result>
+		</action>
+		<!-- 用户查询 -->
+		<action name="*SearchUser" method="{1}"
+			class="com.abbcc.module.user.UserSearchAction">
+			<result type="json">
+				<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">result</param>
+			</result>
+		</action>
+		<!-- 产品管理 -->
+		<action name="*Prod" method="{1}"
+			class="com.abbcc.module.entManage.ProdManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/entManage/prod_audit.jsp
+			</result>
+			<result name="proinfo">
+				/admin/entManage/prod_info.jsp
+			</result>
+			<result name="view" type="redirect">
+				viewAuditProd?result=${result}
+			</result>
+			<result name="list">/admin/entManage/prod_list.jsp</result>
+			<result name="search">
+				/admin/entManage/prod_search.jsp
+			</result>
+			<result name="listsearch" type="redirect">
+				searchProd?result=${result}
+			</result>
+		</action>
+		<!-- 供求管理 -->
+		<action name="*Supply" method="{1}"
+			class="com.abbcc.module.entManage.SupplyManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/entManage/supply_audit.jsp
+			</result>
+			<result name="info">
+				/admin/entManage/supply_info.jsp
+			</result>
+			<result name="view" type="redirect">
+				viewAuditSupply?result=${result}
+			</result>
+			<result name="search">
+				/admin/entManage/supply_search.jsp
+			</result>
+			<result name="detail">
+				/admin/entManage/supply_detail.jsp
+			</result>
+			<result name="listsearch" type="redirect">
+				searchSupply?result=${result}
+			</result>
+		</action>
+		<!-- 新闻管理 -->
+		<action name="*News" method="{1}"
+			class="com.abbcc.module.news.NewsManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/newsMessage/news_audit.jsp
+			</result>
+			<result name="view" type="redirect">
+				viewAuditNews?result=${result}
+			</result>
+			<result name="list">
+				/admin/newsMessage/news_list.jsp
+			</result>
+			<result name="returnList" type="redirect">listNews?errorMsg=${errorMsg}&amp;result=${result}
+			</result>
+			<result name="listSys">
+				/admin/newsMessage/news_sys_list.jsp
+			</result>
+			<result name="detail">
+				/admin/newsMessage/news_detail.jsp
+			</result>
+			<result name="listnews" type="redirect">
+				listNews?result=${result}
+			</result>
+			<result name="showAddPage">/admin/newsMessage/news_add.jsp
+			</result>
+			<result name="returnShow" type="redirect">listSysNews?errorMsg=${errorMsg}&amp;result=${result}
+			</result>
+			<result name="showLayout">/admin/newsMessage/news_layout.jsp
+			</result>
+
+			<result name="returnshowLayout" type="redirect">searchByCategoryNews?category=${category}
+			</result>
+			<result name="returnImage" type="redirect">imageSortNews?category=${category}
+			</result>
+			<result name="showUpdatePage">/admin/newsMessage/news_update.jsp
+			</result>
+			<result name="json" type="json" />
+		</action>
+		<action name="addSysNews" method="addSys"
+			class="com.abbcc.module.news.NewsManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="showAddPage">/admin/newsMessage/news_add.jsp
+			</result>
+			<result name="input">
+				/admin/newsMessage/news_add.jsp
+			</result>
+			<result name="returnShow" type="redirect">listSysNews?errorMsg=${errorMsg}&amp;result=${result}
+			</result>
+		</action>
+		<action name="updateNews" method="updateNews"
+			class="com.abbcc.module.news.NewsManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">/admin/newsMessage/news_update.jsp
+			</result>
+			<result name="returnShowUpdatePage" type="redirect">updatePageNews
+			</result>
+			<result name="returnShow" type="redirect">listSysNews?errorMsg=${errorMsg}&amp;result=${result}
+			</result>
+		</action>
+		<!--系统新闻分类 -->
+		<action name="*categorys" class="com.abbcc.module.news.CategoryAction"
+			method="{1}">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="show">/admin/newsMessage/news_category.jsp
+			</result>
+
+			<result name="sonShow">/admin/newsMessage/news_category_son.jsp
+			</result>
+			<result name="returnsonShow" type="redirect">soncategorys?id=${belongId}
+			</result>
+			<result name="input" type="redirect">showcategorys
+			</result>
+			<result name="returnshow" type="redirect">showcategorys
+			</result>
+			<result name="json" type="json" />
+		</action>
+		<!-- 新闻栏目管理 -->
+		<action name="*NewsCategory" method="{1}"
+			class="com.abbcc.module.news.NewsCategoryManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="list">
+				/admin/newsMessage/newscategory_list.jsp
+			</result>
+			<result name="listcategory" type="redirect">
+				listNewsCategory?result=${result}
+			</result>
+		</action>
+		<!-- 公告管理 -->
+		<action name="*Announce" method="{1}"
+			class="com.abbcc.module.news.AnnounceManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="list">
+				/admin/newsMessage/announce_list.jsp
+			</result>
+			<result name="view">
+				/admin/newsMessage/announce_edit.jsp
+			</result>
+			<result name="listannounce" type="redirect">
+				listAnnounce?result=${result}
+			</result>
+			<result name="detail">
+				/admin/newsMessage/announce_detail.jsp
+			</result>
+		</action>
+		<!-- 留言 -->
+		<action name="*Message" method="{1}"
+			class="com.abbcc.module.message.MessageManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="list">
+				/admin/newsMessage/message_list.jsp
+			</result>
+			<result name="listmessage" type="redirect">
+				listMessage?result=${result}
+			</result>
+			<result name="detail">
+				/admin/newsMessage/message_detail.jsp
+			</result>
+		</action>
+		<!-- 群组消息 -->
+		<action name="*Groupmessage" method="{1}"
+			class="com.abbcc.module.message.GroupMessageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="input">
+				/admin/newsMessage/send_groupmessage.jsp
+			</result>
+		</action>
+		<!-- 帮助中心 -->
+		<action name="*HelpCenter" method="{1}"
+			class="com.abbcc.module.help.HelpCenterAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="view">
+				/admin/help/view.jsp
+			</result>
+			<result name="input">
+				/admin/help/view.jsp
+			</result>
+			<result name="detail">
+				/admin/help/detail.jsp
+			</result>
+			<result name="returnView" type="redirect">adminViewHelpCenter</result>
+		</action>
+		<!--网站服务器管理 -->
+		<action name="*WebServer" method="{1}"
+			class="com.abbcc.module.soa.WebServerManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="view">
+				/admin/soa/view_webServer.jsp
+			</result>
+			<result name="input">
+				/admin/soa/add_webServer.jsp
+			</result>
+			<result name="list">
+				/admin/soa/list_webServer.jsp
+			</result>
+		</action>
+		<!--网站服务器用户 -->
+		<action name="*UserSite" method="{1}"
+			class="com.abbcc.module.soa.UserSiteManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="view">
+				/admin/soa/view_soaUser.jsp
+			</result>
+			<result name="input">
+				/admin/soa/add_soaUser.jsp
+			</result>
+			<result name="list">
+				/admin/soa/list_soaUser.jsp
+			</result>
+			<result type="json">
+				<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">result</param>
+			</result>
+		</action>
+		<!-- 用户登陆首页 -->
+		<action name="*Right" method="{1}"
+			class="com.abbcc.module.admin.AdminRightAction">
+			<result name="view">
+				/admin/manframe.jsp
+			</result>
+			<result name="input">
+				/admin/help/view.jsp
+			</result>
+			<result name="detail">
+				/admin/help/detail.jsp
+			</result>
+			<result name="returnView" type="redirect">adminViewHelpCenter</result>
+		</action>
+		<!--在登陆后首页查看会员 -->
+		<action name="searchPayLog" method="search"
+			class="com.abbcc.module.admin.AdminRightAction">
+			<result name="monthMember">/admin/memberManage/search_paylog_list.jsp
+			</result>
+			<result name="notAudit">/admin/memberManage/pay_audit_list.jsp</result>
+		</action>
+		<!-- 产品查询 -->
+		<action name="*SearchProduct" method="{1}"
+			class="com.abbcc.module.product.ProductSearchAction">
+			<result name="json" type="json">
+				<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">nameSet</param>
+			</result>
+		</action>
+		<!-- 搜索业推广的产品查询 -->
+		<action name="*Popularize" method="{1}"
+			class="com.abbcc.module.product.PopularizeAction">
+			<result name="view">/admin/entManage/prod_popularize.jsp</result>
+			<result name="add">/admin/entManage/popularize_add.jsp</result>
+			<result name="save" type="redirect">viewPopularize?result=${result}
+			</result>
+			<result name="input">/admin/entManage/popularize_add.jsp</result>
+		</action>
+		<!-- 新闻查询 -->
+		<action name="*SearchNewsJson" method="{1}"
+			class="com.abbcc.module.news.NewsSearchAction">
+			<result type="json">
+				<!-- 因为要将nameSet的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">nameSet</param>
+			</result>
+		</action>
+		<!--网站模板用户 -->
+		<action name="*UserTemplate" method="{1}"
+			class="com.abbcc.module.soa.UserTemplateManageAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="view">
+				/admin/soa/view_userTemplate.jsp
+			</result>
+			<result name="input">
+				/admin/soa/add_userTemplate.jsp
+			</result>
+			<result name="list">
+				/admin/soa/list_userTemplate.jsp
+			</result>
+			<result name="listCriteria">
+				/admin/soa/list_userTemplate_criteria.jsp
+			</result>
+		</action>
+		<!--网站同步 -->
+		<action name="*SiteSync" method="{1}"
+			class="com.abbcc.module.soa.UserSiteSyncAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="list">
+				/admin/soa/list_userSiteSync.jsp
+			</result>
+		</action>
+
+
+		<action name="*Stat" method="{1}"
+			class="com.abbcc.module.subMember.MemberStatAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="memberStat">
+				/admin/memberManage/submember_stat.jsp
+			</result>
+			<result name="memberStatShow">
+				/admin/memberManage/submember_list.jsp
+			</result>
+			<result name="loginList">
+				/admin/memberManage/login_list.jsp
+			</result>
+			<result name="publishList">
+				/admin/memberManage/publish_list.jsp
+			</result>
+			<result name="upgradeStat">
+				/admin/memberManage/upgrade_stat.jsp
+			</result>
+			<result name="earn">
+				/admin/memberManage/earn_stat.jsp
+			</result>
+			<result name="visit">
+				/admin/statistic/visitStat.jsp
+			</result>
+			<result type="chart">
+				<param name="width">400</param>
+				<param name="height">300</param>
+			</result>
+
+		</action>
+		<action name="*Log" method="{1}" class="com.abbcc.module.log.LogAction">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="show">
+				/admin/statistic/log_show.jsp
+			</result>
+
+		</action>
+		<action name="*backup" class="com.abbcc.module.log.BackupAction"
+			method="{1}">
+			<interceptor-ref name="adminDefaultStack"></interceptor-ref>
+			<result name="show">
+				/user/log/backup_show.jsp
+			</result>
+			<result name="input">
+				/user/log/backup_show.jsp
+			</result>
+			<result name="returnshow" type="redirect">
+				showbackup?result=${result}
+			</result>
+		</action>
+	</package>
+
+	<!--会员资料导出（会员资料复制，如 布局） -->
+	<package name="memberRelevance" extends="abbcc-default"
+		namespace="/admin/memeber/relevance">
+		<action name="*" method="{1}"
+			class="com.abbcc.module.member.MemberRelevanceAction">
+			<result name="{1}">
+				/admin/relevance/{1}.jsp
+			</result>
+			<result name="copyOk">
+				/admin/relevance/edit.jsp
+			</result>
+			<result name="input">
+				/admin/relevance/edit.jsp
+			</result>
+		</action>
+	</package>
+	<package name="memberRelddevance" extends="abbcc-default"
+		namespace="/admin/priv">
+
+		<action name="savepriv" method="savepriv"
+			class="com.abbcc.module.admin.AdmainPrivAction">
+			<result name="list">
+				/admin/priv.jsp
+			</result>
+		</action>
+	</package>
+</struts>
+

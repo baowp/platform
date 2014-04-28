@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc" xmlns:p="http://www.springframework.org/schema/p"
+
+	xsi:schemaLocation="http://www.springframework.org/schema/beans  
+            http://www.springframework.org/schema/beans/spring-beans-3.0.xsd  
+            http://www.springframework.org/schema/context  
+            http://www.springframework.org/schema/context/spring-context-3.0.xsd  
+            http://www.springframework.org/schema/mvc 
+            http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd">
+
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping" />
+	<bean id="multipartResolver"
+		class="org.springframework.web.multipart.commons.CommonsMultipartResolver" />
+	<bean
+		class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter">
+		<property name="messageConverters">
+			<list>
+				<ref bean="mappingJacksonHttpMessageConverter" /><!-- json转换器 -->
+			</list>
+		</property>
+		<property name="webBindingInitializer">
+			<!-- Configures Spring MVC DataBinder instances -->
+			<bean
+				class="org.springframework.web.bind.support.ConfigurableWebBindingInitializer">
+				<property name="validator" ref="validator" />
+			</bean>
+		</property>
+	</bean>
+	<!-- Creates the JSR-303 Validator -->
+	<bean id="validator"
+		class="org.springframework.validation.beanvalidation.LocalValidatorFactoryBean" />
+	<bean id="mappingJacksonHttpMessageConverter"
+		class="org.springframework.http.converter.json.MappingJacksonHttpMessageConverter" />
+
+	<mvc:interceptors>
+		<mvc:interceptor>
+			<mvc:mapping path="/user/**" />
+			<bean class="com.abbcc.springrest.interceptor.UserPrivacyInterceptor" />
+		</mvc:interceptor>
+		<mvc:interceptor>
+			<mvc:mapping path="/admin/**" />
+			<bean class="com.abbcc.springrest.interceptor.AdminPrivacyInterceptor" />
+		</mvc:interceptor>
+		<bean class="com.abbcc.springrest.interceptor.RequestResponseInterceptor" />
+		<bean class="com.abbcc.springrest.interceptor.PrepareInterceptor" />
+		<bean class="com.abbcc.springrest.interceptor.ParametersInterceptor" />
+		<bean class="com.abbcc.springrest.interceptor.JsonpInterceptor" />
+	</mvc:interceptors>
+
+	<!-- 自动搜索@Controller标注的类 -->
+	<context:component-scan base-package="com.abbcc.springrest.controller" />
+	
+	<!-- Default ViewResolver -->
+	<bean id="viewResolver"
+		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass"
+			value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+</beans>

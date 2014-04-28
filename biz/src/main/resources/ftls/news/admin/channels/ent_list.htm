@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>频道企业</title>
+
+<script type="text/javascript" src="http://abbcc.net/js/jquery.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/common.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/jquery/dialog/jquery.jmodal.js"></script>
+<link rel="stylesheet" type="text/css" href="http://abbcc.net/css/jquery/dialog/jquery.jmodal.css">
+<link rel="stylesheet" type="text/css" href="http://abbcc.net/news/css/comm.css">
+
+<script type="text/javascript">
+$().ready(function() {
+    $('a.appaly').click(function() {
+    	var $row=$(this).parents("tr[enterpriseId]");
+        $.fn.jmodal({
+            title: '添加频道',
+            content: function(e) {
+                e.html('loading...');
+                e.load('/channels/channelsList');
+            },
+            buttonText: { ok: '确定', cancel: '取消' },
+            okEvent: function(obj, args) {
+            	var checkboxs="";
+                var value= document.getElementsByName('ch');
+                for(var i=0;i<value.length;i++){
+            		if(value[i].checked==true){
+            			checkboxs=checkboxs+"ch="+value[i].defaultValue+"&"
+            		}
+            	}
+
+        		$.ajax( {
+        			url : "/channels/saveToInfo?"+checkboxs,
+        			dataType:"json",
+        			async:false,  	//不进行异步操作
+        			data : {
+        				enterpriseId:$row.attr("enterpriseId")
+        			},
+        			success : function(data) {
+        				alert("添加成功");
+        				args.complete();
+        			}
+        		})
+            }
+        });
+    });
+})
+    </script>
+</head>
+<body>
+<table cellspacing="1" class="tablesorter">
+<thead>
+		<tr>
+			<th>企业名称</th>
+			<th>操作</th>
+		</tr>
+</thead>
+<tbody>
+	<@s.iterator value="pageList.items" status="st">
+	<tr enterpriseId="${enterpriseId}">
+		<td>
+		<@s.property value="name"/>
+		</td>
+		<td><a href="javascript:void(0)" class="appaly">添加到...</a></td>
+	</tr>
+</@s.iterator>
+</tbody>
+</table>
+</body>
+</html>

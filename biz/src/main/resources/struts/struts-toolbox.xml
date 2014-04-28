@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="toolbox_recycle" extends="abbcc-default" namespace="/user/recycle">
+		<!--拦截器-->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+		<action name="*" method="{1}" class="com.abbcc.module.toolbox.RecycleAction">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="list">/user/toolbox/recycle_list.jsp</result>
+			<result name="success" type="redirect">list</result>
+		</action>
+	</package>
+	
+	<package name="toolbox_favourite" extends="abbcc-default" namespace="/user/favour">
+		<!--拦截器-->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="abbccRecycleStack"/>
+		<action name="*" method="{1}" class="com.abbcc.module.toolbox.FavouriteAction">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="list">/user/toolbox/favourite_list.jsp</result>
+			<result name="success" type="redirect">list</result>
+		</action>
+	</package>
+	<package name="toolbox_favourite1" extends="abbcc-default" namespace="/favour">
+		
+		<action name="*" method="{1}" class="com.abbcc.module.toolbox.FavouriteAction">
+						<result name="json" type="json">
+				<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">result</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd"
+	default-autowire="byName" default-lazy-init="false">
+
+	<!--
+		memcached 服务器
+	-->
+	<bean id="cacheService" class="com.abbcc.module.cache.CacheService"
+		init-method="init" destroy-method="destory">
+		<property name="cacheServerList" value="${memcached.server}" />
+		<property name="cacheServerWeights" value="1" />
+		<!--是否使用memcache或者ehcache,false使用本地ehcache，true使用Memcached-->
+		<property name="cacheCluster" value="${memcached.cluster}" />
+		<property name="localCache" ref="localCache" />
+	</bean>
+	<!--
+		session改成memcached 服务器
+	-->
+	<bean id="sessionService" class="com.abbcc.module.session.SessionService">
+		<property name="cacheService" ref="cacheService" />
+	</bean>
+	<!--
+		memcached的拦截器类
+	-->
+	<bean id="cachingInterceptor" class="com.abbcc.module.cache.CachingInterceptor">
+		<property name="cacheService" ref="cacheService" />
+	</bean>
+	<!--
+		memcached的拦截的类和方法
+	-->
+<!--	<aop:config proxy-target-class="true">-->
+<!--		<aop:advisor pointcut="execution(*  com.abbcc.dao.impl.*DAOImpl.find*(..))"-->
+<!--			advice-ref="cachingInterceptor" />-->
+<!--	</aop:config>-->
+	<!-- EhCache Manager -->
+	<bean id="cacheManager"
+		class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+		<property name="configLocation">
+			<value>classpath:ehcache.xml</value>
+		</property>
+	</bean>
+	<!-- EhCache 名称 -->
+	<bean id="localCache" class="org.springframework.cache.ehcache.EhCacheFactoryBean">
+		<property name="cacheManager" ref="cacheManager" />
+		<property name="cacheName" value="abbcc.cache.LOCAL_CACHE" />
+	</bean>
+</beans>

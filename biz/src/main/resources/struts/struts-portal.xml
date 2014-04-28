@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="portal" extends="abbcc-default" namespace="/portal">
+		<action name="*" method="index" class="com.abbcc.module.portal.PortalAction">
+			<param name="industry">{1}</param>
+			<result name="index">/portal/home.jsp</result>
+		</action>
+	</package>
+
+</struts>

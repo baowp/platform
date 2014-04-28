@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="http://abbcc.net/js/jquery.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/common.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/jquery/dialog/jquery_dialog.js"></script>
+<script type="text/javascript">
+function Ok(){
+
+	$.ajax( {
+		url : "add",
+		dataType:"json",
+		async:false,  	//不进行异步操作
+		data : {
+		classId:$("#classId").val(),
+		classSign:$("#classSign").val(),
+		sign:$("#sign").val(),
+		name:$("#name").val()
+		},
+		success : function(data) {
+		var ol=parent.$("ol.clone").clone().removeClass("clone");
+		{
+			var index=parent.$(".category:visible").find("ol.main").length;
+			ol.find("input[name^=entities]").attr("name",function(i,v){return v.replace('0',index)});
+			ol.find("select[name^=entities]").attr("name",function(i,v){return v.replace('0',index)});
+			ol.find("input[name$=genusId]").val(data.genusId);
+			ol.find("input[name$=classSign]").val(data.classSign)
+			ol.find("input[name$=sign]").val(data.sign)
+			
+			ol.find("li.sign").html(data.sign);
+			
+			ol.find("input[name$=name]").val(data.name)
+			ol.find("input[name$=sort]").val(data.sort)
+			ol.find("select[name$=display]").val(data.display)
+
+
+		}
+		ol.insertBefore(parent.$(".category:visible").find(".buttonDiv"));
+		ol.show(300);
+		
+		}
+	})
+	
+	
+	//info("添加成功！",function(){parent.reload()});
+	return true;//返回true模态窗口关闭；返回false模态窗口不关闭；
+}
+</script>
+</head>
+<body>
+<center>
+<@s.form action="add" id="form1" target="_parent">
+<@s.hidden name="classId" id="classId" value="%{classId}"/>
+<@s.hidden name="classSign" id="classSign" value="%{sign}"/>
+<table>
+<tr><td><@s.textfield name="sign" id="sign" theme="xhtml" label="标示" value=""/></td></tr>
+<tr><td><@s.textfield name="name" id="name" theme="xhtml" label="分类名称"/></td></tr>
+</table>
+</@s.form>
+</center>
+</body>
+</html>

@@ -1,0 +1,14 @@
+[	
+	{name:'首页',page:'index',grade:1,sort:1,display:'1'},
+	{name:'供应产品',page:'product',grade:1,sort:2,display:'1'},
+	{name:'供求信息',page:'supply',grade:1,sort:3,display:'1'},
+	{name:'公司介绍',page:'company',grade:1,sort:4,display:'1'},
+	{name:'公司相册',page:'album',grade:1,sort:5,display:'1'},
+	{name:'联系方式',page:'contact',grade:1,sort:6,display:'1'},
+	{name:'在线留言',page:'message',grade:1,sort:7,display:'1'},
+	{name:'技术实力',page:'technic',grade:1,sort:8,display:'0'},
+	{name:'公司新闻',page:'news',grade:1,sort:9,display:'0'},
+	{name:'招聘信息',page:'recruit',grade:1,sort:10,display:'0'},
+	{name:'公司证书',page:'cert',grade:1,sort:11,display:'0'},
+	{name:'产品搜索',page:'search',grade:1,sort:12,display:'0'}
+]

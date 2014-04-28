@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>频道企业</title>
+
+<script type="text/javascript" src="http://abbcc.net/js/jquery.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/common.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/jquery/dialog/jquery.jmodal.js"></script>
+<link rel="stylesheet" type="text/css" href="http://abbcc.net/css/jquery/dialog/jquery.jmodal.css">
+<link rel="stylesheet" type="text/css" href="http://abbcc.net/news/css/comm.css">
+
+</head>
+<body>
+<form action="/channels/saveToInfo" id="form1">
+<@s.hidden name="enterpriseId" value="%{enterpriseId}"/>
+<table cellspacing="1" class="tablesorter">
+<thead>
+		<tr>
+			<th>频道名称</th>
+			<th><@s.checkbox id="check" name="check" onclick="check_all(this,'ch')"/>全选</th>
+		</tr>
+</thead>
+<tbody>
+	<@s.iterator value="pageList.items" status="st">
+	<tr>
+		<td>
+		<@s.property value="name"/>
+		</td>
+		<td><@s.checkbox fieldValue="%{channelsId}" name="ch" id="ch"/></td>
+	</tr>
+</@s.iterator>
+</tbody>
+</table>
+</form>
+</body>
+</html>

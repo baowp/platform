@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd"
+	default-autowire="byName" default-lazy-init="false">
+	<!-- baseService -->
+	<bean id="baseService" class="com.abbcc.service.impl.BaseServiceImpl">
+		<property name="baseDAO">
+			<ref bean="baseDAO" />
+		</property>
+	</bean>
+	<!-- adminService -->
+	<bean id="adminService" class="com.abbcc.service.impl.AdminServiceImpl">
+		<property name="adminDAO">
+			<ref bean="adminDAO" />
+		</property>
+	</bean>
+		<!-- userService -->
+	<bean id="userService" class="com.abbcc.service.impl.UserServiceImpl">
+		<property name="userDAO">
+			<ref bean="userDAO" />
+		</property>
+	</bean>
+		
+	<bean id="enterpriseService" class="com.abbcc.service.impl.EnterpriseServiceImpl">
+		<property name="enterpriseDAO">
+			<ref bean="enterpriseDAO" />
+		</property>
+	</bean>
+	<!-- adminprivilegeService -->
+	<bean id="adminprivilegeService" class="com.abbcc.service.impl.AdminprivilegeServiceImpl">
+		<property name="adminprivilegeDAO">
+			<ref bean="adminprivilegeDAO" />
+		</property>
+	</bean>
+		<!-- adminuserprivService -->
+	<bean id="adminuserprivService" class="com.abbcc.service.impl.AdminuserprivServiceImpl">
+		<property name="adminuserprivDAO">
+			<ref bean="adminuserprivDAO" />
+		</property>
+	</bean>
+		
+	<bean id="albumService" class="com.abbcc.service.impl.AlbumServiceImpl">
+		<property name="albumDAO">
+			<ref bean="albumDAO" />
+		</property>
+	</bean>
+	<!-- attachmentService -->
+	<bean id="attachmentService" class="com.abbcc.service.impl.AttachmentServiceImpl">
+		<property name="attachmentDAO">
+			<ref bean="attachmentDAO" />
+		</property>
+	</bean>
+		<!-- brandService -->
+	<bean id="brandService" class="com.abbcc.service.impl.BrandServiceImpl">
+		<property name="brandDAO">
+			<ref bean="brandDAO" />
+		</property>
+	</bean>
+		
+	<bean id="categoryService" class="com.abbcc.service.impl.CategoryServiceImpl">
+		<property name="categoryDAO">
+			<ref bean="categoryDAO" />
+		</property>
+	</bean>
+	<!-- adminService -->
+	<bean id="cellbindService" class="com.abbcc.service.impl.CellbindServiceImpl">
+		<property name="cellbindDAO">
+			<ref bean="cellbindDAO" />
+		</property>
+	</bean>
+		<!-- cellserverService -->
+	<bean id="cellserverService" class="com.abbcc.service.impl.CellserverServiceImpl">
+		<property name="cellserverDAO">
+			<ref bean="cellserverDAO" />
+		</property>
+	</bean>
+		
+	<bean id="certificateService" class="com.abbcc.service.impl.CertificateServiceImpl">
+		<property name="certificateDAO">
+			<ref bean="certificateDAO" />
+		</property>
+	</bean>
+	<!-- commentService -->
+	<bean id="commentService" class="com.abbcc.service.impl.CommentServiceImpl"/>
+		<!-- domainbindService -->
+	<bean id="domainbindService" class="com.abbcc.service.impl.DomainbindServiceImpl">
+		<property name="domainbindDAO">
+			<ref bean="domainbindDAO" />
+		</property>
+	</bean>
+		
+	<bean id="domainregService" class="com.abbcc.service.impl.DomainregServiceImpl">
+		<property name="domainregDAO">
+			<ref bean="domainregDAO" />
+		</property>
+	</bean>
+	<!-- enterpcontactService -->
+	<bean id="enterpcontactService" class="com.abbcc.service.impl.EnterpcontactServiceImpl">
+		<property name="enterpcontactDAO">
+			<ref bean="enterpcontactDAO" />
+		</property>
+	</bean>
+		<!-- favouriteService -->
+	<bean id="favouriteService" class="com.abbcc.service.impl.FavouriteServiceImpl">
+		<property name="favouriteDAO">
+			<ref bean="favouriteDAO" />
+		</property>
+	</bean>
+		
+	<bean id="jobService" class="com.abbcc.service.impl.JobServiceImpl">
+		<property name="jobDAO">
+			<ref bean="jobDAO" />
+		</property>
+	</bean>
+	<!-- layoutService -->
+	<bean id="layoutService" class="com.abbcc.service.impl.LayoutServiceImpl">
+		<property name="layoutDAO">
+			<ref bean="layoutDAO" />
+		</property>
+	</bean>
+		<!-- layoutmoduleService -->
+	<bean id="layoutmoduleService" class="com.abbcc.service.impl.LayoutmoduleServiceImpl">
+		<property name="layoutmoduleDAO">
+			<ref bean="layoutmoduleDAO" />
+		</property>
+	</bean>
+		
+	<bean id="linkService" class="com.abbcc.service.impl.LinkServiceImpl">
+		<property name="linkDAO">
+			<ref bean="linkDAO" />
+		</property>
+	</bean>
+	<!-- logService -->
+	<bean id="logService" class="com.abbcc.service.impl.LogServiceImpl">
+		<property name="logDAO">
+			<ref bean="logDAO" />
+		</property>
+	</bean>
+		<!-- mailService -->
+	<bean id="mailService" class="com.abbcc.service.impl.MailServiceImpl">
+		<property name="mailDAO">
+			<ref bean="mailDAO" />
+		</property>
+	</bean>
+		
+	<bean id="mailsendService" class="com.abbcc.service.impl.MailsendServiceImpl">
+		<property name="mailsendDAO">
+			<ref bean="mailsendDAO" />
+		</property>
+	</bean>
+	<!-- mailtemplateService -->
+	<bean id="mailtemplateService" class="com.abbcc.service.impl.MailtemplateServiceImpl">
+		<property name="mailtemplateDAO">
+			<ref bean="mailtemplateDAO" />
+		</property>
+	</bean>
+		<!-- messageService -->
+	<bean id="messageService" class="com.abbcc.service.impl.MessageServiceImpl">
+		<property name="messageDAO">
+			<ref bean="messageDAO" />
+		</property>
+	</bean>
+		
+	<bean id="moduleService" class="com.abbcc.service.impl.ModuleServiceImpl">
+		<property name="moduleDAO">
+			<ref bean="moduleDAO" />
+		</property>
+	</bean>
+	<!-- newsService -->
+	<bean id="newsService" class="com.abbcc.service.impl.NewsServiceImpl">
+		<property name="newsDAO">
+			<ref bean="newsDAO" />
+		</property>
+	</bean>
+		<!-- paylogService -->
+	<bean id="paylogService" class="com.abbcc.service.impl.PaylogServiceImpl">
+		<property name="paylogDAO">
+			<ref bean="paylogDAO" />
+		</property>
+	</bean>
+		
+	<bean id="payuserService" class="com.abbcc.service.impl.PayuserServiceImpl">
+		<property name="payuserDAO">
+			<ref bean="payuserDAO" />
+		</property>
+	</bean>
+	<!-- productService -->
+	<bean id="productService" class="com.abbcc.service.impl.ProductServiceImpl">
+		<property name="productDAO">
+			<ref bean="productDAO" />
+		</property>
+	</bean>
+		<!-- recycleService -->
+	<bean id="recycleService" class="com.abbcc.service.impl.RecycleServiceImpl">
+		<property name="recycleDAO">
+			<ref bean="recycleDAO" />
+		</property>
+	</bean>
+		
+	<bean id="supplyService" class="com.abbcc.service.impl.SupplyServiceImpl">
+		<property name="supplyDAO">
+			<ref bean="supplyDAO" />
+		</property>
+	</bean>
+	<bean id="syscodeService" class="com.abbcc.service.impl.SyscodeServiceImpl">
+		<property name="syscodeDAO">
+			<ref bean="syscodeDAO" />
+		</property>
+	</bean>
+		
+	<bean id="upgradelogService" class="com.abbcc.service.impl.UpgradelogServiceImpl">
+		<property name="upgradelogDAO">
+			<ref bean="upgradelogDAO" />
+		</property>
+	</bean>
+	<bean id="usergroupService" class="com.abbcc.service.impl.UsergroupServiceImpl">
+		<property name="usergroupDAO">
+			<ref bean="usergroupDAO" />
+		</property>
+	</bean>
+		
+	<bean id="viewlogService" class="com.abbcc.service.impl.ViewlogServiceImpl">
+		<property name="viewlogDAO">
+			<ref bean="viewlogDAO" />
+		</property>
+	</bean>
+	<bean id="userprivilegeService" class="com.abbcc.service.impl.UserprivilegeServiceImpl">
+		<property name="userprivilegeDAO">
+			<ref bean="userprivilegeDAO" />
+		</property>
+	</bean>
+			
+	<bean id="userprivService" class="com.abbcc.service.impl.UserprivServiceImpl">
+		<property name="userprivDAO">
+			<ref bean="userprivDAO" />
+		</property>
+	</bean>
+	<bean id="menuService" class="com.abbcc.service.impl.MenuServiceImpl">
+		<property name="menuDAO">
+			<ref bean="menuDAO" />
+		</property>
+	</bean>
+			
+	<bean id="customService" class="com.abbcc.service.impl.CustomServiceImpl">
+		<property name="customDAO">
+			<ref bean="customDAO" />
+		</property>
+	</bean>			
+	<bean id="groupmemberService" class="com.abbcc.service.impl.GroupmemberServiceImpl">
+		<property name="groupmemberDAO">
+			<ref bean="groupmemberDAO" />
+		</property>
+	</bean>
+	<bean id="statService" class="com.abbcc.service.impl.StatServiceImpl"/>
+
+	<bean id="popularizeService" class="com.abbcc.service.impl.PopularizeServiceImpl"/>
+	<bean id="orderService" class="com.abbcc.service.impl.OrderServiceImpl"/>
+	<bean id="themeService" class="com.abbcc.service.impl.ThemeServiceImpl"/>
+	<bean id="laythemeService" class="com.abbcc.service.impl.LaythemeServiceImpl"/>
+	<bean id="bindService" class="com.abbcc.service.impl.BindServiceImpl"/>
+
+	<bean id="soaWebserverService" class="com.abbcc.service.impl.SoaWebserverServiceImpl"/>
+	<bean id="soaUserService" class="com.abbcc.service.impl.SoaUserServiceImpl"/>
+	<bean id="soaTemplateService" class="com.abbcc.service.impl.SoaTemplateServiceImpl"/>
+	<bean id="soaTemplateCriteriaService" class="com.abbcc.service.impl.SoaTemplateCriteriaServiceImpl"/>
+	<bean id="soaLogService" class="com.abbcc.service.impl.SoaLogServiceImpl"/>
+	<bean id="syncDataService" class="com.abbcc.module.soa.SyncDataService"/>
+	<bean id="customizeSiteService" class="com.abbcc.module.soa.CustomizeSiteService"/>
+	
+	<bean id="newsClassService" class="com.abbcc.news.service.impl.NewsClassServiceImpl"/>
+	<bean id="newsGenusService" class="com.abbcc.news.service.impl.NewsGenusServiceImpl"/>
+	<bean id="newsNewsService" class="com.abbcc.news.service.impl.NewsNewsServiceImpl" scope="singleton"/>
+	<bean id="merchantsService" class="com.abbcc.merchants.service.impl.MerchantsServiceImpl"/>
+	<bean id="channelsInfoService" class="com.abbcc.merchants.service.impl.ChannelsInfoServiceImpl"/>
+	<bean id="channelsClassService" class="com.abbcc.merchants.service.impl.ChannelsClassServiceImpl"/>
+	<bean id="doorvipService" class="com.abbcc.merchants.service.impl.DoorvipServiceImpl"/>
+	
+</beans>

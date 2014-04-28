@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="com.abbcc.module.account" extends="json-default"
+		namespace="/user/account/password">
+		<!--拦截器 -->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/user/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+
+		<!--密码设置 -->
+		<action name="showUpdatePassword" class="com.abbcc.module.account.PasswordAction"
+			method="showUpdatePassword">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="showUpdatePassword">/user/account/account_password_update_page.jsp
+			</result>
+		</action>
+		<action name="udatePassword" class="com.abbcc.module.account.PasswordAction"
+			method="udatePassword">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="udatePassword" type="redirect">showUpdatePassword?result=${result}
+			</result>
+			<result name="input">/user/account/account_password_update_page.jsp
+			</result>
+		</action>
+		<action name="forgetPassword" class="com.abbcc.module.account.PasswordAction"
+			method="forgetPassword">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="showForgotPassword">/user/account/account_forgot_password.jsp
+			</result>
+			<result name="input">/user/account/account_password_update_page.jsp
+			</result>
+		</action>
+
+		<action name="*" class="com.abbcc.module.account.PasswordAction"
+			method="{1}">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="showUpdatePassword">/user/account/account_password_update_page.jsp
+			</result>
+			<result name="udatePassword" type="redirect">showUpdatePassword?result=${result}
+			</result>
+
+			<result name="input">/user/account/account_password_update_page.jsp
+			</result>
+		</action>
+		<action name="*" class="com.abbcc.module.account.SubAccountAction"
+			method="{1}">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="showSubAccount">/user/account/sub_account_show.jsp
+			</result>
+			<result name="returnShowSubAccount" type="redirect">showSubAccount?result=${result}
+			</result>
+			<result name="showUpdateSubAccount">/user/account/sub_account_update.jsp
+			</result>
+			<result name="input">/user/account/account_password_update_page.jsp
+			</result>
+			<result name="json" type="json"></result>
+		</action>
+		<action name="addSubAccount" class="com.abbcc.module.account.SubAccountAction"
+			method="addSubAccount">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="returnShowSubAccount" type="redirect">showSubAccount?result=${result}
+			</result>
+
+			<result name="input">/user/account/sub_account_add.jsp
+			</result>
+		</action>
+		<action name="updateSubAccount" class="com.abbcc.module.account.SubAccountAction"
+			method="updateSubAccount">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="returnShowSubAccount" type="redirect">showSubAccount?result=${result}
+			</result>
+
+			<result name="input">/user/account/sub_account_update.jsp
+			</result>
+		</action>
+		<action name="popedomShow" class="com.abbcc.module.account.SubAccountAction"
+			method="popedomShow">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="popedomShow">/user/account/sub_account_popedom.jsp
+			</result>
+
+		</action>
+	</package>
+	<package name="account" extends="struts-default" namespace="/user/account/password">
+		<!--拦截器 -->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/user/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+		<action name="showPasswordProtection" class="com.abbcc.module.account.PasswordAction"
+			method="showPasswordProtection">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="showPasswordProtection">/user/account/protection_show.jsp
+			</result>
+			<result name="input">/user/account/protection_show.jsp
+			</result>
+		</action>
+
+		<action name="savePasswordProtection" class="com.abbcc.module.account.PasswordAction"
+			method="savePasswordProtection">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="savePasswordProtection" type="redirect">showPasswordProtection?result=${result}
+			</result>
+			<result name="input">/user/account/protection_show.jsp
+			</result>
+		</action>
+
+		<action name="updatePasswordProtection" class="com.abbcc.module.account.PasswordAction"
+			method="updatePasswordProtection">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="updatePasswordProtection" type="redirect">showPasswordProtection?result=${result}
+			</result>
+			<result name="input">/user/account/protection_show.jsp
+			</result>
+		</action>
+
+		<action name="showForgetUsernameOrPassword" class="com.abbcc.module.account.PasswordAction"
+			method="showForgetUsernameOrPassword">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="showForgetUsernameOrPassword">/user/account/account_forgot_page_next.jsp?pageType=${pageType}
+			</result>
+			<result name="input">/user/account/account_forgot_page.jsp
+			</result>
+		</action>
+
+		<action name="forgetUsernameOrPassword" class="com.abbcc.module.account.PasswordAction"
+			method="forgetUsernameOrPassword">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="forgetUsernameOrPasswordSuccess">/user/account/account_forgot_success.jsp
+			</result>
+			<result name="input">/user/account/account_forgot_page_next.jsp
+			</result>
+		</action>
+
+		<action name="updatePasswordForId" class="com.abbcc.module.account.PasswordAction"
+			method="updatePasswordForId">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result>/user/account/account_update_password_success.jsp
+			</result>
+			<result name="input">/user/account/account_forgot_password.jsp
+			</result>
+		</action>
+	</package>
+
+
+
+</struts>
+

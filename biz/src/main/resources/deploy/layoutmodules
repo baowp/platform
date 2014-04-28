@@ -1,0 +1,44 @@
+[	
+	{module:{moduleId:'HEAD_LOGO'},block:'HOME',blockOrder:1,position:'headList'},
+	{module:{moduleId:'HEAD_NAVIGATOR'},block:'HOME',blockOrder:2,position:'headList'},
+	{module:{moduleId:'HEAD_SHOW'},block:'HOME',blockOrder:3,position:'headList'},
+	
+	{module:{moduleId:'NAV_HOME'},block:'HOME',blockOrder:1,position:'list_nav'},
+	{module:{moduleId:'NAV_PRODUCT'},block:'HOME',blockOrder:2,position:'list_nav'},
+	{module:{moduleId:'NAV_SUPPLY'},block:'HOME',blockOrder:3,position:'list_nav'},
+	{module:{moduleId:'NAV_COMPANY'},block:'HOME',blockOrder:4,position:'list_nav'},
+	{module:{moduleId:'NAV_PHOTO'},block:'HOME',blockOrder:5,position:'list_nav'},
+	{module:{moduleId:'NAV_MESSAGE'},block:'HOME',blockOrder:6,position:'list_nav'},
+	{module:{moduleId:'NAV_CONTACT'},block:'HOME',blockOrder:7,position:'list_nav'},
+	
+	{module:{moduleId:'SIDE_CATEGORY'},block:'HOME',blockOrder:1,position:'content1'},
+	{module:{moduleId:'SIDE_CONTACT'},block:'HOME',blockOrder:2,position:'content1'},
+	
+	{module:{moduleId:'MAIN_INTRO'},block:'HOME',blockOrder:1,position:'content2'},
+	{module:{moduleId:'MAIN_PRODUCTS'},block:'HOME',blockOrder:2,position:'content2'},
+	
+	{module:{moduleId:'MAIN_INTRO'},block:'PRODUCT',blockOrder:1,position:'content2'},
+	{module:{moduleId:'MAIN_PRODUCTS'},block:'PRODUCT',blockOrder:2,position:'content2'},
+	
+	{module:{moduleId:'MAIN_SUPPLIES'},block:'SUPPLY',blockOrder:1,position:'content2'},
+	{module:{moduleId:'MAIN_INTRO'},block:'SUPPLY',blockOrder:2,position:'content2'},
+	
+	{module:{moduleId:'MAIN_INTRO'},block:'COMPANY',blockOrder:1,position:'content2'},
+	
+	{module:{moduleId:'MAIN_PHOTO'},block:'PHOTO',blockOrder:1,position:'content2'},
+	
+	{module:{moduleId:'MAIN_MESSAGE'},block:'MESSAGE',blockOrder:1,position:'content2'},
+	
+	{module:{moduleId:'MAIN_CONTACTS'},block:'CONTACT',blockOrder:1,position:'content2'},
+	
+	{module:{moduleId:'MAIN_NEWS'},block:'NEWS',blockOrder:1,position:'content2'},
+	
+	{module:{moduleId:'MAIN_TECHNIC'},block:'TECHNIC',blockOrder:1,position:'content2'},
+	
+	{module:{moduleId:'MAIN_RECRUIT'},block:'RECRUIT',blockOrder:1,position:'content2'},
+	
+	{module:{moduleId:'MAIN_CERT'},block:'CERT',blockOrder:1,position:'content2'},
+	
+	{module:{moduleId:'PRODUCT_SIMPLE3'},block:'PRODUCT_DETAIL',blockOrder:1,position:'content2'}
+		
+]

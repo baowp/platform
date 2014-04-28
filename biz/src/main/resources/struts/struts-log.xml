@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="com.abbcc.module.log" namespace="/user/log"
+		extends="abbcc-default">
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+
+		<!--全局跳转-->
+		<global-results>
+			<result name="error">/user/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+
+		<action name="*" class="com.abbcc.module.log.LogAction"
+			method="{1}">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="show">/user/log/log_show.jsp
+			</result>
+			<result name="returnshow" type="redirect">show?result=${result}
+			</result>
+		</action>
+	</package>
+
+
+
+</struts>
+

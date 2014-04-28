@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>news</title>
+<link rel="stylesheet" type="text/css"
+	href="http://abbcc.net/user/abbcc/css/common.css">
+<script type="text/javascript" src="http://abbcc.net/js/jquery.js" /></script>
+<script type="text/javascript" src="http://abbcc.net/js/common.js" /></script>
+<script type="text/javascript"
+	src="http://abbcc.net/js/jquery/colorize.js"></script>
+<script type="text/javascript"
+	src="http://abbcc.net/news/js/news.maintain.js"></script>
+	<script type="text/javascript">
+	function setDisplay(obj) {
+		$.getJSON("/index/setDisplayexhibition?randomNumber="+Math.random(), {
+			id:obj.getAttribute('nId'),
+		}, function(result) {
+			if(result){
+					obj.innerHTML=result;
+			}
+		});
+	}
+	</script>
+</head>
+<body>
+<@s.action var="req" name="categoryList"/> <@s.form action="list">
+<@s.select name="classSign" value="classSign" list="#req.classList"
+listKey="sign" listValue="name" headerKey="" headerValue=""
+onchange="fetchGenus(this)"/>&nbsp&nbsp二级分类
+<font class="hidden">*</font>
+<@s.select name="genusSign" value="genusSign" list="#req.genusList"
+listKey="sign" listValue="name" headerKey="" headerValue=""/>&nbsp关键字<@s.textfield name="key"/> <@s.submit
+value="查询"/> </@s.form>
+<a href="list?notAudit=1">所有未审核新闻</a>
+<table class="listTable">
+	<thead>
+		<tr>
+			<th width="200px">标题</th>
+			<th>新闻类型</th>
+			<!--			<th>所属分类</th>-->
+			<th>发布时间</th>
+			<th>添加企业</th>
+			<th>审核</th>
+			<th>操作</th>
+		</tr>
+	</thead>
+	<@s.iterator value="pageList.items" status="st">
+	<tr>
+		<td title="${title}">
+		<div class="ellipsis"><@s.property value="title"/></div>
+		</td>
+		<td><@s.property value="%{type=='picture'?'图片新闻':'一般新闻'}"/></td>
+		<!--			<td><@s.property value=""/></td>-->
+		<td><@s.date name="addTime"/></td>
+		<td><@s.property value="entName()"/></td>
+		<td><a id="display" href="javascript:void(0)"
+				onclick=setDisplay(this) nId="${newsId}"><@s.property value="stateName()"/></a></td>
+		<td><a href="edit?id=${newsId}">修改</a> <a
+			href="remove?id=${newsId}" class="remove">删除</a></td>
+	</tr>
+	</@s.iterator>
+	<tfoot>
+		<tr>
+			<td colspan="9">
+			<div class="paging">
+			<@s.include
+			value="../../../common/page.jsp">
+			<@s.param name="urlArgs" value="'key='+(key||'')+'&classSign='+(classSign||'')+'&genusSign='+(genusSign||'')+'&'" />
+		</@s.include>
+			</div>
+			</td>
+		</tr>
+	</tfoot>
+</table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="news_class" extends="news-default" namespace="/news/class">
+		<action name="*" method="{1}" class="com.abbcc.news.action.main.ClassAction">
+		</action>
+	</package>
+	<package name="news_genus" extends="news-default" namespace="/news/genus">
+		<action name="*" method="{1}" class="com.abbcc.news.action.main.GenusAction">
+		</action>
+	</package>
+	<package name="news_news" extends="news-default" namespace="/news">
+		<action name="*" method="{1}" class="com.abbcc.news.action.main.NewsAction">
+			<result name="{1}">/main/{1}.htm</result>
+			<result name="index">/main/index.htm</result>
+			<result>/main/news/add.htm</result>
+			<result name="json" type="json"><param name="root">result</param></result>
+		</action>
+	</package>
+</struts>

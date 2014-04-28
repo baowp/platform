@@ -1,0 +1,40 @@
+<div id="nav">
+	<ul class="nav_main">
+      <@s.action var="reqClass" namespace="/news/class" name="lis"/>
+      <@s.iterator value="#reqClass.classResults" status="st">
+      	<@s.if test="sign=='index'">
+      	 	<li style="background-image: none;">
+      	 		<@s.if test="!#parameters['class']"><div></@s.if>
+      	 			<a href="http://news.${domain}">新闻首页</a>
+      	 		<@s.if test="!#parameters['class']"></div></@s.if>
+      	 	</li>
+      	</@s.if>
+       	<@s.else>
+       		<li>
+       			<@s.if test="#parameters['class'][0]==sign">
+					<@s.set name="className" value="name"/>
+					<@s.set name="classSign" value="sign"/><div></@s.if>
+       				<a href="/n?class=${sign}">${name}</a>
+       			<@s.if test="#parameters['class'][0]==sign"></div></@s.if>
+       		</li>
+       	</@s.else>
+      </@s.iterator>
+    </ul>
+</div>
+<@s.if test="#parameters['class']!=null&&#parameters['class'][0]!='index'">
+	<@s.action var="reqGenus" namespace="/news/genus" name="lis"/>
+	<style type="text/css">#subnav h2 {width: ${(className.length()-2)*17+92}px;}</style>
+	<div id="subnav">
+		<h2>
+			<a href="/n?class=${classSign}">${className}新闻</a>
+		</h2>
+		<ul>
+		<@s.iterator value="#reqGenus.genusList" status="st">
+			<li><a href="/n?class=${classSign}&genus=${sign}">${name}</a></li>
+			<@s.if test="#st.index+1<#reqGenus.genusList.size">
+				<li class="sep"></li>
+			</@s.if>
+		</@s.iterator>
+		</ul>
+	</div>
+</@s.if>

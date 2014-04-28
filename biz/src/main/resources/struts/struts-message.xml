@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="com.abbcc.module.message" namespace="/user/message"
+		extends="abbcc-default">
+		<!--拦截器-->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+
+		<!--全局跳转-->
+		<global-results>
+			<result name="error">/user/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+
+		<action name="message*" class="com.abbcc.module.message.MessageAction"
+			method="{1}">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="messageEntry">/user/message/message_show.jsp
+			</result>
+			<result name="messageSysEntry">/user/message/message_show_sys.jsp
+			</result>
+			<result name="messageSendPage">/user/message/message_send.jsp
+			</result>
+			<result name="returnMessageSendPage" type="redirect">messagesendPage?result=${result}
+			</result>
+			<result name="returnvisitor" type="redirect">messagevisitor
+			</result>
+			<result name="returnShowInfo" type="redirect">messageshowInfo?id=${recvMessageId}&amp;result=${result}
+			</result>
+			
+			<result name="returnvisitorNotRead" type="redirect">messagesearchVisitorNotRead
+			</result>
+			<result name="returnMessageShow" type="redirect">messagesearchRecv?result=${result}
+			</result>
+			<result name="returnMessageSendShow" type="redirect">messagesearchSend?result=${result}
+			</result>
+			<result name="returnMessageNotReadShow" type="redirect">messagesearchNotRead?result=${result}
+			</result>
+			<result name="messageAddUser">/user/message/message_add_user.jsp
+			</result>
+			<result name="sendSuccess">/user/message/message_send_success.jsp
+			</result>
+			<result name="messageShow">/user/message/message_show.jsp
+			</result>
+			<result name="messageInfoPage">/user/message/message_show_info.jsp
+			</result>
+			<result name="input">/user/message/message_send.jsp
+			</result>
+			<result name="json" type="json"/>
+
+		</action>
+
+
+	</package>
+
+
+
+</struts>
+

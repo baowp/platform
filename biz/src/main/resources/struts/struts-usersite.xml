@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+    "http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="user_site" extends="abbcc-default" namespace="/site">
+		<action name="*" method="home"
+			class="com.abbcc.module.usersite.SubsiteAction">
+			<param name="username">{1}</param>
+			<!-- <result name="index">/user/subsite/index.jsp</result> -->
+			<result name="index">/user/free_user/index.jsp</result>
+			<result name="none" type="redirect">/user</result>
+
+		</action>
+		<action name="*/*" method="{2}"
+			class="com.abbcc.module.usersite.SubsiteAction">
+			<param name="username">{1}</param>
+			<param name="result">{2}</param>
+			<result name="{2}">/user/free_user/{2}.jsp</result>
+			<result name="json" type="json" />
+		</action>
+	</package>
+
+	<package name="vip_site" extends="abbcc-default" namespace="/vip">
+		<action name="*" method="home"
+			class="com.abbcc.module.usersite.VipsiteAction">
+			<param name="username">{1}</param>
+			<result name="index">/user/vipsite/index.jsp</result>
+			<result name="flash">/user/vipsite/flash.jsp</result>
+			<result name="none" type="redirect">/user</result>
+		</action>
+		<action name="*/*" method="{2}"
+			class="com.abbcc.module.usersite.VipsiteAction">
+			<param name="username">{1}</param>
+			<param name="result">{2}</param>
+			<result name="index" type="redirect">/vip/{1}</result>
+			<result name="{2}">/user/vipsite/{2}.jsp</result>
+			<result name="json" type="json" />
+		</action>
+	</package>
+
+	<package name="vip_site_maintain" extends="abbcc-default"
+		namespace="/maintain">
+		<action name="*" method="home"
+			class="com.abbcc.module.usersite.VipsiteMaintainAction">
+			<param name="username">{1}</param>
+			<result name="index">/user/vipsite/index.jsp</result>
+			<result name="none" type="redirect">/user</result>
+		</action>
+		<action name="*/*" method="{2}"
+			class="com.abbcc.module.usersite.VipsiteMaintainAction">
+			<param name="username">{1}</param>
+			<param name="result">{2}</param>
+			<result name="{2}">/user/vipsite/{2}.jsp</result>
+			<result name="json" type="json" />
+		</action>
+	</package>
+
+	<package name="vip_static" extends="abbcc-default" namespace="/viplate">
+		<action name="*/*" method="{2}"	
+			class="com.abbcc.module.usersite.VipsiteStaticAction">
+			<param name="username">{1}</param>
+		</action>
+		<action name="allUserStatic" method="allUserStatic"
+			class="com.abbcc.module.usersite.VipsiteStaticAction">
+		</action>
+	</package>
+	<!-- 检查过期付费用户 -->
+	<package name="vip_check" extends="abbcc-default" namespace="/vipUser">
+		<action name="allUserCheckMember" method="allUserCheckMember"
+			class="com.abbcc.module.member.MemberManageAction">
+		</action>
+	</package>
+	<package name="layout" extends="abbcc-default" namespace="/layout">
+		<action name="*" method="{1}"
+			class="com.abbcc.module.usersite.LayoutAction">
+			<result name="json" type="json" />
+		</action>
+	</package>
+
+	<package name="laytheme" extends="abbcc-default" namespace="/laytheme">
+		<action name="*" method="{1}"
+			class="com.abbcc.module.usersite.LaythemeAction">
+			<result name="json" type="json">
+				<param name="root">model</param>
+			</result>
+		</action>
+	</package>
+
+	<package name="site_message" extends="abbcc-default" namespace="/site_message">
+		<action name="*" method="{1}"
+			class="com.abbcc.module.usersite.MessageAction" />
+	</package>
+
+	<package name="subsite_user" extends="abbcc-default" namespace="/subuser">
+		<action name="*" method="{1}"
+			class="com.abbcc.module.usersite.SubuserAction">
+		</action>
+	</package>
+
+	<package name="layout_attach" extends="abbcc-default"
+		namespace="/laytach">
+		<global-results>
+			<result name="back">/user/vipsite/tool/uploaded.jsp</result>
+		</global-results>
+		<action name="*" method="{1}"
+			class="com.abbcc.module.usersite.AttachAction">
+			<param name="allowedExtension">gif,jpg</param>
+			<param name="maximumSize">204800</param>
+		</action>
+		<action name="topic" method="topic"
+			class="com.abbcc.module.usersite.AttachAction">
+			<param name="allowedExtension">gif,jpg</param>
+			<param name="maximumSize">358400</param>
+		</action>
+		<action name="nav" method="nav"
+			class="com.abbcc.module.usersite.AttachAction">
+			<param name="allowedExtension">gif,jpg</param>
+			<param name="maximumSize">30720</param>
+		</action>
+		<action name="title" method="title"
+			class="com.abbcc.module.usersite.AttachAction">
+			<param name="allowedExtension">gif,jpg</param>
+			<param name="maximumSize">30720</param>
+		</action>
+		<action name="flash" method="flash"
+			class="com.abbcc.module.usersite.AttachAction">
+			<param name="allowedExtension">swf</param>
+			<param name="maximumSize">1048576</param>
+		</action>
+	</package>
+
+	<package name="sync_user_sync" extends="abbcc-default"
+		namespace="/user/syncsite">
+		<action name="*" method="{1}"
+			class="com.abbcc.module.usersite.SynchronizeAction">
+			<param name="websoaPort">8081</param>
+			<result name="json" type="json"></result>
+		</action>
+	</package>
+
+	<package name="sync_admin_sync" extends="abbcc-default"
+		namespace="/admin/syncsite">
+		<action name="*" method="{1}"
+			class="com.abbcc.module.usersite.SynchronizeAdminAction">
+			<interceptor-ref name="adminDefaultStack" />
+			<param name="websoaPort">80</param>
+			<result name="list">/admin/soa/list_userSiteSync.jsp</result>
+		</action>
+	</package>
+
+	<package name="user_vipsite_bind" extends="abbcc-default"
+		namespace="/user/bind">
+		<action name="*" method="{1}" class="com.abbcc.module.usersite.BindAction">
+			<result name="apply">/user/vipsite/bind/apply.jsp</result>
+			<result name="applied">/user/vipsite/bind/applied.jsp</result>
+		</action>
+	</package>
+
+	<package name="admin_vipsite_bind" extends="abbcc-default"
+		namespace="/admin/bind">
+		<action name="*" method="{1}"
+			class="com.abbcc.module.usersite.BindAdminAction">
+			<result name="audit">/admin/bind/audit.jsp</result>
+			<result name="approved">/admin/bind/approved.jsp</result>
+			<result name="unapproved">/admin/bind/unapproved.jsp</result>
+			<result name="view">/admin/bind/detail.jsp</result>
+			<result name="json" type="json" />
+		</action>
+	</package>
+	
+	<package name="vipsite_seo" extends="abbcc-default" namespace="/vipsite/seo">
+		<action name="*" method="{1}" class="com.abbcc.module.usersite.SeoAction">
+			<result name="{1}">/user/vipsite/seo/{1}.jsp</result>
+		</action>
+	</package>
+
+	<package name="sync_site" extends="abbcc-default" namespace="/syncsite">
+		<action name="*Site" method="{1}"
+			class="com.abbcc.module.usersite.SiteSync">
+			<result name="view">/user/syncsite/view.jsp</result>
+		</action>
+	</package>
+
+	<package name="view_log" extends="abbcc-default" namespace="/user/viewlog">
+		<action name="*Log" method="{1}"
+			class="com.abbcc.module.usersite.ViewLogAction">
+			<result name="json" type="json">
+				<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">result</param>
+			</result>
+		</action>
+		<action name="viewLogMain" method="showMainPage"
+			class="com.abbcc.module.usersite.ViewLogAction">
+			<result name="viewLogMain">/user/viewlog/view_main.jsp</result>
+		</action>
+	</package>
+	<package name="add_product_number" extends="abbcc-default"
+		namespace="/product">
+		<action name="addNumber" method="addNumber"
+			class="com.abbcc.module.product.ProductAction">
+			<result name="json" type="json">
+				<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">result</param>
+				<param name="callbackParameter">callback</param>
+			</result>
+		</action>
+	</package>
+<package name="is_login" extends="abbcc-default"
+		namespace="/u">
+		<action name="isLogin" method="isLogin"
+			class="com.abbcc.module.product.ProductAction">
+			<result name="json" type="json">
+				<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+	
+	<package name="user_analysis" extends="abbcc-default" namespace="/user/analysis">
+		<action name="*" method="{1}" class="com.abbcc.module.usersite.AnalysisAction">
+			<result name="{1}">/user/vipsite/analysis/{1}.jsp</result>
+		</action>
+	</package>
+	
+</struts>

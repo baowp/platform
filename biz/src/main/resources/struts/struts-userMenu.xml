@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="com.abbcc.module.usermenu" namespace="/user/menu"
+		extends="abbcc-default">
+		<!--拦截器-->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="abbccRecycleStack" />
+
+		<!--全局跳转-->
+		<global-results>
+			<result name="error">/user/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+
+		<action name="menu*" class="com.abbcc.module.user.UserMenuAction"
+			method="{1}">
+			<result name="show">/user/left.jsp
+			</result>
+			<result name="allMenuList">/user/custom/list.jsp
+			</result>
+			<result name="showEdit">/user/custom/edit.jsp
+			</result>
+			<result name="returnshow" type="redirect">menuedit
+			</result>
+			<result name="json" type="json"/>
+			<result name="json1" type="json">
+			<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+			<!-- root的值对应要返回的值的属性 -->
+				<param name="root">result</param>
+			</result>
+		</action>		
+	</package>
+
+
+
+</struts>
+

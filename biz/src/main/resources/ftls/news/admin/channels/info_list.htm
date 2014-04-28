@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>频道列表</title>
+
+<script type="text/javascript" src="http://abbcc.net/js/jquery.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/common.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/jquery/dialog/jquery.jmodal.js"></script>
+<link rel="stylesheet" type="text/css" href="http://abbcc.net/css/jquery/dialog/jquery.jmodal.css">
+<link rel="stylesheet" type="text/css" href="http://abbcc.net/news/css/comm.css">
+
+<script type="text/javascript">
+function setEsbablished(obj){
+	var $row=$(obj).parents("tr[infoId]");
+	$.ajax( {
+		url : "/index/setEsbablishedchannelsInfo",
+		dataType:"json",
+		async:false,  	//不进行异步操作
+		data : {
+			id:$row.attr('infoId')
+		},
+		success : function(data) {
+			alert("修改成功!");
+		}
+	})
+}
+function setStorm(obj){
+	var $row=$(obj).parents("tr[infoId]");
+	$.ajax( {
+		url : "/index/setStormchannelsInfo",
+		dataType:"json",
+		async:false,  	//不进行异步操作
+		data : {
+			id:$row.attr('infoId')
+		},
+		success : function(data) {
+			alert("修改成功!");
+		}
+	})
+}
+function stepSort(obj,type){
+	var $row=$(obj).parents("tr[infoId]");
+	$("input[name=sourceCate]").val($row.attr("infoId"));
+	$("input[name=sourceSort]").val($row.attr("sort"));
+	$("input[name=stepType]").val(type);
+	var $form=$("form:first");
+	$form.attr("action",$form.attr("action").replace("entchange","entstep"));
+	$form.submit();
+}
+
+function changeSort(obj){
+	var $row=$(obj).parents("tr[infoId]");
+	if(!confirm("您确定要调换该分类顺序吗？")){
+		obj.value=$row.attr("infoId")+","+$row.attr("sort");
+		return ;
+	}
+	var info=obj.value.split(",");
+	$("input[name=sourceCate]").val($row.attr("infoId"));
+	$("input[name=sourceSort]").val($row.attr("sort"));
+	$("input[name=targetCate]").val(info[0]);
+	$("input[name=targetSort]").val(info[1]);
+	$("#form1").submit();
+}
+
+$().ready(function() {
+    $('a.appaly').click(function() {
+        $.fn.jmodal({
+            title: '添加频道',
+            content: function(e) {
+                e.html('loading...');
+                e.load('/channels/add');
+            },
+            buttonText: { ok: '确定', cancel: '取消' },
+            okEvent: function(obj, args) {
+            	if($("#name").val()==''){
+            		alert('请输入频道名称!')
+            		return false;
+            	}else{
+					$("#form1").submit();
+            	}
+                
+            }
+        });
+    });
+})
+    </script>
+</head>
+<body>
+<@s.form action="entchange" namespace="/channels/info" id="form1">
+	<!-- 用于调顺序 -->
+	<@s.hidden name="sourceCate" />
+	<@s.hidden name="sourceSort" />
+	<@s.hidden name="targetCate" />
+	<@s.hidden name="targetSort" />
+	<@s.hidden name="stepType" />
+	<@s.hidden name="cId" value="%{cId}"/>
+</@s.form>
+<table cellspacing="1" class="tablesorter">
+<thead>
+		<tr>
+			<td>企业名称</td>
+			<td>排序</td>
+			<td>操作</td>
+			<td></td>
+		</tr>
+</thead>
+<tbody>
+	<@s.iterator value="pageList.items" status="st">
+	<tr infoId=${infoId} sort=${sort}>
+		<td>
+		<@s.property value="entName()"/>
+		</td>
+		<td>
+		<@s.select list="#request['sortMap']" listKey="key"
+						listValue="value" name="categoryOrder" value="infoId+','+sort"
+						onchange="changeSort(this)" />/<@s.if
+					test="infoId==resultList[0].infoId">上移</@s.if> <@s.else>
+					<a href=javascript:void(0) onclick=stepSort(this,2)>上移</a>
+				</@s.else>/ <@s.if
+					test="infoId==resultList[resultList.size()-1].infoId">下移</@s.if>
+				<@s.else>
+					<a href=javascript:void(0) onclick=stepSort(this,1)>下移</a>
+				</@s.else>
+		</td>
+		<td><a href="entremove?id=${infoId}&cId=${channelsId}" class="remove">删除</a></td>
+		<td><input type="checkbox" onclick="setEsbablished(this)" <@s.property value='estate()'/>   id="<@s.property value='#st.index'/>"  name="esbablished"><label class="checkboxLabel" for="<@s.property value='#st.index'/>">知名企业</label><input type="checkbox" id="<@s.property value='#st.index+1000'/>"  name="storm" onclick="setStorm(this)" <@s.property value='sstorm()'/>><label class="checkboxLabel" for="<@s.property value='#st.index+1000'/>">火爆地带</label></td>
+	</tr>
+</@s.iterator>
+</tbody>
+</table>
+</body>
+</html>

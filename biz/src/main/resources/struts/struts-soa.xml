@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="com.abbcc.soa" extends="abbcc-default" namespace="/soa">
+		
+		<!-- 验证用户名唯一 -->
+		<action name="checkRegName" method="checkRegName" class="com.abbcc.module.soa.HtmlSoaUserAction">
+		</action>
+		
+		<!-- 验证用户Email唯一 -->
+		<action name="checkRegEmail" method="checkRegEmail" class="com.abbcc.module.soa.HtmlSoaUserAction">
+		</action>
+
+		<!-- 用户注册 -->
+		<action name="register" method="register" class="com.abbcc.module.soa.HtmlSoaUserAction">
+		</action>
+		
+		<!-- 用户登录 -->
+		<action name="login" method="login" class="com.abbcc.module.soa.HtmlSoaUserAction">
+		</action>
+		<!-- 上门网，地板网，等用户登录 -->
+		<action name="loginUser" method="loginUser" class="com.abbcc.module.soa.HtmlSoaUserAction">
+		</action>
+		
+		<!-- 判断用户是否已登录 -->
+		<action name="isLogin" method="isLogin" class="com.abbcc.module.soa.HtmlSoaUserAction">
+		</action>
+		
+		<!-- 用户注销 -->
+		<action name="loginOut" method="loginOut" class="com.abbcc.module.soa.HtmlSoaUserAction">
+		</action>
+		
+		<!-- 用户找回密码 -->
+		<action name="getPwd" method="getPwd" class="com.abbcc.module.soa.HtmlSoaUserAction">
+		</action>
+		
+		<!-- 统计网站访问量 -->
+		<action name="viewRecord" method="viewRecord" class="com.abbcc.module.soa.HtmlSoaUserAction">
+		</action>
+		
+		<!-- 给产品留言 -->
+		<action name="doMsg" method="doMsg" class="com.abbcc.module.soa.HtmlSoaMsgAction">
+		</action>
+		<!-- 留言 -->
+		<action name="domessage" method="domessage" class="com.abbcc.module.soa.HtmlSoaMsgAction">
+		</action>
+		<!-- 给产品下订单 -->
+		<action name="doOrder" method="doOrder" class="com.abbcc.module.soa.HtmlSoaOrderAction">
+		</action>
+		
+		<!-- 搜索 -->
+		<action name="search" method="search" class="com.abbcc.module.soa.HtmlSoaSearchAction">
+		</action>
+
+	</package>
+
+</struts>

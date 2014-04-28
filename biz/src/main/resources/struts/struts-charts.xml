@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="com.abbcc.module.charts" namespace="/chart"
+		extends="abbcc-default">
+		<default-interceptor-ref name="abbccRecycleStack" />
+
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/user/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+
+		<action name="*" class="com.abbcc.module.chart.ChartAction"
+			method="{1}">
+			<result name="json" type="json" />
+			<result type="json" name="json2">
+				<param name="root">result</param>
+			</result>
+			<result name="success">/upload/success.jsp</result>
+		</action>
+	</package>
+
+
+</struts>
+

@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="/user/abbcc/css/common.css">
+<script type="text/javascript" src="/js/cvi/busy.js"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/common.js"></script>
+<script type="text/javascript" src="/news/js/news.maintain.js"></script>
+<script type="text/javascript" src="/news/js/news.js"></script>
+
+<style>
+.ui-corner-all {
+	-moz-border-radius: 4px 4px 4px 4px;
+}
+
+.ui-widget-content {
+	background: url("images/ui-bg_flat_75_ffffff_40x100.png") repeat-x
+		scroll 50% 50% #FFFFFF;
+	border: 1px solid #AAAAAA;
+	color: #222222;
+}
+
+.ui-widget {
+	font-family: Verdana, Arial, sans-serif;
+	font-size: 1.1em;
+}
+
+.ui-progressbar {
+	height: 2em;
+	text-align: left;
+}
+
+.ui-progressbar .ui-progressbar-value {
+	height: 100%;
+	margin: -1px;
+}
+
+.ui-progressbar-value {
+	background-image:
+		url("http://jqueryui.com/demos/progressbar/images/pbar-ani.gif");
+}
+
+.ui-corner-left {
+	-moz-border-radius-bottomleft: 4px;
+	-moz-border-radius-topleft: 4px;
+}
+
+.ui-widget-header {
+	background:
+		url("http://jqueryui.com/themeroller/css/../images/?new=f6a828&w=500&h=100&f=png&q=100&fltr[]=over|textures/12_gloss_wave.png|0|0|35")
+		repeat-x scroll 50% 50% #F6A828;
+	border: 1px solid #E78F08;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+</style>
+
+<title>静态化</title>
+<script type="text/javascript">
+	function staticStart(path) {
+		$
+				.ajax({
+					url : path,
+					cache : false,
+					beforeSend : function() {
+						busylay = getBusyOverlay(
+								msie6 ? document.body : parent.document.body,
+								{
+									color : 'black',
+									opacity : 0.4,
+									text : '',
+									style : 'text-decoration:blink;font-weight:bold;font-size:12px;color:white;',
+									zIndex : 30
+								}, {
+									color : '#fff',
+									size : 128,
+									type : 'o'
+								});
+					},
+					complete : function() {
+						if (window.busylay)
+							busylay.remove();
+					}
+				});
+	}
+	function staticPage() {
+		staticStart("/news/admin/news/indexStatic");
+	}
+	function allStatic() {
+		$.getJSON("/news/admin/news/allStatic?randomNumber=" + Math.random(), {
+			classSign : $("#classSign").val(),
+			genusSign : $("#genusSign").val()
+	}, function(result) {
+			start();
+		})
+	}
+	function start() {
+		$.getJSON("/news/admin/news/progress?randomNumber=" + Math.random(),
+				{}, function(result) {
+					if (result == '-1') {
+						$("#stateDiv").html("静态化完成");
+						$(".ui-progressbar-value").css({
+							"width" : "100%"
+						})
+						$("#progressbar").hide();
+					} else {
+						$("#progressbar").show();
+						start();
+						$(".ui-progressbar-value").css({
+							"width" : result.split("/")[2] + "%"
+						})
+						$("#stateDiv").html(
+								"共有:" + result.split("/")[1] + "个文件，当前是第"
+										+ result.split("/")[0] + "个文件");
+
+					}
+				})
+	}
+</script>
+</head>
+<body>
+<form id="staticForm" action="/news/admin/news/allStatic"></form>
+<div id="progressbar" style="display: none;"
+	class="ui-progressbar ui-widget ui-widget-content ui-corner-all"
+	role="progressbar" aria-valuemin="0" aria-valuemax="100"
+	aria-valuenow="59">
+<div class="ui-progressbar-value ui-widget-header ui-corner-left"
+	style="width: 0%;"></div>
+</div>
+<div id="stateDiv"></div>
+<div id="bdiv"><@s.action var="req" name="categoryList"/>
+<table>
+	<tr>
+		<td><@s.select name="classSign" value="classSign"
+		list="#req.classList" listKey="sign" listValue="name"
+		onchange="fetchGenus(this)" headerKey=""
+		headerValue="全部" id="classSign"/>&nbsp&nbsp二级分类<@s.select name="genusSign"
+		value="genusSign" id="genusSign" list="#req.genusList" listKey="sign"
+		listValue="name" headerKey="" headerValue="全部"/></td>
+		<td><input type="button" onclick="allStatic()" value="新闻静态化" /></td>
+	</tr>
+	<tr>
+		<td></td>
+		<td><input type="button" onclick="staticPage()" value="首页静态化" /></td>
+	</tr>
+</table>
+
+</div>
+</body>
+</html>

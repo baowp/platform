@@ -1,0 +1,131 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>新闻后台</title>
+<LINK rel=stylesheet type=text/css href="<@s.url value="/user/abbcc/images/admincp.css"/>">
+<script type="text/javascript" src="<@s.url value="/js/jquery.js"/>"></script>
+<script type="text/javascript" src="<@s.url value="/user/abbcc/js/common.js"/>"></script>
+<script src="<@s.url value="/user/js/prototype.lite.js"/>"
+	type="text/javascript"></script>
+<script src="<@s.url value="/user/js/moo.fx.js"/>" type="text/javascript"></script>
+<script type="text/javascript">
+	function makeState(value){
+		document.getElementById("stateValue").innerHTML=value;
+		document.getElementById("stateValue").style.fontSize=17;
+		document.getElementById("makestate").style.display="";
+		setTimeout(hiddenDiv,3000)
+	}
+	function hiddenDiv(){
+		document.getElementById("makestate").style.display="none";
+	}
+	function logout1(){
+		if (confirm("确定退出?") == true) {
+			window.location.href="/news/admin/logout";
+		} else {
+			return false;
+		}
+	}
+</script>
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="no-cache">
+<meta http-equiv="Expires" content="-1">
+<meta http-equiv="Cache-Control" content="no-cache">
+</head>
+<body>
+<DIV id=append_parent></DIV>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" height="100%">
+	<TBODY>
+		<TR>
+			<TD height=90 colSpan=2>
+			<DIV class=mainhd>
+			<DIV class=logo>abbcc</DIV>
+			<DIV class=uinfo>
+			<P>您好, <EM>${Session.abbccadmin.name}</EM> [ <A
+				target="_self" href="#" onclick="logout1()">退出</A> ]</P>
+			<P class=btnlink><A href="<@s.url value="/"/>" target=_blank>abbcc首页</A></P>
+			</DIV>
+			<DIV class=navbg></DIV>
+			<DIV class=nav>
+			<UL id=topmenu>
+				<LI><EM><A hideFocus id=header_index
+					onclick="toggleMenu('index', 'settings&amp;operation=styles');"
+					href="javascript:;">首页</A></EM></LI>
+				<LI><EM><A hideFocus id=header_news
+					onclick="toggleMenu('news', 'forums');" href="javascript:;">新闻</A></EM></LI>
+			</UL>
+			<DIV class=currentloca></DIV>
+			<DIV class=navbd></DIV>
+			<DIV class=sitemapbtn>
+			<DIV id="makestate" style="margin: 0px 350px 0px 0px; float: left;display:none;">
+			<div id="stateValue" style="background-color: #FFE4C4;"></div>
+			</DIV>
+			<SPAN id=add2custom></SPAN><A id=cpmap
+				onclick="showMap();return false;" href="#"><IMG title=后台导航
+				src="<@s.url value="/user/abbcc/images/btn_map.gif"/>" width=72 height=18></A></DIV>
+			</DIV>
+			</DIV>
+			</TD>
+		</TR>
+		<TR>
+			<TD class=menutd vAlign=top width=160>
+			<DIV id=leftmenu class=menu>
+			<UL style="DISPLAY: none" id=menu_news>
+				<li><a hideFocus href="<@s.url value="/news/admin/class/list"/>"
+					target="main">一级分类</a></li>
+				<li><a hideFocus href="<@s.url value="/news/admin/genus/list"/>"
+					target="main">二级分类</a></li>
+				<li><a hideFocus href="<@s.url value="/news/admin/news/add"/>"
+					target="main">新闻添加</a></li>
+				<li><a hideFocus href="<@s.url value="/news/admin/news/list"/>" 
+					target="main">新闻管理</a></li>
+			</UL>
+			<UL style="DISPLAY: none" id=menu_index>
+				<li><a hideFocus href="<@s.url value="/news/admin/class/list"/>"
+					target="main">一级分类</a></li>
+				<li><a hideFocus href="<@s.url value="/news/admin/genus/list"/>"
+					target="main">二级分类</a></li>
+				<li><a hideFocus href="<@s.url value="/news/admin/news/add"/>"
+					target="main">新闻添加</a></li>
+				<li><a hideFocus href="<@s.url value="/news/admin/news/list"/>" 
+					target="main">新闻管理</a></li>
+				<li><a hideFocus href="<@s.url value="/news/admin/news/staticPage"/>" target="main">生成静态html</a></li>
+				<li><a hideFocus href="<@s.url value="/news/comment/list"/>" target="main">新闻评论管理</a></li>
+				<li><a hideFocus href="<@s.url value="/merchants/manage/list"/>" target="main">招商大会管理</a></li>
+				<li><a hideFocus href="<@s.url value="/merchants/vip/list"/>" target="main">Vip用户管理</a></li>
+				<li><a hideFocus href="<@s.url value="/channels/list"/>" target="main">频道管理</a></li>
+				<li><a hideFocus href="<@s.url value="/channels/info/ententerprise"/>" target="main">频道企业</a></li>
+				<li><a hideFocus href="<@s.url value="/news/message/list"/>" target="main">客户留言</a></li>
+			</UL>
+			</DIV>
+			</TD>
+			<TD class=mask vAlign=top width="100%"><IFRAME
+				style="OVERFLOW: visible" height="100%"
+				src="" frameBorder=0 width="100%"
+				name=main scrolling=yes></IFRAME></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<DIV class=copyright>
+<P>Powered by <A href="http://abbcc.cn/" target=_blank>东方五金</A></P>
+<P>&copy; 2010-2019, <A href="http://abbcc.cn/" target=_blank>团队
+</A></P>
+</DIV>
+<DIV style="DISPLAY: none" id=cpmap_menu class=custom>
+<DIV class=cside>
+<center>版权所有,东方五金</center>
+
+</DIV>
+<DIV id=cmain class=cmain></DIV>
+<DIV class=cfixbd></DIV>
+</DIV>
+
+<script type="text/javascript"
+	src="<@s.url value="/user/abbcc/js/index.js"/>"></script>
+<script language="JavaScript">
+function logout(){
+	if (confirm("您确定要退出后台管理吗"))
+	top.location = "../userLogout";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>vip添加用户</title>
+
+<script type="text/javascript" src="http://abbcc.net/js/jquery.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/common.js"/></script>
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+.sssss {	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #000000;
+	text-decoration: none;
+}
+-->
+</style>
+</head>
+<body>
+<form action="/merchants/vip/save" method="post">
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td align="center">&nbsp;</td>
+  </tr>
+  <tr>
+    <td><form action='savereg.jsp' method='post' name='UserReg' id="UserReg">
+      <table width="100%" border="0" align="center" cellpadding="3" cellspacing="0" bordercolor="#FFFFFF" style="border-collapse: collapse">
+        <tr align="center">
+          <td height="20" colspan="3" bgcolor="#FFFFFF"><b class="zaq">新用户注册</b></td>
+        </tr>
+        <tr>
+          <td colspan="2" valign="top" bgcolor="#FFFFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr>
+                <td width="37%" height="34" bgcolor="#FFFFFF"><b class="sssss">用户名：</b></td>
+                <td width="63%" bgcolor="#FFFFFF"><input   maxlength="10" size="15" name="username" />
+                    <font color="#FF0000" class="c4">*</font></td>
+              </tr>
+            </table>
+              <br /></td>
+          <td width="49%" bgcolor="#FFFFFF"><span class="cs">不能小于4个字符（2个汉字）</span></td>
+        </tr>
+        <tr>
+          <td width="19%" bgcolor="#FFFFFF"><b class="sssss">密码(至少6位)：</b><br /></td>
+          <td width="32%"><input   type="password" maxlength="12" size="25" name="password" />
+              <font color="#FF0000" class="c4">*</font> </td>
+          <td width="49%"><span class="zzzz">请输入密码，区分大小写。 不要使用类似 '*'、' '的特殊字符</span></td>
+        </tr>
+        <tr>
+          <td width="19%" bgcolor="#FFFFFF"><strong class="sssss">确认密码(至少6位)：</strong><br />
+          </td>
+          <td width="32%" bgcolor="#FFFFFF"><input   type="password" maxlength="12" size="25" name="password1" />
+              <font color="#FF0000" class="c4">*</font></td>
+          <td width="49%" bgcolor="#FFFFFF">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="19%"><strong class="sssss">密码问题：</strong><br /></td>
+          <td width="32%"><select id="question" name="question" class="text" title="密码保护问题">
+              <option value="" selected="selected" >请选择一个问题</option>
+              <option value="我就读的第一所学校的名称？" >我就读的第一所学校的名称？</option>
+              <option value="我最喜欢的休闲运动是什么？" >我最喜欢的休闲运动是什么？</option>
+              <option value="我最喜欢的运动员是谁？" >我最喜欢的运动员是谁？</option>
+              <option value="我最喜欢的物品的名称？" >我最喜欢的物品的名称？</option>
+              <option value="我最喜欢的歌曲？" >我最喜欢的歌曲？</option>
+              <option value="我最喜欢的食物？" >我最喜欢的食物？</option>
+              <option value="我最爱的人的名字？" >我最爱的人的名字？</option>
+              <option value="我最爱的电影？" >我最爱的电影？</option>
+              <option value="我妈妈的生日？" >我妈妈的生日？</option>
+              <option value="我的初恋日期？" >我的初恋日期？</option>
+              <option value="我的自定义问题" >我的自定义问题</option>
+            </select>
+              <font color="#FF0000" class="c4">*</font> </td>
+          <td width="49%"><span class="cs">忘记密码的提示问题</span></td>
+        </tr>
+        <tr>
+          <td width="19%" bgcolor="#FFFFFF"><strong class="sssss">问题答案：</strong><br /></td>
+          <td width="32%" bgcolor="#FFFFFF"><input   type="text" maxlength="20" size="25" name="answer" />
+              <font color="#FF0000" class="c4">*</font></td>
+          <td width="49%" bgcolor="#FFFFFF"><span class="cs">忘记密码的提示问题答案，用于取回密码</span></td>
+        </tr>
+        <tr>
+          <td width="19%"><strong class="sssss">性别：</strong><br /></td>
+          <td width="32%" class="cs"><input type="radio" checked="checked" value="1" name="sex" />
+            男 &nbsp;&nbsp;
+            <input type="radio" value="0" name="sex" />
+            女</td>
+          <td width="49%"><span class="cs">请选择您的性别</span></td>
+        </tr>
+        <tr>
+          <td width="19%" bgcolor="#FFFFFF"><strong class="sssss">Email地址：</strong><br /></td>
+          <td width="32%" bgcolor="#FFFFFF"><input   maxlength="50" size="25" name="email" /></td>
+          <td width="49%" bgcolor="#FFFFFF"><span class="cs">请输入有效的邮件地址</span></td>
+        </tr>
+        <tr>
+          <td><strong class="sssss">公司网址：</strong></td>
+          <td width="32%"><input name="homepage" id="homepage" value="http://" size="25"   maxlength="50" /></td>
+          <td width="49%">&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="19%" bgcolor="#FFFFFF"><strong class="sssss">公司名称：</strong><br /></td>
+          <td width="32%" bgcolor="#FFFFFF"><input name="companyName" id="companyName" size="25"   maxlength="100" /></td>
+          <td width="49%" bgcolor="#FFFFFF"><span class="cs">您的公司名称</span></td>
+        </tr>
+        <tr>
+          <td><strong class="sssss">公司地址：</strong></td>
+          <td><input name="address" id="add" size="25"   maxlength="100" />
+              <font color="#FF0000" class="c4">*</font></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#FFFFFF"><strong class="sssss">联系人：</strong></td>
+          <td bgcolor="#FFFFFF"><input name="receiver" id="Receiver" size="25"   maxlength="100" />
+              <font color="#FF0000" class="c4">*</font></td>
+          <td bgcolor="#FFFFFF">&nbsp;</td>
+        </tr>
+        <tr>
+          <td><strong class="sssss">邮政编码：</strong></td>
+          <td width="32%"><input name="postcode" id="postcode" size="25" maxlength="20" /></td>
+          <td width="49%">&nbsp;</td>
+        </tr>
+        <tr>
+          <td bgcolor="#FFFFFF"><span class="sssss"><strong>联系电话：</strong></span><strong><br />
+          </strong></td>
+          <td width="32%" bgcolor="#FFFFFF"><input name="phone" id="Phone" size="25" maxlength="20" />
+              <font color="#FF0000" class="c4">*</font></td>
+          <td width="49%" bgcolor="#FFFFFF"><span class="cs">格式020-34700400</span></td>
+        </tr>
+        <tr>
+          <td><strong class="sssss">手机：</strong></td>
+          <td><input name="Mobile" id="mobile" size="25" maxlength="20" /></td>
+          <td>&nbsp;</td>
+        </tr>
+        <tr>
+          <td width="19%" bgcolor="#FFFFFF"><strong class="sssss">传 真：</strong></td>
+          <td width="32%" bgcolor="#FFFFFF"><input name="Fax" id="fax" size="25" maxlength="50" /></td>
+          <td width="49%" bgcolor="#FFFFFF">&nbsp;</td>
+        </tr>
+      </table>
+      <div align="center">
+        <input name="Submit2"   type="submit" class="c1" value="提交" />
+        &nbsp;
+        <input name="Reset"   type="reset" class="c1" id="Reset" value="清空" />
+      </div>
+    </form></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</form>
+</body>
+</html>

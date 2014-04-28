@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="com.abbcc.module.usernews" namespace="/user/news"
+		extends="abbcc-default">
+		<!--拦截器-->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="abbccRecycleStack" />
+
+		<!--全局跳转-->
+		<global-results>
+			<result name="error">/user/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+
+		<action name="news*" class="com.abbcc.module.userNews.NewsAction"
+			method="{1}">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="show">/user/news/news_manage.jsp
+			</result>
+			<result name="showAddPage">/user/news/news_add.jsp
+			</result>
+			<result name="showUpdatePage">/user/news/news_update.jsp
+			</result>
+			<result name="returnShowUpdatePage" type="redirect">newsupdatePage
+			</result>
+			<result name="returnShow" type="redirect">newsshow?errorMsg=${errorMsg}&amp;result=${result}&amp;category=${category}
+			</result>
+			<result name="showLayout">/user/news/news_layout.jsp
+			</result>
+			<result name="returnshowLayout" type="redirect">newssearchByCategory?category=${category}&amp;result=${result}
+			</result>
+			<result name="returnImage" type="redirect">newsimageSort?category=${category}&amp;result=${result}
+			</result>
+			<result name="input">/user/news/news_add.jsp
+			</result>
+			<result name="json" type="json" />
+		</action>
+		<action name="newsupdate" class="com.abbcc.module.userNews.NewsAction"
+			method="update">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="input">/user/news/news_update.jsp
+			</result>
+		</action>
+		<action name="categorys*" class="com.abbcc.module.userNews.CategoryAction"
+			method="{1}">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="show">/user/news/news_category.jsp
+			</result>
+
+			<result name="sonShow">/user/news/news_category_son.jsp
+			</result>
+			<result name="returnsonShow" type="redirect">categorysson?id=${belongId}
+			</result>
+			<result name="input" type="redirect">categorysshow
+			</result>
+			<result name="returnshow" type="redirect">categorysshow?result=${result}
+			</result>
+			<result name="json" type="json"/>
+		<result name="json2" type="json">
+			<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+			<!-- root的值对应要返回的值的属性 -->
+				<param name="root">result</param>
+			</result>
+		</action>
+<!-- 用于公告 -->
+		<action name="announce*" class="com.abbcc.module.news.AnnounceManageAction"
+			method="{1}">
+			<result name="show">/user/news/announce_show.jsp
+			</result>
+		</action>
+
+	</package>
+
+
+
+</struts>
+

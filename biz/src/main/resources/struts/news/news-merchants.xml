@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="news_merchants" extends="news-default" namespace="/merchants/manage">
+		<action name="*" method="{1}" class="com.abbcc.merchants.action.MerchantsManageAction">
+			<result name="{1}">/main/{1}.htm</result>
+			<result name="list">/admin/merchant/merchants.htm</result>
+			<result name="edit">/admin/merchant/merchants_edit.htm</result>
+			<result type="redirect">list?page=${page}</result>
+			<result name="json" type="json"><param name="root">result</param></result>
+		</action>
+	</package>
+<package name="news_merchants_vip" extends="news-default" namespace="/merchants/vip">
+		<action name="*" method="{1}" class="com.abbcc.merchants.action.VipUserAction">
+			<result name="list">/admin/merchant/vipUser.htm</result>
+			<result type="redirect">list</result>
+			<result name="add">/admin/merchant/vipAdd.htm</result>
+			<result name="json" type="json"><param name="root">result</param></result>
+		</action>
+</package>
+<package name="news_channels" extends="news-default" namespace="/channels">
+		<action name="*" method="{1}" class="com.abbcc.merchants.action.ChannelsClassAction">
+			<result name="list">/admin/channels/class_list.htm</result>
+			<result name="cList">/admin/channels/class_list_1.htm</result>
+			<result name="add">/admin/channels/class_add.htm</result>
+			<result type="redirect">list</result>
+			<result name="json" type="json"><param name="root">result</param></result>
+		</action>
+</package>
+<package name="news_channels_info" extends="news-default" namespace="/channels/info">
+		<action name="ent*" method="{1}" class="com.abbcc.merchants.action.ChannelsInfoAction">
+			<result name="list">/admin/channels/info_list.htm</result>
+			<result name="entlist">/admin/channels/ent_list.htm</result>
+			<result name="add">/admin/channels/class_add.htm</result>
+			<result type="redirect">entlist?cId=${cId}</result>
+			<result name="json" type="json"><param name="root">result</param></result>
+		</action>
+</package>
+</struts>

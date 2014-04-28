@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="news_admin" extends="news-default" namespace="/news/admin">
+		<action name="*" method="{1}" class="com.abbcc.news.action.admin.AdminAction">
+			<result name="input">/admin/login.htm</result>
+			<result name="enter" type="redirect">/news/admin/index</result>
+			<result name="index">/admin/index.htm</result>
+		</action>
+	</package>
+</struts>

@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>修改招商</title>
+
+<script type="text/javascript" src="http://abbcc.net/js/jquery.js"/></script>
+<script type="text/javascript" src="http://abbcc.net/js/common.js"/></script>
+</head>
+<body>
+<@s.form action="save">
+<@s.hidden name="id" value="%{merchantsId}"/>
+<table>
+	<tr>
+	<td>申请期数</td>
+		<td><select name="type"><@s.if test="%{type=='01'}"><option value="01" selected="selected">第一期</option></@s.if><@s.else><option value="01">第一期</option></@s.else>
+		<@s.if test="%{type=='02'}"><option value="02" selected="selected">第二期</option></@s.if><@s.else><option value="02">第二期</option></@s.else>
+		<@s.if test="%{type=='03'}"><option value="03" selected="selected">第三期</option></@s.if><@s.else><option value="03">第三期</option></@s.else>
+		<@s.if test="%{type=='04'}"><option value="04" selected="selected">第四期</option></@s.if><@s.else><option value="04">第四期</option></@s.else>
+		</select></td>
+	</tr>
+	<tr>
+		<td><font color="red">*</font>姓名:</td>
+		<td><@s.textfield name="name" /></td>
+	</tr>
+	<tr>
+		<td><font color="red">*</font>电话:</td>
+		<td><@s.textfield name="phone" /></td>
+	</tr>
+	<tr>
+		<td>Email:</td>
+		<td><@s.textfield name="email" /></td>
+	</tr>
+	<tr>
+		<td>意向地区:</td>
+		<td><@s.textfield name="address" /></td>
+	</tr>
+	<tr>
+		<td>代理详情:</td>
+		<td><@s.textarea  rows="5" name="content" cols="30"/></td>
+	</tr>
+	<tr><td><@s.submit value="修改"/></td></tr>
+</table>
+</@s.form>
+</body>

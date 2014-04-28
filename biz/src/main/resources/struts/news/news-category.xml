@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="news_admin_class" extends="news-default" namespace="/news/admin/class">
+		<action name="*" method="{1}" class="com.abbcc.news.action.admin.ClassAction">
+			<result name="input">/admin/category/classList.htm</result>
+			<result name="addPage">/admin/category/classAdd.htm</result>
+			<result name="list">/admin/category/classList.htm</result>
+			<result name="json" type="json"><param name="root">result</param></result>
+			<result name="success" type="redirect">list</result>
+		</action>
+	</package>
+	
+	<package name="news_admin_genus" extends="news-default" namespace="/news/admin/genus">
+		<action name="*" method="{1}" class="com.abbcc.news.action.admin.GenusAction">
+			<result name="input">/admin/category/genusList.htm</result>
+			<result name="addPage">/admin/category/genusAdd.htm</result>
+			<result name="list">/admin/category/genusList.htm</result>
+			<result name="success" type="redirect">list</result>
+			<result name="json" type="json"><param name="root">result</param></result>
+			<result name="json2" type="json"><param name="root">model</param></result>
+		</action>
+	</package>
+</struts>

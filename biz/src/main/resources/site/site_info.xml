@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<siteinfo>
+	<siteid>YKJY001</siteid>
+	<sitename>永康五金网</sitename>
+	<url>http://abbcc.net</url>
+	<company>永康五金网有限公司</company>
+	<address>浙江省杭州市西湖区</address>
+	<zipcode>310012</zipcode>
+	<phone>87931517</phone>
+	<fax>87931517</fax>
+	<contact>大力</contact>
+	<email>daly@abbcc.com</email>
+	<smtp>smtp.163.com</smtp>
+	<adminemail>ykwj715@163.com</adminemail>
+	<mailusername>ykwj715</mailusername>
+	<mailpassword>33022938</mailpassword>
+	<syncKey>abbcc_2010_key</syncKey>
+	<pageCount>1</pageCount>
+	<staticNumber>0</staticNumber>
+</siteinfo>

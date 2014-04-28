@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="user" extends="json-default" namespace="/user">
+
+		<!--拦截器 -->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/error.jsp</result>
+			<result name="login">/user/login.html</result>
+		</global-results>
+		<!--用户注销 -->
+		<action name="userLogout" class="com.abbcc.module.user.UserLogoutAction"
+			method="logout">
+			<result name="login">/user/signout.html</result>
+			<result name="index" type="redirect">${pageType}</result>
+		</action>
+
+		<action name="login" class="com.abbcc.module.user.UserLoginAction"
+			method="login">
+			<result type="redirect">/user/platform/index.jsp</result>
+			<result name="index" type="redirect">${pageType}</result>
+			<!--<result>/user/index.jsp</result> -->
+			<result name="input">/user/login.jsp</result>
+			<result name="login2">${loginPage}</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="show" class="com.abbcc.module.user.RegisterAction"
+			method="show">
+			<result name="show">/user/register.jsp</result>
+		</action>
+
+		<action name="registerUser" class="com.abbcc.module.user.UserRegisterAction"
+			method="register">
+			<result name="registerSuccess">/user/register_success.jsp</result>
+			<result name="input">/user/reg.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="userValidate" class="com.abbcc.module.user.UserRegisterAction"
+			method="usernameValidate">
+			<result name="json" type="json"></result>
+		</action>
+		<action name="emailValidate" class="com.abbcc.module.user.UserRegisterAction"
+			method="emailValidate">
+			<result name="json" type="json"></result>
+		</action>
+
+		<action name="userActivation" class="com.abbcc.module.user.UserRegisterAction"
+			method="userActivation">
+			<result name="validationSuccess">/user/validation_success.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="right" class="com.abbcc.module.user.RightAction"
+			method="right">
+			<result name="right">/user/right.jsp</result>
+			<result name="error">/error.jsp</result>
+		</action>
+		<action name="right*" class="com.abbcc.module.user.RightAction"
+			method="{1}">
+		</action>
+		<action name="member" class="com.abbcc.module.user.RightAction"
+			method="member">
+
+		</action>
+		<action name="hint" class="com.abbcc.module.user.RightAction"
+			method="hint">
+
+		</action>
+		<action name="*Template" class="com.abbcc.module.soa.UserTemplateManageAction"
+			method="{1}">
+			<result name="list">/user/template/list_userTemplate.jsp</result>
+			<result name="view">
+				/user/template/view_userTemplate.jsp
+			</result>
+			<result name="returnList" type="redirect">
+				/user/viewUserTemplate?result=${result}
+			</result>
+		</action>
+		<!-- 关键字检查 -->
+		<action name="*Bannedkey" method="{1}"
+			class="com.abbcc.module.syscode.BannedkeyManageAction">
+			<result name="json" type="json"></result>
+			<result name="json1" type="json">
+				<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+</struts>
+

@@ -1,0 +1,9 @@
+<div class="area">
+	<@s.action var="reqCategories" namespace="/news/genus" name="categories"/>
+	<@s.iterator value="#reqCategories.genusList">
+		<#include "${ROOT}/main/list.genus.htm">
+	</@s.iterator>
+	<@s.iterator value="#reqCategories.classResults">
+		<#include "${ROOT}/main/list.class.htm">
+	</@s.iterator>
+</div>

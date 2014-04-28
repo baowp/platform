@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="enterprise_order" extends="json-default" namespace="/user/order">
+		<!--拦截器-->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+				<!--全局跳转-->
+		<global-results>
+			<result name="error">/user/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+		<action name="*" method="{1}" class="com.abbcc.module.order.OrderAction">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="input">/user/order/order_temp_save.jsp</result>
+			<result name="add">/user/order/order_temp_save.jsp</result>
+			<result name="edit">/user/order/order_temp_save.jsp</result>
+			<result name="view">/user/order/order_view.jsp</result>
+			<result name="list">/user/order/order_list.jsp</result>
+			<result name="stat">/user/order/order_stat.jsp</result>
+			<result name="success" type="redirect">list</result>
+			<result name="json" type="json"/>
+		</action>
+	</package>
+</struts>

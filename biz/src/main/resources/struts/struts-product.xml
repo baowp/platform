@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+        "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+
+	<package name="product_category" extends="abbcc-default"
+		namespace="/user/product/category">
+		<!--拦截器 -->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="abbccRecycleStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="abbccRecycleStack" />
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+		<action name="*" method="{1}"
+			class="com.abbcc.module.product.CategoryAction">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="show">/user/product/category_manage.jsp</result>
+			<result name="input" type="redirect">show?belongId=${belongId}&amp;page=${page}&amp;clue=${clue}&amp;result=${result}
+			</result>
+			<result name="save" type="redirect">show?belongId=${belongId}&amp;page=${page}&amp;result=${result}
+			</result>
+			<result name="remove" type="redirect">show?belongId=${belongId}&amp;page=${page}&amp;result=${result}
+			</result>
+			<result name="change" type="redirect">show?belongId=${belongId}&amp;page=${page}
+			</result>
+			<result name="alter">/user/product/category_alter.jsp</result>
+			<result name="json" type="json" />
+			<result name="innerList">/user/product/category_inner_list.jsp</result>
+		</action>
+	</package>
+
+	<!-- 取系统分类表的数据 -->
+	<package name="product_syscode" extends="json-default"
+		namespace="/user/product/syscode">
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+		<action name="*" method="{1}"
+			class="com.abbcc.module.product.FetchSyscodeAction">
+			<result name="json" type="json" />
+		</action>
+	</package>
+
+	<package name="product" extends="abbcc-default" namespace="/user/product">
+
+		<!--拦截器 -->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="abbccRecycleStack" />
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+
+			<result name='add'>/user/product/product_add.jsp</result>
+			<result name='input'>/user/product/product_add.jsp</result>
+			<result name="success">/user/product/product_add_success.jsp</result>
+			<result name="auditing">/user/product/product_auditing.jsp</result>
+			<result name="unapprove">/user/product/product_unapprove.jsp</result>
+			<result name="expired">/user/product/product_expired.jsp</result>
+			<result name="published">/user/product/product_published.jsp</result>
+			<result name="edit">/user/product/product_edit.jsp</result>
+			<result name="showauditing" type="redirect">auditing?result=${result}
+			</result>
+			<result name="showunapprove" type="redirect">unapprove?result=${result}
+			</result>
+			<result name="showexpired" type="redirect">expired?result=${result}
+			</result>
+			<result name="showpublished" type="redirect">published?result=${result}
+			</result>
+		</global-results>
+		<action name="*" method="{1}"
+			class="com.abbcc.module.product.ProductAction">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="republished" type="redirect">published?category=${category}&amp;type=${type.name()}&amp;name=${name}&amp;page=${page}&amp;ads=${ads}&amp;result=${result}
+			</result>
+			<result name="innerList">/user/product/product_inner_list.jsp</result>
+		</action>
+		<action name="update" method="update"
+			class="com.abbcc.module.product.ProductAction">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name='input'>/user/product/product_edit.jsp</result>
+		</action>
+		<action name="fetchAttach" method="fetchAttach"
+			class="com.abbcc.module.product.FetchAttachAction">
+
+		</action>
+		<action name="fleshTime" method="fleshTime"
+			class="com.abbcc.module.product.ProductAction">
+			<result name="json" type="json" >
+				<param name="root">result</param>
+			</result>
+		</action>
+	</package>
+
+	<package name="supply" extends="abbcc-default" namespace="/user/supply">
+		<!--拦截器 -->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="abbccRecycleStack" />
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+		<action name="*" method="{1}" class="com.abbcc.module.product.SupplyAction">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name='add'>/user/product/supply_add.jsp</result>
+			<result name='input'>/user/product/supply_add.jsp</result>
+			<result name="success">/user/product/supply_add_success.jsp</result>
+			<result name="auditing">/user/product/supply_auditing.jsp</result>
+			<result name="unapprove">/user/product/supply_unapprove.jsp</result>
+			<result name="expired">/user/product/supply_expired.jsp</result>
+			<result name="published">/user/product/supply_published.jsp</result>
+			<result name="edit">/user/product/supply_edit.jsp</result>
+			<result name="showunapprove" type="redirect">unapprove?result=${result}
+			</result>
+			<result name="showexpired" type="redirect">expired?result=${result}
+			</result>
+			<result name="showpublished" type="redirect">published?result=${result}
+			</result>
+		</action>
+	</package>
+
+	<package name="product_brand" extends="abbcc-default"
+		namespace="/user/product/brand">
+		<!--拦截器 -->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="abbccRecycleStack" />
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+		<action name="*" method="{1}" class="com.abbcc.module.product.BrandAction">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="input">/user/product/brand_save.jsp</result>
+			<result name="add">/user/product/brand_save.jsp</result>
+			<result name="edit">/user/product/brand_save.jsp</result>
+			<result name="list">/user/product/brand_list.jsp</result>
+			<result name="success" type="redirect">list?result=${result}</result>
+		</action>
+	</package>
+</struts>

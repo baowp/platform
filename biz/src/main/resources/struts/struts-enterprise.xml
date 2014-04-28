@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="com.abbcc.module.enterprise" extends="abbcc-default"
+		namespace="/user/enterprise/job">
+		<!--拦截器 -->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+
+		<!--招聘 -->
+
+		<action name="*" class="com.abbcc.module.enterprise.JobAction"
+			method="{1}">
+
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<result name="recruitManage">/user/enterprise/job_manage.jsp
+			</result>
+			<result name="issuanceRecruit" type="redirect">recruitManage?result=${result}
+			</result>
+			<result name="delIssuanceRecruit" type="redirect">recruitManage?result=${result}
+			</result>
+			<result name="returnResend" type="redirect">expired?result=${result}
+			</result>
+			<result name="returnSearchAction" type="redirect">search
+			</result>
+			<result name="returnexpired" type="redirect">expired?result=${result}
+			</result>
+			<result name="returnsearch">/user/enterprise/job_manage.jsp
+			</result>
+			<result name="showUpdateIssuanceRecruit">/user/enterprise/job_update.jsp
+			</result>
+			<result name="updateIssuanceRecruit">/user/enterprise/job_update.jsp?result=${result}
+			</result>
+			<result name="input">/user/enterprise/job_add_page.jsp
+			</result>
+			<result name="error">/error.jsp</result>
+		</action>
+	</package>
+
+	<package name="company" extends="abbcc-default" namespace="/user/enterprise/company">
+		<!--公司管理 -->
+		<!--拦截器 -->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="paramsPrepareParamsStack" />
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+		</global-results>
+
+		<action name="*" class="com.abbcc.module.enterprise.EnterpriseAction"
+			method="{1}">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+
+			<result>/user/enterprise/technic.jsp</result>
+			<result name="showEnterpriseInfo">/user/enterprise/enterprise_info.jsp</result>
+			<result name="updateEnterpriseInfo" type="redirect">showEnterpriseInfo?result=${result}
+			</result>
+			<result name="returnUpdate" type="redirect">showInformationManage?result=${result}
+			</result>
+			<result name="completionList">/user/enterprise/enterprise_update_page.jsp
+			</result>
+			<result name="logoList">/user/enterprise/logo.jsp
+			</result>
+			<result name="returnLogo" type="redirect">logo
+			</result>
+			<result name="showTechnic">/user/enterprise/technical.jsp</result>
+			<result name="updateTechnic" type="redirect">showTechnic?result=${result}
+			</result>
+			<result name="input">/user/enterprise/enterprise_update_page.jsp
+			</result>
+			<result name="technical">/user/enterprise/technical.jsp
+			</result>
+			<result name="info">/user/enterprise/enterprise_info.jsp
+			</result>
+			<result name="updateSuccess">/user/enterprise/updateSuccess.jsp
+			</result>
+			<result name="showInformationManage">/user/enterprise/enterprise_show.jsp</result>
+			<result name="updatePersonPage">/user/enterprise/user_update_page.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="json" type="json">
+				<!-- 因为要将reslut的值返回给客户端，所以这样设置 -->
+				<!-- root的值对应要返回的值的属性 -->
+				<param name="root">result</param>
+			</result>
+
+		</action>
+		<action name="updatePersonAndPhone" class="com.abbcc.module.enterprise.EnterpriseAction"
+			method="updatePersonAndPhone">
+			<result name="returnUpdate" type="redirect">showInformationManage
+			</result>
+			<result name="input">/user/enterprise/user_update_page.jsp
+			</result>
+		</action>
+	</package>
+	<package name="com.abbcc.cont" extends="abbcc-default"
+		namespace="/user/contact">
+		<!--联系人 -->
+		<!--拦截器 -->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="abbccRecycleStack" />
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+
+		</global-results>
+		<action name="contact*" class="com.abbcc.module.enterprise.ContactNameAction"
+			method="{1}">
+			<result name="show">/user/enterprise/enterprise_contact.jsp</result>
+			<result name="returnshow" type="redirect">contactshow?result=${result}
+			</result>
+			<result name="input">/user/enterprise/enterprise_contact_add.jsp
+			</result>
+			<result name="returnshow" type="redirect">contactshow?result=${result}
+			</result>
+			<result name="update">/user/enterprise/enterprise_contact_update.jsp
+			</result>
+		</action>
+
+	</package>
+	<package name="com.abbcc" extends="abbcc-default"
+		namespace="/user/enterprise/certificate">
+		<!--证书 -->
+		<!--拦截器 -->
+		<interceptors>
+			<interceptor name="privInterceptor"
+				class="com.abbcc.module.user.UserPrivInterceptor">
+			</interceptor>
+			<interceptor-stack name="userDefaultStack">
+				<interceptor-ref name="privInterceptor"></interceptor-ref>
+				<interceptor-ref name="paramsPrepareParamsStack"></interceptor-ref>
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="abbccRecycleStack" />
+		<!--全局跳转 -->
+		<global-results>
+			<result name="error">/error.jsp</result>
+			<result name="login">/user/login.jsp</result>
+			<result name="nopriv">/admin/nopriv.html</result>
+
+		</global-results>
+		<action name="*" class="com.abbcc.module.enterprise.CertificateAction"
+			method="{1}">
+			<interceptor-ref name="userDefaultStack"></interceptor-ref>
+			<param name="module">pic</param>
+			<result name="showCertificate">/user/enterprise/certificate_manage.jsp</result>
+			<result name="returnResult" type="redirect">showCertificate?result=${result}
+			</result>
+			<result name="nullCertificate">/user/enterprise/certificat_error.jsp</result>
+			<result name="input">/user/enterprise/certificate_add.jsp</result>
+			<result name="showUpdateCertificate">/user/enterprise/certificate_update.jsp</result>
+			<result type="redirect">/user/enterprise/certificate_manage.jsp</result>
+			<result name="error">/error.jsp</result>
+			<result name="json" type="json"></result>
+		</action>
+
+	</package>
+	<package name="com.abbcc.user" extends="abbcc-default"
+		namespace="/user/enterprise/updateuser">
+		<action name="*" class="com.abbcc.module.enterprise.UserAction"
+			method="{1}">
+			<result name="edit">/user/enterprise/user_update_page.jsp</result>
+			<result name="input">/user/enterprise/user_update_page.jsp</result>
+			<result name="returnUpdate" type="redirect">/user/enterprise/company/showInformationManage?result=${result}
+			</result>
+			<result name="json" type="json"></result>
+		</action>
+
+	</package>
+	<package name="com.abbcc.ent" extends="abbcc-default"
+		namespace="/user/enterprise">
+		<action name="*" class="com.abbcc.module.enterprise.EnterpriseAction"
+			method="{1}">
+			<result name="key">/user/enterprise/enterprise_key.jsp</result>
+
+		</action>
+
+	</package>
+
+	<package name="com.abbcc.ent.technical" extends="abbcc-default"
+		namespace="/user/technical">
+		<action name="*" class="com.abbcc.module.enterprise.TechnicalAction"
+			method="{1}">
+			<result name="input">/user/enterprise/technical.jsp</result>
+
+		</action>
+	</package>
+
+	<package name="ranking" extends="abbcc-default" namespace="/ranking">
+		<action name="*" class="com.abbcc.module.enterprise.RankingAction"
+			method="{1}">
+			<result name="view">/ranking/index.jsp</result>
+			<result name="showSupplyinfo">/user/product/supply_bu.jsp</result>
+		</action>
+	</package>
+	
+	<package name="com.abbcc.enterprise.link" extends="abbcc-default" namespace="/user/enterprise/link">
+		<action name="*" class="com.abbcc.module.enterprise.LinkAction"
+			method="{1}">
+			<result name="{1}">/user/enterprise/link/{1}.jsp</result>
+			<result name="success" type="redirect">list?result=${result}</result>
+		</action>
+	</package>
+</struts>
+
