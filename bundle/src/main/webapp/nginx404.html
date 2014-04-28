@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>错误提示</title>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function() {
+		var i = $("#second").html();
+
+		function e() {
+			$("#second").html(i--);
+			if (i == 0) {
+				window.location = "/";
+			} else
+				setTimeout(e, 1000);
+		}
+
+		setTimeout(e, 1000);
+	});
+</script>
+</head>
+<body style="padding: 10px; background-color: #ffffff;">
+	<center>
+		<div style="margin: 50px 0px;">
+			<img src="images/error/false.gif" />&nbsp;<strong
+				style="color: #12AAE0;">ERROR&nbsp;404-PAGE&nbsp;NOT&nbsp;FOUND
+			</strong>
+		</div>
+		<div style="width: 80%;">
+			<img src="images/error/sorry.gif" alt="sorry" />
+		</div>
+		<br /> <br /> <font color="#12AAE0"><b>对不起，您访问的页面不存在！<span
+				id="second">5</span>秒后转到主页<a href="/" style="color:#12AAE0;margin:0px,10px;">返回首页</a>
+		</b> </font><br />
+	</center>
+</body>
+</html>

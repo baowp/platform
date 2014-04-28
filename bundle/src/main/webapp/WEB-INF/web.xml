@@ -1,34 +1,158 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
-	id="WebApp_ID" version="3.0">
-	
-	<!-- The definition of the Root Spring Container shared by all Servlets and Filters -->
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>Abbcc</display-name>
+	<!--spring配置文件 -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>classpath:spring/spring-context.xml</param-value>
+		<param-value>
+			classpath:spring/applicationContext.xml
+		</param-value>
 	</context-param>
-	
-	<!-- Creates the Spring Container shared by all Servlets and Filters -->
+	<!-- 用memcached做session的filter -->
+	<filter>
+		<description>memcached的filter</description>
+		<display-name>memcached的filter</display-name>
+		<filter-name>MemcachedSessionFilter</filter-name>
+		<filter-class>com.abbcc.module.session.MemcachedSessionFilter</filter-class>
+		<init-param>
+			<param-name>cookieDomain</param-name>
+			<param-value>
+				.51archetype.com
+			</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>MemcachedSessionFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- 编码的filter，默认编码utf-8 -->
+	<filter>
+		<description>编码的filter</description>
+		<display-name>编码filter</display-name>
+		<filter-name>EncodeFilter</filter-name>
+		<filter-class>com.abbcc.filter.EncodeFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>EncodeFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!--移除jsessionid这个url上的尾巴 -->
+	<filter>
+		<filter-name>JsessionIdRemoveFilter</filter-name>
+		<filter-class>com.abbcc.filter.JsessionIdRemoveFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>JsessionIdRemoveFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+
+	<!-- 用户登陆的filter -->
+	<filter>
+		<filter-name>LoginFilter</filter-name>
+		<filter-class>com.abbcc.filter.LoginFilter</filter-class>
+		<init-param>
+			<param-name>notFilterDir</param-name>
+			<param-value>
+				/user/login.jsp,/user/register.jsp,/user/js,/user/css,/user/images,/user/login,/user/index.html,/user/registerUser,/user/enterprise/updateJob.jsp,/user/account/account_forgot_page.jsp,/user/account/account_forgot_page_next.jsp,/user/mail.jsp,/user/publish.jsp,/user/vipsite,/user/vipsite/album/GetIdHandler.jsp,/user/vipsite/album/GetInfoHandler.jsp,/user/vipsite/album/UploadHandler.jsp,/user/protocol.jsp,/user/show,/user/userValidate,/user/emailValidate,/user/css/footer.css,/user/js/*,/user/include/header.jsp,/user/images/*,/user/mailreplaceSendMail,/user/userActivation,/user/footer.jsp,/user/account/password/showForgetUsernameOrPassword,/user/account/password/forgetUsernameOrPassword,/user/account/password/forgetPassword,/user/reg.jsp,/user/viewlog/addViewLog,/user/register_success.jsp
+			</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>LoginFilter</filter-name>
+		<url-pattern>/user/*</url-pattern>
+	</filter-mapping>
+	<!-- 管理员的filter -->
+	<filter>
+		<filter-name>AdminFilter</filter-name>
+		<filter-class>com.abbcc.filter.AdminFilter</filter-class>
+		<init-param>
+			<param-name>notFilterDir</param-name>
+			<param-value>
+				/admin/login.jsp,/admin/js,/admin/images,/admin/css,/admin/login,/admin/byNameSearchNewsJson,/admin/byNameSearchProduct,/admin/byNameSearchEnterprise,/admin/byUserNameSearchUser,/admin/editCountSiteInfo,/admin/checkValueBannedkey
+			</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>AdminFilter</filter-name>
+		<url-pattern>/admin/*</url-pattern>
+	</filter-mapping>
+	<!-- struts2的filter -->
+	<filter>
+		<filter-name>struts2</filter-name>
+		<filter-class>com.abbcc.filter.Struts2Filter</filter-class>
+		<init-param>
+			<param-name>notFilterDir</param-name>
+			<param-value>
+				/service/,/rest/
+			</param-value>
+		</init-param>
+	</filter>
+	<filter-mapping>
+		<filter-name>struts2</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+	<!-- spring的listener -->
 	<listener>
 		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
 	</listener>
+	<!-- 主页面 -->
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index</welcome-file>
+	</welcome-file-list>
+	<!--读取配置文件的servlet -->
+	<servlet>
+		<description>Reading config files</description>
+		<display-name>Config Servlet</display-name>
+		<servlet-name>ConfServlet</servlet-name>
+		<servlet-class>com.abbcc.servlet.ConfServlet</servlet-class>
+		<load-on-startup>0</load-on-startup>
+	</servlet>
+
+	<servlet>
+		<servlet-name>Upload</servlet-name>
+		<servlet-class>com.abbcc.servlet.AlanXUploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Upload</servlet-name>
+		<url-pattern>/upload</url-pattern>
+	</servlet-mapping>
+
+  
+	<!--CXF的servlet -->
+	<servlet>
+		<servlet-name>CXFServlet</servlet-name>
+		<servlet-class>org.apache.cxf.transport.servlet.CXFServlet</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>CXFServlet</servlet-name>
+		<url-pattern>/service/*</url-pattern>
+	</servlet-mapping>
 	
-	<!-- Processes application requests -->
 	<servlet>
 		<servlet-name>springmvc</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath*:spring-servlet.xml</param-value>
+			<param-value>classpath:spring/springmvc-servlet.xml</param-value>
 		</init-param>
 		<load-on-startup>2</load-on-startup>
-		<async-supported>true</async-supported> 
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>springmvc</servlet-name>
-		<url-pattern>/</url-pattern>
+		<url-pattern>/rest/*</url-pattern>
 	</servlet-mapping>
 	
+	<error-page>
+  <error-code>404</error-code>
+  <location>/404.html</location>
+  </error-page>
+
+
 </web-app>
