@@ -20,7 +20,7 @@
 			log_not_found	off;
 		}
 		location @search {
-			proxy_pass http://abbcc.net;	
+			proxy_pass http://51archetype.com;
 			proxy_set_header http_host $host;
 			rewrite	^/search/([^,]*),([^,]*),([^,]*)\.html$ /viplate/${username}/search?keywords=$1&priceStart=$2&priceEnd=$3 break;
 			rewrite	"^/search/([^;]*);([^;]*);([^;]*)\.html$" /rest/static/${username}/search?keywords=$1&priceStart=$2&priceEnd=$3 break;

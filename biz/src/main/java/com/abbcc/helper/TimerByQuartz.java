@@ -12,7 +12,7 @@ public class TimerByQuartz{
 	    public void work()  
 	     {
 	        try {
-	            URL o_url = new URL("http://abbcc.net/news/admin/news/indexStatic");
+	            URL o_url = new URL("http://51archetype.com/news/admin/news/indexStatic");
 	            InputStream in = o_url.openStream();
 	            in.close();
 	            
@@ -24,7 +24,7 @@ public class TimerByQuartz{
 	     } 
 	    public void checkMember(){
 	    	try {
-	            URL o_url = new URL("http://abbcc.net/vipUser/allUserCheckMember");
+	            URL o_url = new URL("http://51archetype.com/vipUser/allUserCheckMember");
 	            InputStream in = o_url.openStream();
 	            in.close();
 	            

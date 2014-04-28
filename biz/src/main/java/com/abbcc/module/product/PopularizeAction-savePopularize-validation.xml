@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="price">
+		<field-validator type="required">
+			<message>实收价格不能为空</message>
+		</field-validator>
+	</field>
+	<field name="key">
+		<field-validator type="requiredstring">
+			<message>关键字不能为空</message>
+		</field-validator>
+	</field>
+	<field name="pName">
+		<field-validator type="requiredstring">
+			<message>地址不能为空</message>
+		</field-validator>
+	</field>
+	<field name="url">
+		<field-validator type="requiredstring">
+			<message>主页地址不能为空</message>
+		</field-validator>
+		<field-validator type="url">
+			<message>主页地址必须是一个有效的网址</message>
+		</field-validator>
+	</field>
+	<field name="startTime">
+		<field-validator type="required">	
+			<message>请选择开始时间</message>
+		</field-validator>
+	</field>
+	<field name="endTime">
+		<field-validator type="fieldexpression">
+ 			<param name="expression">  <![CDATA[(startTime<endTime)]]> </param>
+			<message>到期时间应在开始时间之后</message>
+    	</field-validator>		
+	</field>
+
+</validators>
+

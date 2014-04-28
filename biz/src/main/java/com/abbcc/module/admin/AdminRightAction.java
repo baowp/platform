@@ -464,7 +464,7 @@ public class AdminRightAction extends BaseAction<AbcPaylog> {
 							String title = "会员到期提醒";
 							String content = "尊敬的用户:，你的会员账号"
 									+ au.getUsername()
-									+ "已经过期,到期后，您的旺铺将不能使用，为了保证客户能及时看到您的更新信息，请及时续费！<br><a href=\"http://abbcc.net/user/login.jsp\">点些登陆续费</a>";
+									+ "已经过期,到期后，您的旺铺将不能使用，为了保证客户能及时看到您的更新信息，请及时续费！<br><a href=\"http://51archetype.com/user/login.jsp\">点些登陆续费</a>";
 							userService.sendMemberMail(au,
 									CommonConst.MAILPAYENDREMIND, title,
 									content);

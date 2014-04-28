@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+ <field name="cellphone">
+        <field-validator type="requiredstring">
+            <message>请输入手机号码</message>
+        </field-validator>
+        <field-validator type="regex">
+        <param name="expression"><![CDATA[(13|15)\d{9}]]></param>  
+      	 <message>手机号码不正确</message>
+        </field-validator>
+ </field>  
+</validators>
+

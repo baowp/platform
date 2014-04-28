@@ -31,6 +31,10 @@
         </dependency>
         <dependency>
             <groupId>org.springframework</groupId>
+            <artifactId>spring-context-support</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
             <artifactId>spring-jms</artifactId>
         </dependency>
         <dependency>
@@ -60,6 +64,10 @@
         <dependency>
             <groupId>org.hibernate</groupId>
             <artifactId>hibernate-search</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-ehcache</artifactId>
         </dependency>
         <dependency>
             <groupId>c3p0</groupId>
@@ -134,14 +142,10 @@
             <groupId>org.apache.ant</groupId>
             <artifactId>ant</artifactId>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>net.sf.ehcache</groupId>
             <artifactId>ehcache-core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.danga</groupId>
-            <artifactId>memcached</artifactId>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>joda-time</groupId>
             <artifactId>joda-time</artifactId>
@@ -154,6 +158,18 @@
             <groupId>jmagick</groupId>
             <artifactId>jmagick</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.oracle</groupId>
+            <artifactId>ojdbc14</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>jaxen</groupId>
+            <artifactId>jaxen</artifactId>
+        </dependency>
 
         <dependency>
             <groupId>org.apache.httpcomponents</groupId>
@@ -162,6 +178,22 @@
         <dependency>
             <groupId>org.apache.struts</groupId>
             <artifactId>struts2-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-spring-plugin</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.struts</groupId>
+            <artifactId>struts2-json-plugin</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.opensymphony</groupId>
+            <artifactId>xwork</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>javassist</groupId>
+            <artifactId>javassist</artifactId>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty.diy</groupId>

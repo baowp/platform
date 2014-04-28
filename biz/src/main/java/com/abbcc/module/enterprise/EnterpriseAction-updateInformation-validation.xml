@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+  <field name="mainBusiness">
+        <field-validator type="requiredstring">
+            <message>请输入主营产品或服务</message>
+        </field-validator>
+    </field>
+  <field name="regTime">
+        <field-validator type="requiredstring">
+            <message>请选择公司成立时间</message>
+        </field-validator>
+    </field>
+     <field name="legalPre">
+        <field-validator type="requiredstring">
+            <message>请输入法定代表/负责人</message>
+        </field-validator>
+    </field>
+ <field name="staffSum">
+        <field-validator type="requiredstring">
+            <message>请输入员工人数</message>
+        </field-validator>
+ </field>
+</validators>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="attach.belongId">
+		<field-validator type="requiredstring">
+			<message>请选择付费记录</message>
+		</field-validator>
+	</field>
+	<field name="upload">
+		<field-validator type="required">
+			<message>请添加凭证</message>
+		</field-validator>
+	</field>
+</validators>
+

@@ -363,12 +363,12 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService {
 	public void sendMail(String name, String username, String email,
 			String randomString32) {
 		// TODO Auto-generated method stub
-		String content = "<link href=\"http://abbcc.net/css/e-mail.css\" rel=\"stylesheet\" type=\"text/css\" />"
+		String content = "<link href=\"http://51archetype.com/css/e-mail.css\" rel=\"stylesheet\" type=\"text/css\" />"
 				+ "<div id=\"naf\">"
 				+ "<div style=\"width:770px;height:55px;padding-top:5px;\">"
-				+ "<div style=\"width:180px;height:50px;float:left;\"><img src=\"http://abbcc.net/images/logo.jpg\" width=\"163\" height=\"47\" /></div>"
+				+ "<div style=\"width:180px;height:50px;float:left;\"><img src=\"h51archetype.comcc.net/images/logo.jpg\" width=\"163\" height=\"47\" /></div>"
 				+ "<div style=\"margin-left:5px;border-left:#999999 2px solid;height:25px;font-size:16px;line-height:25px;color:#333333;margin-top:20px;float:left;\">&nbsp;东方五金商贸中心</div>"
-				+ "<div style=\"margin-top:30px;height:20px;float:right;color:#333333;font-size:12px;text-align:right;padding-right:10px;\"> <a href=\"http://abbcc.net/user\">登陆</a></div>"
+				+ "<div style=\"margin-top:30px;height:20px;float:right;color:#333333;font-size:12px;text-align:right;padding-right:10px;\"> <a hr51archetype.com://51archetype.com/user\">登陆</a></div>"
 				+ "</div>"
 				+ "<div id=\"content\" style=\"width:770px;height:100%;border:#BFE0F0 1px solid;\">"
 				+ "<table width=\"100%\" height=\"290\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">"
@@ -403,19 +403,19 @@ public class UserServiceImpl extends BaseServiceImpl implements UserService {
 				+ "<td width=\"98%\" height=\"5\" bgcolor=\"#FAF8E4\">&nbsp;</td>"
 				+ "<td width=\"1%\" rowspan=\"3\">&nbsp;</td>"
 				+ "</tr><tr><td height=\"25\" align=\"left\" valign=\"top\" bgcolor=\"#FAF8E4\">&nbsp;请确认此邮箱是您本人使用，保证潜在商业伙伴联系到您！</td>"
-				+ "</tr><tr><td height=\"56\" align=\"left\" valign=\"top\" bgcolor=\"#FAF8E4\">&nbsp;<a href=\"http://abbcc.net/user/userActivation?username="
+				+ "</tr><tr><td height=\"56\" align=\"left\" valign=\"top\" bgcolor=\"#FAF8E4\">&nbsp51archetype.com\"http://51archetype.com/user/userActivation?username="
 				+ username
 				+ "&&randomString32="
 				+ randomString32
 				+ "\">点此验证</a></td>"
-				+ "</tr><tr><td colspan=\"2\">如果无法验证也可以复制链接到地址栏进行验证，链接地址:http://abbcc.net/user/userActivation?username="
+				+ "</tr><tr><td colspan=\"2\">如果无法验证也可以复51archetype.com验证，链接地址:http://51archetype.com/user/userActivation?username="
 				+ username
 				+ "&&randomString32="
 				+ randomString32
 				+ "</td></tr><tr><td>&nbsp;</td>"
 				+ "<td height=\"68\" align=\"left\" bgcolor=\"#FAF8E4\"><table width=\"100%\" height=\"20\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\">"
 				+ "<tr><td width=\"3%\">&nbsp;</td><td width=\"25%\">&nbsp;</td>"
-				+ "<td width=\"72%\">如果有任何疑问，欢迎 <img src=\"http://abbcc.net/images/icon_point_16.gif\" width=\"16\" height=\"16\" alt=\"点此验证\" title=\"点此验证\"/> <a href=\"#\">给我们留言</a>，我们将尽快给您回复！</td>"
+				+ "<td width=\"72%\"51archetype.com欢迎 <img src=\"http://51archetype.com/images/icon_point_16.gif\" width=\"16\" height=\"16\" alt=\"点此验证\" title=\"点此验证\"/> <a href=\"#\">给我们留言</a>，我们将尽快给您回复！</td>"
 				+ "</tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td> </tr></table></td><td>&nbsp;</td>"
 				+ "</tr><tr><td>&nbsp;</td><td height=\"35\" align=\"left\"><div class=\"cont\"></div></td>"
 				+ "<td>&nbsp;</td></tr></table></td></tr></table></div></div>";

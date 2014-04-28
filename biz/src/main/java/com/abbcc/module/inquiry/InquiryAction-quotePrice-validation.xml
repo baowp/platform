@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+ <field name="personName">
+ 	<field-validator type="requiredstring" short-circuit="true">
+			<param name="trim">true</param>
+			<message>"请输入姓名"</message>
+		</field-validator>
+		
+    </field>
+ <field name="entName">
+        <field-validator type="requiredstring">
+            <message>请输入公司名称</message>
+        </field-validator>
+    </field>
+ <field name="phone">
+        <field-validator type="requiredstring">
+            <message>请输入电话</message>
+        </field-validator>
+      <field-validator type="regex">
+			<param name="expression"><![CDATA[^[0-9]{3,4}\-[0-9]{7,8}$]]></param>
+			<message>电话格式不正确！</message>
+		</field-validator>
+    </field>
+ <field name="mainBusiness">
+        <field-validator type="requiredstring">
+            <message>请输入主营产品</message>
+        </field-validator>
+    </field>
+     <field name="title">
+        <field-validator type="requiredstring">
+            <message>请输入题</message>
+        </field-validator>
+    </field>
+     <field name="added">
+        <field-validator type="requiredstring">
+            <message>请输入内容</message>
+        </field-validator>
+    </field>
+</validators>
+

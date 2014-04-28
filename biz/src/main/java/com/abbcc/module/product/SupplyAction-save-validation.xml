@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="title">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>		
+			<message>请输入供求信息标题</message>
+		</field-validator>
+	</field>
+	<field name="productId">
+		<field-validator type="requiredstring">
+			<message>请选择对应产品</message>
+		</field-validator>
+	</field>
+	<field name="skey">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>		
+			<message>请输入关键字</message>
+		</field-validator>
+	</field>
+	<field name="contactId">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>		
+			<message>请输入联系人</message>
+		</field-validator>
+	</field>
+	<field name="contact">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>		
+			<message>请输入联系方式</message>
+		</field-validator>
+	</field>
+	<field name="startTime">
+		<field-validator type="required">	
+			<message>请选择发布时间</message>
+		</field-validator>
+	</field>
+	<field name="endTime">
+		<field-validator type="required">
+			<param name="trim">true</param>		
+			<message>请选择产品结束时间</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+ 			<param name="expression">  <![CDATA[(endTime>startTime)]]> </param>
+			<message>到期时间应在发布时间之后</message>
+    	</field-validator>		
+	</field>
+</validators>
+

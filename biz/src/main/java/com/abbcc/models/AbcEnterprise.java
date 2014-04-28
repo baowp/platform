@@ -517,7 +517,7 @@ public class AbcEnterprise implements java.io.Serializable {
 						+ userList.get(0).getDomain();
 			}
 		}
-		return "?url=http://" + path + ".abbcc.net";
+		return "?url=http://" + path + ".51archetype.com";
 	}
 
 	public String enterprisePhone(String entId) {
@@ -673,7 +673,7 @@ public class AbcEnterprise implements java.io.Serializable {
 			return "?url=" + "http://" + userList.get(0).getUsername() + "."
 					+ userList.get(0).getDomain();
 		}
-		return "?url=" + "http://" + path + ".abbcc.net";
+		return "?url=" + "http://" + path + ".51archetype.com";
 	}
 
 	public String businessTypeName() {

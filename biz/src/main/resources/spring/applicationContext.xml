@@ -14,7 +14,7 @@
 	<import resource="applicationSOA.xml" />
 	<import resource="applicationMessage.xml" />
 	<import resource="applicationCache.xml" />
-	<import resource="applicationTimerQuartz.xml" />
+	<!--<import resource="applicationTimerQuartz.xml" />-->
 	<aop:aspectj-autoproxy />
 
 	<context:component-scan base-package="com.abbcc.dao.impl" />

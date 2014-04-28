@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="ename">
+		<field-validator type="requiredstring">
+			<message>公司名称不能为空</message>
+		</field-validator>
+	</field>
+	<field name="uname">
+		<field-validator type="requiredstring">
+			<message>姓名不能为空</message>
+		</field-validator>
+	</field>
+
+	<field name="cellphone">
+		<field-validator type="requiredstring">
+			<message>手机不能为空</message>
+		</field-validator>
+	</field>
+</validators>
+

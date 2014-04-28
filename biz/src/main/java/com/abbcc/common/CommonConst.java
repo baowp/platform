@@ -378,7 +378,7 @@ public class CommonConst {
 	public static int THUMBNAIL_SMALL2 = 80;
 	public static int THUMBNAIL_LITTLE = 40;
 	/**
-	 * 相册水印类型，格式为：1，2，1不为空代表显示企业网站域名(a.abbcc.net),2不为空表示显示公司名称，里面（1：中间显示，2：左右边角显示，3：右下角显示）
+	 * 相册水印类型，格式为：1，2，1不为空代表显示企业网站域名(a.51archetype.com),2不为空表示显示公司名称，里面（1：中间显示，2：左右边角显示，3：右下角显示）
 	 */
 
 	/**
@@ -401,7 +401,7 @@ public class CommonConst {
 	public static String MAIL_TYPE_REGISTER = "04";
 	public static String DFWJ="02"; //东方五金网类型
 	public static String DOORVIP="20"; //上门 网VIP类型
-	public static String DOMAINABBCC="abbcc.net";
+	public static String DOMAINABBCC="51archetype.com";
 	
 	public static Map<String,String> languagePack = new HashMap<String,String>();
 	/**

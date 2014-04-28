@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="bank">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入银行名称</message>
+		</field-validator>
+	</field>
+	<field name="bankAccount">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入银行账号</message>
+		</field-validator>
+	</field>
+	<field name="documentId">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入单据号</message>
+		</field-validator>
+	</field>
+	<field name="amount">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>
+			<message>请输入付费金额</message>
+		</field-validator>
+	</field>
+	<field name="startTime">
+		<field-validator type="required">	
+			<message>请选择服务开始时间</message>
+		</field-validator>
+	</field>
+	<field name="endTime">
+		<field-validator type="required">	
+			<message>请选择服务到期时间</message>
+		</field-validator>
+		<field-validator type="fieldexpression">
+ 			<param name="expression">  <![CDATA[(endTime>startTime)]]> </param>
+			<message>到期时间应在开始时间之后</message>
+    	</field-validator>	
+	</field>
+	<field name="payTime">
+		<field-validator type="required">	
+			<message>请选择付费时间</message>
+		</field-validator>
+	</field>
+</validators>
+

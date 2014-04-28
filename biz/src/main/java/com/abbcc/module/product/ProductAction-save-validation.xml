@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="name">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>		
+			<message>请输入名称</message>
+		</field-validator>
+	</field>
+	<field name="pkey">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>		
+			<message>请输入产品关键字</message>
+		</field-validator>
+	</field>
+	<field name="category">
+		<field-validator type="requiredstring">
+			<message>请选择产品分类</message>
+		</field-validator>
+	</field>
+	<field name="photo">
+		<field-validator type="requiredstring">	
+			<message>请选择产品图片</message>
+		</field-validator>
+	</field>
+	<!--<field name="contactId">
+		<field-validator type="requiredstring">
+			<param name="trim">true</param>		
+			<message>请输入联系人</message>
+		</field-validator>
+	</field>
+	--><!--<field name="publishTime">
+		<field-validator type="required">	
+			<message>请选择产品发布时间</message>
+		</field-validator>
+	</field>
+	<field name="unpublishTime">
+		<field-validator type="fieldexpression">
+ 			<param name="expression">  <![CDATA[(publishTime<unpublishTime)]]> </param>
+			<message>产品到期时间应在发布时间之后</message>
+    	</field-validator>		
+	</field>
+--></validators>
+
