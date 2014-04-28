@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+<title>添加管理员</title>
+</head>
+<body>
+<div id="man_zone">
+<form id="adminLogin" action="adminLogin" method="post">
+					<table width="99%" border="0" align="center" cellpadding="3"
+						cellspacing="1" class="table_style">
+						<tr>
+							<td width="18%" class="left_title_1">
+								<span class="left-title">用户名</span>
+							</td>
+							<td width="82%">
+								<input type="text" name="username" value=""
+									id="adminLogin_username"  size="20"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="left_title_2">
+								密码
+							</td>
+							<td>
+								<input type="password" name="password" id="adminLogin_password" size="20"/>
+							</td>
+						</tr>
+						<tr>
+							<td class="left_title_1">
+								验证码
+							</td>
+							<td>
+								<input type="text" name="veriCode" value=""
+									id="adminLogin_veriCode"  size="4"/>
+								&nbsp;
+								<img class="validate-num" id="verifyPic" name="verifyPic" valign="bottom"
+									src="../image/RandomImg" />
+								<a onclick="refreshCode();" href="#">看不清换一张？</a>
+							</td>
+						</tr>
+						<tr>
+							<td class="left_title_2"></td>
+							<td class="left_title_2"   style="text-align:left">
+								<input type="submit" id="adminLogin_save" name="save" value="登录" />
+							</td>
+						</tr>
+					</table>
+				</form>
+</div>
+</body>
+</html>
