@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="siteid">
+		<field-validator type="requiredstring">
+			<message>请输入网站编号</message>
+		</field-validator>
+	</field>
+	<field name="sitename">
+		<field-validator type="requiredstring">
+			<message>请输入网站名称</message>
+		</field-validator>
+	</field>
+	<field name="url">
+		<field-validator type="requiredstring">
+			<message>请输入网站网址</message>
+		</field-validator>
+	</field>
+	<field name="company">
+		<field-validator type="requiredstring">
+			<message>请输入公司名称</message>
+		</field-validator>
+	</field>
+	<field name="address">
+		<field-validator type="requiredstring">
+			<message>请输入公司地址</message>
+		</field-validator>
+	</field>
+	<field name="zipcode">
+		<field-validator type="requiredstring">
+			<message>请输入邮编</message>
+		</field-validator>
+	</field>
+	<field name="phone">
+		<field-validator type="requiredstring">
+			<message>请输入联系电话</message>
+		</field-validator>
+	</field>
+	<field name="contact">
+		<field-validator type="requiredstring">
+			<message>请输入联系人</message>
+		</field-validator>
+	</field>
+	<field name="email">
+		<field-validator type="requiredstring">
+			<message>请输入email</message>
+		</field-validator>
+	</field>
+	<field name="email">
+		<field-validator type="email">
+			<message>请输入正确的email</message>
+		</field-validator>
+	</field>
+</validators>
+

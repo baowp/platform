@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="amount">
+		<field-validator type="requiredstring">
+			<message>请输入付费金额</message>
+		</field-validator>
+	</field>
+<!--	<field name="payTime">-->
+<!--		<field-validator type="requiredstring">-->
+<!--			<message>请输入付款日期</message>-->
+<!--		</field-validator>-->
+<!--	</field>-->
+<!--		<field name="startTime">-->
+<!--		<field-validator type="requiredstring">-->
+<!--			<message>请输入付费开始时间</message>-->
+<!--		</field-validator>-->
+<!--	</field>-->
+<!--		<field name="endTime">-->
+<!--		<field-validator type="requiredstring">-->
+<!--			<message>请输入付费结束时间</message>-->
+<!--		</field-validator>-->
+<!--	</field>-->
+</validators>

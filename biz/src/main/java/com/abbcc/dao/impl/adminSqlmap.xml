@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>   
+<!DOCTYPE sqlMap         
+   PUBLIC "-//ibatis.apache.org//DTD SQL Map 2.0//EN"         
+  "http://ibatis.apache.org/dtd/sql-map-2.dtd">
+<sqlMap namespace="Admin">
+	<typeAlias alias="admin" type="com.abbcc.models.AbcAdmin" />
+	<select id="getAdminById" resultClass="admin">
+		select a.admin_id as adminId,
+		a.username as username,
+		a.state as state,
+		a.name as name,
+		a.password as password,
+		a.type as type,
+		a.add_time as addTime,
+		a.email as email,
+		a.cellphone as cellphone,
+		a.gender as gender,
+		a.adesc as adesc
+		from abc_admin a
+		where a.admin_id = #value# 
+		</select>
+	<select id="findAdminByQuery" resultClass="admin">
+		select a.admin_id as
+		adminId,
+		a.username as username,
+		a.state as state,
+		a.name as name,
+		a.password as password,
+		a.type as type,
+		a.add_time as addTime,
+		a.email as email,
+		a.cellphone as cellphone,
+		a.gender as gender,
+		a.adesc as adesc
+		from ABC_ADMIN a where ( a.username like #value# or a.name like #value# )and state &lt;&gt;3
+	</select>
+	<select id="findAdminByEmail" resultClass="admin" parameterClass="java.lang.String">
+		select a.admin_id as
+		adminId,
+		a.username as username,
+		a.state as state,
+		a.name as name,
+		a.password as password,
+		a.type as type,
+		a.add_time as addTime,
+		a.email as email,
+		a.cellphone as cellphone,
+		a.gender as gender,
+		a.adesc as adesc
+		from abc_admin a where a.email = #email#
+	</select>
+	<select id="findAdminByUsername" resultClass="admin" parameterClass="java.lang.String">
+		select a.admin_id as
+		adminId,
+		a.username as username,
+		a.state as state,
+		a.name as name,
+		a.password as password,
+		a.type as type,
+		a.add_time as addTime,
+		a.email as email,
+		a.cellphone as cellphone,
+		a.gender as gender,
+		a.adesc as adesc
+		from abc_admin a where a.username = #username#
+	</select>
+	<update id="updateAdminState" parameterClass="java.util.Map">
+		update abc_admin set state=#state# where admin_id=#adminId#
+	</update>
+	<update id="updateAdminPassword" parameterClass="java.util.Map">
+		update abc_admin set password=#password# where admin_id=#adminId#
+	</update>
+	<update id="updateAdminInfo" parameterClass="java.util.Map">
+		update abc_admin set email=#email#,cellphone=#cellphone#,gender=#gender#,adesc=#adesc# where admin_id=#adminId#
+	</update>
+	<update id="updateOtherAdminInfo" parameterClass="java.util.Map">
+		update abc_admin set state=#state#,type=#type#,cellphone=#cellphone#,gender=#gender#,adesc=#adesc# where admin_id=#adminId#
+	</update>
+	<update id="updateAdmin" parameterClass="java.util.Map">
+		update ABC_ADMIN set username=#username#,email=#email#,name=#name#,state=#state#,type=#type#,password=#password#,cellphone=#cellphone#,gender=#gender#,adesc=#adesc# where admin_id=#adminId#
+	</update>
+	<insert id="insertAdminInfo" parameterClass="java.util.Map">
+		insert into abc_admin (type,username,name,state,password,add_time,cellphone,adesc,email,gender) 
+		values(#type#,#username#,#name#,1,#password#,now(),#cellphone#,#adesc#,#email#,#gender#)
+	</insert>
+	<delete id="delAdminById" >
+		delete from abc_admin where admin_id =#value#
+	</delete>
+</sqlMap>  

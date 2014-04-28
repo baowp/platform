@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN" 
+"http://www.opensymphony.com/xwork/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="name">
+		<field-validator type="requiredstring">
+			<message>请输入服务器名称</message>
+		</field-validator>
+	</field>
+	<field name="ip">
+		<field-validator type="requiredstring">
+			<message>请输入服务器ip</message>
+		</field-validator>
+		<field-validator type="regex">
+			<param name="expression"><![CDATA[(^(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})$)]]></param>
+			<message>ip请输入符合规则的格式，例如：10.102.3.23</message>
+		</field-validator>
+	</field>
+	<field name="ftpUsername">
+		<field-validator type="requiredstring">
+			<message>请输入ftp用户名</message>
+		</field-validator>
+	</field>
+	<field name="ftpPassword">
+		<field-validator type="requiredstring">
+			<message>请输入ftp密码</message>
+		</field-validator>
+	</field>
+	<field name="webservice">
+		<field-validator type="requiredstring">
+			<message>请输入webservice</message>
+		</field-validator>
+	</field>
+</validators>
+
