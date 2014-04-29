@@ -1,0 +1,1 @@
+<#include "piece/product_simple3.ftl"/>

@@ -1,0 +1,108 @@
+#header .work-head-new {
+	background:
+		url("img/tophbgg.gif")
+		repeat-x scroll 0 0 transparent;
+	border-bottom: 1px solid #6593CF;
+	border-top: 1px solid #BFD8FF;
+	color: #666666;
+	font-family: "Tahoma,Arial,ËÎÌו";
+	height: 39px;
+	line-height: 1.5;
+	margin-bottom: 1px;
+	min-width: 1000px;
+	overflow: hidden;
+}
+#header .work-head-new .work-head-m {
+    float: left;
+    width: 100%;
+}
+#header .work-head-new .work-head-m-c {
+    padding: 0 0 0 230px!important;
+	padding: 0 0 0 30px;
+}
+#header .work-nav-new li.w4 a:hover, #header .work-nav-new li.w4 a.current {
+    background: url("img/menubg.png") no-repeat scroll 0 0 transparent;
+    width: 89px;
+}
+#header .work-nav-new {
+	padding-top: 1px;
+	position: relative;
+	z-index: 99;
+}
+
+#header .work-nav-new li {
+	background:
+		url("img/4517_1446014988.png")
+		no-repeat scroll right center transparent;
+	float: left;
+	font-size: 14px;
+	height: 38px;
+	line-height: 38px;
+	padding-right: 2px;
+	text-align: center;
+	width: 62px;
+}
+
+#header .work-nav-new li a:hover,#header .work-nav-new li a.current {
+	background:
+		url("img/menubgs.png")
+		no-repeat scroll 0 0 transparent;
+	float: left;
+	height: 38px;
+	margin: 0 1px;
+	overflow: hidden;
+	width: 60px;
+}
+#header .b {
+    font-weight: bold;
+}
+#header .work-nav-new li.w4 {
+	width: 91px;
+}
+
+#header .work-head-new .work-head-l {
+    float: left;
+    margin-left: -100%;
+}
+
+ul {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none outside none;
+}
+
+#header .work-head-new a:link,#header .work-head-new a:visited {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+#header .work-head-new a:hover{
+	color: #ff7300;
+	text-decoration: underline
+}
+
+#header .work-head-new  a:active{
+	color: #FF6600;
+	text-decoration: underline
+}
+#header .work-head-l ul {
+    padding: 8px 4px 0;
+}
+
+#header .work-head-l li {
+    height: 23px;
+    line-height: 23px;
+    padding: 4px 0;
+    overflow: hidden;
+    width: 220px;
+}
+a:active {
+    color: #FF7300;
+}
+a:hover {
+    color: #FF7300;
+}

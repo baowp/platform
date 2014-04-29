@@ -1,0 +1,251 @@
+.productDetail1 {
+	text-align: -webkit-center;
+	text-align: -moz-center;
+	_text-align: center;
+}
+
+.productDetail1 > div {
+	margin: 0 auto\9;	
+}
+
+.tab {
+	border-bottom: 1px solid #CCCCCC;
+	font-family: "宋体";
+	height: 20px;
+	margin-bottom: 5px;
+	padding-bottom: 5px;
+	padding-top: 10px;
+	text-align: center;
+	width: 715px;
+	font-size: 16px;
+}
+
+.cpzs {
+	height: 505px;
+	padding: 2px;
+	width: 715px;
+}
+
+.con_cs {
+	padding: 30px 100px;
+}
+
+.cpzs .cpzs_left {
+	float: left;
+	height: 505px;
+	width: 510px;
+}
+
+.cpzs .cpzs_left .datu {
+	
+}
+
+.cpzs .cpzs_right {
+	float: left;
+	height: 505px;
+	width: 204px;
+}
+
+.cpzs .cpzs_right .canshu {
+	height: 130px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	width: 200px;
+}
+
+.divImg {
+	width: 80px;
+	height: 80px;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+*+html .divImg {
+	display: block;
+	font-size: 72px;
+}
+
+* html .divImg {
+	display: block;
+	font-size: 72px;
+}
+
+.divImg img {
+	vertical-align: middle;
+}
+
+.cpzs .cpzs_right .canshu .xinhao {
+	font-size: 20px;
+	height: 30px;
+	line-height: 24px;
+	padding-left: 10px;
+	padding-top: 35px;
+	text-align: left;
+	width: 170px;
+}
+
+.cpzs .cpzs_right .canshu .jiben {
+	font-family: "宋体";
+	font-size: 12px;
+	height: 40px;
+	line-height: 14px;
+	padding-left: 10px;
+	padding-top: 20px;
+	width: 170px;
+}
+
+.cpzs .cpzs_right .jiaodu {
+	height: 290px;
+	width: 185px;
+	margin: 2px;
+	padding-top: 10px;
+}
+
+.jiaodu li {
+	float: left;
+	margin: 2px;
+}
+
+.cpzs .cpzs_right .jiaodu img {
+	cursor: pointer;
+	margin: 1px;
+}
+
+.xxcs {
+	margin-top: 10px;
+	padding: 5px;
+	width: 715px;
+	text-align: left;
+}
+
+.xxcs .xxcs_hard {
+	background-repeat: repeat-x;
+	width: 715px;
+	height: 24px;
+}
+
+.xxcs #open {
+	background: url("../images/product/tabbg.jpg") repeat scroll 0 0
+		transparent;
+	font-weight: bold;
+	font-size: 13px;
+	margin-right: 1px;
+	border-width: 1px;
+	border-style: solid;
+	border-bottom: none;
+}
+
+.xxcs #colse {
+	background: url("../images/product/tabbg2.jpg") repeat scroll 0 0
+		transparent;
+	margin-right: 1px;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.xxcs .xxcs_hard .xntd {
+	background: url("../images/product/tabbg.jpg") repeat scroll 0 0
+		transparent;
+	/*border:1px solid #C8C8C8;*/
+	line-height: 23px;
+	float: left;
+	padding: 0 14px;
+	cursor: pointer;
+	margin-right: 1px;
+	border-width: 1px;
+	border-style: solid;
+}
+
+.datu a {
+	display: table-cell;
+	height: 500px;
+	text-align: center;
+	vertical-align: middle;
+	width: 500px;
+}
+
+.datu a {
+	display: table-cell;
+	height: 500px;
+	text-align: center;
+	vertical-align: middle;
+	width: 500px;
+}
+
+*+html .datu a {
+	display: block;
+	font-size: 450px;
+}
+
+* html .datu a {
+	display: block;
+	font-size: 450px;
+}
+
+.datu a img {
+	vertical-align: middle;
+}
+
+.con_xn {
+	padding: 20px;
+}
+
+.xxcs .con {
+	border-width: 1px;
+	border-style: solid;
+}
+
+.xxcs .con_xn.con .laomu {
+	height: 100px;
+	margin: 20px 24px 30px;
+	width: 600px;
+}
+
+.xxcs .con_xn.con .laomu .laozi_wen {
+	float: left;
+	height: 100px;
+	padding-left: 10px;
+	width: 429px;
+}
+
+.laomu .laozi_wen .wen_tite {
+	font-family: "宋体";
+	font-size: 18px;
+	font-weight: bold;
+	padding-top: 4px;
+}
+
+.xxcs .con {
+	border-width: 1px;
+	border-style: solid;
+}
+
+.con_cs.con table {
+	width: 100%;
+	text-align: left;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-left: 1px solid #888;
+	border-top: 1px solid #888;
+}
+
+.con_cs.con table tr {
+	margin: 0;
+}
+
+table tr .xinhao {
+	background-color: #CCCCCC;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+td {
+	margin: 0;
+	padding-left: 10px;
+	border-right: 1px solid #888;
+	border-bottom: 1px solid #888;
+	padding: 0px 10px;
+}

@@ -1,0 +1,116 @@
+@CHARSET "UTF-8";
+
+.outBg {
+	padding-top: 33px;
+}
+
+.topbar-v2,.topbar-v2 .topbar-container,.topbar-v2 .account-not,.topbar-v2 .account-signed,.topbar-v2 .bg-arrow,.topbar-v2 .contact-us-free,.topbar-v2 .fill-form-free,.topbar-v2 .join-promotions,.topbar-v2 .title-sitemap,.topbar-v2 .top-alitalk a,.topbar-v2 .list-sitemap-all a
+	{
+	background: url("../../images/vipsite/6413_1651874970.png") no-repeat
+		scroll -100px 0 transparent;
+}
+
+.topbar-v2,.topbar-v2 .topbar-container {
+	background: url(../../images/vipsite/topbg.gif);
+}
+
+.topbar-v2 {
+	background-position: 0 -12px;
+	background-repeat: repeat-x;
+	color: #666666;
+	height: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	_width: expression(documentElement.clientWidth);
+	text-align: left;
+	font: 12px/1.5 Tahoma, Arial, "宋体", sans-serif;
+	text-align: left;
+}
+
+.topbar-v2 .topbar-container {
+	background-position: 0 -12px;
+	background-repeat: repeat-x;
+	height: 27px;
+	margin: 0 auto;
+	width: 952px;
+	overflow: hidden;
+}
+
+.topbar-v2 .account-sign-status {
+	float: left;
+	height: 27px;
+	overflow: hidden;
+}
+
+.topbar-v2 .account-sign-status li,.topbar-v2 .topnav li {
+	border-right: 1px solid #EEEEEE;
+	float: left;
+	height: 27px;
+	line-height: 27px;
+	padding: 0 8px;
+}
+
+.topbar-v2 .account-sign-status .account-welcome {
+	min-width: 134px;
+	padding-left: 0;
+	word-wrap: normal;
+}
+
+.topbar-v2 a:link,.topbar-v2 a:visited {
+	color: #666666;
+}
+
+.topbar-v2 a:hover,.topbar-v2 a:active {
+	color: #FF7300 !important;
+	text-decoration: none;
+}
+
+.topbar-v2 .account-sign-status a {
+	font-weight: 700;
+}
+
+.topbar-v2 .account-sign-status .account-welcome a {
+	font-weight: 400;
+}
+
+.topbar-v2 .account-signed {
+	background-position: -32px -178px;
+	padding-left: 15px;
+}
+
+.topbar-v2 .account-not {
+	background-position: -32px -148px;
+	padding-left: 15px;
+}
+
+.topbar-v2 .topnav {
+	float: right;
+}
+
+.panel_flex {
+	height: 20px;
+	position: absolute;
+	right: 5px;
+	text-align: right;
+	top: 8px;
+	width: 20px;
+	z-index: 3;
+	margin: 0;
+}
+
+.icon_toolbar_up,.icon_toolbar_down {
+	background-image: url("../../images/vipsite/bg_toolbar_v3.gif");
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 13px;
+	vertical-align: middle;
+	width: 11px;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.icon_toolbar_down {
+	background-position: -16px 0;
+}

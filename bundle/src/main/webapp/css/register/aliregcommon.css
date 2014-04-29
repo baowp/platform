@@ -1,0 +1,630 @@
+body {
+	font-size: 13px;
+	font-family: "宋体", arial;
+	line-height: 22px;
+}
+
+.footerBox {
+	font-family: arial;
+}
+
+a,a:visited {
+	color: #003278;
+	text-decoration: none
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #ff7300
+}
+
+.clearfix {
+	zoom: 1;
+	display: block
+}
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.head_5 {
+	width: 952px;
+	margin: 0 auto;
+	position: relative
+}
+
+.head_5 ul {
+	list-style: none;
+	position: relative;
+	z-index: 10;
+}
+
+.head_5 ul li {
+	float: left
+}
+
+.head_5 .r {
+	display: block;
+	position: absolute;
+	height: 35px;
+	width: 120px;
+	top: 160px;
+	left: 563px;
+	z-index: 10;
+	background: #fff;
+	filter: alpha(opacity = 0);
+	opacity: 0;
+}
+
+.head_5 .l {
+	display: block;
+	position: absolute;
+	height: 35px;
+	width: 100px;
+	top: 160px;
+	left: 708px;
+	z-index: 10;
+	background: #fff;
+	filter: alpha(opacity = 0);
+	opacity: 0;
+}
+
+.head_6 {
+	width: 952px;
+	margin: 0 auto;
+	position: relative
+}
+
+.head_6 ul {
+	list-style: none;
+	position: relative;
+	z-index: 10;
+}
+
+.head_6 ul li {
+	float: left
+}
+
+.head_6 .r {
+	display: block;
+	position: absolute;
+	height: 32px;
+	width: 100px;
+	top: 172px;
+	left: 660px;
+	z-index: 10;
+	background: #fff;
+	filter: alpha(opacity = 0);
+	opacity: 0;
+}
+
+.head_6 .l {
+	display: block;
+	position: absolute;
+	height: 32px;
+	width: 100px;
+	top: 172px;
+	left: 544px;
+	z-index: 10;
+	background: #fff;
+	filter: alpha(opacity = 0);
+	opacity: 0;
+}
+
+#regMain .regArea .subDiv .submit,#regMain .regArea .tip span.correct,#regMain .regArea .tip span.normal1,#regMain .regArea .tip span.normal2,#regMain .regArea .tip span.error1,#regMain .regArea .tip span.error2
+	{
+	background:
+		url(http://img.china.alibaba.com/images/cn/member/reg/newsub.gif)
+		no-repeat;
+}
+
+#regMain .regArea .tip span.correct {
+	background-position: 0 -80px;
+}
+
+#regMain .regArea .tip span.normal1,#regMain .regArea .tip span.normal2
+	{
+	padding-left: 20px;
+	background-position: 0 -160px;
+}
+
+#regMain .regArea .tip span.error1,#regMain .regArea .tip span.error2 {
+	padding: 1px 0 0 20px;
+	background-position: 0 -120px;
+}
+
+.wrap {
+	background:
+		url(http://img.china.alibaba.com/images/cn/member/reg/commonregbgb.gif)
+		no-repeat bottom center;
+	background-color: #f4f8fa;
+}
+
+.main {
+	background:
+		url(http://img.china.alibaba.com/images/cn/member/reg/commonregbgt.gif)
+		no-repeat top center;
+	padding-top: 8px;
+}
+
+#wrap.parafix {
+	background:
+		url(http://img.china.alibaba.com/images/cn/member/reg/commonregbgb-para.gif)
+		no-repeat bottom center;
+}
+
+#main.parafix {
+	background:
+		url(http://img.china.alibaba.com/images/cn/member/reg/commonregbgt-para.gif)
+		no-repeat top center;
+}
+
+.hd {
+	position: relative;
+	width: 952px;
+	margin: 0 auto;
+	height: 55px;
+	margin: 0 auto;
+}
+	
+	/* .hd .la{background:url(http://img.china.alibaba.com/images/cn/member/reg/alilogo.png) no-repeat top left;width:168px;height:58px;float:left; cursor:pointer;}*html .hd .la{background:none;filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src=http://img.china.alibaba.com/images/cn/member/reg/alilogo.png);} */
+.hd .la {
+	background:
+		url(http://51archetype.com/user/images/logo.jpg)
+		no-repeat top left;
+	width: 280px;
+	height: 55px;
+	float: left;
+	cursor: pointer;
+}
+
+* html .hd .la {
+	background: none;
+	filter: progid : DXImageTransform.Microsoft.AlphaImageLoader ( src =
+		h51archetype.comcc.net/user/images/logo.jpg );
+}
+
+.hd .txt {
+	font-size: 25px;
+	font-weight: bold;
+	display: none;
+	float: left;
+	border-left: 1px solid #999999;
+	height: 35px;
+	line-height: 35px;
+	margin-left: 4px;
+	padding-left: 4px;
+	font-family: 黑体
+}
+
+.hd .contact {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: right;
+	font-size: 12px;
+}
+
+.hd .contact a,.hd .contact a:visited {
+	color: #003278;
+	text-decoration: none
+}
+
+.hd .contact a:hover {
+	text-decoration: underline;
+	color: #ff7300
+}
+
+.regContainer {
+	width: 952px;
+	margin: 14px auto;
+	padding-bottom: 44px;
+}
+
+.regContainer-parafix {
+	margin-top: 0;
+}
+
+.regForm {
+	margin: 0;
+}
+
+#regMain {
+	padding-bottom: 24px;
+	background-color: #fff;
+	border-left: 1px solid #afc6d3;
+	border-right: 1px solid #afc6d3;
+	width: 949px;
+}
+
+* html#regMain .title {
+	height: 26px;
+	text-align: left;
+	background-color: #ededed;
+}
+
+#regMain .title h2 {
+	margin-left: 24px;
+	font-size: 14px;
+	line-height: 26px;
+}
+
+#regMain .regArea {
+	padding-left: 60px;
+}
+
+#regMain .regArea .line {
+	clear: both;
+	overflow: visible;
+	min-height: 50px;
+	height: auto;
+}
+
+* html #regMain .regArea .line {
+	height: 50px;
+}
+
+#regMain .regArea .line.last {
+	border-bottom: none;
+}
+
+#regMain .regArea .line.focus {
+	background-color: #f3f4f8;
+}
+
+#regMain .regArea .line.oneline {
+	height: 40px;
+	min-height: 40px;
+}
+
+#regMain .regArea .con {
+	min-height: 40px;
+	height: auto;
+	overflow: visible
+}
+
+#regMain .regArea .chk {
+	height: 36px; *
+	margin-top: -4px;
+	_margin-top: 4px;
+}
+
+#regMain .regArea .info,#regMain .regArea .inp,#regMain .regArea .tip {
+	float: left;
+}
+
+#regMain .regArea .info {
+	width: 120px;
+	text-align: right;
+	height: 28px;
+	line-height: 28px;
+	overflow: hidden;
+}
+
+#regMain .regArea .info.identityline {
+	line-height: 20px;
+}
+
+#regMain .regArea .inp {
+	
+}
+
+#regMain .regArea .inp input.iText {
+	height: 20px;
+	line-height: 16px;
+	padding: 4px 0 2px 0;
+	width: 230px;
+	padding-left: 4px;
+	border: 1px solid #7F9DB9; *
+	position: relative; *
+	top: -1px;
+}
+
+#regMain .regArea .inp input.iTextNormal {
+	border: 1px solid #7B99DF;
+	background: #E6EDFD
+}
+
+#regMain .regArea .inp input.iTextError {
+	border: 1px solid #ED8F8F;
+	background: #FFF2F2
+}
+
+#regMain .regArea .inp input.noime {
+	ime-mode: disabled
+}
+
+#regMain .regArea .inp.addcompany {
+	padding-left: 120px;
+}
+
+#regMain .regArea .inp input.noime {
+	ime-mode: disabled
+}
+
+#regMain .regArea .tip {
+	margin-left: 0px
+}
+
+#regMain .regArea .tip span {
+	display: block;
+	height: 32px;
+	margin-top: 2px;
+	width: 358px;
+	padding-left: 20px;
+	line-height: 16px;
+	margin-left: 8px;
+}
+
+#regMain .regArea .tip span.none {
+	background: none;
+}
+
+#regMain .regArea .tip span.normal1,#regMain .regArea .tip span.normal2
+	{
+	color: #2C5CD8
+}
+
+#regMain .regArea .tip span.normaltip {
+	color: #999;
+}
+
+#regMain .regArea .tip span.normal1,#regMain .regArea .tip span.error1 {
+	/*height:18px;*/
+	
+}
+
+#regMain .regArea .tip span.correct {
+	height: 32px;
+	overflow: hidden;
+	padding: 0;
+}
+
+#regMain .regArea .tip span.error1,#regMain .regArea .tip span.error2 {
+	color: #C53032;
+}
+
+#suggestLoginid {
+	border: 1px solid #ED8F8F;
+	border-top: 0;
+	margin-bottom: 16px;
+	width: 226px;
+	padding: 4px;
+	margin-top: -2px;
+	display: none;
+}
+
+#suggestLoginid .h6 {
+	font-weight: bold;
+	line-height: 20px;
+	color: #DC7C80
+}
+
+#suggestLoginid .uct label {
+	margin-left: 4px; *
+	margin-left: 0;
+}
+
+#regMain .otherInfo {
+	margin-top: 0;
+}
+
+#regMain .otherInfo .con {
+	height: 40px
+}
+
+#regMain .regArea .inp input.code {
+	width: 120px;
+}
+
+#regMain .regArea .inp input.phoneCountry {
+	width: 30px;
+}
+
+#regMain .regArea .inp input.phoneArea {
+	width: 50px;
+	margin: 0 6px; *
+	margin: 0 -1px;
+}
+
+#regMain .regArea .inp input.phoneNumber {
+	width: 112px;
+}
+
+#regMain .regArea .inp input.emailName {
+	width: 110px;
+}
+
+#regMain .regArea .inp input.emailType {
+	width: 79px;
+}
+
+#regMain .regArea .inp .emailC {
+	font-family: arial;
+	position: relative; *
+	top: -8px;
+	font-size: 13px;
+	margin: 0 4px;
+}
+
+#regMain .regArea .inp .identity {
+	margin: 0 22px 0 4px; *
+	margin: 0 15px 0 4px;
+}
+
+#regMain .regArea .tip a.chgImg {
+	position: relative;
+	top: 0px;
+}
+
+#regMain .regArea .inp img.imgCode {
+	margin-left: 8px;
+	vertical-align: middle; *
+	vertical-align: top;
+	cursor: pointer;
+}
+
+#regMain .regArea .inp .checkbox {
+	width: 13px;
+	position: relative;
+	top: 3px; *
+	top: 0;
+}
+
+#regMain .regArea .privacy {
+	margin-left: 146px;
+}
+
+#regMain .regArea .subDiv {
+	margin-left: 121px; *
+	margin-left: 124px;
+	margin-top: 0px;
+}
+
+#regMain .regArea .subDiv .submit {
+	border: 0 none;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: bold;
+	height: 28px;
+	text-align: center;
+	width: 232px;
+}
+
+#regMain .regArea .subDiv .submit.over {
+	background-position: 0 -39px;
+}
+
+#regCheckInfo {
+	position: absolute;
+	top: 80px;
+	left: 370px;
+	width: 360px;
+	color: blue;
+}
+
+label.placeholder {
+	cursor: text;
+}
+
+label.placeholder span {
+	color: #ccc;
+	font-size: 13px;
+	line-height: 22px;
+	opacity: 1;
+	position: absolute;
+	z-index: 5;
+	width: 230px;
+}
+
+#catePageImg {
+	
+}
+
+.catePageTips {
+	position: absolute;
+	left: 62px;
+	z-index: 1000;
+	top: -10px; *
+	top: -10px;
+	display: none;
+	_top: -16px;
+	background-position: 0 -287px;
+	width: 323px;
+	height: 57px;
+}
+
+.addCompanyTip {
+	background-position: 0 -18px;
+	height: 16px;
+	display: inline-block;
+	width: 16px;
+}
+
+#privacyhiddenIfr {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #fff;
+	display: none;
+	opacity: .5;
+	filter: alpha(opacity = 50)
+}
+
+#privacyIfr {
+	width: 800px;
+	height: 430px;
+}
+
+#privacyIfrLayer {
+	display: none;
+	position: absolute;
+	top: 200px;
+	left: 300px;
+	background-color: #fff;
+	z-index: 10000;
+	overflow: hidden;
+	border: 1px solid #656451;
+}
+
+#privacyIfrLayer .btn {
+	text-align: center;
+	padding: 16px 0;
+}
+
+#bd {
+	width: 952px;
+	margin: 24px auto;
+}
+
+#bd .regForm {
+	width: 72px;
+	margin: 0 96px;
+}
+
+.regContainer .red2 {
+	color: #ff6600;
+	margin: 0 4px;
+}
+
+.regContainer .red {
+	color: #ff6600;
+	margin: 0 12px 0 4px;
+}
+
+.regContainer .tipinfo {
+	padding-left: 76px;
+	padding-top: 24px;
+	padding-bottom: 20px;
+	background-color: #fff;
+	border-left: 1px solid #afc6d3;
+	border-right: 1px solid #afc6d3;
+	width: 873px;
+}
+
+#supplyblock,#agreement {
+	display: none;
+}
+
+.regForm .word {
+	padding-left: 60px;
+	background-color: #fff;
+	border-left: 1px solid #afc6d3;
+	border-right: 1px solid #afc6d3;
+	width: 889px;
+}
+
+.promotion {
+	background:
+		url(http://img.china.alibaba.com/images/cn/member/reg/probanner.jpg)
+		no-repeat;
+	text-indent: -9999px;
+	width: 932px;
+	height: 102px;
+	margin: 0 auto;
+	display: block;
+}

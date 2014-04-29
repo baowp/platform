@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="永康东方五金网--永康网站建设|做网站|网络推广|网站制作|企业邮箱|域名注册|电子商务|东方五金网">
+<meta name="description" content="东方五金网由永康市东方五金电子商务有限公司主办,专业从事互联网电子商务产品的研发,咨询和服务的高新技术企业,主要为全国的五金企业提供网站建设,网络广告,网络营销策划,网络推广,网站制作,国际贸易,企业管理系统开发,实施、维护等IT服务">
+<meta name="author" content="东方五金网--永康市东方五金电子商务有限公司" />
+<meta name="Copyright" content="东方五金网--永康市东方五金电子商务有限公司 " />
+<META NAME="LANGUAGE" CONTENT="东方五金网">
+<META NAME="DOCUMENTCOUNTRYCODE" CONTENT="cn">
+<META NAME="AUTHOR" CONTENT="东方五金网">
+<META NAME="SEGMENT" CONTENT="东方五金网">
+<meta name="keywords" content="网站建设,网络推广,网站制作,企业邮箱,域名注册,网络营销策划,网络广告">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<title>东方五金经典2代--永康网站建设|做网站|网络推广|网站制作|企业邮箱|域名注册|电子商务|东方五金网</title>
+<link href="a.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link href="../a.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="MM_preloadImages('images/in9-a.jpg','images/in9-1-a.jpg','images/in9-2-a.jpg','images/in9-3-a.jpg','images/in9-4-a.jpg','images/in9-5-a.jpg')">
+<link href="/home/css/css.css" rel="stylesheet" type="text/css" />
+<link href="/home/css/div.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery/query.js"></script>
+<script type="text/javascript" src="/home/js/top.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$
+				.getJSON(
+						"/u/isLogin?randomNumber=" + Math.random(),
+						{},
+						function(result) {
+							var html;
+							if (result == '0') {
+								html = "<div class=\"noLogin\">您还未登陆,<span class=\"font\">[</span><span class=\"font01\"><a href=\"/user\" id=\"create-user\">登录</a></span>]</div>";
+							} else {
+								html = "<span class=\"font\" id=\"isLogin\">您好("
+										+ result
+										+ ")，<a href=\"/user/platform/index.jsp\">用户中心</a>&nbsp[<a href=\"/index/user/logout\">注销</a>] </span>";
+							}
+							$(".header_center01").html(html);
+						})
+	})
+</script>
+
+<style type="text/css">
+#dialog-form {
+	display: none;
+}
+
+div#users-contain {
+	width: 350px;
+	margin: 20px 0;
+}
+
+div#users-contain table {
+	margin: 1em 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+div#users-contain table td,div#users-contain table th {
+	border: 1px solid #eee;
+	padding: .6em 10px;
+	text-align: left;
+}
+
+.ui-dialog .ui-state-error {
+	padding: .3em;
+}
+
+.validateTips {
+	border: 1px solid transparent;
+	padding: 0.3em;
+}
+</style>
+<div id="header">
+<div class="header_center">
+<div class="header_center01"></div>
+<div class="header_center02"><img src="/home/images/shouy.gif"
+	width="9" height="9" /> <span class="font">老版本入口:<a
+	href="http://cn1.51archetype.com/office/">中文版</a>|<a
+	href="http:51archetype.comcc.net/office/">英文版</a><a
+	href="javascript:setHomepage()">&nbsp设置首页</a> | <a
+	href="javascript:addPage()">收藏本站</a> </span></div>
+</div>
+</div>
+<div id="top">
+<div class="top_left"><a href="/"><img
+	src="/user/images/logo.png" border="0" width="187" height="53" /></a></div>
+<div class="top_center">
+<div class="top_01">
+<div class="top_03" onclick="changeThis(this,'product')">产 品</div>
+<div class="top_04" onclick="changeThis(this,'ent')">公 司</div>
+<div class="top_04" onclick="changeThis(this,'purchase')">供求</div>
+</div>
+<div class="top_02">
+<form action="/index/search/search" id="tosearch"><input
+	type="hidden" name="pageType" id="pageType" />
+<div class="left_t"><input type="text" class="form" id="textfield"
+	name="searchKey" /></div>
+<div class="left_tt"><input type="image"
+	src="/home/images/search.jpg" width="106" height="32" /></div>
+<div class="left_tp">&nbsp;<a href="/home/to_buy.jsp">如何采购</a>&nbsp;&nbsp;<a
+	href="/home/to_search.jsp">如何搜索</a></div>
+</form>
+</div>
+</div>
+</div>
+<table width="1004" height="47" border="0" align="center" cellpadding="0" cellspacing="0" background="images/in9-6.jpg">
+  <tr>
+    <td width="26" valign="top">&nbsp;</td>
+    <td valign="top"><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image36','','images/in9-a.jpg',1)"><img src="images/in9.jpg" name="Image36" width="81" height="47" border="0" id="Image36" /></a></td>
+    <td valign="top"><a href="cpjs.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image37','','images/in9-1-a.jpg',1)"><img src="images/in9-1.jpg" name="Image37" width="98" height="47" border="0" id="Image37" /></a></td>
+    <td valign="top"><a href="cpys.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image38','','images/in9-2-a.jpg',1)"><img src="images/in9-2.jpg" name="Image38" width="98" height="47" border="0" id="Image38" /></a></td>
+    <td valign="top"><a href="bbdb.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image39','','images/in9-3-a.jpg',1)"><img src="images/in9-3.jpg" name="Image39" width="98" height="47" border="0" id="Image39" /></a></td>
+    <td valign="top"><a href="fwlc.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image40','','images/in9-4-a.jpg',1)"><img src="images/in9-4.jpg" name="Image40" width="97" height="47" border="0" id="Image40" /></a></td>
+    <td valign="top"><a href="cgal.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image41','','images/in9-5-a.jpg',1)"><img src="images/in9-5-a.jpg" name="Image41" width="99" height="47" border="0" id="Image41" /></a></td>
+     <td width="98" valign="top"><a href="http://user.qzone.qq.com/83503261" target="_blank" onmouseover="MM_swapImage('Image102','','images/in9-7-a.jpg',1)" onmouseout="MM_swapImgRestore()"><img src="images/in9-7.jpg" name="Image102" width="98" height="47" border="0" id="Image102" /></a></td>
+    <td width="309" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="6"></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="images/in2.jpg" width="1004" height="280" border="0" usemap="#Map" /></td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="17" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="37" valign="top">&nbsp;</td>
+    <td width="642" valign="top"><table width="642" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="40" align="center" valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+          <td align="center" valign="top"><iframe id="main2" align=left height="300px" frameborder=0  marginheight=0 marginwidth=0 name="new4" noResize scrolling=no src="success.html" width=614 onload="this.style.height = main2.document.body.scrollHeight;"></iframe></td>
+        </tr>
+      </table>
+    </td>
+    <td width="19" valign="top">&nbsp;</td>
+    <td width="306" valign="top"><table width="306" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="45" valign="bottom"><img src="images/in4-3.jpg" width="306" height="25" /></td>
+        </tr>
+      </table>
+      <table width="306" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><iframe id="main1" align=left frameborder=0  marginheight=0 marginwidth=0 name="new3" noResize scrolling=no src="news.html" width=306 onload="this.style.height = main1.document.body.scrollHeight;"></iframe></td>
+        </tr>
+      </table>
+	  <table width="306" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top">&nbsp;</td>
+        </tr>
+      </table>
+      <table width="306" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top"><a href="contact.htm"><img src="images/in4-4.jpg" width="306" height="25" border="0" /></a></td>
+        </tr>
+      </table>
+      <table width="306" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td height="12" valign="top"></td>
+        </tr>
+        <tr>
+          <td valign="top" class="c3">　运营服务：0579-87171989　0579-83840778</td>
+        </tr>
+        <tr>
+          <td valign="top" class="c3">　　　　　　0579-88026855</td>
+        </tr>
+        <tr>
+          <td valign="top" class="c3">　技术支持：0579-83840669</td>
+        </tr>
+        <tr>
+          <td valign="top" class="c3">　传　　真：0579-87173500</td>
+        </tr>
+      </table>
+      <table width="306" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td valign="top">&nbsp;</td>
+        </tr>
+        <tr>
+          <td valign="top"><table width="289" border="0" align="center" cellpadding="0" cellspacing="0">
+            <tr>
+              <td width="131" height="28" align="center" valign="middle"><a href="tencent://message/?uin=1004924027&amp;Site=ykit.net/taolitaowa&amp;Menu=yes" target="blank"><img src="http://wpa.qq.com/pa?p=1:1004924027:41" alt="请留言"  border="0" /></a></td>
+              <td valign="middle" align="left"><a href="tencent://message/?uin=1452425603&amp;Site=ykit.net/taolitaowa&amp;Menu=yes" target="blank"><img src="http://wpa.qq.com/pa?p=1:1452425603:41" alt="请留言"  border="0" /></a></td>
+            </tr>
+            <tr>
+              <td height="18" align="center" valign="middle" class="c1">市场经理</td>
+              <td align="left" valign="middle"><span class="c1">　销售总监</span></td>
+            </tr>
+            <tr>
+              <td height="28" align="center" valign="middle"><a href="tencent://message/?uin=9568027&amp;Site=ykit.net/taolitaowa&amp;Menu=yes" target="blank"><img src="http://wpa.qq.com/pa?p=1:9568027:41" alt="请留言"  border="0" /></a></td>
+              <td width="158" align="left" valign="middle"><a href="tencent://message/?uin=739284194&amp;Site=ykit.net/taolitaowa&amp;Menu=yes" target="blank"><img src="http://wpa.qq.com/pa?p=1:739284194:41" alt="请留言"  border="0" /></a></td>
+            </tr>
+            <tr>
+              <td height="18" align="center" valign="middle" class="c1">客服经理1</td>
+              <td align="left" valign="middle"><span class="c1">　客服专员1</span></td>
+            </tr>
+            <tr>
+              <td height="28" align="center" valign="middle" class="c1"><a href="tencent://message/?uin=1016768267&amp;Site=ykit.net/taolitaowa&amp;Menu=yes" target="blank"><img src="http://wpa.qq.com/pa?p=1:1016768267:41" alt="请留言"  border="0" /></a></td>
+              <td align="left" valign="middle"><a href="tencent://message/?uin=1121680019&amp;Site=ykit.net/taolitaowa&amp;Menu=yes" target="blank"><img src="http://wpa.qq.com/pa?p=1:1121680019:41" alt="请留言"  border="0" /></a></td>
+            </tr>
+            <tr>
+              <td height="18" align="center" valign="middle" class="c1">客服经理2</td>
+              <td valign="middle" align="left"><span class="c1">　客服专员2</span></td>
+            </tr>
+            <tr>
+              <td height="28" align="center" valign="middle" class="c1"><a href="tencent://message/?uin=625364522&amp;Site=ykit.net/taolitaowa&amp;Menu=yes" target="blank"><img src="http://wpa.qq.com/pa?p=1:625364522:41" alt="请留言"  border="0" /></a></td>
+              <td align="left" valign="middle"><a href="tencent://message/?uin=1258798049&amp;Site=ykit.net/taolitaowa&amp;Menu=yes" target="blank"><img src="http://wpa.qq.com/pa?p=1:1258798049:41" alt="请留言"  border="0" /></a></td>
+            </tr>
+            <tr>
+              <td height="18" align="center" valign="middle" class="c1">客服经理3</td>
+              <td valign="middle" align="left"><span class="c1">　客服专员3</span></td>
+            </tr>
+            <tr>
+              <td height="28" align="center" valign="middle" class="c1"><a href="tencent://message/?uin=1004924027&amp;Site=ykit.net/taolitaowa&amp;Menu=yes" target="blank"><img src="http://wpa.qq.com/pa?p=1:1004924027:41" alt="请留言"  border="0" /></a></td>
+              <td valign="middle" align="left"><a href="tencent://message/?uin=1009553990&amp;Site=ykit.net/taolitaowa&amp;Menu=yes" target="blank"><img src="http://wpa.qq.com/pa?p=1:1009553990:41" alt="请留言"  border="0" /></a></td>
+            </tr>
+            <tr>
+              <td height="18" align="center" valign="middle" class="c1">客服经理4</td>
+              <td valign="middle" align="left"><span class="c1">　客服专员4</span></td>
+            </tr>
+            <tr>
+              <td height="18" align="center" valign="middle" class="c1">&nbsp;</td>
+              <td valign="middle">&nbsp;</td>
+            </tr>
+          </table></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="20" valign="middle"><img src="images/in8.jpg" width="1004" height="2" /></td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="24" align="center" valign="top" class="c1">运营服务：0579-87171989 83840778 88026855　   技术支持：:0579-83840669 　传真：0579-87173500</td>
+  </tr>
+  <tr>
+    <td height="24" align="center" valign="top" class="c1">东方五金网版权所有 2000-2011 E-mail： dfwj@ykit.net   　互联网违法和不良信息举报</td>
+  </tr>
+  <tr>
+    <td height="30" align="center" valign="top" class="c1">经营许可证编号:浙B2-20100285  　网络实名：<a href="http://www.ykit.net/about2.html" target="_blank" class="c1">东方五金网</a></td>
+  </tr>
+</table>
+<map name="Map" id="Map">
+  <area shape="rect" coords="375,224,559,268" href="/user" target="_blank" />
+<area shape="rect" coords="119,229,307,266" href="/user/reg.jsp" target="_blank" />
+</map>
+</body>
+</html>

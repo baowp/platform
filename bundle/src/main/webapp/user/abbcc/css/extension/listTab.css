@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+body{
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:13px;
+}
+.listTab {
+height:32px;
+line-height:32px;
+padding-bottom:0;
+}
+.listTab .focus {
+background:scroll 0 0 no-repeat url(../images/tabbtn.gif);
+cursor:pointer;
+font-weight:bold;
+height:31px;
+border-left:none;
+border-bottom:#FFFFFF solid 1px;
+line-height:31px;
+text-align:center;
+}
+.listTab dl {
+background:url("../images/taboffbtn.gif") no-repeat scroll 0 0 transparent;
+border-right:1px solid #AED8FF;
+color:black;
+cursor:pointer;
+height:31px;
+line-height:31px;
+margin-top:9px;
+padding:0 15px;
+text-align:center;
+}
+
+.listTab dl {
+float:left;
+margin:0 8px 0 0;
+position:relative;
+top:1px;
+}
+.listTab dl dd {
+cursor:pointer;
+font-family:"宋体";
+vertical-align:middle;
+}
+.rh{
+ height:150px;
+ border:#CCCCCC solid 1px;
+ }
+.listTab a:link{
+ color:#003366;
+ text-decoration:none;
+}
+.listTab a:visited{
+ color:#003366;
+ text-decoration:none;
+}
+.listTab a:hover{
+ color:#FF6600;
+ text-decoration:none;
+}

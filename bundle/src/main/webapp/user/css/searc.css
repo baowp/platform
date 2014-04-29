@@ -1,0 +1,169 @@
+/* CSS Document */
+body {
+background-color:#FFFFFF;
+color:#000000;
+margin:0;
+padding:6px 0 0;
+position:relative;
+}
+body, td, .p1, .p2, .i {
+font-family:arial;
+}
+#wrapper {
+min-width:880px;
+}
+#u {
+font-size:12px;
+margin:0;
+position:absolute;
+right:10px;
+text-align:right;
+top:6px;
+white-space:nowrap;
+z-index:210;
+}
+table {
+border:0 none;
+}
+element.style {
+padding:4px 0 0 8px;
+width:137px;
+}
+td {
+font-size:9pt;
+line-height:18px;
+}
+.Tit {
+font-size:14px;
+height:21px;
+position:relative;
+z-index:200;
+}
+.Tit a {
+color:#0000CC;
+}
+.Tit {
+font-size:14px;
+}
+#tb_mr {
+color:#0000CC;
+cursor:pointer;
+position:relative;
+z-index:200;
+}
+#tb_mr b {
+font-weight:normal;
+text-decoration:underline;
+}
+#tb_mr {
+color:#0000CC;
+cursor:pointer;
+}
+form {
+margin:0;
+position:relative;
+z-index:9;
+}
+input {
+-moz-box-sizing:border-box;
+padding-bottom:0;
+padding-top:0;
+}
+.bi {
+background-color:#D9E1F7;
+height:20px;
+margin-bottom:12px;
+}
+element.style {
+border-left:1px solid #E1E1E1;
+padding-left:10px;
+word-wrap:break-word;
+color:#000000;
+}
+.r.ec_bdtg {
+width:238px;
+}
+.r {
+width:238px;
+}
+.ec_bdtg .fsblock {
+font-family:arial;
+padding:0;
+}
+.ec_bdtg .title a {
+cursor:pointer;
+margin:0;
+padding:0;
+text-decoration:underline;
+}
+.ec_bdtg .fsblock a {
+text-decoration:none;
+}
+.ec_bdtg .title a {
+cursor:pointer;
+text-decoration:underline;
+}
+.ec_bdtg .fsblock a {
+text-decoration:none;
+}
+.result {
+table-layout:fixed;
+width:34em;
+}
+.f {
+font-size:100%;
+line-height:115%;
+padding-left:15px;
+width:33.7em;
+word-wrap:break-word;
+}
+a em {
+text-decoration:underline;
+}
+em {
+color:#CC0000;
+font-style:normal;
+}
+.p {
+font-size:14px;
+margin:0 0 20px;
+padding-left:18px;
+word-spacing:4px;
+}
+element.style {
+font-size:14px;
+font-weight:bold;
+height:35px;
+width:70px;
+}
+.f14 {
+font-size:14px;
+}
+.s {
+height:25px;
+padding-left:10px;
+width:8%;
+}
+element.style {
+height:60px;
+margin-left:18px;
+}
+.i, .btn {
+vertical-align:middle;
+}
+.btn {
+font-size:14px;
+height:2em;
+margin-left:3px;
+width:5.6em;
+}
+.i {
+font-size:16px;
+height:22px;
+line-height:1.4em;
+}
+.photo{
+  padding-left:7px;
+  height:105px;
+  vertical-align:middle;
+  }

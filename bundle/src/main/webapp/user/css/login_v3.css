@@ -1,0 +1,315 @@
+BODY {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; FONT-SIZE: 12px; BORDER-BOTTOM-WIDTH: 0px; MARGIN: 0px; FONT-FAMILY: 宋体; BACKGROUND-COLOR: #fff; BORDER-RIGHT-WIDTH: 0px
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; LIST-STYLE-TYPE: none
+}
+IMG {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px
+}
+A {
+	COLOR: #003278; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #003278; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #ff7300; TEXT-DECORATION: underline
+}
+.main952_box {
+	MARGIN: 0px auto; WIDTH: 952px
+}
+#main_nav {
+	CLEAR: both; MARGIN-TOP: 7px
+}
+#main_nav A:link {
+	COLOR: #003278; TEXT-DECORATION: none
+}
+#main_nav A:visited {
+	COLOR: #003278; TEXT-DECORATION: none
+}
+#main_nav A:hover {
+	COLOR: #ff7300; TEXT-DECORATION: underline
+}
+#main_nav .bt_area {
+	FLOAT: right; WIDTH: 400px
+}
+#main_nav LI A {
+	FONT-WEIGHT: normal; MARGIN: 2px 3px
+}
+#main_nav LI.bor {
+	BORDER-LEFT: #000 1px solid
+}
+.redtext1 {
+	COLOR: #d34601
+}
+.redtext1 A {
+	COLOR: #d34601
+}
+.redtext1 A:link {
+	COLOR: #d34601
+}
+.redtext1 A:visited {
+	COLOR: #d34601
+}
+.redtext1 A:hover {
+	COLOR: #d34601
+}
+.sm {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px
+}
+.mainimgbox {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FLOAT: right; PADDING-BOTTOM: 0px; MARGIN: 0px; WIDTH: 589px; PADDING-TOP: 0px; HEIGHT: 157px
+}
+.lefttitle {
+	MARGIN-TOP: 24px; FONT-SIZE: 20px; COLOR: #ff7300; LINE-HEIGHT: 20px; FONT-FAMILY: 黑体; TEXT-ALIGN: left
+}
+.leftcenter {
+	MARGIN-TOP: 17px; FONT-SIZE: 14px; PADDING-BOTTOM: 13px; TEXT-ALIGN: left
+}
+.leftcenter .textdiv1 {
+	MARGIN-TOP: 15px; LINE-HEIGHT: 14px
+}
+.leftcenter .textdiv2 {
+	MARGIN-TOP: 3px; FONT-SIZE: 12px; MARGIN-LEFT: 20px; COLOR: #999999; LINE-HEIGHT: 12px
+}
+.leftcenter .textdiv3 {
+	MARGIN-TOP: 3px; FONT-SIZE: 12px; COLOR: #999999; LINE-HEIGHT: 12px
+}
+.leftcenter .textdiv4 {
+	MARGIN-TOP: 7px; FONT-SIZE: 12px; COLOR: #999999; LINE-HEIGHT: 12px
+}
+.leftbuttom {
+	MARGIN-TOP: 5px; LINE-HEIGHT: 170%
+}
+.dashedline {
+	WIDTH: 560px; BORDER-BOTTOM: #b2b2b2 1px dashed
+}
+.cxtbuttonbg {
+	DISPLAY: block; BACKGROUND: url(http://img.china.alibaba.com/images/cn/feedback/cxtbutton1.gif) no-repeat; FLOAT: left; WIDTH: 97px; LINE-HEIGHT: 21px; HEIGHT: 21px; TEXT-ALIGN: center
+}
+.cxtbutton1 A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.cxtbutton1 A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.cxtbutton1 A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+.blackbox A:link {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.blackbox A:visited {
+	COLOR: #000000; TEXT-DECORATION: none
+}
+.blackbox A:hover {
+	COLOR: #ff6600; TEXT-DECORATION: underline
+}
+.logindiv {
+	FONT-SIZE: 20px; FONT-FAMILY: 黑体
+}
+.logindiv .div1 {
+	MARGIN-LEFT: 35px
+}
+.rightlineimg {
+	BACKGROUND: url(http://img.china.alibaba.com/images/cn/feedback/rightline.gif) no-repeat 50% bottom
+}
+.rightlineimg2 {
+	BACKGROUND: url(http://img.china.alibaba.com/images/cn/feedback/rightline.gif) no-repeat 50% top
+}
+.logindivbutton {
+	MARGIN-TOP: 15px; MARGIN-LEFT: 88px
+}
+.signindiv .div1 {
+	FONT-SIZE: 20px; MARGIN-LEFT: 35px; LINE-HEIGHT: 20px; FONT-FAMILY: 黑体
+}
+.signindiv .div2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; MARGIN: 10px 0px 0px 56px
+}
+.signindiv .div3 {
+	MARGIN-TOP: 26px; MARGIN-LEFT: 70px
+}
+.inputwd1 {
+	BORDER-RIGHT: #7b99df 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #7b99df 1px solid; PADDING-LEFT: 2px; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; MARGIN-LEFT: 4px; BORDER-LEFT: #7b99df 1px solid; WIDTH: 160px; PADDING-TOP: 3px; BORDER-BOTTOM: #7b99df 1px solid; HEIGHT: 16px
+}
+.inputwd2 {
+	BORDER-RIGHT: #7b99df 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #7b99df 1px solid; PADDING-LEFT: 2px; PADDING-BOTTOM: 3px; BORDER-LEFT: #7b99df 1px solid; WIDTH: 56px; PADDING-TOP: 3px; BORDER-BOTTOM: #7b99df 1px solid; HEIGHT: 16px
+}
+.signinbutton {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(http://img.china.alibaba.com/images/cn/member/signin/logbtn.gif) no-repeat 0px -36px; PADDING-BOTTOM: 0px; MARGIN: 0px 0px 0px 40px; VERTICAL-ALIGN: middle; WIDTH: 73px; CURSOR: pointer; BORDER-TOP-STYLE: none; LINE-HEIGHT: 29px; PADDING-TOP: 0px; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; HEIGHT: 29px; BORDER-BOTTOM-STYLE: none
+}
+.over {
+	BACKGROUND-POSITION: 0px -69px
+}
+.error {
+	BORDER-RIGHT: #ed8f8f 1px solid; BORDER-TOP: #ed8f8f 1px solid; BORDER-LEFT: #ed8f8f 1px solid; BORDER-BOTTOM: #ed8f8f 1px solid; BACKGROUND-COLOR: #fff2f2
+}
+.error {
+	BORDER-RIGHT: #ed8f8f 1px solid; BORDER-TOP: #ed8f8f 1px solid; BORDER-LEFT: #ed8f8f 1px solid; BORDER-BOTTOM: #ed8f8f 1px solid; BACKGROUND-COLOR: #fff2f2
+}
+.error2 {
+	BORDER-RIGHT: #ed8f8f 1px solid; BORDER-TOP: #ed8f8f 1px solid; BORDER-LEFT: #ed8f8f 1px solid; BORDER-BOTTOM: #ed8f8f 1px; BACKGROUND-COLOR: #fff2f2
+}
+.error2 {
+	BORDER-RIGHT: #ed8f8f 1px solid; BORDER-TOP: #ed8f8f 1px solid; BORDER-LEFT: #ed8f8f 1px solid; BORDER-BOTTOM: #ed8f8f 1px; BACKGROUND-COLOR: #fff2f2
+}
+.loginbox {
+	FONT-SIZE: 12px; MARGIN: 20px 0px 0px 48px
+}
+.loginbox P {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.loginbox .errortip {
+	BORDER-RIGHT: #ed8f8f 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ed8f8f 1px; PADDING-LEFT: 2px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; MARGIN: -1px 0px 16px 40px; BORDER-LEFT: #ed8f8f 1px solid; WIDTH: 160px; COLOR: #c53032; PADDING-TOP: 4px; BORDER-BOTTOM: #ed8f8f 1px solid
+}
+.loginbox .errortip2 {
+	BORDER-RIGHT: #ed8f8f 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ed8f8f 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; MARGIN: -1px 0px 16px 40px; BORDER-LEFT: #ed8f8f 1px solid; WIDTH: 160px; COLOR: #c53032; PADDING-TOP: 4px; BORDER-BOTTOM: #ed8f8f 1px solid
+}
+.loginbox .errortip3 {
+	BORDER-RIGHT: #ed8f8f 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ed8f8f 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; MARGIN: -1px 0px 16px 40px; BORDER-LEFT: #ed8f8f 1px solid; WIDTH: 160px; COLOR: #c53032; PADDING-TOP: 4px; BORDER-BOTTOM: #ed8f8f 1px solid
+}
+.loginbox .errortip4 {
+	BORDER-RIGHT: #ed8f8f 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ed8f8f 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; MARGIN: -1px 0px 16px 40px; BORDER-LEFT: #ed8f8f 1px solid; WIDTH: 160px; COLOR: #c53032; PADDING-TOP: 4px; BORDER-BOTTOM: #ed8f8f 1px solid
+}
+.loginbox .errortip5 {
+	BORDER-RIGHT: #ed8f8f 1px solid; PADDING-RIGHT: 0px; BORDER-TOP: #ed8f8f 1px solid; PADDING-LEFT: 2px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 3px; MARGIN: -1px 0px 16px 40px; BORDER-LEFT: #ed8f8f 1px solid; WIDTH: 160px; COLOR: #c53032; PADDING-TOP: 4px; BORDER-BOTTOM: #ed8f8f 1px solid
+}
+.loginbox .errortip3 {
+	PADDING-RIGHT: 6px; MARGIN-TOP: 16px; PADDING-LEFT: 6px; BACKGROUND: url(http://img.china.alibaba.com/images/common/icon_v01/1000212.gif) no-repeat 6px 6px; PADDING-BOTTOM: 4px; WIDTH: 150px; TEXT-INDENT: 16px; PADDING-TOP: 7px
+}
+.loginbox .errortip5 {
+	PADDING-RIGHT: 6px; MARGIN-TOP: 16px; PADDING-LEFT: 6px; BACKGROUND: url(http://img.china.alibaba.com/images/common/icon_v01/1000212.gif) no-repeat 6px 6px; PADDING-BOTTOM: 4px; WIDTH: 150px; TEXT-INDENT: 16px; PADDING-TOP: 7px
+}
+.loginbox .errortip4 {
+	PADDING-RIGHT: 3px; MARGIN-TOP: 16px; PADDING-LEFT: 3px; PADDING-BOTTOM: 4px; WIDTH: 156px; PADDING-TOP: 4px
+}
+.loginbox .errortip5 {
+	MARGIN-LEFT: 54px
+}
+.loginbox .boldfont {
+	FONT-WEIGHT: bolder; FONT-SIZE: 14px
+}
+.loginbox DIV {
+	MARGIN-TOP: 16px
+}
+.loginbox SPAN {
+	VERTICAL-ALIGN: middle; LINE-HEIGHT: 20px
+}
+.loginbox .checkcode {
+	MARGIN-LEFT: -11px
+}
+.loginbox .ccimg {
+	VERTICAL-ALIGN: middle; WIDTH: 98px; HEIGHT: 20px
+}
+.loginbox .labeltext {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 8px; PADDING-BOTTOM: 0px; CURSOR: text; COLOR: #999; PADDING-TOP: 7px; POSITION: absolute
+}
+.loginbox .hide {
+	DISPLAY: none
+}
+.loginbox .tip {
+	COLOR: #999
+}
+.loginbox .focused {
+	BORDER-RIGHT: #7b99df 1px solid; BORDER-TOP: #7b99df 1px solid; BACKGROUND: #e6edfd; BORDER-LEFT: #7b99df 1px solid; BORDER-BOTTOM: #7b99df 1px solid
+}
+A.freeregister {
+	DISPLAY: block; BACKGROUND: url(http://img.china.alibaba.com/images/cn/member/signin/freereg.gif) no-repeat 0px 0px; WIDTH: 121px; HEIGHT: 41px
+}
+A.freeregister:hover {
+	BACKGROUND-POSITION: 0px -56px
+}
+.loginbox .adjustml {
+	MARGIN-LEFT: 15px
+}
+.logindiv .adjustml {
+	MARGIN-LEFT: 15px
+}
+#ccimg {
+	CURSOR: pointer
+}
+.loginright {
+	BORDER-RIGHT: #adadad 1px solid; BORDER-TOP: #adadad 1px solid; FLOAT: left; BORDER-LEFT: #adadad 1px solid; WIDTH: 360px; BORDER-BOTTOM: #adadad 1px solid
+}
+.loginalipay {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 20px; BACKGROUND: url(http://) no-repeat -156px -361px; PADDING-BOTTOM: 0px; PADDING-TOP: 0px; HEIGHT: 16px
+}
+.errorbox {
+	BORDER-RIGHT: #ffd4ad 1px solid; BORDER-TOP: #ffd4ad 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND: url(http://img.china.alibaba.com/images/common/icon_v01/1000212.gif) no-repeat 12px 12px; BORDER-LEFT: #ffd4ad 1px solid; WIDTH: 177px; COLOR: #ff0000; BORDER-BOTTOM: #ffd4ad 1px solid; HEIGHT: 50px
+}
+.errorbox .textdiv1 {
+	MARGIN-TOP: 12px; MARGIN-LEFT: 32px
+}
+.errorbox .textdiv2 {
+	MARGIN-LEFT: 32px
+}
+.errorbox2 {
+	BORDER-RIGHT: #ffd4ad 1px solid; BORDER-TOP: #ffd4ad 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND: url(http://img.china.alibaba.com/images/common/icon_v01/1000212.gif) no-repeat 12px 12px; BORDER-LEFT: #ffd4ad 1px solid; WIDTH: 177px; COLOR: #ff0000; BORDER-BOTTOM: #ffd4ad 1px solid; HEIGHT: 62px
+}
+.errorbox2 .textdiv1 {
+	MARGIN-TOP: 12px; MARGIN-LEFT: 32px
+}
+.errorbox2 .textdiv2 {
+	MARGIN-LEFT: 32px
+}
+.errorbox3 {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000
+}
+.errorbox4 {
+	BORDER-RIGHT: #ffd4ad 1px solid; BORDER-TOP: #ffd4ad 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 12px; BACKGROUND: url(http://img.china.alibaba.com/images/common/icon_v01/1000212.gif) no-repeat 12px 12px; BORDER-LEFT: #ffd4ad 1px solid; WIDTH: 177px; COLOR: #ff0000; BORDER-BOTTOM: #ffd4ad 1px solid; HEIGHT: 36px
+}
+.errorbox4 .textdiv1 {
+	MARGIN-TOP: 12px; MARGIN-LEFT: 32px
+}
+.left {
+	FLOAT: left
+}
+.right {
+	FLOAT: right
+}
+.top25_box {
+	CLEAR: both; HEIGHT: 25px
+}
+.loginleft {
+	FLOAT: left; WIDTH: 590px
+}
+.lh13 {
+	LINE-HEIGHT: 130%
+}
+.rmargint1 {
+	PADDING-TOP: 36px
+}
+.rmargint2 {
+	PADDING-TOP: 20px
+}
+.rpaddingb1 {
+	PADDING-BOTTOM: 50px
+}
+.rpaddingb2 {
+	PADDING-BOTTOM: 15px
+}
+.rpaddingb3 {
+	PADDING-BOTTOM: 28px
+}
+.clr {
+	CLEAR: both
+}
+.martop20 {
+	MARGIN-TOP: 20px
+}
+.freeregpad {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 24px; PADDING-TOP: 24px
+}
+.ldv1 {
+	MARGIN-TOP: 20px; FONT: bold 16px/20px "黑体"
+}
+.ldv2 {
+	MARGIN-TOP: 12px
+}
+.ldv2 A {
+	DISPLAY: block; BACKGROUND: url(http://img.china.alibaba.com/images/cn/trade/090312/9.gif); WIDTH: 116px; HEIGHT: 31px
+}

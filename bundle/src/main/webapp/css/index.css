@@ -1,0 +1,39 @@
+*{padding:0;margin:0;}
+#nav{margin:0 auto;width:440px;clear:both;overflow:hidden;}
+#nav li{padding:15px 0;width:52px;float:left;text-align:center;margin-right:10px;list-style:none;}
+#nav li a{display:block;cursor:pointer;color:#333;text-decoration:none;}
+#nav li a span{background:url(../images/index_pictrue.png) no-repeat;display:block;width:52px;height:37px;margin-bottom:15px;}
+#nav li a:hover{text-decoration:underline;}
+#nav li#info_1 a:hover{color:#54a70d;}
+#nav li#info_2 a:hover{color:#3c78e6;}
+#nav li#info_3 a:hover{color:#96cfec;}
+#nav li#info_4 a:hover{color:#e8d50f;}
+#nav li#info_5 a:hover{color:#ea4f4b;}
+#nav li#info_1 a span{background-position:0 0;}
+#nav li#info_2 a span{background-position:0 -37px;}
+#nav li#info_3 a span{background-position:0 -74px;}
+#nav li#info_4 a span{background-position:0 -111px;}
+#nav li#info_5 a span{background-position:0 -148px;}
+.procurement-top {
+float:left;
+padding-left:10px;
+}
+.procurement-top a:link, .procurement-top a:visited {
+color:#333333;
+}
+
+.procurement-top a:link,  .procurement-top a:visited {
+color:#333333;
+}
+
+
+a:link, a:visited {
+color:#333333;
+text-decoration:none;
+}
+.procurement-top a {
+background:url("../images/ph.jpg") no-repeat scroll 0 center transparent;
+color:#333333;
+padding-left:12px;
+vertical-align:top;
+}

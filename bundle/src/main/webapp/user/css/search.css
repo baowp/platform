@@ -1,0 +1,327 @@
+/* CSS Document */
+body {
+font-family:"ËÎÌו",arial;
+font-size:13px;
+line-height:22px;
+}
+body, html {
+min-height:101%;
+}
+body {
+font-family:arial,helvetica,clean,sans-serif;
+line-height:100%;
+}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td {
+margin:0;
+padding:0;
+}
+html {
+color:#000000;
+}
+.wrap {
+background:url(../images/commonregbgb.gif) no-repeat scroll center bottom #F4F8FA;
+}
+.main {
+background:url(../images/commonregbgt.gif) no-repeat scroll center top transparent;
+padding-top:8px;
+}
+.hd {
+height:55px;
+margin:0 auto;
+position:relative;
+width:952px;
+}
+.hd .la {
+background:url(../images/logo.png) no-repeat scroll left top transparent;
+cursor:pointer;
+float:left;
+height:55px;
+width:280px;
+}
+#regMain .regArea .subDiv {
+margin-left:121px;
+margin-top:0;
+}
+#regMain .regArea .subDiv .submit {
+border:0 none;
+cursor:pointer;
+font-size:14px;
+font-weight:bold;
+height:28px;
+text-align:center;
+width:232px;
+}
+#regMain .regArea .tip span {
+line-height:16px;
+}
+.hd .contact {
+font-size:12px;
+position:absolute;
+right:4px;
+text-align:right;
+top:4px;
+}
+.regContainer {
+margin:14px auto;
+padding-bottom:44px;
+width:952px;
+}
+.regContainer .tipinfo {
+background-color:#FFFFFF;
+border-left:1px solid #AFC6D3;
+border-right:1px solid #AFC6D3;
+padding-bottom:20px;
+padding-left:76px;
+padding-top:24px;
+width:873px;
+}
+.regContainer .red2 {
+color:#FF6600;
+margin:0 4px;
+}
+.regForm {
+margin:0;
+}
+input, textarea, select {
+font-family:inherit;
+font-size:inherit;
+font-weight:inherit;
+}
+#regMain {
+background-color:#FFFFFF;
+border-left:1px solid #AFC6D3;
+border-right:1px solid #AFC6D3;
+padding-bottom:24px;
+width:949px;
+}
+#regMain .regArea {
+padding-left:60px;
+}
+#regMain .regArea .line {
+clear:both;
+height:auto;
+min-height:50px;
+overflow:visible;
+}
+#regMain .regArea .inp.addcompany {
+padding-left:120px;
+}
+#regMain .regArea .inp .checkbox {
+position:relative;
+top:3px;
+width:13px;
+}
+element.style {
+position:relative;
+}
+#regMain .otherInfo {
+margin-top:0;
+}
+#regMain .regArea .info {
+height:28px;
+line-height:28px;
+overflow:hidden;
+text-align:right;
+width:120px;
+}
+#regMain .regArea .info, #regMain .regArea .inp, #regMain .regArea .tip {
+float:left;
+}
+.regContainer .red {
+color:#FF6600;
+margin:0 12px 0 4px;
+}
+#regMain .regArea .inp {
+}
+#regMain .regArea .inp input.emailName {
+width:110px;
+}
+#regMain .regArea .inp input.noime {
+ime-mode:disabled;
+}
+#regMain .regArea .inp input.iText {
+border:1px solid #7F9DB9;
+height:20px;
+line-height:16px;
+padding:4px 0 2px 4px;
+width:230px;
+}
+#regMain .regArea .inp .emailC {
+font-family:arial;
+font-size:13px;
+margin:0 4px;
+position:relative;
+}
+#regMain .regArea .inp input.emailType {
+width:79px;
+}
+#regMain .regArea .tip {
+margin-left:0;
+}
+#regMain .regArea .tip span {
+display:block;
+height:32px;
+line-height:16px;
+margin-left:8px;
+margin-top:2px;
+padding-left:20px;
+width:358px;
+}
+#regMain .regArea .info {
+line-height:28px;
+text-align:right;
+}
+element.style {
+display:inline;
+}
+element.style {
+width:40px;
+}
+element.style {
+width:100px;
+}
+label.placeholder {
+cursor:text;
+}
+element.style {
+padding-left:4px;
+}
+label.placeholder span {
+color:#CCCCCC;
+font-size:13px;
+line-height:22px;
+opacity:1;
+padding:5px 11px;
+position:absolute;
+width:230px;
+z-index:5;
+}
+#regMain .regArea .inp input.phoneNumber {
+width:103px;
+}
+#regMain .regArea .inp input.phoneArea {
+margin:0 6px;
+width:50px;
+}
+#regMain .regArea .line.oneline {
+height:40px;
+min-height:40px;
+}
+#regMain .regArea .info.identityline {
+line-height:20px;
+}
+#regMain .regArea .inp .identity {
+margin:0 22px 0 4px;
+}
+#regMain .regArea .inp input.code {
+width:66px;
+}
+#regMain .regArea .inp img.imgCode {
+cursor:pointer;
+margin-left:8px;
+vertical-align:middle;
+}
+.mod-validate-code .tip {
+margin-top:10px;
+}
+#regMain .regArea .tip span.none {
+background:none repeat scroll 0 0 transparent;
+}
+element.style {
+display:block;
+}
+#regMain .regArea .privacy {
+margin-left:146px;
+}
+#privacyhiddenIfr {
+background-color:#FFFFFF;
+display:none;
+left:0;
+opacity:0.5;
+position:absolute;
+top:0;
+}
+#privacyIfrLayer {
+background-color:#FFFFFF;
+border:1px solid #656451;
+display:none;
+left:300px;
+overflow:hidden;
+position:absolute;
+top:200px;
+z-index:10000;
+}
+.footerBox {
+border-top:3px solid #FF7300;
+clear:both;
+font-size:12px;
+line-height:150%;
+margin:10px auto;
+overflow:hidden;
+padding-bottom:10px;
+padding-top:7px;
+text-align:center;
+width:99%;
+}
+.footer {
+margin:0 auto;
+overflow:hidden;
+width:952px;
+}
+.footer ul {
+clear:both;
+float:left;
+list-style:none outside none;
+margin:3px auto;
+padding:0;
+text-align:center;
+width:100%;
+}
+.footer li {
+border-right:1px solid #666666;
+display:inline;
+font-family:Arial,Helvetica,sans-serif;
+padding:0 8px 0 4px !important;
+}
+li {
+list-style:none outside none;
+}
+.footer .no_border {
+border:0 none;
+}
+.footerBox a:link {
+color:#003278;
+text-decoration:none;
+}
+a, a:visited {
+color:#003278;
+text-decoration:none;
+}
+.footerBox {
+font-size:12px;
+line-height:150%;
+text-align:center;
+}
+element.style {
+display:none;
+position:absolute;
+z-index:9999;
+}
+element.style {
+left:-77px;
+position:absolute;
+top:-5px;
+}
+fieldset, img {
+border:0 none;
+}
+#privacyIfrLayer .btn {
+padding:16px 0;
+text-align:center;
+}
+#privacyIfrLayer .btn {
+text-align:center;
+}
+#regMain .regArea .inp input.phoneCountry {
+width:30px;
+}

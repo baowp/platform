@@ -1,0 +1,54 @@
+@CHARSET "UTF-8";
+
+#search_in_site .bodyContContent {
+	line-height: 28px;
+	text-align: left;
+}
+
+#search_in_site .bodyContContent label {
+	display: inline-block;
+}
+
+#search_in_site .bodyContContent .proName {
+	margin-left: 8px;
+}
+
+#search_in_site .bodyContContent input {
+	background: url("../images/listbg.gif") no-repeat scroll 0 0
+		transparent;
+}
+
+#search_in_site .bodyContContent input {
+	background-position: 0 0;
+	border: 1px solid #9FA3A4;
+	height: 18px;
+	margin: 0 0 0 4px;
+	padding: 3px 0 0;
+	vertical-align: middle;
+}
+
+#search_in_site .bodyContContent .proNameInput {
+	width: 128px;
+}
+
+#search_in_site .bodyContContent .pricelabel {
+	margin-left: 16px;
+}
+
+#search_in_site .bodyContContent #priceLowSide,#search_in_site .bodyContContent #priceHighSide
+	{
+	margin-left: 8px;
+	width: 50px;
+}
+
+#search_in_site .bodyContContent #searchBtnSide {
+	background-position: 0 -31px;
+	border: medium none;
+	cursor: pointer;
+	height: 26px;
+	margin-left: 48px;
+	margin-top: 4px;
+	padding: 0;
+	text-indent: -9999px;
+	width: 69px;
+}

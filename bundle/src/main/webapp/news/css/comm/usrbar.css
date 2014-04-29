@@ -1,0 +1,14 @@
+@CHARSET "UTF-8";
+
+#usrbar {
+	font-size: 12px;
+	height: 19px;
+	line-height: 19px;
+	margin-top: 4px;
+	padding-right: 10px;
+	text-align: right;
+}
+
+#usrbar a,#usrbar a:visited {
+	color: #0000CC;
+}

@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+.file{
+	width:600px;
+	height:300px;
+	margin:80px auto;
+}
+ul, menu, dir {
+	-moz-padding-start: 0px;
+    margin: 0;
+}
+li{
+	list-style-type: none; 
+}
+.file ul{
+	float:left;
+	margin-right:100px;
+}

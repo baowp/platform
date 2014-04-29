@@ -1,0 +1,63 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta http-equiv="content-language" content="en">
+<meta name="author" content="Leon Zhuang">
+<title>demo</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="jquery.timers.js"></script>
+<!-- <script type="text/javascript" src="getJsonData.php"></script> 可以用这引入数据 -->
+<script type="text/javascript"><!--
+		var mobile = ["0等奖","1等奖","2等奖","3等奖","4等奖","5等奖","6等奖","7等奖","8等奖","9等奖","10等奖","11等奖","12等奖","13等奖","14等奖","15等奖","16等奖","17等奖","18等奖","19等奖","20等奖","21等奖","22等奖","23等奖","24等奖","25等奖","26等奖","27等奖","28等奖","29等奖","30等奖","31等奖","32等奖","33等奖","34等奖","35等奖","36等奖","37等奖","38等奖","39等奖","40等奖","41等奖","42等奖","43等奖","44等奖","45等奖","46等奖","47等奖","48等奖","49等奖","50等奖","51等奖","52等奖","53等奖","54等奖","55等奖","56等奖","57等奖","58等奖","59等奖","60等奖","61等奖","62等奖","63等奖","64等奖","65等奖","66等奖","67等奖","68等奖","69等奖","70等奖","71等奖","72等奖","73等奖","74等奖","75等奖","76等奖","77等奖","78等奖","79等奖","80等奖","81等奖","82等奖","83等奖","84等奖","85等奖","86等奖","87等奖","88等奖","89等奖","90等奖","91等奖","92等奖","93等奖","94等奖","95等奖","96等奖","97等奖","98等奖","99等奖"];
+    function GetRnd(min,max){
+        randnum = parseInt(Math.random()*(max-min+1));
+        return randnum;
+    }
+    function autoScroll(obj){
+        var randNumber = mobile[GetRnd(0,mobile.length-1)];
+        $(obj).empty().text(randNumber);   
+    }
+    function delJsonElement(data){
+        
+    }
+
+    function runScroll(){
+        intervalID = setInterval('autoScroll("#scroll")',10);
+        return intervalID;    
+    }
+
+
+    var t = 1;
+    $(document).ready(function(){
+    	$("#stop").attr("disabled", true);
+        $("#start").click(function(){
+        	$("#stop").attr("disabled", false);
+        	$("#start").attr("disabled", true);
+        	intervalID = runScroll();
+        })
+        $("#stop").click(function(){
+        	$("#stop").attr("disabled", true);
+        	intervalID=clearInterval(intervalID)
+        	alert($("#scroll").html())
+        })
+	
+     
+    });  
+    function stop(){
+    	intervalID=clearInterval(intervalID)
+    }
+//--></script>
+</head>
+
+<body>
+<div class="main">
+
+
+  <div id="scroll" class="transparent"></div>
+  <input type="button" id="start" value="开始"/>
+  <input type="button" id="stop" value="停止"/>
+</div>
+</body>
+</html>

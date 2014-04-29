@@ -1,0 +1,59 @@
+#rbbox{position:absolute;right:0;bottom:0;width:290px;height:0px;overflow:hidden;} 
+.button{display:inline;float:right;font-size:13px;cursor:pointer} 
+div { margin:auto;}
+#nb_header{
+  width:290px; 
+  margin-top:10px;
+  background:url(bc.jpg) no-repeat scroll 0 0 transparent;
+  }
+.alpha{
+  width:29px;
+  filter:alpha(opacity=50);
+  opacity:0.6;
+  -moz-opacity:0.5;
+ } 
+.nb_01{
+  height:30px;
+  text-align:left;
+  padding-top:5px;
+  padding-left:10px;
+  }
+.f{
+  height:30px;
+  line-height:30px;
+  text-align:left;
+  font-size:14px;
+  font-weight:700;
+  color:#0066CC;
+  padding-left:105px;
+  background:url(logo.png) no-repeat;
+  }
+.nb_02{
+  padding:10px;
+  height:130px;
+  }
+.t{
+  height:5px;
+  border-top:#C8E8F0 1px dotted;
+  }
+.nb_c{
+  height:100px;
+  line-height:25px;
+  text-align:left;
+  padding-left:10px;
+  padding-top:10px;
+  }
+.font{
+  color:#0066CC;
+  font-size:15px;
+  line-height:35px;
+  font-family:Arial;
+  }
+.nb_v{
+  border-bottom:#C8E8F0 1px dotted;
+  height:20px;
+  }
+  .stateValue{
+  	height:20px;
+	background-image: url("../images/right01.jpg");
+}

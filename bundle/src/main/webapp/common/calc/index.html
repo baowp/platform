@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="gbk" />
+    <title>工具箱-计算器</title>
+    <link rel="stylesheet" href="css/css.css" />
+    <style>
+    html, body {
+        height: 100%;
+    }
+    body {
+        background: url(http://i04.c.aliimg.com/cms/upload/other/201012152317/calc/bg.png);
+    }
+    
+    #calc {
+        margin: 0 auto;
+        padding-top: 20px;
+        width: 409px;
+    }
+    #result-wrap {
+        width: 409px;
+        height: 70px;
+        background: url(http://i03.c.aliimg.com/cms/upload/other/201012161545/calc/normal.png) 0 0;
+    }
+    #jsq-result {
+        overflow: hidden;
+        padding-top: 14px;
+        margin-left: 30px;
+        width: 348px;
+        height: 51px;
+        font-family: Arial;
+        font-size: 39px;
+        font-weight: bold;
+        line-height: 50px;
+        text-align: right;
+    }
+    
+    .calc-btn {
+        display: block;
+        overflow: hidden;
+        background-color: #2b2b2b;
+        background-image: url(http://i03.c.aliimg.com/cms/upload/other/201012161545/calc/normal.png);
+        text-indent: -5000px;
+    }
+    .calc-btn:hover {
+        background-image: url(http://i02.c.aliimg.com/cms/upload/other/201012161545/calc/hover.png);
+    }
+    .calc-btn:active {
+        background-image: url(http://i04.c.aliimg.com/cms/upload/other/201012161545/calc/active.png);
+    }
+    
+    #num-7 {
+        background-position: 0 -70px;
+        width: 84px;
+        height: 61px;
+    }
+    #num-8 {
+        background-position: -84px -70px;
+        width: 77px;
+        height: 61px;
+    }
+    #num-9 {
+        background-position: -161px -70px;
+        width: 80px;
+        height: 61px;
+    }
+    #op-div {
+        background-position: -241px -70px;
+        width: 82px;
+        height: 61px;
+    }
+    #clear-all {
+        background-position: -323px -70px;
+        width: 86px;
+        height: 61px;
+    }
+    
+    #num-4 {
+        background-position: 0 -131px;
+        width: 84px;
+        height: 60px;
+    }
+    #num-5 {
+        background-position: -84px -131px;
+        width: 77px;
+        height: 60px;
+    }
+    #num-6 {
+        background-position: -161px -131px;
+        width: 80px;
+        height: 60px;
+    }
+    #op-mul {
+        background-position: -241px -131px;
+        width: 82px;
+        height: 60px;
+    }
+    #op-result {
+        background-position: -323px -131px;
+        width: 86px;
+        height: 181px;
+    }
+    
+    #num-1 {
+        background-position: 0 -191px;
+        width: 84px;
+        height: 57px;
+    }
+    #num-2 {
+        background-position: -84px -191px;
+        width: 77px;
+        height: 57px;
+    }
+    #num-3 {
+        background-position: -161px -191px;
+        width: 80px;
+        height: 57px;
+    }
+    #op-minus {
+        background-position: -241px -191px;
+        width: 82px;
+        height: 57px;
+    }
+    
+    #num-0 {
+        background-position: 0 -248px;
+        width: 84px;
+        height: 64px;
+    }
+    #negative {
+        background-position: -84px -248px;
+        width: 77px;
+        height: 64px;
+    }
+    #decimal {
+        background-position: -161px -248px;
+        width: 80px;
+        height: 64px;
+    }
+    #op-plus {
+        background-position: -241px -248px;
+        width: 82px;
+        height: 64px;
+    }
+    
+    </style>
+</head>
+<body><script type=text/javascript src=" http://style.china.alibaba.com/js/common/beacon.js"></script>       <script type=text/javascript>var dmtrack_c='{-}'; var dmtrack_pageid='da6d39326e4bc3511297923808'; sk_dmtracking();</script>       <noscript><img src=" http://dmtracking.alibaba.com/b.jpg?cD0yJnU9ey93b3JrLmNoaW5hLmFsaWJhYmEuY29tL2hvbWUvYm94ZXMvY2FsYy5odG19Jm09e0dFVH0mcz17MjAwfSZyPXtodHRwOi8vd29yay5jaGluYS5hbGliYWJhLmNvbS9ob21lL2JveGVzL2JveGVzLmh0bT90cmFjZWxvZz13b3JrXzBfbF9hbG1hbmNlfSZhPXtjX210PTN8Y19taWQ9ZGFseW5ldHxjX2xpZD1kYWx5bmV0fSZiPXstfSZjPXstfQ==&ver=40&pageid=da6d39326e4bc3511297923808&time=1297923808" width="1" height="1" style="display:none"></noscript>
+
+    <div id="calc">
+        <table>
+            <tr>
+                <td colspan="5"><div id="result-wrap"><div id="jsq-result"></div></div></td>
+            </tr>
+            <tr>
+                <td><a id="num-7" class="calc-btn" href="#" onclick="inputNum(7);">7</a></td>
+                <td><a id="num-8" class="calc-btn" href="#" onclick="inputNum(8);">8</a></td>
+
+                <td><a id="num-9" class="calc-btn" href="#" onclick="inputNum(9);">9</a></td>
+                <td><a id="op-div" class="calc-btn" href="#" onclick="operate('÷');">÷</a></td>
+                <td><a id="clear-all" class="calc-btn" href="#" onclick="clearAll();">CE</a></td>
+            </tr>
+            <tr>
+                <td><a id="num-4" class="calc-btn" href="#" onclick="inputNum(4);">4</a></td>
+                <td><a id="num-5" class="calc-btn" href="#" onclick="inputNum(5);">5</a></td>
+
+                <td><a id="num-6" class="calc-btn" href="#" onclick="inputNum(6);">6</a></td>
+                <td><a id="op-mul" class="calc-btn" href="#" onclick="operate('×');">×</a></td>
+                <td rowspan="3"><a id="op-result" class="calc-btn" href="#" onclick="operate('=');">=</a></td>
+            </tr>
+            <tr>
+                <td><a id="num-1" class="calc-btn" href="#" onclick="inputNum(1);">1</a></td>
+                <td><a id="num-2" class="calc-btn" href="#" onclick="inputNum(2);">2</a></td>
+
+                <td><a id="num-3" class="calc-btn" href="#" onclick="inputNum(3);">3</a></td>
+                <td><a id="op-minus" class="calc-btn" href="#" onclick="operate('－');">－</a></td>
+            </tr>
+            <tr>
+                <td><a id="num-0" class="calc-btn" href="#" onclick="inputNum(0);">0</a></td>
+                <td><a id="negative"  class="calc-btn" href="#" onclick="negative();">+/-</a></td>
+                <td><a id="decimal" class="calc-btn" href="#" onclick="inputDecimal();">.</a></td>
+
+                <td><a id="op-plus" class="calc-btn" href="#" onclick="operate('+');">+</a></td>
+            </tr>
+        </table>
+    </div>
+    <div id="jsq-prompt" style="display: none;"></div>
+</body>
+<script>
+var nLast = 0;
+var bNewNum = false;
+var sLastOpr = '';
+var sLastPrompt = '';
+var result;
+
+var sLastPro = '';
+var prompt;
+
+function get(id) {
+    return document.getElementById(id);
+}
+
+function fInit() {
+    result = get('jsq-result');
+    result.innerHTML = '0';
+    prompt = get('jsq-prompt');
+}
+
+function inputNum (num) {
+    if (bNewNum) {
+        result.innerHTML  = num;
+        bNewNum = false;
+        if(sLastOpr == "="){
+            prompt.innerHTML = num;
+        }else{
+            prompt.innerHTML += num;
+        }
+    }else {
+        if (result.innerHTML == "0"){
+            result.innerHTML = num;
+            prompt.innerHTML = num;
+        }else{
+            result.innerHTML += num;
+            prompt.innerHTML += num;
+            
+        }
+    }
+    sLastPrompt = prompt.innerHTML;
+}
+
+
+function operate(opr)
+{
+    if(!sLastPrompt){
+        return;
+    }
+    var Readout = result.innerHTML;
+    if (bNewNum && sLastOpr != "="){
+        switch(opr)
+        {
+            case '+' :
+            case '－' :
+                prompt.innerHTML = sLastPrompt+opr;	//字符串相加	
+                break;
+            case '×' :
+            case '÷' :
+                prompt.innerHTML = "("+sLastPrompt+")"+opr;
+                break;
+            default :
+                break;
+        }
+        sLastOpr = opr;
+    }else{
+        bNewNum = true;
+        switch(sLastOpr)
+        {
+            case '+' :
+                nLast += parseFloat(Readout);
+                break;
+            case '－' :
+                nLast -= parseFloat(Readout);
+                break;
+            case '×' :
+                nLast *= parseFloat(Readout);
+                break;
+            case '÷' :
+                nLast /= parseFloat(Readout);
+                break;
+            default :
+                nLast = parseFloat(Readout);
+                break;
+        }
+        switch(opr)
+        {
+            case '+' :
+            case '－' :
+                prompt.innerHTML += opr;
+                break;
+            case '×' :
+            case '÷' :
+                if(sLastOpr == '×' || sLastOpr == '÷' || sLastOpr == ""){
+                    prompt.innerHTML += opr;
+                }else{
+                    prompt.innerHTML = "("+prompt.innerHTML+")"+opr;
+                }
+                break;
+            case '=' :
+                break;
+            default :
+                break;
+        }
+        if(nLast *  100000 < Number.MAX_VALUE){
+            nLast = Math.round(nLast * 100000) / 100000;				
+        }
+        result.innerHTML = nLast;
+        sLastOpr = opr;
+    }
+}
+
+function inputDecimal()
+{
+    var value = result.innerHTML;
+    if (bNewNum) {
+        value = "0.";
+        prompt.innerHTML += "0.";
+        bNewNum = false;
+    }else{
+        if (value.indexOf(".") == -1){
+            value += ".";
+            if(prompt.innerHTML == ""){
+                prompt.innerHTML = "0.";
+            }else{
+                prompt.innerHTML += "."; 
+            }
+        }
+    }
+    result.innerHTML = value;
+}
+
+function clearAll()
+{
+    nLast = 0;
+    sLastOpr = "";
+    result.innerHTML = "0";
+    prompt.innerHTML = "";
+    bNewNum = true;
+}
+
+function negative() 
+{
+    result.innerHTML = parseFloat(result.innerHTML) * -1;
+    prompt.innerHTML = "-("+prompt.innerHTML+")";
+}
+
+fInit();
+
+var elmCalc = get('calc');
+var links = elmCalc.getElementsByTagName('a');
+for (var i = 0, c = links.length; i < c; i++) {
+    (function() {
+        var onclick = links[i].onclick;
+        links[i].onclick = function() {
+            onclick.apply(this, arguments);
+            return false;
+        };
+        links[i].onmouseup = function() {
+            this.blur();
+        };
+    })();
+}
+
+var hoverImage = new Image();
+hoverImage.src = 'http://i02.c.aliimg.com/cms/upload/other/201012161545/calc/hover.png';
+var activeImage = new Image();
+hoverImage.src = 'http://i04.c.aliimg.com/cms/upload/other/201012161545/calc/active.png';
+</script>
+</html>

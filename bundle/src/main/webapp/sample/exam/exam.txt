@@ -1,0 +1,6 @@
+1. 实例化一个Map实现类的，并成对打印其键值。
+
+2. js验证表单，name:required,age:number,email:x@x.x
+	错误提示不要用alert,在后面的error span中显示，数据不符合条件不能提交，
+	错误提示应该用红色字体，相应 的js和css文件都已引入.
+	

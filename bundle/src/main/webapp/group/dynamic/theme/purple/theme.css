@@ -1,0 +1,83 @@
+@CHARSET "UTF-8";
+
+.outBg {
+	background:url(/group/dynamic/theme/purple/images/purple_bg.jpg) repeat scroll 0 0 transparent;
+}
+
+.inBg {
+	background: url(images/inBg.jpg) repeat scroll 0 0 #fff;
+}
+
+.headTopic {
+	background: url(images/banner.jpg) repeat scroll 0 0 transparent;
+	height: 200px;
+}
+
+.topbaner {
+	background: url(/group/dynamic/theme/purple/images/topbanerBg.jpg) no-repeat scroll 0 0 transparent;
+}
+
+.chinaname {
+	color: #fff;
+}
+
+
+.headerMenuBg {
+	background: url(images/navBg.jpg)  scroll 0 0 transparent;
+}
+
+.headerMenuBorder {
+	border-style: solid;
+	border-width: 0px 0px 0;
+	height: 32px;
+}
+
+.headerMenuList a {
+	color: #9B1CE7;
+}
+
+.headerMenuLiCheck {
+	border-color: #5e4e3a;
+	border-style: none;
+	height:28px;
+}
+.headerMenuLiCheckBg{
+	background:url(/group/dynamic/theme/purple/images/navBg_a.png) repeat scroll center center transparent;
+}
+
+.headerMenuLiCheck a {
+	color: #fff;
+}
+
+.headerMenuBottom {
+	border-bottom-color: #C743BF;
+}
+
+.bodyCont {
+	border:1px solid #C5B3EF;
+}
+
+.bodyContTitle {
+	background: url(/group/dynamic/theme/purple/images/titleBg.gif) repeat scroll 0 0;
+	background-color: #9C8370;
+}
+
+.bodyContTitle .titleLinkColor {
+	color: #AB3801;
+}
+
+.bodyContContent {
+	color: #fff;
+}
+
+.bodyContContent a:link {
+	color: #fff;
+}
+
+.topicLink {
+	color: #FFF;
+}
+
+.mainTextColor {
+	color: #fff;
+}

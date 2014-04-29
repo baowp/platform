@@ -1,0 +1,719 @@
+.work-content-r-c {
+	
+}
+
+.work-content-r-c-wrap {
+	padding: 4px;
+}
+
+.mod-wp-tablist {
+	border-bottom: 1px solid #CDE2FB;
+	margin: 0 -4px;
+}
+
+.mod-wp-tablist ul {
+	height: 34px;
+	margin: 0 12px;
+}
+
+.clr {
+	width:269px;
+}
+.clr td{
+	white-space: nowrap;
+	overflow:hidden;
+}
+ul,ol {
+	list-style: none outside none;
+}
+
+.mod-wp-tablist li.wp-selected {
+	background-position: 0 0;
+	height: 34px;
+	margin-top: -1px;
+	top: 4px;
+}
+
+index-  ...rge.css   (第   13 行  ) .mod-wp-tablist li {
+	background-position: 0 -40px;
+	float: left;
+	font-weight: bold;
+	height: 30px;
+	line-height: 32px;
+	margin: 4px 4px 0 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.mod-wp-tablist li {
+	background-position: 0 -40px;
+	float: left;
+	font-weight: bold;
+	height: 30px;
+	line-height: 32px;
+	margin: 4px 4px 0 0;
+	overflow: hidden;
+	position: relative;
+}
+
+.mod-wp-tablist li.fixed-tab a {
+	padding: 0 16px;
+}
+
+.mod-wp-tablist li.wp-selected a {
+	background-position: 100% -128px;
+	cursor: default;
+}
+
+.mod-wp-tablist li a:link,.mod-wp-tablist li a:visited,.mod-wp-tablist li a:hover
+	{
+	color: #255593;
+	text-decoration: none;
+}
+
+.mod-wp-tablist li a {
+	background-position: 100% -169px;
+	display: block;
+	padding: 0 34px 0 16px;
+}
+
+.mod-wp-tablist li,.mod-wp-tablist li a,.mod-wp-tablist li .close {
+	background:
+		url("img/tabs.gif")
+		no-repeat scroll 0 0 transparent;
+}
+
+.mod-wp-container {
+	background-color: #FFFFFF;
+	margin: 0 -4px;
+	padding: 4px 4px 0;
+}
+
+.mod-wp-container .mod-wp-tab {
+	
+}
+
+.wp-tab-index-wrap {
+	
+}
+
+.work-content-table {
+	position: relative;
+	table-layout: fixed;
+	width: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.work-content-table td.table-td-layout {
+	vertical-align: top;
+}
+
+.work-content-r-l {
+	width: 500px;
+}
+
+body,button,input,select,textarea,td {
+	color: #333333;
+	font: 12px/1.5 Tahoma, Arial, "宋体", sans-serif;
+}
+
+.work-content-r-l-wrap {
+	overflow:hidden;
+	*width:548px;
+}
+.work-content-r-l-wrap-ent{
+	padding-right: 4px;
+	width:300px;
+}
+
+.mod-wp-win {
+	float:left;
+	margin-right: 2px;
+    width: 269px;
+	background-color: #FFFFFF;
+	border: 1px solid #D4E7FF;
+}
+
+.mod-wp-win .win-head-wrap {
+	border-bottom: 1px solid #D4E7FF;
+	height: 25px;
+	padding: 1px 1px 0;
+}
+
+body,h1,h2,h3,h4,h5,h6,hr,p,blockquote,dl,dt,dd,ul,ol,li,pre,fieldset,lengend,button,input,textarea,form,th,td
+	{
+	margin: 0;
+	padding: 0;
+}
+
+.mod-info-center {
+	line-height: 150%;
+	margin: 4px 6px 0 16px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.mod-info-center-wrap {
+	font-family: "宋体";
+	text-align: left;
+}
+
+ul,ol {
+	list-style: none outside none;
+}
+
+.mod-info-center li {
+	background:
+		url("img/dotline.gif")
+		repeat-x scroll 0 bottom transparent;
+	overflow: hidden;
+	padding: 8px 0;
+}
+
+.mod-info-center .ic-l {
+	float: left;
+	width: 97px;
+}
+
+.mod-info-center .ic-icon-3 {
+	background-position: -85px -75px;
+}
+
+.mod-info-center .ic-icon-3 {
+	background-position: -85px -75px;
+}
+
+.mod-info-center .ic-icon-1,.mod-info-center .ic-icon-2,.mod-info-center .ic-icon-3
+	{
+	color: #666666;
+	font-weight: bold;
+	margin-left: 9px;
+	padding-left: 22px;
+}
+
+.mod-info-center .ic-icon-1,.mod-info-center .ic-icon-2,.mod-info-center .ic-icon-3,.mod-info-center .ic-btn
+	{
+	background:
+		url("img/info-icon.gif")
+		no-repeat scroll 0 0 transparent;
+}
+
+.mod-info-center .ic-r {
+	float: right;
+	width: 70px;
+}
+
+.mod-info-center .ic-btn {
+	background-position: 0 0;
+	display: inline-block;
+	height: 22px;
+	line-height: 150%;
+	text-align: center;
+	text-decoration: none;
+	width: 64px;
+}
+
+.mod-info-center .ic-icon-1,.mod-info-center .ic-icon-2,.mod-info-center .ic-icon-3,.mod-info-center .ic-btn
+	{
+	background:
+		url("img/info-icon.gif")
+		no-repeat scroll 0 0 transparent;
+}
+
+
+.mod-info-center .ic-btn em {
+	cursor: pointer;
+	display: inline-block;
+	margin-top: 2px;
+}
+
+address,cite,dfn,em,var {
+	font-style: normal;
+}
+
+.mod-info-center .ic-m {
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+.mod-info-center-wrap .ic-m em {
+	color: #FF7300;
+	font-weight: bold;
+	margin: 0 2px;
+}
+
+address,cite,dfn,em,var {
+	font-style: normal;
+}
+
+.mod-info-center .ic-icon-2 {
+	background-position: -85px -39px;
+}
+
+.mod-wp-win {
+	background-color: #FFFFFF;
+	border: 1px solid #D4E7FF;
+}
+
+.mt8 {
+	margin-top: 8px;
+}
+
+.mod-wp-win .win-head-wrap {
+	border-bottom: 1px solid #D4E7FF;
+	height: 25px;
+	padding: 1px 1px 0;
+}
+
+
+.mod-line-chart {
+}
+.mod-line-chart td{
+	border-bottom:1px dashed #E8F2FD;
+	overflow:hidden;
+}
+.mod-line-chart .loadingimg {
+	margin: 12px auto 8px;
+	vertical-align: middle;
+}
+
+.line-chart-wrap.no-data {
+	margin: 12px 8px 12px 18px;
+	width: auto;
+}
+
+
+
+.mod-wp-win {
+	background-color: #FFFFFF;
+	border: 1px solid #D4E7FF;
+}
+
+.mod-wp-win .win-head-wrap {
+	border-bottom: 1px solid #D4E7FF;
+	height: 25px;
+	padding: 1px 1px 0;
+}
+.mod-pie-chart-wrap {
+	text-align: left;
+}
+
+.work-content-table td.table-td-layout {
+	vertical-align: top;
+}
+
+.work-content-r-r {
+	width: 248px;
+}
+
+.mod-wp-win-tabs {
+	background-color: #FFFFFF;
+	width:272px;
+}
+
+.mod-wp-win-tabs .win-tabs-list {
+	border-bottom: 1px solid #D4E7FF;
+	height: 27px;
+}
+.mod-wp-win-tabs .win-tabs-list li.selected em {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 13px;
+    margin: -1px;
+    padding: 7px 10px;
+}
+
+.mod-wp-win-tabs .win-tabs-list li.selected {
+	color: #666666;
+	margin-top: -1px;
+	top: 1px;
+}
+
+.mod-wp-win-tabs .win-tabs-list li em {
+	background:
+		url("img/wpwinheadbg.gif")
+		repeat-x scroll 0 0 transparent;
+	float: left;
+	height: 12px;
+	line-height: 12px;
+	padding: 6px 10px;
+}
+
+.mod-wp-win-tabs .win-tabs-list li em {
+	background:
+		url("img/wpwinheadbg.gif")
+		repeat-x scroll 0 0 transparent;
+	float: left;
+	height: 12px;
+	line-height: 12px;
+	padding: 6px 10px;
+}
+
+address,cite,dfn,em,var {
+	font-style: normal;
+}
+
+.mod-wp-win-tabs .win-tabs-list li {
+	border: #D4E7FF solid 1px;
+	color: #0067D0;
+	cursor: default;
+	float: left;
+	font-weight: bold;
+	margin-right: 4px;
+	padding: 1px 1px 0;
+	position: relative;
+	text-align: center;
+	top: 1px;
+}
+.mod-public-bulletin .notice-list {
+	padding: 4px 16px;
+}
+
+.mod-public-bulletin .notice-list li,.mod-public-tip li {
+	background:
+		url("img/dotline.gif")
+		repeat-x scroll 0 bottom transparent;
+	overflow: hidden;
+	padding: 8px 0;
+}
+
+.mod-public-bulletin .notice-list li a {
+	background:
+		url("img/arr.gif")
+		no-repeat scroll 0 4px transparent;
+	overflow: hidden;
+	padding-left: 8px;
+}
+
+.mod-public-bulletin .notice-list li.no-dot,.mod-public-tip li.no-dot {
+	background: none repeat scroll 0 0 transparent;
+}
+
+.mod-public-bulletin .notice-list li,.mod-public-tip li {
+	background:
+		url("img/dotline.gif")
+		repeat-x scroll 0 bottom transparent;
+	overflow: hidden;
+	padding: 8px 0;
+}
+
+.mod-public-tip {
+	height: 110px;
+}
+
+.mod-public-bulletin {
+	border-color: -moz-use-text-color #D4E7FF;
+	border-left: 1px solid #D4E7FF;
+	border-right: 1px solid #D4E7FF;
+	border-style: none solid;
+	border-width: medium 1px;
+	display: none;
+}
+
+.mod-wp-win {
+	background-color: #FFFFFF;
+	border: 1px solid #D4E7FF;
+}
+
+.mt8 {
+	margin-top: 8px;
+}
+
+.mod-wp-win .win-head-wrap {
+	border-bottom: 1px solid #D4E7FF;
+	height: 25px;
+	padding: 1px 1px 0;
+}
+
+.mod-mytools-wrap {
+	margin: 8px auto 12px;
+	width: 200px;
+}
+
+.mod-mytools .tool-v12 {
+	background:
+		url("img/1.gif")
+		no-repeat scroll 23px 6px transparent;
+}
+
+.mod-mytools .tool-v22 {
+	background:
+		url("img/2.gif")
+		no-repeat scroll 24px 7px transparent;
+}
+
+.mod-mytools a {
+	display: inline-block;
+	margin: 0 10px 8px;
+	padding-top: 34px;
+	text-align: center;
+	width: 74px;
+}
+
+.mod-mytools .tool-v82 {
+	background:
+		url("img/8.gif")
+		no-repeat scroll 23px 6px transparent;
+}
+
+.mod-mytools a {
+	display: inline-block;
+	margin: 0 10px 8px;
+	padding-top: 34px;
+	text-align: center;
+	width: 74px;
+}
+
+.mod-mytools .tool-v92 {
+	background:
+		url("img/9.gif")
+		no-repeat scroll 23px 6px transparent;
+}
+
+.mod-mytools a {
+	display: inline-block;
+	margin: 0 10px 8px;
+	padding-top: 34px;
+	text-align: center;
+	width: 74px;
+}
+
+.mod-wp-win .win-head-wrap {
+	border-bottom: 1px solid #D4E7FF;
+	height: 25px;
+	padding: 1px 1px 0;
+}
+
+.mod-wp-win .win-head {
+	background:
+		url("img/wpwinheadbg.gif")
+		repeat-x scroll 0 0 transparent;
+	color: #0066CC;
+	height: 25px;
+	line-height: 25px;
+	text-align: left;
+	text-indent: 6px;
+}
+
+.mod-my-say {
+	padding-top: 8px;
+	position: relative;
+	text-align: center;
+}
+
+.mt8 {
+	margin-top: 8px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+.mod-service-center .content {
+	display: block;
+	overflow: hidden;
+	padding: 0 8px 8px;
+	width: 218px;
+}
+
+.mod-service-center .hotline {
+	border-bottom: 1px dashed #E3E3E5;
+	padding-bottom: 8px;
+}
+
+.wrp {
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+.mod-service-center .hotline .hotline-title {
+	background-position: 4px -143px;
+}
+
+.mod-service-center .hotline span,.mod-service-center .hotline strong,.mod-service-center .service-t span,.mod-service-center .service-t strong
+	{
+	display: block;
+	line-height: 18px;
+	padding: 0 0 0 20px;
+}
+
+.icon-v1 {
+	background-image:
+		url("img/work-icon-v1.png");
+}
+
+.icon-v1,.icon-v2,.icon-v3 {
+	background-repeat: no-repeat;
+}
+
+.b {
+	font-weight: bold;
+}
+
+.second-l span,.hotline .orange {
+	font-family: "Tahoma";
+}
+
+.orange,.orange a:link,.orange a:visited {
+	color: #FF7300;
+}
+
+.mod-service-center .service-t {
+	padding: 8px 0 0;
+}
+
+.wrp {
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+.mod-service-center .service-t .service-title {
+	background-position: 2px -106px;
+}
+
+.mod-service-center .opr-btn {
+	display: inline-block;
+	margin: 8px 0 0;
+	padding: 0 0 0 20px;
+	width: 198px;
+}
+
+.mod-service-center .opr-btn a {
+	margin: 0 12px 0 0;
+}
+
+a:link,a:visited {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+.btn-a2 .btn-l {
+	background-position: left top;
+	padding-left: 2px;
+}
+
+.btn-a2 span {
+	background:
+		url("img/btn3.png")
+		no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 22px;
+}
+
+.btn-a2 button {
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	cursor: pointer;
+	height: 22px;
+	margin: 0;
+	outline: medium none;
+	padding: 0;
+	text-align: center;
+}
+
+.btn-a2 em {
+	color: #0066CC !important;
+	font: 12px/20px 宋体;
+	padding: 0 0 0 4px;
+}
+
+address,cite,dfn,em,var {
+	font-style: normal;
+}
+
+.btn-a2 .btn-r {
+	background-position: right top;
+	width: 2px;
+}
+
+.btn-a2 span {
+	background:
+		url("img/btn3.png")
+		no-repeat scroll 0 0 transparent;
+	cursor: pointer;
+	display: block;
+	float: left;
+	height: 22px;
+}
+
+.line-chart-wrap li {
+	background:
+		url("img/dotline.gif")
+		repeat-x scroll 0 bottom transparent;
+	overflow: hidden;
+	padding: 8px 0;
+}
+
+.line-chart-wrap .ic-l {
+	float: left;
+	width: 97px;
+}
+
+.line-chart-wrap .ic-r {
+	float: right;
+	width: 70px;
+}
+
+.line-chart-wrap .ic-btn {
+	background-position: 0 0;
+	display: inline-block;
+	height: 22px;
+	line-height: 150%;
+	text-align: center;
+	text-decoration: none;
+	width: 64px;
+}
+
+.line-chart-wrap .ic-r .ic-btn
+	{
+	background:
+		url("img/info-icon.gif")
+		no-repeat scroll 0 0 transparent;
+}
+
+.line-chart-wrap .ic-btn:hover {
+	background-position: 0 -24px;
+	color: #06c;
+	text-decoration: none;
+}
+.line-chart-wrap .ic-m em {
+    color: #FF7300;
+    font-weight: bold;
+    margin: 0 2px;
+}
+.line-chart-wrap .ic-icon-1, .line-chart-wrap .ic-icon-2, .line-chart-wrap .ic-icon-3 {
+    color: #666666;
+    font-weight: bold;
+    margin-left: 9px;
+    padding-left: 22px;
+}
+.showThis{
+	display: block;
+}
+.mod-public-tip .tip {
+    padding: 0 0 0 16px;
+}.mod-public-bulletin .notice-list li.no-dot, .mod-public-tip li.no-dot {
+    background: none repeat scroll 0 0 transparent;
+}.mod-public-tip li {
+    padding: 8px 0 4px;
+}
+#mod-line-chart-win{
+	width:542px;
+}
+.win-head .tailor{
+	margin-right:5px;
+	float:right;
+	border: medium none;
+    height: 23px;
+    width: 76px;
+	background:url(/user/platform/images/btn_normal.png) no-repeat scroll 0 0 transparent;
+}
+.win-head .tailor:hover{
+	background:url(/user/platform/images/btn_hover.png);
+}

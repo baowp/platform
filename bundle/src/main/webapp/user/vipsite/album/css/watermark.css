@@ -1,0 +1,121 @@
+#new-content {
+	background-color: #FFFFFF;
+	float: left;
+}
+
+#new-content {
+	float: right;
+	padding-top: 8px;
+	width: 792px;
+}
+
+.cell-head {
+	margin-bottom: 15px;
+}
+
+body,div,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td
+	{
+	margin: 0;
+	padding: 0;
+}
+
+.cell-head h3 {
+	border-left: 5px solid #0065CB;
+	font-size: 13px;
+	font-weight: bold;
+	padding-left: 10px;
+}
+
+.cell-con {
+	overflow: hidden;
+}
+
+.img-wrap {
+	border: 1px solid #E5E5E5;
+	float: left;
+	margin: 0 20px 0 0;
+	padding: 3px;
+}
+
+.img-wrap img {
+	display: block;
+	height: 311px;
+	width: 311px;
+}
+
+fieldset,img {
+	border: medium none;
+}
+
+.cell-con form {
+	float: left;
+}
+
+#new-content p {
+	line-height: 180%;
+}
+
+.op-box p {
+	margin-bottom: 8px;
+	overflow: hidden;
+}
+
+.op-box p input {
+	margin-right: 8px;
+	vertical-align: -2px;
+}
+
+button,input,select,textarea {
+	font-size: 100%;
+}
+
+#new-content p {
+	line-height: 180%;
+}
+
+.op-box p {
+	margin-bottom: 8px;
+	overflow: hidden;
+}
+
+.btn {
+	background:
+		url("http://img.china.alibaba.com/cms/upload/2011/868/140/41868_1213880884.gif")
+		no-repeat scroll 0 0 transparent;
+	border: medium none;
+	color: #7B1111;
+	float: left;
+	font-size: 13px;
+	font-weight: bold;
+	height: 31px;
+	margin-top: 4px;
+	width: 94px;
+}
+
+.op-box p.btn-box .save-tip {
+	border: 2px solid #0066CC;
+	float: left;
+	font-size: 13px;
+	height: 36px;
+	line-height: 36px;
+	margin-left: 20px;
+	width: 122px;
+}
+#parent {
+	cursor: pointer;
+}
+#www {
+	cursor: pointer;
+	left: 68px;
+	top: 85px;
+	position: relative;
+}
+.img-wrap {
+	float: left;
+	height: 400px;
+	width: 400px;
+	background-image: url(../images/ZY-02A.jpg);
+}
+#mycolor{
+	width:60px;
+}

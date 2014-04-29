@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+.uploadifyQueueItem {
+	background-color: #FFFFFF;
+	border: 2px solid #E5F0FE;
+	font: 11px Verdana, Geneva, sans-serif;
+	margin: 1%;
+	padding: 10px;
+}
+
+.uploadifyProgress {
+	background-image: url(/user/vipsite/album/images/progress.jpg);
+	margin-top: 10px;
+	height: 12px;
+	width: 100%;
+}
+
+.uploadifyProgressBar {
+	background-image: url(/user/vipsite/album/images/progressBar.jpg);
+	height: 12px;
+	width: 1px;
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="永康东方五金网--永康网站建设|做网站|网络推广|网站制作|企业邮箱|域名注册|电子商务|东方五金网">
+<meta name="description" content="东方五金网由永康市东方五金电子商务有限公司主办,专业从事互联网电子商务产品的研发,咨询和服务的高新技术企业,主要为全国的五金企业提供网站建设,网络广告,网络营销策划,网络推广,网站制作,国际贸易,企业管理系统开发,实施、维护等IT服务">
+<meta name="author" content="东方五金网--永康市东方五金电子商务有限公司" />
+<meta name="Copyright" content="东方五金网--永康市东方五金电子商务有限公司 " />
+<META NAME="LANGUAGE" CONTENT="东方五金网">
+<META NAME="DOCUMENTCOUNTRYCODE" CONTENT="cn">
+<META NAME="AUTHOR" CONTENT="东方五金网">
+<META NAME="SEGMENT" CONTENT="东方五金网">
+<meta name="keywords" content="网站建设,网络推广,网站制作,企业邮箱,域名注册,网络营销策划,网络广告">
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+<title>东方五金经典2代--永康网站建设|做网站|网络推广|网站制作|企业邮箱|域名注册|电子商务|东方五金网</title>
+<link href="a.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+-->
+</style>
+<script type="text/JavaScript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+<link href="../a.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="MM_preloadImages('images/in9-a.jpg','images/in9-1-a.jpg','images/in9-2-a.jpg','images/in9-3-a.jpg','images/in9-4-a.jpg','images/in9-5-a.jpg')">
+<link href="/home/css/css.css" rel="stylesheet" type="text/css" />
+<link href="/home/css/div.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/js/jquery/query.js"></script>
+<script type="text/javascript" src="/home/js/top.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$
+				.getJSON(
+						"/u/isLogin?randomNumber=" + Math.random(),
+						{},
+						function(result) {
+							var html;
+							if (result == '0') {
+								html = "<div class=\"noLogin\">您还未登陆,<span class=\"font\">[</span><span class=\"font01\"><a href=\"/user\" id=\"create-user\">登录</a></span>]</div>";
+							} else {
+								html = "<span class=\"font\" id=\"isLogin\">您好("
+										+ result
+										+ ")，<a href=\"/user/platform/index.jsp\">用户中心</a>&nbsp[<a href=\"/index/user/logout\">注销</a>] </span>";
+							}
+							$(".header_center01").html(html);
+						})
+	})
+</script>
+
+<style type="text/css">
+#dialog-form {
+	display: none;
+}
+
+div#users-contain {
+	width: 350px;
+	margin: 20px 0;
+}
+
+div#users-contain table {
+	margin: 1em 0;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+div#users-contain table td,div#users-contain table th {
+	border: 1px solid #eee;
+	padding: .6em 10px;
+	text-align: left;
+}
+
+.ui-dialog .ui-state-error {
+	padding: .3em;
+}
+
+.validateTips {
+	border: 1px solid transparent;
+	padding: 0.3em;
+}
+</style>
+<div id="header">
+<div class="header_center">
+<div class="header_center01"></div>
+<div class="header_center02"><img src="/home/images/shouy.gif"
+	width="9" height="9" /> <span class="font">老版本入口:<a
+	href="http://cn1.51archetype.com/office/">中文版</a>|<a
+	href="http:51archetype.comcc.net/office/">英文版</a><a
+	href="javascript:setHomepage()">&nbsp设置首页</a> | <a
+	href="javascript:addPage()">收藏本站</a> </span></div>
+</div>
+</div>
+<div id="top">
+<div class="top_left"><a href="/"><img
+	src="/user/images/logo.png" border="0" width="187" height="53" /></a></div>
+<div class="top_center">
+<div class="top_01">
+<div class="top_03" onclick="changeThis(this,'product')">产 品</div>
+<div class="top_04" onclick="changeThis(this,'ent')">公 司</div>
+<div class="top_04" onclick="changeThis(this,'purchase')">供求</div>
+</div>
+<div class="top_02">
+<form action="/index/search/search" id="tosearch"><input
+	type="hidden" name="pageType" id="pageType" />
+<div class="left_t"><input type="text" class="form" id="textfield"
+	name="searchKey" /></div>
+<div class="left_tt"><input type="image"
+	src="/home/images/search.jpg" width="106" height="32" /></div>
+<div class="left_tp">&nbsp;<a href="/home/to_buy.jsp">如何采购</a>&nbsp;&nbsp;<a
+	href="/home/to_search.jsp">如何搜索</a></div>
+</form>
+</div>
+</div>
+</div>
+<table width="1004" height="47" border="0" align="center" cellpadding="0" cellspacing="0" background="images/in9-6.jpg">
+  <tr>
+    <td width="26" valign="top">&nbsp;</td>
+    <td valign="top"><a href="index.html" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image36','','images/in9-a.jpg',1)"><img src="images/in9.jpg" name="Image36" width="81" height="47" border="0" id="Image36" /></a></td>
+    <td valign="top"><a href="cpjs.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image37','','images/in9-1-a.jpg',1)"><img src="images/in9-1.jpg" name="Image37" width="98" height="47" border="0" id="Image37" /></a></td>
+    <td valign="top"><a href="cpys.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image38','','images/in9-2-a.jpg',1)"><img src="images/in9-2.jpg" name="Image38" width="98" height="47" border="0" id="Image38" /></a></td>
+    <td valign="top"><a href="bbdb.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image39','','images/in9-3-a.jpg',1)"><img src="images/in9-3-a.jpg" name="Image39" width="98" height="47" border="0" id="Image39" /></a></td>
+    <td valign="top"><a href="fwlc.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image40','','images/in9-4-a.jpg',1)"><img src="images/in9-4.jpg" name="Image40" width="97" height="47" border="0" id="Image40" /></a></td>
+    <td valign="top"><a href="cgal.htm" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image41','','images/in9-5-a.jpg',1)"><img src="images/in9-5.jpg" name="Image41" width="99" height="47" border="0" id="Image41" /></a></td>
+     <td width="98" valign="top"><a href="http://user.qzone.qq.com/83503261" target="_blank" onmouseover="MM_swapImage('Image102','','images/in9-7-a.jpg',1)" onmouseout="MM_swapImgRestore()"><img src="images/in9-7.jpg" name="Image102" width="98" height="47" border="0" id="Image102" /></a></td>
+    <td width="309" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="6"></td>
+  </tr>
+  <tr>
+    <td valign="top"><img src="images/in2.jpg" width="1004" height="280" border="0" usemap="#Map" /></td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="22" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="48" valign="top" background="images/bb1.jpg">&nbsp;</td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="6" valign="top"></td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="59" valign="top" background="images/bb2.jpg">&nbsp;</td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td width="29" height="17" valign="top">&nbsp;</td>
+    <td width="947" valign="top"><table width="947" border="1" cellpadding="0" cellspacing="0" bordercolor="#CCCCCC">
+      <tr class="c6">
+        <td width="34" rowspan="12"><p align="center" class="c6a">外<br />
+          观<br />
+          设<br />
+          计</p></td>
+        <td width="143" align="center" class="c6" style="line-height:26px"><p align="left">&nbsp;</p></td>
+        <td width="253" class="c6" style="line-height:26px"><p align="left">　经典企业版 </p></td>
+        <td width="252" class="c6" style="line-height:26px"><p align="left">　经典集团版 </p></td>
+        <td width="253" class="c6" style="line-height:26px"><p align="left">　经典行业版 </p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">主题风格</td>
+        <td width="253" class="c6"><p align="left">　10套主题风格 </p></td>
+        <td width="252" class="c6"><p align="left">　20套主题风格 </p></td>
+        <td width="253" class="c6"><p align="left">　30套主题风格 </p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">栏目管理</td>
+        <td width="253" class="c6"><p align="left">　自定义栏目，一级 </p></td>
+        <td width="252" class="c6"><p align="left">　自定义栏目，二级 </p></td>
+        <td width="253" class="c6"><p align="left">　支持自定义栏目，三级 </p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">版块管理</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">招牌风格</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">主题图片</td>
+        <td width="253" class="c6"><p align="left">　支持FALSH图片滚动展示 </p></td>
+        <td width="252" class="c6"><p align="left">　支持FALSH图片滚动展示 </p></td>
+        <td width="253" class="c6"><p align="left">　支持FALSH图片滚动展示 </p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">栏目风格</td>
+        <td width="253" class="c6"><p align="left" class="c6">　图、文个性化标题 </p></td>
+        <td width="252" class="c6"><p align="left" class="c6">　图、文个性化标题 </p></td>
+        <td width="253" class="c6"><p align="left" class="c6">　图、文个性化标题 </p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">板块风格</td>
+        <td width="253" class="c6"><p align="left" class="c6">　图、文个性化标题 </p></td>
+        <td width="252" class="c6"><p align="left" class="c6">　图、文个性化标题 </p></td>
+        <td width="253" class="c6"><p align="left" class="c6">　图、文个性化标题 </p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">整体风格</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">网站布局</td>
+        <td width="253" class="c6"><p align="left">　左右布局 </p></td>
+        <td width="252" class="c6"><p align="left">　自由布局 </p></td>
+        <td width="253" class="c6"><p align="left">　自由布局 </p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">网站标志</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">Flash形象首页</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr class="c6">
+        <td width="34" rowspan="11"><p align="center" class="c6a">内<br />
+          容<br />
+          展<br />
+          示</p></td>
+        <td width="143" align="center" class="c6" style="line-height:26px">产品个性化分类</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　支持图、文 </p></td>
+        <td width="253" class="c6"><p align="left">　支持图、文 </p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">产品展示系统</td>
+        <td width="253" class="c6"><p align="left">　产品页支持自由组合 </p></td>
+        <td width="252" class="c6"><p align="left">　产品页支持自由组合 </p></td>
+        <td width="253" class="c6"><p align="left">　产品页支持自由组合 </p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">广告产品</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">公司相册</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">主题图片</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">荣誉信誉</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">炫首页</td>
+        <td width="253" class="c6"><p align="left">　—</p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">炫相册</td>
+        <td width="253" class="c6"><p align="left">　—</p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">炫名片</td>
+        <td width="253" class="c6"><p align="left">　—</p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">供应信息分类</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">板块内容</td>
+        <td width="253" class="c6"><p align="left">　标准内容+多个自定义 </p></td>
+        <td width="252" class="c6"><p align="left">　标准内容+多个自定义 </p></td>
+        <td width="253" class="c6"><p align="left">　标准内容+多个自定义 </p></td>
+      </tr>
+      <tr class="c6">
+        <td width="34" rowspan="8"><p align="center" class="c6a">高<br />
+          级<br />
+          装<br />
+          修</p></td>
+        <td width="143" align="center" class="c6" style="line-height:26px">在线制作招牌</td>
+        <td width="253" class="c6"><p align="left">　—</p></td>
+        <td width="252" class="c6"><p align="left">　—</p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">产品广告主题</td>
+        <td width="253" class="c6"><p align="left">　—</p></td>
+        <td width="252" class="c6"><p align="left">　—</p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">在线制作主题</td>
+        <td width="253" class="c6"><p align="left">　—</p></td>
+        <td width="252" class="c6"><p align="left">　—</p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">大图轮播橱窗</td>
+        <td width="253" class="c6"><p align="left">　—</p></td>
+        <td width="252" class="c6"><p align="left">　—</p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">公司视频</td>
+        <td width="253" class="c6"><p align="left">　—</p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">公司地图</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">公司风采</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">营销海报</td>
+        <td width="253" class="c6"><p align="left">　—</p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr class="c6">
+        <td width="34" rowspan="13"><p align="center" class="c6a">
+          特<br />
+          殊<br />
+          功<br />
+          能</p></td>
+        <td width="143" align="center" class="c6" style="line-height:26px">全局设计模式</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">会员管理系统</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">新闻系统</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">站内搜索</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">在线通讯</td>
+        <td width="253" class="c6"><p align="left">　支持通用聊天工具 </p></td>
+        <td width="252" class="c6"><p align="left">　支持通用聊天工具 </p></td>
+        <td width="253" class="c6"><p align="left">　支持通用聊天工具 </p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">留言系统</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">文件下载</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">友情链接</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">搜索优化SEO</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">流量统计系统</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">三方统计分析</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">三方支付</td>
+        <td width="253" class="c6"><p align="left">　—</p></td>
+        <td width="252" class="c6"><p align="left">　—</p></td>
+        <td width="253" class="c6"><p align="left">　—</p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">多语言版本</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr class="c6">
+        <td width="34" rowspan="5"><p align="center" class="c6a">增<br />
+          值<br />
+          服<br />
+          务</p></td>
+        <td width="143" align="center" class="c6" style="line-height:26px">产品图片</td>
+        <td width="253" class="c6"><p align="left">　无限量存储空间 </p></td>
+        <td width="252" class="c6"><p align="left">　无限量存储空间 </p></td>
+        <td width="253" class="c6"><p align="left">　无限量存储空间 </p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">顶级域名</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">企业邮局</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">备案接入</td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="252" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+        <td width="253" class="c6"><p align="left">　<img width="16" height="16" src="images/001.gif" /></p></td>
+      </tr>
+      <tr>
+        <td width="143" align="center" class="c6" style="line-height:26px">设计制作</td>
+        <td width="253" class="c6"><p align="left">　另计费用 </p></td>
+        <td width="252" class="c6"><p align="left">　另计费用 </p></td>
+        <td width="253" class="c6"><p align="left">　另计费用 </p></td>
+      </tr>
+    </table></td>
+    <td width="28" valign="top">&nbsp;</td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="20" valign="middle"><img src="images/in8.jpg" width="1004" height="2" /></td>
+  </tr>
+</table>
+<table width="1004" border="0" align="center" cellpadding="0" cellspacing="0">
+  <tr>
+    <td height="24" align="center" valign="top" class="c1">运营服务：0579-87171989 83840778 88026855　   技术支持：:0579-83840669 　传真：0579-87173500</td>
+  </tr>
+  <tr>
+    <td height="24" align="center" valign="top" class="c1">东方五金网版权所有 2000-2011 E-mail： dfwj@ykit.net   　互联网违法和不良信息举报</td>
+  </tr>
+  <tr>
+    <td height="30" align="center" valign="top" class="c1">经营许可证编号:浙B2-20100285  　网络实名：<a href="http://www.ykit.net/about2.html" target="_blank" class="c1">东方五金网</a></td>
+  </tr>
+</table>
+<map name="Map" id="Map">
+  <area shape="rect" coords="375,224,559,268" href="/user" target="_blank" />
+<area shape="rect" coords="119,229,307,266" href="/user/reg.jsp" target="_blank" />
+</map>
+</body>
+</html>

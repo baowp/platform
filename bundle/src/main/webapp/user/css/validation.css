@@ -1,0 +1,8 @@
+.label {font-style:italic; }
+
+.errorLabel {font-style:italic; color:red; font-size:12px;}
+
+.errorMessage {font-weight:normal; color:red; font-size:12px;}
+.errors {font-weight:normal; color:red; font-size:12px;}
+
+.errorSpan{font-weight:normal; color:red; font-size:12px;}

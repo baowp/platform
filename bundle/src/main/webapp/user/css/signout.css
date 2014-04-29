@@ -1,0 +1,198 @@
+a,a:visited {
+	color: #003278;
+	text-decoration: none
+}
+
+a:link {
+	color: #003278;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #ff7300
+}
+
+body {
+	font-size: 13px;
+	background-color: #fff;
+	font-family: songti, arial;
+	line-height: 16px;
+	overflow-y: hidden;
+}
+
+.hd {
+	position: relative;
+	width: 952px;
+	margin: 0 auto;
+	margin-top: 8px;
+	height: 40px;
+}
+
+.hd .la {
+	display: block;
+	width: 154px;
+	height: 38px;
+	float: left;
+	background: url(/user/images/logo.png)
+		no-repeat top left;
+}
+
+.hd .logo .txt {
+	display: block;
+	float: left;
+	margin: 2px 0 0 4px;
+	padding-left: 4px;
+}
+
+.hd .contact {
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-align: right;
+	font-size: 12px;
+}
+
+.hd .contact a,.hd .contact a:visited {
+	color: #003278;
+	text-decoration: none;
+}
+
+.hd .contact a:hover {
+	text-decoration: underline;
+	color: #ff7300
+}
+
+.main,.main .okimg,.main .middle .relogin,.main .middle .homepage,.main .middle .favorite,.main .middle .shorthand
+	{
+	background:
+		url(/user/images/signup.jpg)
+		no-repeat top left;
+}
+
+.main {
+	width: 950px;
+	height: 366px;
+	border: 2px #e6ebf1 solid;
+	margin: 16px auto;
+	margin-bottom: 54px;
+	overflow: hidden;
+	text-align: center;
+	position: relative;
+	font-size: 14px;
+	background-position: 0 -670px;
+	background-repeat: repeat-x;
+}
+
+.main div {
+	float: left;
+}
+
+.main .con {
+	padding: 0 24px;
+}
+
+.main .top {
+	padding: 50px 0px 50px 140px;
+	overflow: hidden;
+}
+
+.main .top .okimg {
+	width: 50px;
+	height: 50px;
+	background-position: -10px -610px;
+}
+
+.main .top .txt {
+	font-size: 22px;
+	font-weight: bold;
+	line-height: 28px;
+	padding: 8px 0 0 10px;
+	color: #4f4f4f;
+}
+
+.main .middle {
+	border-top: 1px #bdcede dashed;
+}
+
+.main .middle .txt {
+	font-weight: bold;
+	padding: 16px 16px 16px 8px;
+	text-align: left;
+	overflow: hidden;
+	width: 810px;
+}
+
+.main .middle .relogin,.main .middle .homepage,.main .middle .favorite,.main .middle .shorthand
+	{
+	width: 199px;
+	height: 144px;
+	margin-left: 44px;
+	cursor: pointer;
+}
+
+.main .middle .area {
+	width: 100%;
+	padding-left: 110px;
+}
+
+.main .middle .relogin {
+	background-position: -8px 0px;
+	margin-left: 0px;
+}
+
+#relogin.over {
+	background-position: -221px 0px;
+	margin-left: 0px;
+}
+
+.main .middle .homepage {
+	background-position: -8px -152px;
+}
+
+#homepage.over {
+	background-position: -221px -152px;
+}
+
+.main .middle .favorite {
+	background-position: -8px -304px;
+	width: 200px;
+}
+
+#favorite.over {
+	background-position: -220px -304px;
+}
+
+.main .middle .shorthand {
+	background-position: -8px -456px;
+}
+
+#shorthand.over {
+	background-position: -221px -456px;
+}
+#header {
+    border-bottom: 3px solid #178DE4;
+    clear: both;
+    overflow: hidden;
+    padding-bottom: 4px;
+}.logo {
+    height: 70px;
+    width: 960px;
+}div {
+    margin: 0 auto;
+    text-align: center;
+}.logo_left {
+    float: left;
+    height: 60px;
+    margin-top: 8px;
+    text-align: left;
+}.logo_center {
+    float: left;
+    height: 50px;
+    margin-top: 15px;
+}.logo_right {
+    float: right;
+    height: 35px;
+    margin-top: 15px;
+    padding-top: 10px;
+}

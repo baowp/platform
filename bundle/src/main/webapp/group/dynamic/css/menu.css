@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+.headerMenuLi .submenu,.headerMenuLiCheck .submenu {
+	position: absolute;
+	width: 108px;
+	padding-left: 0;
+	margin-top: 10px;
+	z-index: 1;
+	background-position: -24px 0;
+}
+
+.headerMenuLiCheck .submenu {
+	margin-top: 7px;
+	background-position: 0 0;
+}
+
+.submenu .submenu {
+	margin-top: 0;
+}
+
+.submenu .headerMenuLi {
+	margin-top: 0;
+	height: 24px;
+}

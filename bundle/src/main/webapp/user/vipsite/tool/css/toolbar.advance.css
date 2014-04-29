@@ -1,0 +1,161 @@
+@CHARSET "UTF-8";
+
+.setContent4 {
+	background: #FFFFFF none repeat scroll 0 0;
+	border: 1px solid #8C8A8D;
+	height: 380px;
+	width: 404px;
+}
+
+.setContent4 .check {
+	background: url(../images/setbg.gif) repeat-x scroll center bottom;
+	display: block;
+	height: 360px;
+	padding: 10px 20px;
+	width: 364px;
+}
+
+#editAdvIndex .title {
+	background: url(../images/advMenuBg4.gif) no-repeat scroll 0 0;
+	height: 30px;
+	overflow: hidden;
+	width: 358px;
+}
+
+
+.setContent4 .titleList {
+	height: 20px;
+	padding: 4px 32px;
+	width: 295px;
+}
+
+.setContent4 .titleList ul li {
+	float: left;
+	font-weight: normal;
+	height: 20px;
+	padding-left: 10px;
+	width: 63px;
+}
+
+.setContent4 .titleList ul li a {
+	color: #4F4F4F;
+}
+
+.setContent4 .titleList ul li a:visited {
+	color: #4F4F4F;
+}
+
+.editLine3 {
+	border-top: 1px dotted #D8D8D8;
+	height: 1px;
+	margin-top: 12px;
+	overflow: hidden;
+	width: 360px;
+}
+
+.setContent4 .uncheck {
+	display: none;
+}
+
+#topmenuedit {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: #FFFFFF none repeat scroll 0 0;
+	height: 280px;
+	width: 360px;
+}
+
+#topmenuedit .list {
+	height: 280px;
+	overflow-y: scroll;
+}
+
+#topmenuedit ul {
+	background: #FFFFFF none repeat scroll 0 0;
+}
+
+#topmenuedit .bg1 {
+	background: #EAEAEA none repeat scroll 0 0;
+	font-weight: bold;
+	text-align: center;
+}
+
+#topmenuedit .list ul li {
+	border: 1px solid #E2E2E2;
+	float: left;
+	height: 25px;
+	line-height: 200%;
+	text-align: center;
+}
+
+#topmenuedit .list .w1 {
+	width: 75px;
+}
+
+#topmenuedit .list .w2 {
+	width: 75px;
+}
+
+#topmenuedit .list .w3 {
+	width: 80px;
+}
+
+#topmenuedit .list .w4 {
+	width: 105px;
+}
+
+#topmenuelist .move {
+	clear: both;
+}
+
+#editLog .title {
+	background: url(../images/advMenuBg4.gif) no-repeat scroll 0 -30px;
+	height: 30px;
+	overflow: hidden;
+	width: 358px;
+}
+
+#editColumn .title {
+	background: url(../images/advMenuBg4.gif) no-repeat scroll 0 -60px;
+	height: 30px;
+	overflow: hidden;
+	width: 358px;
+}
+
+#topmenuelist input[type=button] {
+	padding: 0 3px;
+}
+
+#topmenuelist input[type=text] {
+	width: 65px;
+}
+#editNe .title {
+	height: 30px;
+	overflow: hidden;
+	width: 358px;
+}
+.setContent4 .cbut {
+    text-align: right;
+    margin-right: 85px;
+    margin-top: 5px;
+}
+.setContent4.necheck {
+	background: url(../images/setbg.gif) repeat-x scroll center bottom;
+	display: block;
+	height: 360px;
+	padding: 10px 20px;
+	width: 364px;
+}
+#editNe .title {
+	background: url(../images/advMenuBg4.gif) no-repeat scroll 0 -60px;
+	height: 30px;
+	overflow: hidden;
+	width: 358px;
+}
+#editOption .title {
+	background: url(../images/advMenuBg4.gif) no-repeat scroll 0 -90px;
+	height: 30px;
+	overflow: hidden;
+	width: 358px;
+}

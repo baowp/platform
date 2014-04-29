@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:13px;
+ padding:0px;
+ margin:0px auto;
+ text-align:center;
+}
+div{
+ margin:0px auto;
+ padding:0px;
+}
+#mn{
+ padding:3px;
+}
+.top{
+ height:36px;
+}
+.font01{
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:14px;
+ font-weight:bold;
+ color:#FFFFFF;
+}
+.tan{
+ overflow:hidden;
+ padding:5px 0px;
+}
+.tan_left{
+ float:left;
+ padding-left:16px;
+ text-align:left;
+ width:330px;
+}
+.tan_left ul{
+ list-style:none outside none;
+ margin:0px auto;
+ padding:0px;
+}
+h3{
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:14px;
+ line-height:12px;
+ font-weight:bold;
+}
+.tan_left li{
+ padding:0px;
+ font-size:13px;
+ text-align:left;
+ line-height:26px;
+}
+.h{
+ color:#414141;
+ font-size:12px;
+}
+.tan_right{
+ float:left;
+ width:480px;
+ height:300px;
+ margin-left:10px;
+ border:#98CCEB solid 1px;
+}
+.y{
+ height:35px;
+ line-height:35px;
+ margin:0px 8px;
+ text-align:left;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:14px;
+ font-weight:bold;
+ color:#003366;
+ border-bottom:#98CCEB solid 1px;
+}
+.u{
+ margin:3px 8px;
+}
+.font02{
+ color:#FF6600;
+}
+#form011{
+ width:90px;
+}
+#lu tr:hover{
+ background-color:#F2F8FD;
+}

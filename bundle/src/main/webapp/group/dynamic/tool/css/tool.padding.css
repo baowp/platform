@@ -1,0 +1,5 @@
+@CHARSET "UTF-8";
+
+.hunkList .user_defined .bodyContContent,.describe_flash {
+	min-height: 30px;
+}

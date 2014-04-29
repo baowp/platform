@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>东方五金退出登陆</title>
+<link rel="stylesheet" href="/user/css/signout.css" type="text/css" />
+<script type="text/javascript" src="/js/jquery.js"></script>
+<!--[if lte IE 6]>
+<script src="/js/DD_belatedPNG_0.0.8a.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        DD_belatedPNG.fix('div, ul, img, li, input , a');
+    </script>
+<![endif]-->
+<script type="text/javascript">
+	$(function() {
+		$("#relogin").mouseover(function() {
+			$(this).addClass("over")
+		}).mouseout(function() {
+			$(this).removeClass("over")
+		})
+		$("#homepage").click(function() {
+			setHomepage();
+		}).mouseover(function() {
+			$(this).addClass("over")
+		}).mouseout(function() {
+			$(this).removeClass("over")
+		})
+		$("#favorite").click(function() {
+			addPage();
+		}).mouseover(function() {
+			$(this).addClass("over")
+		}).mouseout(function() {
+			$(this).removeClass("over")
+		})
+	})
+	function setHomepage() {
+		var href = "http://" + location.host;
+		if (document.all) {
+			document.body.style.behavior = 'url(#default#homepage)';
+			document.body.setHomePage(href);
+
+		} else if (window.sidebar) {
+			if (window.netscape) {
+				try {
+					netscape.security.PrivilegeManager
+							.enablePrivilege("UniversalXPConnect");
+					var prefs = Components.classes['@mozilla.org/preferences-service;1']
+							.getService(Components.interfaces.nsIPrefBranch);
+					prefs.setCharPref('browser.startup.homepage', href);
+				} catch (e) {
+					alert("\u8be5\u64cd\u4f5c\u88ab\u6d4f\u89c8\u5668\u62d2\u7edd\uff0c\u5982\u679c\u60f3\u542f\u7528\u8be5\u529f\u80fd\uff0c\u8bf7\u5728\u5730\u5740\u680f\u5185\u8f93\u5165 about:config,\u7136\u540e\u5c06\u9879 signed.applets.codebase_principal_support \u503c\u8be5\u4e3atrue");
+				}
+			}
+		}
+	}
+	function addPage() {
+		var ctrl = (navigator.userAgent.toLowerCase()).indexOf('mac') != -1 ? 'Command/Cmd'
+				: 'CTRL';
+		if (document.all) {
+			window.external.addFavorite('http://www.easthardware.com/',
+					'东方五金平台');
+		} else if (window.sidebar) {
+			window.sidebar.addPanel('东方五金平台', 'http://www.easthardware.com/',
+					"");
+		} else {
+			alert('您可以尝试通过快捷键' + ctrl + ' + D 加入到收藏夹~');
+		}
+	}
+</script>
+</head>
+<body>
+<div id="header">
+<div class="logo">
+<div class="logo_left"><a href="/"><img border="0"
+	src="images/logo.png"></a></div>
+<div class="logo_center">全球领先的网上贸易市场</div>
+<div class="logo_right"><a href="/">返回首页</a></div>
+</div>
+</div>
+<div class="main">
+<div class='con'>
+<div class='top'>
+<div class='okimg'></div>
+
+<div class='txt'>您已经退出登录。</div>
+</div>
+<div class='middle'>
+<div class='txt'>您还可以进行以下设置：</div>
+<div class='area'><a href="/user" target='_self'>
+<div class='relogin' id='relogin'></div>
+</a>
+<div class='homepage' id='homepage'></div>
+<div class='favorite' id='favorite'></div>
+
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>

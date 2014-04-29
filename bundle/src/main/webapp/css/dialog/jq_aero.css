@@ -1,0 +1,219 @@
+@CHARSET "UTF-8";
+.ui-corner-all {
+    -moz-border-radius: 0px 0px 0px 0px;
+}
+.ui-dialog {
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 400px;
+	background: url("") no-repeat scroll right top transparent;
+	_border:0px solid #555;
+}
+.ui-dialog .ui-dialog-buttonpane {
+    border-width:0;
+    margin: 0 14px;
+    padding: 0;
+    position: relative;
+    top: -13px;
+    background-color: #F6F6F6;
+}
+
+.ui-dialog .ui-dialog-titlebar {
+	background: url("images/top.png") repeat-x scroll 0 0 ;
+	border: 0px solid transparent;
+	margin: 0 14px;
+    _background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/css/dialog/images/aui_top.png',sizingMethod='crop'); 
+}
+
+ *+html .ui-dialog{
+    border: 0px solid #555;
+} 
+.ui-dialog .ui-dialog-titlebar {
+	line-height: 34px;
+	padding: 0;
+}
+
+.ui-dialog .ui-dialog-title {
+	margin: 0 4px 0 0;
+	padding-left: 15px;
+	line-height: 34px;
+	background: url("images/title.png") no-repeat scroll 0 12px transparent;
+}
+.ui-dialog .ui-dialog-content {
+	background: #fff;
+	padding: 0px;
+	margin-top: 0px;
+	margin-left:13px;
+	margin-right:13px;
+	margin-bottom:13px;
+	border: 1px solid #fff;
+	_border:0px solid #fff;
+}
+.ui-dialog .ui-dialog-titlebar {
+	padding: 0;
+	position: relative;
+	_position:static;
+}
+.ui-dialog .ui-dialog-titlebar-close {
+	_top:20px;
+	_right:14px;
+}
+.ui-widget-content {
+	border: 1px solid transparent;
+	_border: 0px solid transparent;
+}
+
+/*外左上*/
+.ui-dialog .ui-resizable-nw {
+	background: url("images/left_top.png") no-repeat scroll 0 0 transparent;
+	cursor: nw-resize;
+	left: 0px;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/css/dialog/images/aui_left_top.png',sizingMethod='crop'); 
+}
+/*外右上*/
+.ui-dialog .ui-resizable-ne {
+	background: url("images/right_top.png") no-repeat scroll 0 0 transparent;
+	cursor: ne-resize;
+	right: 0px;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/css/dialog/images/aui_right_top.png',sizingMethod='crop'); 
+}
+
+.ui-dialog .ui-resizable-nw,.ui-dialog .ui-resizable-ne {
+	width: 14px;
+	top: 0px;
+	height: 34px;
+}
+
+/*外左下*/
+.ui-dialog .ui-resizable-sw {
+	background: url("images/left_bottom.png") no-repeat scroll 0 0
+		transparent;
+	cursor: sw-resize;
+	left: 0px;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/css/dialog/images/aui_left_bottom.png',sizingMethod='crop'); 
+}
+/*外右下*/
+.ui-dialog .ui-resizable-se {
+	background: url("images/right_bottom.png") no-repeat scroll 0 0
+		transparent;
+	right: 0px;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/css/dialog/images/aui_right_bottom.png',sizingMethod='crop'); 
+}
+
+.ui-dialog .ui-resizable-sw,.ui-dialog .ui-resizable-se {
+	height: 14px;
+	width: 14px;
+	bottom: 0px;
+	_bottom:-1px;
+}
+/*外上*/
+.ui-dialog .ui-resizable-n {
+	background: url() repeat-x scroll 0 0 transparent;
+	cursor: n-resize;
+	height: 0px;
+	left: 14px;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+}
+/*外下*/
+.ui-dialog .ui-resizable-s {
+	background: url("images/bottom.png") repeat-x scroll 0 0 transparent;
+	bottom: 1px;
+	height: 13px;
+	left: 14px;
+	position:absolute;
+	width: auto;
+	right:14px;
+	margin:0px;
+	_bottom:0px;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/css/dialog/images/aui_bottom.png',sizingMethod='crop'); 
+}
+/*外右*/
+.ui-dialog .ui-resizable-e,.ui-dialog .ui-resizable-w {
+	background: url("images/right.png") repeat-y scroll 0 0 transparent;
+	cursor: e-resize;
+	height: auto;
+	bottom: 14px;
+	right: 0px;
+	top: 34px;;
+	width: 14px;
+	position: absolute;
+    _background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/css/dialog/images/aui_right.png',sizingMethod='crop'); 
+}
+
+/*外左*/
+.ui-dialog .ui-resizable-w {
+	background: url("images/left.png") repeat-y scroll 0 0 transparent;
+	left: 0px;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/css/dialog/images/aui_left.png',sizingMethod='crop'); 
+}
+
+.ui-dialog .ui-dialog-buttonpane .ui-dialog-buttonset {
+    margin: 5px;
+    padding:0 0 0 6px;
+    overflow:hidden;
+    line-height:15px;
+}
+.ui-dialog .ui-dialog-buttonset:hover {
+    background-position:left -155px;
+}
+.ui-dialog .ui-dialog-buttonpane button {
+	color:#fff;
+	margin:0 5px;
+    background:url(images/btns.png) no-repeat scroll  0px -124px transparent;
+    border: 0 none;
+    height: 31px;
+    line-height: 31px;
+    max-width: 200px;
+    padding-left:6px;
+    *width:100%;
+    _width:auto;
+    _white-space: nowrap;
+}
+.ui-button .ui-button-text {
+    background: url("images/btns.png") no-repeat scroll right 0 transparent;
+    height: 31px;
+    line-height: 31px;
+    padding: 0 10px 0 4px;
+    display:inline-block;
+    _margin-left:0px;
+}
+.ui-dialog .ui-dialog-buttonset .ui-state-hover {
+	background-position:left -155px;
+}
+.ui-dialog .ui-dialog-buttonset .ui-state-hover span{
+	background-position:right -31px;
+}
+.ui-dialog .ui-dialog-titlebar .ui-icon{
+	background: url("images/aui_close.png") no-repeat scroll 0 0 transparent;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/css/dialog/images/aui_close.png',sizingMethod='crop'); 
+}
+.ui-dialog .ui-dialog-titlebar-close:hover, .ui-dialog-titlebar-close:focus{
+	background:none;
+	background:url(images/aui_close.hover.png) no-repeat scroll  1px 1px transparent;
+	border:1px solid transparent;
+	_margin-right:1px;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/css/dialog/images/aui_close.hover.png',sizingMethod='crop'); 
+	_border:0px solid transparent;	
+}
+.ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover, .ui-state-focus, .ui-widget-content .ui-state-focus, .ui-widget-header .ui-state-focus  {
+    background: url("") repeat-x scroll 50% 50% transparent;
+    border: 0px solid #79B7E7;
+}
+
+.ui-dialog .tipsInfo {
+	line-height: 60px;
+	padding-left: 48px;
+}

@@ -1,0 +1,56 @@
+@CHARSET "UTF-8";
+body {
+	font-family: 'Verdana', '宋体';
+	font-size: 12px;
+}
+
+.pagebar {
+	border: 1px solid gray;
+	width: auto;
+	height: auto;
+	line-height: 28px;
+}
+
+.pageName {
+	border: 1px solid gray;
+	float: left;
+	margin: 0 3 3 3;
+	cursor: pointer;
+	color: #5A5D5F;
+	line-height: 18px;
+	margin: 3 3 3 3;
+}
+
+.page_number {
+	text-align: center;
+	height: 18px;
+	width: 16px;
+	line-height: 18px;
+	margin: 3 3 3 3;
+	border: 1px solid gray;
+	cursor: pointer;
+	float: left;
+	color: #5F7690
+}
+
+.current_pageName {
+	border: 0px solid gray;
+	float: left;
+	margin: 3 3 3 3;
+	cursor: default;
+	color: #5A5D5F;
+	line-height: 18px;
+	margin: 6 3 3 3;
+}
+
+.current_page_number {
+	color: #5A5D5F;
+	border: 1px;
+	cursor: default;
+	margin: 3 3 3 3;
+	line-height: 18px;
+}
+
+.totalpage_number {
+	color: blue;
+}

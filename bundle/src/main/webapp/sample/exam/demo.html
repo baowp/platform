@@ -1,0 +1,46 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<script type="text/javascript" src="jquery.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("p").dblclick(function(){
+  $("p#bb").toggle(1000);
+  $("p.bb").css("background-color","red");
+  $("p.aa").fadeTo("slow",0);
+  $("p.yy").animate({fontSize:"3em"},"slow");
+  $("p#zz").html("¸ÄHello!");
+  $("p#kk").append("<b>disappear</b>");
+  $("img").attr("width","180");
+alert($("img").attr("width"));
+alert($("input:not(:checked)"));
+alert($(":header").css("background", "#EEE"));
+
+  });
+});
+</script>
+
+</head>
+<body>
+<p class="kk" id="bb">If you click me, I will disappear.</p>
+<p class="bb">If you clickme too,I will disappear</p>
+<p class="aa">if you click me too, I will disappear ,too</p>
+<p class="yy">if you click me too, I will disappear,4too</p>
+<p id="zz">if you click me too,I will disappear,5too</p>
+<p id="kk">if you click me too,I will disappear,6too</p>
+<h1>Header 1</h1>
+<p>Contents 1</p>
+<h2>Header 2</h2>
+<p>Contents 2</p>
+<img src="/1.png"/>
+<input name="apple" />
+<input name="flower" checked="checked" />
+<a href="www.baidu.com">baidu</a>
+<a href="www.hao123.com">hao123</a>
+
+</body>
+</html>

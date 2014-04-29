@@ -1,0 +1,64 @@
+/* CSS Document */
+.container {
+padding:9px 20px 20px;
+height:100%;
+text-align:left;
+}
+.top{
+clear:both;
+line-height:20px;
+margin-bottom:0 !important;
+border-bottom:1px solid #DEF4F8;
+overflow:hidden;
+}
+.cf{height:100%;width:100%;}
+#t_01{
+ height:25px;
+ line-height:25px;
+ text-align:10px;
+ padding-left:5px;
+ padding-top:5px;
+ font-size:14px;
+ }
+#t_02{
+  padding-top:10px;
+  line-height:30px;
+  font-size:14px;
+  }
+h3 {
+color:#0099CC;
+font-size:14px;
+margin-bottom:10px;
+}
+a, a:visited {
+color:#003278;
+text-decoration:underline;
+}
+.text:hover, .text:focus{ border-color:#0099cc; background:#F5F9FD; }
+.text{height:18px; line-height:18px; width:180px;}
+.pho_01{
+ padding-left:10px;
+ margin-top:10px;
+ height:165px;
+ width:30%;
+ float:left;
+ }
+.ho_y{
+ width:125px;
+ height:130px;
+ padding:3px;
+ overflow:hidden;
+ display:table-cell;
+ float:left;
+ text-align:center;
+ vertical-align:middle;
+ border:#cccccc 1px solid;
+ }
+.ho_t{
+ height:20px;
+ width:125px;
+ line-height:20px;
+ text-align:center;
+ padding-top:4px;
+ font-size:12px;
+ }

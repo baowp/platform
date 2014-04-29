@@ -1,0 +1,148 @@
+@CHARSET "UTF-8";
+body {
+    margin: 0px;
+}
+li {
+	list-style-type: none;
+}
+ul, menu, dir {
+    margin: 0;
+}
+img {
+	border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	max-width: 100%;
+}
+.versionselect{
+	width:833px;
+}
+.versionselect .bordertop{
+	height:17px;
+	width:833px;
+	clear:both;
+	overflow:hidden;
+}
+.versionselect .bordertop .bordertop_left{
+	width:18px;
+	height:17px;
+	float:left;
+	background:url(/user/upgrade/images/buy/buy01.png) no-repeat scroll 0 0 transparent;
+}
+.versionselect .bordertop .bordertop_middle{
+	height:17px;
+	float:left;
+	width:796px;
+	background:url(/user/upgrade/images/buy/buy02.png) repeat-x scroll 0 0 transparent;
+}
+.versionselect .bordertop .bordertop_right{
+	width:19px;
+	height:17px;
+	float:left;
+	background:url(/user/upgrade/images/buy/buy03.png) no-repeat scroll 0 0 transparent;
+}
+.versionselect .borderhead{
+	height:40px;
+	width:833px;
+	clear:both;
+	
+	overflow:hidden;
+}
+.versionselect .borderhead_left{
+	float:left;
+	width:18px;
+	height:40px;
+	background:url(/user/upgrade/images/buy/buy04.png) repeat scroll 0 0 transparent;
+}
+.versionselect .borderhead_middle{
+	float:left;
+	width:796px;
+	height:40px;
+	padding:3px 0;
+	background:url(/user/upgrade/images/buy/buy07.jpg) no-repeat scroll 0 0 transparent;
+}
+.versionselect .borderhead_right{
+	float:left;
+	width:19px;
+	height:40px;
+	background:url(/user/upgrade/images/buy/buy05.png) repeat-y scroll 0 0 transparent;
+}
+.versionselect .borderline{
+	height:8px;
+	width:833px;
+	clear:both;
+	overflow:hidden;
+}
+.versionselect .borderline_left{
+	float:left;
+	width:18px;
+	height:8px;
+	background:url(/user/upgrade/images/buy/buy04.png) repeat scroll 0 0 transparent;
+}
+.versionselect .borderline_middle{
+	float:left;
+	width:796px;
+	height:8px;
+	background:url(/user/upgrade/images/buy/buy08.jpg) no-repeat scroll right top #1d508f;
+}
+.versionselect .borderline_right{
+	float:left;
+	width:19px;
+	height:8px;
+	background:url(/user/upgrade/images/buy/buy05.png) repeat-y scroll 0 0 transparent;
+}
+.versionselect .main{
+	height:auto;
+	width:833px;
+	clear:both;
+}
+.versionselect .main_left{
+	float:left;
+	height:250px;
+    width: 18px;
+	background:url(/user/upgrade/images/buy/buy04.png) repeat scroll 0 0 transparent;
+}
+.versionselect .main_middle{
+	float:left;
+	width:796px;
+	padding:3px 0;
+}
+.versionselect .main_middle ul{
+	float:left;
+	margin-left: 8px;
+	width:auto;
+}
+*+html .versionselect .main_middle ul{
+	margin: 0px;
+}
+.versionselect .main_middle li{
+	float:left;
+}
+
+.versionselect .main_middle .versions li:hover img {
+	width:90%;
+	height:90%;
+}
+.versionselect .main_right{
+	float:left;
+	width:19px;
+	height:250px;
+	background:url(/user/upgrade/images/buy/buy05.png) repeat-y scroll 0 0 transparent;
+}
+.bottom{
+	float:left;
+	width:833px;
+	height:153px;
+	background:url(/user/upgrade/images/buy/buy06.png) no-repeat scroll 0 0 transparent;
+}
+.cl_navigation {
+    margin: 20px 0;
+    width: 570px;
+}
+.cl_navigation li{
+  color: #666666;
+    font-size: 14px;
+}
+.cl_navigation img{
+ vertical-align: middle;
+}

@@ -1,0 +1,57 @@
+@IMPORT url("div_h1.css");
+
+@IMPORT url("div_h3.css");
+
+@IMPORT url("div_h2.css");
+
+body {
+	background-color: #FFFFFF;
+}
+
+body {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+iframe {
+    border:0px;
+}
+#mainFrame{
+
+}
+a:focus {outline:none;}
+#screen {
+	overflow: visible;
+}
+
+#screen {
+	background: url("http://i04.c.aliimg.com/images/workplace/bor-r-bg.png")
+		repeat-y scroll right 0 transparent;
+	margin: 0;
+	min-width: 1000px;
+	padding-right: 8px;
+	width: auto;
+}
+
+#screen {
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	
+}
+
+#screen-spc,.screen-spc {
+	clear: both;
+	font-size: 0;
+	height: 4px;
+}
+
+#screen-spc {
+	background-color: #DEEBFE;
+	clear: both;
+	font-size: 0;
+	height: 5px;
+}
+#new-content {
+    float: center;
+}

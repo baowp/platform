@@ -1,0 +1,85 @@
+.moduleTitle {
+	background: transparent url(../images/tab_px.gif) repeat-x scroll left
+		center;
+	font-size: 13px;
+	height: 28px;
+	line-height: 28px;
+	padding-left: 7px;
+	text-align: left;
+}
+
+.moduleTitle .name {
+	font-weight: bold;
+}
+
+.moduleContent {
+	border: thin solid #E4EFF3;
+	height: auto;
+	border-top: 0px;
+	overflow: auto;
+	zoom: 1;
+}
+
+.moduleContent .cont {
+	width: 236px;
+	border-right: 1px dashed #91AEC2;
+}
+
+.moduleContent .cont.last {
+	border-right: 0;
+}
+
+.cont {
+	text-align: left;
+	float: left;
+}
+
+.cont .title {
+	background: #E7F8FF;
+	height: 24px;
+	line-height: 24px;
+	text-align: left;
+	padding-left: 25px;
+}
+
+.cont .recommend {
+	padding-left: 5px;
+	line-height: 24px;
+}
+
+.cont .recommend span {
+	float: left;
+}
+
+.cont  ul {
+	overflow: auto;
+	zoom: 1;
+}
+
+.cont .recommend ul {
+	padding-left: 4px;
+}
+
+.cont  li {
+	float: left;
+}
+
+.cont .recommend li {
+	padding: 0 20px;
+}
+
+.cont .list {
+	padding: 3px 0 3px 5px;
+	line-height: 24px;
+}
+
+.cont .list li {
+	padding: 0 6px 0 9px;
+	background: url("../images/pr-8-4.JPG") no-repeat left center;
+	width: 80px;
+}
+
+.cont .subcont {
+	margin-left: 20px;
+	padding-top: 5px;
+}

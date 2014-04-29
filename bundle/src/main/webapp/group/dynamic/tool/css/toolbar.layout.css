@@ -1,0 +1,48 @@
+@CHARSET "UTF-8";
+
+.setContent2 {
+	background: url(../images/setbg.gif) repeat-x scroll center bottom;
+	border: 1px solid #8C8A8D;
+	height: 228px;
+	width: 214px;
+}
+
+.setContent2 {
+	height: 150px;
+}
+
+.black {
+	color: #000000;
+}
+
+.aUnCheck {
+	border: 1px solid #FFFFFF;
+	margin-left: 15px;
+}
+
+.aCheck {
+	border: 1px solid #0000FF;
+	margin-left: 15px;
+}
+
+.borderFFF {
+	border: 1px solid #FFFFFF;
+}
+
+.row ul {
+	width: auto;
+	text-align: center;
+	padding: 0 15px;
+}
+
+.row li {
+	float: left;
+	padding: 10px 6px;
+	margin: 2px;
+	border: 1px solid #E0E0E0;
+	cursor: move;
+}
+
+.row input {
+	width: 23px;
+}

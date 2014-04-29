@@ -1,0 +1,326 @@
+table {
+	font-size: 14px;
+	line-height: 150%;
+}
+
+#hcwrap {
+	color: #333333;
+	font: 12px/20px "ËÎÌו";
+}
+
+#hcwrap {
+	clear: both;
+	margin: 6px 0;
+	width: 760px;
+}
+
+#hcwrap * {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	float: left;
+	height: 69px;
+	margin-right: 20px;
+	overflow: hidden;
+	width: 300px !important;
+}
+
+a:visited {
+	color: #3D362B;
+	text-decoration: underline;
+}
+
+#hcwrap img {
+	border: 0 none;
+}
+
+h1 span {
+	margin-left: -9999px;
+}
+
+#hcuserarea {
+	float: left;
+	margin: 8px 0;
+	width: 439px;
+}
+
+#hcuser,#hcuser li {
+	float: left;
+}
+
+ul,li {
+	list-style: none outside none;
+}
+
+#hcuser li.index {
+	background:
+		url("http://www.toys.hc360.com/images/2007index/topindex.gif")
+		no-repeat scroll 0 0 transparent;
+	margin-right: 4px;
+	width: 53px;
+}
+
+#hcuser li {
+	height: 17px;
+	text-align: center;
+}
+
+#hcuser,#hcuser li {
+	float: left;
+}
+
+#hcuser li a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+#hcuser li span {
+	color: #C63031;
+	font-weight: bold;
+}
+
+#hctools {
+	float: right;
+}
+#hcuser li.login {
+    background: url("http://www.hc360.com/images/2007/top_freereg.gif") no-repeat scroll 0 0 transparent;
+    color: #000000;
+    margin-right: 4px;
+    width: 65px;
+}#hcuser li.login1 {
+    background: url("http://www.hc360.com/images/2007/top_login.gif") no-repeat scroll 0 0 transparent;
+    width: 42px;
+}
+#hctools li {
+	background: url("http://www.hc360.com/images/2007/top_tools_bg.gif")
+		no-repeat scroll left center transparent;
+	cursor: pointer;
+	float: left;
+	padding: 0 4px;
+}
+
+#hctools li.three {
+	background: url("http://www.toys.hc360.com/images/2007index/s_logo.gif")
+		no-repeat scroll 0 2px transparent;
+	padding-left: 18px;
+}
+
+#hctools li {
+	background: url("http://www.hc360.com/images/2007/top_tools_bg.gif")
+		no-repeat scroll left center transparent;
+	cursor: pointer;
+	float: left;
+	padding: 0 4px;
+}
+
+#hctools li a {
+	color: #333333;
+	text-decoration: none;
+}
+
+#hctools li.four {
+	background: url("http://www.toys.hc360.com/images/2007index/im_ico.gif")
+		no-repeat scroll 0 2px transparent;
+	margin-left: 6px;
+	padding-left: 18px;
+}
+
+#hcmainnav {
+	float: left;
+	width: 439px;
+}
+
+#hcmainnav li {
+	background: url("http://www.hc360.com/images/2007/top_nav_bg_4.gif")
+		no-repeat scroll 0 0 transparent;
+	display: inline;
+	float: left;
+	height: 19px;
+	margin-right: 10px;
+	text-align: center;
+	width: 74px;
+}
+
+#hcmainnav li a {
+	color: #333333;
+	font: bold 14px/20px "ËÎÌו";
+	text-decoration: none;
+}
+
+#hcmainnav li {
+	background: url("http://www.hc360.com/images/2007/top_nav_bg_4.gif")
+		no-repeat scroll 0 0 transparent;
+	display: inline;
+	float: left;
+	height: 19px;
+	margin-right: 10px;
+	text-align: center;
+	width: 74px;
+}
+
+#hcmainnav li.list05 {
+	background: url("http://www.hc360.com/images/2007/top_nav_bg_5.gif")
+		no-repeat scroll 0 0 transparent;
+	height: 19px;
+	margin-right: 0;
+	width: 103px;
+}
+
+.alr {
+	background-color: #FFF5D8;
+	border: 1px solid #FF7300;
+	color: red;
+	font-size: 12px;
+	line-height: 22px;
+	margin: 15px auto;
+	padding: 5px;
+	width: 750px;
+}
+
+.bt {
+	background-color: #E2E2E2;
+	border-left: 3px solid #E21921;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 25px;
+	margin: 12px 0 0;
+	text-align: left;
+	text-indent: 8px;
+}
+
+form {
+	margin: 0;
+}
+
+input {
+	font-size: 14px;
+}
+
+.STYLE1 {
+	color: #999999;
+}
+
+.STYLE3 {
+	color: #FF0000;
+	font-weight: bold;
+}
+.note {
+	color: #FF3399
+}
+
+#con {
+	width: 760px;
+	margin: 0 110px;
+}
+
+form {
+	margin: 0;
+}
+
+body {
+	font-size: 14px;
+}
+
+table {
+	font-size: 14px;
+	line-height: 150%;
+}
+
+.c {
+	font-size: 14px
+}
+
+.s {
+	font-size: 12px;
+	color: #666;
+}
+
+.m {
+	font-size: 14px;
+}
+
+.txt_02 {
+	border: 1px solid #D9CBAE;
+	background-color: #FFFAE4;
+	padding: 7px 10px;
+	margin: 10px auto;
+}
+
+.red {
+	color: #FF0000;
+}
+
+.red:link {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.red:visited {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.red:hover {
+	color: #FF0000;
+	text-decoration: underline;
+}
+
+.red1 {
+	color: #FF0000;
+}
+
+.s1 {
+	font-size: 12px;
+	color: #666;
+}
+
+.bt {
+	background-color: #E2E2E2;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 25px;
+	margin: 12px 0px 0px 0px;
+	text-indent: 8px;
+	text-align: left;
+	border-left: 3px solid #E21921;
+}
+
+a:link {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #3D362B;
+	text-decoration: underline;
+}
+
+.STYLE1 {
+	color: #999999
+}
+
+input {
+	font-size: 14px;
+}
+
+.STYLE3 {
+	color: #FF0000;
+	font-weight: bold;
+}
+
+.alr {
+	background-color: #FFF5D8;
+	border: 1px solid #FF7300;
+	color: red;
+	width: 750px;
+	padding: 5px;
+	line-height: 22px;
+	margin: 15px auto;
+	font-size: 12px;
+}
+
+.b_14 {
+	font-size: 14px;
+	font-weight: bold;
+}

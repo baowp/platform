@@ -1,0 +1,30 @@
+@CHARSET "UTF-8";
+.pattern {
+    position: fixed;
+    right: 0;
+    top: 100px;
+    width: 25px;
+    z-index: 90;
+}
+
+* html .pattern{
+	position: absolute;
+	top: expression(eval(100 +   document.documentElement.scrollTop) );
+}
+.pattern .whole {
+    background: transparent url("../../pattern/images/pattern.png") no-repeat
+		scroll 0px 0px;
+    height: 90px;
+    left: 0;  
+    float: right;
+    position: absolute;
+    top: 0;
+    width: 25px;
+    z-index: 90;
+    text-align: left;
+}
+
+.pattern .global {
+     background-position:  -67px 0 ;
+}
+

@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.top{
+ height:35px;
+ line-height:35px;
+ padding-left:10px;
+ margin:3px 0px;
+ clear:both;
+ overflow:hidden;
+ border-bottom:#CCCCCC dotted 1px;
+}
+ul{
+ list-style:none;
+}
+.top ul{
+ padding:0px;
+ margin:0px auto;
+}
+.top li{
+ margin:0px 4px;
+ padding:0px;
+ float:left;
+}
+li.h{
+ background:url(../images/2002912.gif) no-repeat scroll 0 0;
+ height:12px;
+ width:12px;
+ margin:10px 0px;
+}
+li.u{
+ background:url(../images/2000512.gif) no-repeat scroll 0 0;
+ height:12px;
+ width:12px;
+ margin:10px 3px;
+}
+li.j{
+ margin:2px;
+ height:28px;
+ line-height:28px;
+ width:104px;
+ color:#FF6600;
+ text-align:center;
+ background:url(../images/QQt.jpg) no-repeat scroll 0 0;
+}
+
+li.j a:link{
+ color:#FF6600;
+ text-decoration:none;
+}
+li.j a:visited{
+ color:#FF6600;
+ text-decoration:none;
+}

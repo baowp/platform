@@ -1,0 +1,14 @@
+
+#friend_link .bodyContContent {
+    line-height: 1.2em;
+}
+.friendLinkLi {
+    padding: 2px 10px;
+}
+a.topicLink:link {
+    text-decoration: none;
+}
+a.topicLink:active {
+    text-decoration: none;
+}
+

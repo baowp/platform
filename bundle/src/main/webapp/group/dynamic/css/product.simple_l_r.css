@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+.productDetailLeft {
+    float: left;
+    margin-top: 50px;
+}
+.productDetailRight {
+    float: right;
+    margin-top: 50px;
+}

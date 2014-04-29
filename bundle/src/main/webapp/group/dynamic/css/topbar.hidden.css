@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+
+.outBg {
+	padding-top: 6px;
+}
+
+.topbar-container {
+	display: none;
+}

@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+.items {
+	padding: 0 15px;
+	overflow: hidden;
+}
+.spacehr {
+	margin: 10px 8px;
+}
+
+.titleSpan {
+	font-weight: bold;
+	font-size: 13px;
+	color: #2E6E9E;
+	padding-left: 5px;
+	padding-bottom: 6px;
+}
+
+.items li {
+	float: left;
+	height: 25px;
+    width: 250px;
+    font-weight: bold;
+}
+#tabs label {
+	padding: 2px;
+}
+.exist {
+	font-weight: normal;
+	color: green;
+	padding-left: 5px;
+}
+.item-exist {
+	
+}
+.item-hover {
+	background-color:gray;
+}
+.item-inexist {
+	background-color:gray;
+}
+.item-inexist-check {
+	background-color: orange;
+	color: black;
+}
+.ui-tabs .ui-tabs-panel {
+    overflow: hidden;
+}
+.aui_td_content {
+    text-align: left;
+}

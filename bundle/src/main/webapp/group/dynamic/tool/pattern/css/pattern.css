@@ -1,0 +1,22 @@
+@CHARSET "UTF-8";
+
+.pattern {
+	background: url(/group/dynamic/tool/images/pattern.png) no-repeat scroll 0 0 transparent;
+	border: medium none;
+	color:#333;
+	padding-left:16px;
+	margin-top:8px;
+	*padding-left:5px;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/group/dynamic/tool/images/pattern_ie6.png',sizingMethod='crop');
+}
+.pattern{
+	
+}
+.pattern .whole {
+	
+}
+
+.global {
+	background-position:0 -25px;
+}

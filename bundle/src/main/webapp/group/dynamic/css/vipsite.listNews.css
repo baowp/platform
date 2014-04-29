@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+.listNews {
+	
+}
+
+.listNews dl {
+	overflow: auto;
+	zoom: 1;
+	padding: 6px 0;
+	margin: 0;
+}
+
+.listNewsDl {
+	border-bottom: 1px dashed;
+}
+
+.listNews dt {
+	float: left;
+	width: 58%;
+	font-size: 14px;
+}
+
+.listNews dd {
+	float: left;
+	width: 20%;
+	margin-left: 0;
+}

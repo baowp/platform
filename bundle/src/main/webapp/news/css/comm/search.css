@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+#header {
+	margin: auto;
+	width: 984px;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.htb {
+	margin-bottom: 8px;
+}
+
+.htb td {
+	font-size: 9pt;
+	line-height: 18px;
+}
+
+.htb a:visited {
+	color: #261CDC;
+}
+
+img {
+	border: 1px solid #979797;
+}
+
+.htb img {
+	border: medium none;
+}
+
+.tab {
+	font-family: arial;
+	font-size: 14px;
+	height: 21px;
+}
+
+.b {
+	font-weight: bold;
+}
+
+.formfont {
+	font-family: arial;
+	font-size: 16px;
+	height: 22px;
+}
+
+.searchSubmit {
+	background: url(http://51archetype.com/news/images/search.gif) no-repeat;
+	border: 0 none;
+	height: 30px;
+	margin-left: 10px;
+	text-indent: -9999px;
+	vertical-align: baseline;
+	width: 69px;
+	cursor: pointer;
+}

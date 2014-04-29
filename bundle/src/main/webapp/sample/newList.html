@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+
+<title>html－中国站长站www.chinaz.com</title>
+</head>
+<body>
+<script language="javascript">
+//设置广告块
+var divLeft=0;//设置广告块初始左边位置
+var divTop=0;//设置广告块初始顶部位置
+var divWidth=90;//设置广告块宽度
+var divHeight=120;//设置广告块高度
+var divImg="http://www.jb51.net/images/logo.gif";//设置广告图片的URL地址
+var divUrl="http://www.525asp.com";//设置广告链接
+var divTitle="专业建站\n诚信制作\n提供网络空间";
+document.write("<DIV id=\"adDiv\" style=\"position:absolute; left:"+divLeft);
+document.write("px; top:"+divTop+"px; width:"+divWidth+"px; height:"+divHeight);
+document.write("px; z-index:1;\" onMouseOver=\"javascript:window.clearInterval(varId)\"");
+document.write(" onMouseOut=\"javascript:beginMoveAd();\"><a target=\"_blank\" href=\""+divUrl+"\">");
+document.write("<img src=\""+divImg+"\" border=\"0\" alt=\""+divTitle+"\"></a></DIV>")
+//飘浮广告
+var _stepx=2;_stepy=2;//初始化每次偏离的象素
+var moveSpeed=40;//速度
+var varId;//获取setInterval的ID
+function moveAd(){//飘浮广告主函数
+var adLeft=parseInt(adDiv.style.left);
+var adTop=parseInt(adDiv.style.top);
+var adWidth=parseInt(adDiv.style.width);
+var adHeight=parseInt(adDiv.style.height)
+var _bodyLeft=document.body.scrollLeft;
+var _bodyTop=document.body.scrollTop;
+var _bodyHeight=document.body.clientHeight+_bodyTop;
+var _bodyWidth=document.body.clientWidth+_bodyLeft;
+if(adLeft<=_bodyLeft){
+_stepx=2;
+}
+if(adTop<=_bodyTop){
+_stepy=2;
+}
+if((adLeft+adWidth)>=_bodyWidth){
+_stepx=-2
+}
+if((adTop+adHeight)>=_bodyHeight){
+_stepy=-2
+}
+adDiv.style.left=adLeft+_stepx;
+adDiv.style.top=adTop+_stepy;
+}
+function beginMoveAd(){//启动飘浮
+varId=window.setInterval("moveAd()",moveSpeed)
+}
+window.onload=beginMoveAd;//给窗体的load事件附加飘浮函数
+</script> 
+</body>
+</html>
+

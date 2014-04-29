@@ -1,0 +1,178 @@
+@CHARSET "UTF-8";
+
+.summary {
+	margin: 8px auto;
+	min-height: 320px;
+	width: 710px;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+
+.s600,.s600 a {
+	*display:inline;
+	height: 600px;
+	width: 600px;
+}
+
+.pic a {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	*display:inline;
+}
+
+*+html .pic a {
+	line-height: 0;
+	display: block;
+	font-size: 540px;
+}
+
+* html .pic a {
+	line-height: 0;
+	display: block;
+	font-size: 540px;
+}
+
+*+html .pic.s160 a {
+	font-size: 144px;
+}
+
+* html .pic.s160 a {
+	font-size: 144px;
+}
+
+*+html .pic.s40 a {
+	font-size: 36px;
+}
+
+* html .pic.s40 a {
+	font-size: 36px;
+}
+
+.none {
+	display: none;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.gallery {
+	float: left;
+}
+
+.gallery-r .booth,.gallery-l .booth {
+	float: left;
+}
+
+.gallery .thumb {
+	margin: 10px 5px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.gallery-r .thumb {
+	float: left;
+	margin: 40px 0 0 40px;
+}
+
+.gallery-l .thumb {
+	float: left;
+	margin: 40px 20px 0 20px;
+	_margin-left: 10px;
+}
+
+.gallery .thumb li {
+	float: left;
+	width: 162px;
+	height: 160px;
+	_height: 162px;
+	margin: 0 6px 0 0;
+	padding: 7px 4px 4px 2px;
+}
+
+.gallery-r .thumb li {
+	float: none;
+	width: 40px;
+	height: 40px;
+	margin: 2px 0;
+	padding: 0 2px 2px 4px;
+	_padding: 0 2px 0 7px;
+}
+
+.gallery-l .thumb li {
+	float: none;
+	width: 40px;
+	height: 40px;
+	margin: 2px 0;
+	overflow: hidden;
+	padding: 0 10px 2px 2px;
+}
+
+.gallery .thumb-up li {
+	padding: 2px 4px 9px 2px;
+}
+
+.s160,.s160 a {
+	height: 160px;
+	width: 160px;
+}
+
+.s40,.s40 a {
+	height: 40px;
+	width: 40px;
+}
+
+.gallery .thumb li.selected {
+	background: url(../../images/vipsite/product/xzk160.png) no-repeat;
+}
+
+.gallery .thumb-up li.selected {
+	background: url(../../images/vipsite/product/xzk160-d.png) no-repeat;
+}
+
+.gallery-r .thumb li.selected {
+	background: url(../../images/vipsite/product/xzk-l.png) no-repeat;
+}
+
+.gallery-l .thumb li.selected {
+	background: url(../../images/vipsite/product/xzk-r.png) no-repeat;
+}
+
+fieldset,img {
+	border: 0 none;
+}
+
+.s160 img {
+	max-height: 160px;
+	max-width: 160px;
+}
+
+.s40 img {
+	max-height: 40px;
+	max-width: 40px;
+}
+
+.pic a img {
+	vertical-align: middle;
+}
+
+.productType,.productDes,.productDetailTitle {
+	padding: 5px 10px;
+	text-align: left;
+	overflow-x:hidden;
+	_width: 96%;
+}
+
+
+.productDetailTitle {
+	font-size: 20px;
+}
+
+.product_bottom{
+	padding: 10px 0;
+	text-align: center;
+}
+.product_bottomSpan {
+	font-size: 14px;
+}

@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+.recruit dl {
+	line-height: 25px;
+}
+
+.recruitDl {
+	border-bottom: 1px dashed;
+	overflow: auto;
+	zoom: 1;
+}
+
+.recruit dt {
+	font-size: 14px;
+}
+
+.recruit .title {
+	font-weight: bold;
+	font-size: 16px;
+}

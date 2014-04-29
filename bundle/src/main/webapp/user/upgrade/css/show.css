@@ -1,0 +1,143 @@
+@CHARSET "UTF-8";
+/*清楚浮动---------------------------------------------------------------------------------------------*/
+.clear {
+	clear: both;
+	height: 0px;
+	overflow: hidden;
+	display: block;
+	font-size: 1px;
+}
+body{
+	margin:0px;
+}
+img {
+	border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	max-width: 100%;
+}
+a{
+	text-decoration: none;
+}
+.clearfix:after {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+	display: block;
+	visibility: hidden;
+	content: ".";
+}
+li {
+	list-style-type: none;
+}
+
+#sub_content .show_header{
+	background:url(images/show/shopApply.png) no-reapet scroll 0 0 transparent;
+	float:left;
+	clear:both;
+	overflow:hidden;
+	width:820px;
+}
+#sub_content .show05{
+	overflow:hidden;
+	left:0px;
+	width:800px;
+	height:200px;
+	clear:both;
+	margin-left:6px;
+	margin-bottom:5px;
+	border:1px solid #ddd;
+}
+#sub_content .show06{
+	left:0px;
+	width:205px;
+	height:79px;
+		
+}
+#sub_content .show07{
+	left:0px;
+	width:205px;
+	height:89px;
+	float:left;
+}
+#sub_content .show08{
+	left:0px;
+	width:588px;
+	height:169px;
+	float:left;
+}
+#sub_content .show09{
+	left:0px;
+		width:27px;
+	height:168px;
+	float:left;
+}
+#sub_content .show10{
+	position:relative;
+	left:0px;
+		width:820px;
+	height:16px;
+	float:left;
+	clear:both;
+	overflow:hidden;
+}
+#sub_content .line02{
+	width:820px;
+	clear:both;
+	overflow:hidden;
+}
+#sub_content .line02_left{
+	width:205px;
+	float:left;
+}
+#sub_content .show_function{
+	border:1px solid #ddd;
+	height:auto;
+	width:800px;
+	background-color:#FCFCFC;
+	margin-left:6px;
+	clear:both;
+}
+#sub_content .show_function_row02 ul{
+	height:600px;
+}
+
+#sub_content .show_function li img{
+	float:left;
+	margin-right:6px;
+}
+#sub_content .show_function span{
+	color:#703b3a;
+}
+#sub_content .show_function_row01{
+	height:38px;
+	width:auto;	
+}
+
+#sub_content .show_function_row01 img{
+	border:0px solid transparent;
+}
+#sub_content .show_function_row02{
+	width:auto;	
+	clear:both;
+}
+#sub_content .show_function_row02 li{
+	float:left;
+	margin:20px 0;
+	width:250px;
+	height:90px;
+}
+#sub_content .buy01{
+	width:123px;
+	height:34px;
+	float:right;
+	background:url(/user/upgrade/images/btn_green_normal.png) no-repeat scroll 0 0 transparent;
+}
+#sub_content .buy01 a{
+	display:block;
+	width:123px;
+	height:34px;
+}
+#sub_content .buy01:hover{
+	background:url(/user/upgrade/images/btn_green_down.png) no-repeat scroll 0 0 transparent;
+}

@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+.bodyCont,#company_name,.headCont,.footerCont {
+	height: 30px;
+}
+
+.bodyCont div,#company_name div,.headCont div,.detail {
+	overflow: hidden;
+}
+
+.bodyContContent, embed {
+	display: none;
+}
+
+.inBg {
+	overflow: hidden;
+}
+
+.moveList {
+	padding-bottom: 40px;
+}
+
+div.mod-footer {
+	padding-bottom: 0;
+}
+
+.clr {
+	*display: none;
+}

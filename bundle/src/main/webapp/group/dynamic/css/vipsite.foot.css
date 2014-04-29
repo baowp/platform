@@ -1,0 +1,24 @@
+@CHARSET "UTF-8";
+
+div.mod-footer {
+	line-height: 150%;
+	margin-top: 8px;
+	margin-bottom: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	padding: 0 0 20px;
+	border: none;
+}
+
+.mod-footer p {
+	margin: 2px;
+}
+
+.mod-footer a {
+	padding: 0 3px\9;
+}
+
+.analysis_tool {
+	position: relative;
+	top: 2px;
+}

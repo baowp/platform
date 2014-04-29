@@ -1,0 +1,287 @@
+#header .work-status {
+	line-height: 1.5;
+	min-width: 1000px;
+	position: relative;
+	z-index: 99;
+}
+
+#header .work-show-btn a.work-show-off {
+	background-position: 0 bottom;
+}
+
+#header .work-myinfo-l {
+	float: left;
+	padding: 0 6px 0 16px;
+	width: 136px;
+}
+
+#header .work-myinfo-l .tplogo.normal-member {
+	margin-top: 16px;
+}
+
+#header .work-myinfo-m {
+	border-left: 1px solid #E1EEFF;
+	border-right: 1px solid #FFFFFF;
+	float: left;
+	height: 40px;
+	margin: 6px 0;
+	width: 532px;
+	padding-top:8px;
+}
+
+#header .account-info {
+	border-left: 1px solid #FFFFFF;
+	border-right: 1px solid #E1EEFF;
+	height: 38px;
+	overflow:hidden;
+	clear:both;
+	padding: 0 6px;
+}
+
+#header .account-info dt,#header .more-account-box dt {
+	margin: 0 6px;
+}
+
+#header .account-info dd,#header .more-account-box dd {
+	display: inline;
+	float: left;
+	margin: 2px 6px;
+	white-space: nowrap;
+}
+
+#header .orange {
+	color: #FF7300;
+}
+
+#header .orange a:link {
+	color: #FF7300;
+}
+
+#header .work-rmb {
+	font-family: Helvetica;
+	margin-right: 3px;
+}
+
+#header .work-status {
+	line-height: 1.5;
+}
+
+#header .work-loading {
+	margin-top: 15px;
+	text-align: center;
+}
+
+#header .work-myinfo {
+	background: url("img/bg-myinfo.jpg") repeat-x scroll 0 0 transparent;
+	border-bottom: 1px solid #6593CF;
+	color: #666666;
+	display: none;
+	height: 0;
+	overflow: hidden;
+}
+
+#header .work-show-btn a {
+	background: url("img/work-tbg.gif") no-repeat scroll 0 0 transparent;
+	height: 19px;
+	line-height: 19px;
+	padding-left: 25px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 91px;
+}
+
+.more-btns{
+float:right;
+margin:2px 0;
+padding-top:0px!important;
+padding-top:8px;
+}
+#header .work-status a:link,#header .work-status a:visited {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+#header .work-status a:hover {
+	color: #ff7300;
+	text-decoration: underline
+}
+
+#header .work-status  a:active {
+	color: #ff7300;
+	text-decoration: underline
+}
+
+#header .work-status .more-account,#header .work-status .more-account-close
+	{
+	background: url("img/icon-head.gif") no-repeat scroll -23px -46px
+		transparent;
+	float: right;
+	padding-right: 15px;
+}
+
+#header .work-status .more-account-box {
+	background: url("img/4685_1446014988.png") repeat-y scroll 0 0
+		transparent;
+	float: left;
+	padding: 7px 0 10px 8px;
+	width: 525px;
+}
+
+#header .account-info dt,#header .more-account-box dt {
+	margin: 0 6px;
+}
+
+#header .account-info dd,#header .more-account-box dd {
+	display: inline;
+	float: left;
+	margin: 2px 6px;
+	white-space: nowrap;
+}
+
+
+#header .work-status .account-box-b {
+	background: url("img/4686_1446014988.png") no-repeat scroll 0 0
+		transparent;
+	float: left;
+	height: 4px;
+	overflow: hidden;
+	width: 534px;
+}
+
+#header .work-myinfo-r {
+	height: 40px;
+	margin: 6px 0;
+	width:300px;
+	float:left;
+	text-align:left;
+}
+
+#header .work-myservice-t {
+    float: left;
+	height:22px;
+	line-height:22px;
+	overflow:hidden;
+	text-align:left;
+    margin: 8px 0px 0 5px;
+}
+
+#header .work-myservice {
+    float: left;
+    height: 22px;
+	line-height:22px;
+    margin: 8px 0 0;
+	text-align:left;
+    overflow: hidden;
+}
+
+#header .work-myservice .work-myservice-box {
+    height: 22px;
+    overflow: hidden;
+	float:left;
+    text-align: left;
+}
+.work-myinfo-r li{
+float:left;
+margin:0px 3px;
+}
+.work-myinfo-r ul{
+list-style:none;
+padding-top:10px;
+}
+#header .work-myservice li {
+    float: left;
+    height: 22px;
+    padding: 0 5px;
+    text-align: center;
+}
+
+fieldset,img {
+	border: medium none;
+}
+
+#header .work-myservice li img {
+	vertical-align: middle;
+}
+
+#header .work-status #more-account-box {
+	display: none;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	width: 532px;
+	z-index: 1000;
+}
+
+
+#header .work-status .more-account-box dl {
+	width: 460px;
+	padding-top:8px;
+}
+
+#header .account-info dt,#header .more-account-box dt {
+	margin: 0 6px;
+}
+#header .myweb{
+	color:#f30;
+}
+
+#header .work-status .exists {
+	margin-top: -20px;
+}
+
+#header .work-status .more-btn {
+	float: right;
+	margin: 2px 0;
+}
+
+
+#header .account-info dd,#header .more-account-box dd {
+	display: inline;
+	float: left;
+	margin: 2px 6px;
+	white-space: nowrap;
+}
+
+#header .work-status a:link,#header .work-status a:visited {
+	color: #0066CC;
+	text-decoration: none;
+}
+
+#header .work-status .more-account-close {
+	background:
+		url("img/3451_1446014988.png")
+		no-repeat scroll 26px center transparent;
+}
+
+#header .work-status .more-account-box .account-box {
+	border-top: 1px solid #EEEEEE;
+	margin: 10px 0 0;
+	width: 520px;
+	overflow:hidden;
+	clear:both;
+}
+
+#header .work-status .account-box-b {
+	background:
+		url("img/4686_1446014988.png")
+		no-repeat scroll 0 0 transparent;
+	float: left;
+	height: 4px;
+	overflow: hidden;
+	width: 532px;
+}
+
+#header .work-status .more-account-box .more-btn-close {
+	float: right;
+	margin: 2px 0;
+	width: 42px;
+	padding-top:6px!important;
+	padding-top:0px;
+}
+#hideDiv{
+clear:both;
+overflow:hidden;
+height:26px;
+width:518px;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+</head>
+<body>
+<script language="javascript" type="text/javascript">
+    $(document).ready(function()
+    {
+      $("#txtCity").autocomplete
+      (
+        "/Ajax/AutoCity.aspx",
+        {
+            delay:10,
+            minChars:1,
+            matchSubset:1,
+            matchContains:1,
+            cacheLength:10,
+            matchContains: true,   
+            scrollHeight: 100, 
+            width:150,
+            onItemSelect:selectItem,
+            onFindValue:findValue,
+            formatItem:formatItem,
+            autoFill:false
+        });
+
+});
+function findValue(li) 
+{
+
+   $("#<%=hidCityValue.ClientID %>").val("");
+   $("#city").html("");
+    if( li == null )
+    {
+      return  $("#city").html("未匹配值!");
+    }
+    if( !!li.extra )
+    { 
+       var sValue = li.extra[1];
+        //文本域的值
+       //  alert(sValue);
+      // $("#hidCityValue").val(sValue)
+      document.getElementById("<%=hidCityValue.ClientID %>").value=sValue;
+    }
+    else
+    {
+       var sValue = li.selectValue;
+       
+     // document.getElementById("<%=hidCityValue.ClientID %>").value=sValue;
+    }
+}
+function selectItem(li) 
+{
+    findValue(li);
+}
+function formatItem(row) 
+{
+    return  row[0]+"&nbsp;&nbsp;&nbsp;"+row[1];
+}
+function lookupAjax()
+{
+    var oSuggest = $("#txtCity")[0].autocompleter;
+
+    oSuggest.findValue();
+
+    return false;
+}
+function lookupLocal()
+{    
+      var oSuggest = $("#txtCity")[0].autocompleter;    
+      
+      oSuggest.findValue();    
+  
+      return false;  
+      
+}  
+var CheckCityCode=function()
+{
+
+   var  pCityCode=document.getElementById("<%=hidCityValue.ClientID %>").value;
+    
+    var pName=$("#txtCity").val();
+    
+    var bool=BE.B2B.Web.Shenhua.Control.CityControl.IsExistsCityCode(pName,pCityCode).value;
+    
+    if(bool)
+    { 
+        $("#city").html("");
+        return true;
+    }
+    else
+    {
+       $("#city").html("<font color=\"#0278c0\" size=\"2px\" >请选择地区!</font>");
+       return false; 
+    }
+}
+</script>
+
+<input type="text" id="txtCity" onfocus="if(this.value=='支持中文/拼音'){this.value='';}"
+    onblur="if(this.value==''){this.value='支持中文/拼音';}" value="支持中文/拼音" onkeyup="CheckCityCode();" />
+<asp:HiddenField ID="hidCityValue" runat="server" />
+<span id="city"></span>
+</body>
+</html>

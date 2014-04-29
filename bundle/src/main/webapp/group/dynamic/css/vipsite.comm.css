@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+body {
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+a:link,a:visited { /*	color: #27598E;*/
+	text-decoration: none;
+}
+
+a:hover { /**	color: #FF7300;*/
+	color: #FF7300;
+	text-decoration: underline;
+}
+
+ul,li,form {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.inline {
+	display: inline;
+}
+
+.none {
+	display: none;
+}
+
+.ov-hi{
+	overflow: hidden;	
+}

@@ -1,0 +1,88 @@
+@CHARSET "UTF-8";
+
+.outBg {
+	background: url(images/outBg.gif) repeat scroll 0 0 transparent;
+}
+
+.inBg {
+	background: url(images/inBg.jpg) repeat scroll 0 0 transparent;
+}
+
+.headTopic {
+	background: url(images/banner.jpg) repeat scroll 0 0 transparent;
+	height: 200px;
+}
+
+.topbaner {
+	background: none repeat scroll 0 0 transparent;
+}
+
+.chinaname {
+	color: #5f2f5c;
+}
+
+
+.headerMenuBg {
+	background: url(images/navBg.gif)  scroll 0 0 transparent;
+}
+
+.headerMenuBorder {
+	border-style: solid;
+	border-width: 0px 0px 0;
+	height: 32px;
+}
+
+.headerMenuList a {
+	color: #fff;
+}
+
+.headerMenuLiCheck {
+	border-color: #5e4e3a;
+	border-style: none;
+}
+.headerMenuLiCheckBg{
+	
+}
+
+.headerMenuLiCheck a {
+	color: yellow;
+}
+
+.headerMenuBottom {
+	border-bottom-color: #7c6859;
+}
+
+.bodyCont {
+	background: url(images/bodyCont.gif) repeat-x scroll 0 0 #7C645A;
+	border-color: #7c6859;
+	border-style: solied;
+}
+
+.bodyContTitle {
+	background: url(images/titleBg.jpg) repeat scroll 0 0;
+	background-color: #9C8370;
+}
+
+.bodyContTitle .titleLinkColor {
+	color: #fff;
+}
+
+.bodyContContent {
+	background-color: #7c6859;
+	color: #fff;
+}
+
+.bodyContContent a:link {
+	color: #fff;
+}
+
+.topicLink {
+	color: #FFF;
+}
+
+.mainTextColor {
+	color: #fff;
+}
+.submenu .headerMenuLi {
+    height: 28px;
+}

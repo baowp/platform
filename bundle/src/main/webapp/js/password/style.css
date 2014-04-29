@@ -1,0 +1,28 @@
+.is0{background:url(progressImg1.png) no-repeat 0 0;width:288px;height:7px;}
+.is10{background-position:0 -7px;}
+.is20{background-position:0 -14px;}
+.is30{background-position:0 -21px;}
+.is40{background-position:0 -28px;}
+.is50{background-position:0 -35px;}
+.is60{background-position:0 -42px;}
+.is70{background-position:0 -49px;}
+.is80{background-position:0 -56px;}
+.is90{background-position:0 -63px;}
+.is100{background-position:0 -70px;}
+body{font-size:12px;}
+.clearfix:after{
+content:"."; display:block; height:0; clear:both;
+visibility:hidden;
+}
+*html .clearfix{
+ height:1%;
+}
+*+html .clearfix{
+ height:1%;
+}
+.l{float:left;}
+.form_item{margin-bottom:6px;}
+.form_item label{width:100px;text-align:right;margin-right:4px;display:block;float:left;padding-top:2px;}
+.form_item .text{height:14px;padding:2px;width:132px;border:1px solid #999;}
+.form_item  div a{margin-left:6px;}
+#passwordStrengthDiv{margin-top:6px;}

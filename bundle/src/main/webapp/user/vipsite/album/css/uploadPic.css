@@ -1,0 +1,58 @@
+@CHARSET "UTF-8";
+body{
+	margin:2px;
+}
+.left{float:left;}
+.right{float:right;}
+
+.picMain{
+	width:100%;
+	min-height:250px;
+	background-color:#E5F0FE;
+	overflow:hidden;
+}
+.picMain .picMain_header{
+	margin:7px;
+	clear:both;
+}
+.picMain .picMain_header img{
+	margin-right:7px;
+}
+.picMain .picMain_header p{
+	float:left;
+	clear:both;
+	font-size:12px;
+	color:#61809D;
+}
+.picMain .picContent{
+	background-color:#E5F0FE;
+	float:left;
+	clear:both;
+	overflow:hidden;
+	width: 100%;
+	min-height:250px;
+	padding:0px;
+}
+.picMain .picContent .picborder{
+	 background-color: #FFFFFF;
+    margin: 0 auto;
+    min-height: 240px;
+    width: 98%;
+   
+}
+.picMain .picContent .picInsert01{
+	text-align:center;
+	float:left;
+	margin-top:20px;
+}
+a{
+	color:#529FD0;
+}
+
+.uploadifyQueueItem{
+	width:90%;
+}
+img:hover{
+	cursor:pointer;
+}
+

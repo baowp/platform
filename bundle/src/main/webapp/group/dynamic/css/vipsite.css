@@ -1,0 +1,602 @@
+﻿@CHARSET "UTF-8";
+
+@IMPORT url("vipsite.comm.css");
+
+@IMPORT url("vipsite.search.css");
+
+@IMPORT url("vipsite.photo.css");
+
+@IMPORT url("vipsite.listNews.css");
+
+@IMPORT url("vipsite.recruit.css");
+
+@IMPORT url("vipsite.cert.css");
+
+@IMPORT url("vipsite.foot.css");
+@IMPORT url("vipsite.util.css");
+@IMPORT url("pagination.css");
+
+.outBg {
+	background: #FFFFFF none repeat scroll 0 0;
+}
+
+.outBg {
+	background: transparent url(../images/jz1_outBg.gif) repeat
+		scroll 0 0;
+}
+
+.inBg {
+	width: 952px;
+	margin: 0 auto;
+	overflow-x: hidden;
+	_overflow: hidden;
+	zoom: 1;
+}
+
+.inBg {
+	background: transparent url(../images/jz1_inBg.jpg) repeat
+		scroll 0 0;
+}
+
+a.black {
+	color: #000000;
+}
+
+#company_name {
+	height: 90px;
+}
+
+#companyname {
+	float: left;
+	margin-left: 5px;
+	margin-top: 15px;
+	text-align: left;
+	width: 85%;
+}
+
+.chinaname {
+	color: #000000;
+	font-family: 楷体_GB2312;
+	font-size: 26px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#companyname .chinaname {
+	overflow: visible;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.clr {
+	clear: both;
+}
+
+.headerMenu {
+	width: 100%;
+}
+
+.headerMenuBorder {
+	border-color: #CCCCCC;
+	border-style: solid;
+	border-width: 1px 1px 0;
+	height: 28px;
+}
+
+.headerMenuBg {
+	background: transparent url(../images/jz1_lmyBg.gif);
+}
+
+.headerMenuList {
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0 auto;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+.headerMenuList ul {
+	padding-left: 24px;
+}
+
+.headerMenuLi {
+	cursor: pointer;
+	float: left;
+	height: 20px;
+	padding-top: 8px;
+	width: 108px;
+	cursor: auto;
+	white-space: nowrap;
+}
+
+.headerMenuLi a {
+	color: #ffffff;
+}
+
+.headerMenuLiCheck {
+	border-color: #FFFFFF;
+	color: #27598E;
+	border-style: solid;
+	border-width: 1px 1px 0;
+	float: left;
+	line-height: 24px;
+	margin-top: 3px;
+	width: 108px;
+	cursor: auto;
+	white-space: nowrap;
+}
+
+.headerMenuLiCheck a {
+	color: #27598E;
+}
+
+.headerMenuBottom {
+	border-bottom: 3px solid;
+	border-bottom-color: #FFFFFF;
+}
+
+.headTopic {
+	background: transparent url(../images/jz1_bigPic.jpg) repeat
+		scroll 0 0;
+	background-repeat: repeat-x;
+	height: 200px;
+	width: 100%;
+	height: 200px;
+}
+
+.description {
+	padding-left: 40px;
+	padding-top: 35px;
+	text-align: left;
+}
+
+.topDesc {
+	font-family: 黑体;
+	font-size: 30px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#content {
+	width:300%;
+	overflow: auto;
+	zoom: 1;
+}
+
+.bottomDesc {
+	font-family: Verdana;
+	font-size: 26px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.moveList{
+	float: left;
+	margin-top: 7px;
+}
+.moveList.sort1{
+	margin-left: 0;
+}
+.moveList.sort2,.moveList.sort3{
+	margin-left: 7px;
+}
+.content1{
+	width: 200px;	
+}
+.content2{
+	width: 745px;	
+}
+.content3{
+	width: 200px;	
+}
+
+.filter {
+	filter: Alpha(opacity=85);
+	opacity: 0.85;
+}
+
+.bodyCont {
+	background: #FFFFFF none repeat scroll 0 0;
+	border: 1px none;
+	margin-bottom: 7px;
+	border-color: #648EB6;
+	border-style: solid;
+}
+
+.bodyContTitle {
+	background: transparent url(../images/jz1_titleBg.gif)
+		repeat-x scroll 0 0;
+}
+
+.bodyContTitle {
+	font-size: 14px;
+	font-weight: bold;
+	height: 28px;
+	line-height: 28px;
+	padding: 0 15px;
+	text-align: left;
+}
+
+.bodyContTitle .titleLinkColor {
+	color: #FFFFFF;
+	cursor: pointer;
+}
+
+.bodyContTitle .titleName{
+	cursor: default;	
+}
+
+.hunkList .user_defined{
+	border: none;
+	margin-bottom: 0;
+}
+
+.hunkList .user_defined .bodyContTitle{
+	display: none;
+}
+
+.user_defined .bodyContContent{
+	width: 100%;
+	overflow: hidden;	
+	padding: 0px;
+}
+
+.b {
+	font-weight: bold;
+}
+
+.fl {
+	float: left;
+}
+
+.bodyContContent {
+	padding-bottom: 7px;
+	padding-top: 7px;
+	text-align: left;
+}
+
+.bodyContContentBB {
+	border-bottom: 1px dotted #BFBFBF;
+}
+
+.bodyContContentLi {
+	height: 22px;
+	line-height: 22px;
+	text-align: left;
+}
+
+.treeDiv {
+	padding-left: 8px;
+}
+
+.topicLink {
+	color: #27598E;
+}
+
+.topicLink:hover {
+	color: #FF7300;
+}
+
+.contactLi {
+	padding: 3px 5px 3px 10px;
+}
+
+.bodyRight {
+	float: left;
+	margin-left: 10px;
+	margin-top: 7px;
+	width: 742px;
+}
+
+.fr {
+	float: right;
+}
+
+.fs12px {
+	font-size: 12px;
+}
+
+.nb {
+	font-weight: normal;
+}
+
+.rel {
+	position: relative;
+}
+
+.rightConteWidth {
+	margin: 0 auto;
+	text-align: center;
+	width: 98%;
+	overflow-x: hidden;
+}
+
+.bodyContContentRightCont {
+	margin-left: 15px;
+}
+
+.tal {
+	text-align: left;
+}
+
+.mainTextColor {
+	color: #000000;
+}
+
+.bodyContContentRightCont {
+	width: 675px;
+}
+
+.glitzBody ul {
+	overflow: hidden;
+	zoom: 1;
+}
+
+.glitzBody li {
+	float: left;
+	margin-bottom: 20px;
+	width: 178px;
+}
+
+.glitzPic,.glitzPic a {
+	height: 160px;
+	width: 160px;
+}
+
+.glitzPic {
+	border: 1px solid #CCCCCC;
+	text-align: center;
+	margin: auto;
+}
+
+.glitzPic a {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+*+html .glitzPic a {
+	display: block;
+	font-size: 144px;
+}
+
+* html .glitzPic a {
+	display: block;
+	font-size: 144px;
+}
+
+.glitzPic a img {
+	vertical-align: middle;
+}
+
+.glitzBorder {
+	border-width: 1px;
+	border-style: solid;
+}
+
+.glitzColor {
+	border-color: #cccccc;
+}
+
+.glitzBody .txt {
+	height: 42px;
+	line-height: 1.2;
+	overflow: hidden;
+	padding-top: 5px;
+}
+
+/**div#contact_column*/
+.contacts {
+	padding: 20px;
+	text-align: left;
+	overflow: auto;
+	zoom: 1;
+}
+
+.contacts ul li {
+	line-height: 150%;
+}
+
+.contactOne {
+	float: left;
+	width: 50%;
+	padding: 5px 0;
+	border-bottom: 1px dashed #ccc;
+}
+
+/**product_detail*/
+.wangpuBodyContTitle {
+	border-bottom: 1px dashed #CCCCCC;
+	border-color: #CCCCCC;
+	border-width: 1px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 44px;
+	padding: 0 15px;
+	text-align: center;
+	width: 92%;
+}
+
+#detailCtn {
+	float: left;
+	overflow: hidden;
+	padding-left: 16px;
+	text-align: left;
+	width: 350px;
+}
+
+.bodyCont #detailCtn {
+	width: 385px;
+}
+
+#detailCtn .row7 {
+	border-top: 0 none;
+	padding: 0 0 5px 2px;
+}
+
+#detailCtn .row4 {
+	padding: 6px 0;
+}
+
+#detailCtn .row4 p {
+	clear: both;
+	color: #646464;
+	line-height: 22px;
+	margin: 0;
+	padding: 0;
+}
+
+span.wordwarp {
+	overflow: hidden;
+	word-wrap: break-word;
+}
+
+#detailCtn .row4 .right {
+	float: right;
+	margin-top: -26px;
+}
+
+.nopaybt {
+	border-top: 1px dashed #C3BBAC;
+	padding-top: 10px;
+}
+
+.nopayww {
+	height: 40px;
+	line-height: 40px;
+	padding-left: 22px;
+	text-align: left;
+}
+
+a.nopaycontact {
+	background-image: url(../images/detail-but.gif);
+	background-position: 0 -310px;
+	background-repeat: no-repeat;
+	color: #FFFFFF !important;
+	display: block;
+	font-weight: bold;
+	height: 27px;
+	line-height: 27px;
+	padding-left: 25px;
+	text-decoration: none;
+	width: 60px;
+}
+
+a.nopaycontact:hover {
+	background-position: -100px -310px;
+}
+
+/**supplies*/
+.bodyContContentImg-150 .picBox {
+	font-size: 134px !important;
+	height: 150px !important;
+	overflow: hidden;
+	position: relative;
+	width: 150px !important;
+}
+
+/**main_message*/
+.tip .error {
+	background: transparent url(../images/1_1245982792953.gif)
+		no-repeat scroll 0 0;
+	color: #C53032;
+	padding-left: 20px;
+}
+
+.leaveWord {
+	min-height: 100px;
+	/**height: 440px;*/
+}
+
+.leaveWord .sendtd {
+	text-align: right;
+	padding-right: 8px;
+	width: 20%;
+}
+
+.leaveWord .sendcont {
+	text-align: left;
+	padding: 3px 0;
+}
+
+.leaveWord .sendTitle,.leaveWord .sendContent {
+	width: 60%;
+}
+
+.leaveWord .tip .error {
+	background-image: none;
+	padding-left: 5px
+}
+
+.leaveWord #codeCell .tip {
+	margin-left: 70px;
+}
+
+.sendSub {
+	margin-top: 12px;
+}
+
+.sendBtn {
+	font-weight: '';
+}
+
+.validateForm input.error,.validateForm textarea.error {
+	border: 1px dotted red !important;
+}
+
+label.error {
+	color: red;
+	font-style: italic;
+}
+
+.msgSendSucc {
+	background: transparent url(../images/1000748.gif) no-repeat
+		scroll 0 0 !important;
+	font-family: 黑体;
+	font-size: 32px;
+	font-weight: bold;
+	height: 100px;
+	margin: 30px auto auto;
+	padding-left: 60px;
+	padding-top: 8px;
+	text-align: left;
+	width: 360px;
+	line-height: 20px;
+}
+
+#log {
+	float: left;
+	padding-left: 20px;
+}
+
+.topbaner {
+	background: #FFFFFF none repeat scroll 0 0;
+	width: 952px;
+}
+
+.topbanerCont {
+	height : 100%;
+	overflow: hidden;
+}
+
+.enname {
+	color: #000000;
+	font-family: Verdana;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+.ygtvlabel,.ygtvlabel:link,.ygtvlabel:visited,.ygtvlabel:hover {
+	background-color: transparent !important;
+}
+
+.newsContent {
+	text-align: left;
+}
+
+.mapbarBox{
+	padding-left : 7px;
+}

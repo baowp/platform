@@ -1,0 +1,93 @@
+@CHARSET "UTF-8";
+
+ul,ol,li,form {
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol {
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	clear: both;
+}
+
+.category ol {
+	margin: 3px 0;
+	overflow: auto;
+}
+
+.category li {
+	float: left;
+	margin-right: 4px;
+}
+
+.title {
+	font-size: 14px;
+	text-align: center;
+}
+
+.sign {
+	width: 80px;
+}
+
+.name {
+	width: 160px;
+}
+
+.sort,.display {
+	width: 60px;
+}
+
+.sort input {
+	width: 50px;
+}
+
+.buttonDiv {
+	margin-top: 10px;
+}
+
+#categories {
+	border-top: 1px solid #F6F6F6;
+	width: 120px;
+	margin-top: 50px;
+}
+
+#categories li {
+	padding-left: 7px;
+	border-left: 1px solid #C1CEE0;
+	border-right: 1px solid #C1CEE0;
+	background-image: url(http://51archetype.com/news/images/arrow-1.gif);
+	background-position: right center;
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #F6F6F6;
+	border-left: 1px solid #C1CEE0;
+	cursor: pointer;
+}
+
+#categories li.current {
+	background-color: #FBFDFF;
+	border-left: 1px solid #9FB5D6;
+	border-right: medium none;
+	margin: 0 0 0;
+	position: relative;
+	width: 108px;
+	z-index: 4;
+}
+
+#categories li a {
+	display: block;
+	width: 110px;
+}
+
+div.category.none {
+	display: none;
+	position: absolute;
+	top: 4px;
+	left: 120px;
+	background-color: #FBFDFF;
+	width: 500px;
+	height: 400px;
+	padding: 2px 3px 10px 8px;
+	border: 1px solid #9FB5D6;
+}

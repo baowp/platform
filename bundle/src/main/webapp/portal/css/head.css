@@ -1,0 +1,233 @@
+
+
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dd,dl,dt,li,ol,ul,fieldset,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,form
+	{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #FFFFFF;
+	font-family: Tahoma, Verdana, Simsun, Microsoft YaHei, Arial Unicode MS,
+		Mingliu, Arial, Helvetica;
+	font-size: 12px;
+	font-size-adjust: none;
+	font-stretch: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	line-height: 1.5em;
+	text-align: center;
+}
+
+body {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: #FFFFFF none repeat scroll 0 0;
+	color: #4D4D4D;
+}
+
+.head {
+	color: #666666;
+	margin-bottom: 7px;
+	text-align: left;
+}
+
+.m {
+	margin: auto;
+	width: 950px;
+}
+
+.head .site-bar {
+	background: transparent url(../images/heads_20100110.png) repeat-x
+		scroll 0 -80px;
+	height: 28px;
+	line-height: normal;
+	position: relative;
+	z-index: 32;
+}
+
+.head .buy-sell {
+	float: left;
+	padding-top: 4px;
+}
+
+.head .buy-sell a {
+	background: transparent url(../images/heads_20100110.png) no-repeat
+		scroll 0 -473px;
+	float: left;
+	padding: 2px 9px 1px;
+}
+
+.head a:link,.head a:visited {
+	color: #666666;
+	text-decoration: none;
+}
+
+.head a:HOVER {
+	text-decoration: underline;
+	color: #ff4e00;
+}
+
+.head .site-link {
+	float: right;
+}
+
+.site-bar .site-link li {
+	background: transparent url(../images/heads_20100110.png) no-repeat
+		scroll 0 -469px;
+	float: left;
+	padding: 6px 9px 1px;
+}
+
+.head a.buy,.head li.login {
+	background-image: none;
+}
+
+ul,ol {
+	list-style-type: none;
+}
+
+#search_bar {
+	position: relative;
+	z-index: 31;
+	background: transparent url(../images/logo.gif) no-repeat scroll 120px
+		18px;
+}
+
+.head .search-bar {
+	padding-top: 10px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+#primary_site .search-bar {
+	margin: 0 auto;
+	width: 864px;
+}
+
+.head .search-bar .logo {
+	float: left;
+	padding-right: 20px;
+	text-align: right;
+	width: 282px;
+}
+
+#primary_site .logo {
+	margin-top: 20px;
+}
+
+.head .search-form {
+	float: left;
+	position: relative;
+	z-index: 33;
+}
+
+.head .search-tabs {
+	left: 10px;
+	position: absolute;
+	z-index: 2;
+}
+
+.head .search-tabs p {
+	float: left;
+	padding-left: 15px;
+}
+
+.search-tabs p.now {
+	background: transparent url(../images/heads_20100110.png) no-repeat
+		scroll 0 -589px;
+}
+
+.head .search-tabs span {
+	cursor: pointer;
+	display: block;
+	float: left;
+	line-height: 21px;
+	padding-right: 15px;
+}
+
+.search-tabs p.now span {
+	background: transparent url(../images/heads_20100110.png) no-repeat
+		scroll right -612px;
+}
+
+.head .search-input {
+	background: transparent url(../images/heads_20100110.png) repeat-x
+		scroll 0 -151px;
+	height: 38px;
+	padding-left: 6px;
+	position: relative;
+	width: 468px;
+}
+
+#primary_site .search-input {
+	top: 20px;
+	z-index: 1;
+}
+
+.head .search-form input {
+	border-color: gray #D9D9D9 #D9D9D9 gray;
+	border-style: solid;
+	border-width: 1px;
+	margin-top: 6px;
+	padding: 3px 0 4px 5px;
+	width: 362px;
+}
+
+#KeyWord {
+	font-size: 1.2em;
+}
+
+button {
+	cursor: pointer;
+	font-size: 12px;
+	margin: 0;
+	padding: 0;
+}
+
+.head .search-form button {
+	background: transparent url(../images/heads_20100110.png) no-repeat
+		scroll -55px -245px;
+	border: 0 none;
+	height: 27px;
+	margin: 5px 0 0 6px;
+	vertical-align: top;
+	width: 87px;
+}
+
+.head .search-bar .tl {
+	background: transparent url(../images/heads_20100110.png) no-repeat
+		scroll 0 -111px;
+	height: 38px;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 3px;
+}
+
+.head .search-bar .tr {
+	background: transparent url(../images/heads_20100110.png) no-repeat
+		scroll right -111px;
+	height: 38px;
+	overflow: hidden;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 3px;
+}
+
+#primary_site .hot-items {
+	padding-top: 25px;
+}
+
+.head .search-more {
+	float: left;
+	padding-left: 10px;
+}
+
+#primary_site .search-more {
+	padding: 20px 0 0 5px;
+}

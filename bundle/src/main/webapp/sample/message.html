@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>【强烈推荐】 超漂亮的仿腾讯弹出层效果（兼容主流浏览器）</title>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#show").click(function(){
+		$("#privacyIfrLayer").show();
+	})
+})
+</script>
+</head>
+<body>
+<input type="button" id="show" value="阅读"/>
+<div id="privacyIfrLayer" style="display:none; left: 112px; top: 203.5px;">
+          <iframe scrolling="no" height="600" frameborder="0" width="800" src="http://page.china.alibaba.com/shtml/coop/terms2.shtml?iframe_delete=true" id="privacyIfr"></iframe>
+          <div class="btn">
+            <button id="privacyBtn">阅读完毕，关闭窗口</button>
+          </div>
+   </div>
+</body>
+</html>

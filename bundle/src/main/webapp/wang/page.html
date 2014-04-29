@@ -1,0 +1,110 @@
+<html>
+<head>
+<title>AJAX静态分页</title>
+<meta http-equiv="content-type" content="text/html;charset=gb2312">
+
+<style type="text/css">
+<!--
+body				{ text-align:center;font:14px Verdana,sans-serif; }
+a:link,a:visited	{ color:#00f;text-decoration:none; }
+a:hover				{ color:#f00;text-decoration:underline; }
+#main				{ width:450px;background:#f2f2f2;border:1px #999 solid;padding:10px;text-align:left;line-height:150%;margin:0 auto; }
+#title				{ width:100%;line-height:30px;border-bottom:1px #999 solid;display:table; }
+#left				{ float:left;width:50%;text-align:left;font-size:14px;font-weight:bold; }
+#right				{ float:left;width:50%;text-align:right; }
+#content			{ width:100%;margin:10px 0;clear:both; }
+#download			{ width:100%;margin:10px 0;line-height:150%; }
+-->
+</style>
+
+<script type="text/javascript">
+<!--
+function createAjax() {			//该函数将返回XMLHTTP对象实例
+	var _xmlhttp;
+	try {	
+		_xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");	//IE的创建方式
+	}
+	catch (e) {
+		try {
+			_xmlhttp=new XMLHttpRequest();	//FF等浏览器的创建方式
+		}
+		catch (e) {
+			_xmlhttp=false;		//如果创建失败，将返回false
+		}
+	}
+	return _xmlhttp;	//返回xmlhttp对象实例
+}
+
+function getweblist(page) {		//该函数用来获取分页数据
+	var xmlhttp=createAjax();	//创建变量xmlhttp，并将createAjax()函数创建的对象实例赋于它
+	if (xmlhttp) {		//如果xmlhttp对象创建成功，则执行条件语句中的程序
+		var content=document.getElementById('content');		//获取页面中id为content的对象
+		xmlhttp.open('get','server.asp?page='+page+'&n='+Math.random(),true);	//打开与服务器的连接，其中get为连接方式，server.asp为要连接的页面，有两个参数，其中第一个参数page为需要返回数据的页数,第二个参数n为一个随机数，这样每次发送的URL都会不一样，相当于都向服务器发出一个新的请求，避免浏览器缓存数据。
+		xmlhttp.onreadystatechange=function() {		//为xmlhttp对象的readyState属性指定事件，改属性值改变时，则会执行其中的程序
+			if (xmlhttp.readyState==4 && xmlhttp.status==200) {	//如果xmlhttp.readyState==4并且xmlhttp.status==200时，执行条件中的程序，其中readyState有五个值，4为请求完成，是客户端向服务器提交的数据成功到达，status有N多值-_-!!，其中200为OK，是指服务器向客户端完成发送数据。
+				content.innerHTML=unescape(xmlhttp.responseText);	//将服务器返回的数据解码并写入指定的ID中。
+			}
+			else {
+				content.innerHTML='<span style="color:red">正在从服务器提取数据......</span>';	//如果服务器没有完成传送，则向用户提示正在传输。
+			}
+		}
+		xmlhttp.send(null);	//向服务器发送请求，因为是get请求，会直接附在URL后面，所以这里括号中的数据为null，IE中也可以不写，但FF就必须加上null，否则会发送失败。
+	}
+}
+
+function edit() {	//编辑分页显示条数的函数
+	var str='<form style="margin:0">每页显示 <input type="text" id="pagesize" size="3"> 条 <input type="button" id="savebtn" value="保存" onclick="save()"> <input type="button" id="cancelbtn" value="取消" onclick="rightinfo()"></form>'		//定义html字符串
+	var right=document.getElementById('right');	//获得页面中的right对象。
+	right.innerHTML=str;	将str变量的值写入该对象中。
+}
+
+function rightinfo() {		//right对象中的原始信息，请在页面开始和被显示条数被修改后调用
+	document.getElementById('right').innerHTML='<a href="javascript:void(edit())" title="修改每页显示条数">Edit</a>';
+}
+
+function save() {	//保存修改后的显示条数
+	var pagesize=document.getElementById('pagesize');	//这个就不写了，跟上面的用法一样。
+	if (pagesize.value==''||/[0-9]+/.test(pagesize.value)==false) {		//确定用户输入的新数据是不是一个数字
+		alert("请正确填写每页显示条数！ ");
+		return;
+	}
+	var xmlhttp=createAjax();	//创建对象
+	if (xmlhttp) {
+		xmlhttp.open('get','set.asp?pagesize='+pagesize.value+'&n='+Math.random(),true)		//参上同看
+		xmlhttp.onreadystatechange=function() {
+			if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+				document.getElementById('right').innerHTML=unescape(xmlhttp.responseText);	//先写入从服务器返回的字符串，如果成功，会写入completed。
+				getweblist(1);		//从新获取新修改后的第一页的数据
+				setTimeout('rightinfo()',3000);		//3秒后将right对象的原始字符串写入。
+			}
+			else {
+				document.getElementById('pagesize').disabled=true;	//将几个FORM表单的元素都设为不可改动
+				document.getElementById('savebtn').disabled=true;
+				document.getElementById('cancelbtn').disabled=true;
+			}
+		}
+		xmlhttp.send(null);	//发送请求。
+	}
+}
+
+//-->
+</script>
+</head>
+
+<body onload="getweblist(1);rightinfo();">
+	<div id="main">
+		<div id="title">
+			<div id="left">静态分页的AJAX实现</div>
+			<div id="right"></div>
+		</div>
+		<div id="content"></div>
+		<div id="download">
+			作者：十一狼<br />
+			联系：275915854(QQ)&nbsp;112183883@163.com(email)<br />
+			下载：<a href="http://www.w3cg.net/Ajax.rar" target="_blank">http://www.w3cg.net/Ajax.rar</a>
+		</div>
+
+	</div>
+</body>
+
+</html>

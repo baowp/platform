@@ -1,0 +1,68 @@
+@CHARSET "UTF-8";
+
+.dolog .area .list {
+	margin: 16px 0;
+}
+
+.dolog .area .list .item {
+	height: 34px;
+}
+
+.dolog .area .list .item .nameTxt {
+	float: left;
+	height: 22px;
+	line-height: 22px;
+	padding-right: 12px;
+	text-align: right;
+	width: 110px;
+}
+
+.dolog #login .area .list .item .nameTxt {
+	width: 60px;
+}
+
+.dolog .area .list .item .con {
+	display: block;
+	float: left;
+	padding-right: 12px;
+	min-width: 226px;
+}
+
+.dolog #login .area .list .item .con {
+	min-width: 50px;
+}
+
+.dolog .area .list .item .input {
+	border: 1px solid #7F9DB9;
+	font-size: 12px;
+	height: 16px;
+	line-height: 16px;
+	padding: 2px 0 2px 4px;
+	width: 220px;
+}
+
+.dolog #login .area .list .item .input {
+	width: 140px;
+}
+
+.dolog .area .list .item .tip {
+	float: left;
+}
+
+.dolog .area .list .item .tip div {
+	line-height: 16px;
+	padding-left: 20px;
+	text-align: left;
+}
+
+.dolog .area .list .item .tip div.error {
+	background: transparent url(../images/1_1245982792953.gif)
+		no-repeat scroll 0 0;
+	color: #C53032;
+}
+
+.dolog .area .list .item .tip div.correct {
+	background: transparent url(../images/1000716.gif) no-repeat
+		scroll 0 0;
+	color: green;
+}

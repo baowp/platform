@@ -1,0 +1,227 @@
+@CHARSET "UTF-8";
+
+#editTopic .check {
+	background: transparent url(../images/setbg.gif) repeat-x scroll center
+		bottom;
+	display: block;
+	height: 500px;
+	padding: 10px 20px;
+	width: 441px;
+}
+
+#editTopicImg .title {
+	background: transparent url(../images/editTopicBg.gif) no-repeat scroll;
+	height: 30px;
+	overflow: hidden;
+	width: 430px;
+}
+
+#editTopic .titleList {
+	height: 20px;
+	padding: 4px 39px;
+	width: 365px;
+}
+
+#editTopic .titleList ul li {
+	float: left;
+	font-weight: normal;
+	height: 20px;
+	padding-left: 10px;
+	width: 63px;
+}
+
+#editTopic .titleList ul li a {
+	color: #4F4F4F;
+}
+
+.contTitle {
+	background: url(../images/icon1.gif) no-repeat scroll 9px 2px;
+	color: #CA7032;
+	line-height: 150%;
+	margin-top: 5px;
+}
+
+.contCont {
+	color: #000000;
+	font-weight: normal;
+	padding-left: 23px;
+}
+
+.contCont ul li {
+	line-height: 150%;
+}
+
+.backgroundImgBox2 {
+	height: 110px;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 365px;
+}
+
+.backgroundImgBox2 ul li {
+	float: left;
+	padding: 2px 4px;
+}
+
+.backgroundImgBox2 a {
+	border: 1px solid #D3D3D3;
+}
+
+.uncheck2 {
+	border: 1px solid #FFFFFF;
+}
+
+.check2 {
+	border: 1px solid #0000FF;
+}
+
+.gray {
+	color: #999999;
+}
+
+.editLine {
+	border-top: 1px dotted #D8D8D8;
+	height: 1px;
+	margin-top: 12px;
+	overflow: hidden;
+	width: 430px;
+}
+
+#editTopic .uncheck {
+	display: none;
+}
+
+#editTopContent .title {
+	background: url(../images/editTopicBg.gif) no-repeat scroll 0 -30px;
+	height: 30px;
+	overflow: hidden;
+	width: 430px;
+}
+
+.chinaname {
+	display: block;
+	height: 32px;
+	overflow: hidden;
+}
+
+/**
+.enname {
+	display: block;
+	height: 32px;
+	overflow: hidden;
+}
+*/
+.colorShow {
+	border: 1px solid #DFDFDF;
+	cursor: pointer;
+	height: 18px;
+	width: 18px;
+	*background: #ffffff;
+	_background: #ffffff;
+}
+
+#editMenu .title {
+	background: url(../images/editTopicBg.gif) no-repeat scroll 0 -60px;
+	height: 30px;
+	overflow: hidden;
+	width: 430px;
+}
+
+.backgroundImgBox ul li {
+	float: left;
+	padding: 2px 3px;
+}
+
+.backgroundImgBox a {
+	border: 1px solid #D3D3D3;
+}
+
+#editModule .title {
+	background: url(../images/editTopicBg.gif) no-repeat scroll 0 -90px;
+	height: 30px;
+	overflow: hidden;
+	width: 430px;
+}
+
+.contCont .w1 {
+	width: 250px;
+}
+
+.contCont .w2 {
+	width: 150px;
+}
+
+.contCont .w3 {
+	width: 125px;
+}
+
+.backgroundImgBox {
+	height: 80px;
+	margin-left: 17px;
+	width: 400px;
+}
+
+#editAll .title {
+	background: url(../images/editTopicBg.gif) no-repeat scroll 0 -120px;
+	height: 30px;
+	overflow: hidden;
+	width: 430px;
+}
+
+.bgSetTitleIn {
+	background: url(../images/inBgBg.gif) no-repeat scroll 0 0;
+	height: 96px;
+	margin-left: 10px;
+	margin-top: 7px;
+	text-align: center;
+	width: 433px;
+}
+
+.bgSetTitleOut {
+	background: url(../images/outBgBg.gif) no-repeat scroll 0 0;
+	height: 96px;
+	margin-left: 10px;
+	margin-top: 7px;
+	text-align: center;
+	width: 433px;
+}
+
+#bgSetTitle .check3 {
+	color: #C97132;
+	float: left;
+	font-weight: bold;
+	padding: 10px 17px 0;
+}
+
+#bgSetTitle .uncheck3 {
+	color: #3233FF;
+	float: left;
+	font-weight: normal;
+	padding: 10px 17px 0;
+}
+
+.bgSetCont {
+	background: #FFF8EE none repeat scroll 0 0;
+	border-color: #FFCB99;
+	border-style: solid;
+	border-width: 0 1px 1px;
+	height: 205px;
+	margin-left: 10px;
+	margin-top: 0 !important;
+	padding-bottom: 7px;
+	padding-top: 7px;
+	width: 431px;
+}
+
+.typeLabel {
+	padding-top: 3px;
+	padding-left: 12px;
+	line-height: 200%;
+	background: url(../images/point.gif) no-repeat left center;
+	padding-left: 12px;
+	background: url(../images/point.gif) no-repeat left center
+}
+
+.lin200 {
+	line-height: 200%;
+}

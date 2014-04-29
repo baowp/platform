@@ -1,0 +1,132 @@
+body {font-size:12px;}
+.interity-form .line {
+	height: 34px;
+	overflow: hidden;
+}
+
+.interity-form div.right-text {
+	display: inline;
+	float: left;
+	line-height: 16px;
+}
+
+.interity-form .error,.interity-form .file-info {
+	background-position: 0 -277px;
+}
+
+.interity-form .tip,.interity-form .error,.interity-form .right,.interity-form .file-info
+	{
+	background:
+		url("http://img.china.alibaba.com/images/myalibaba/integrity/certify/icons.png")
+		no-repeat scroll 0 -167px transparent;
+	padding-left: 16px;
+}
+
+.interity-form div.left-text {
+	text-align: right;
+	width: 116px;
+}
+.interity-form .m-l128 {
+    margin: 0 0 0 128px;
+}
+.interity-form div.left-text,.interity-form div.fill-cont,.interity-form ul.fill-cont,.interity-form div.text-box
+	{
+	display: inline;
+	float: left;
+	line-height: 150% !important;
+	margin-right: 12px;
+}
+
+.interity-form div.left-text font {
+	display: inline-block;
+	width: 8px;
+}
+
+.interity-form div.fill-cont {
+	width: 228px;
+}
+
+#identityCard,#bankAccountId,#bankAccountIdR,#mobile {
+	ime-mode: disabled;
+}
+
+.interity-form div.fill-cont input.red-border {
+	border: 1px solid #ED8F8F;
+}
+
+.interity-form div.fill-cont input.fill-input {
+	border: 1px solid #7F9DB9;
+	height: 16px;
+	padding: 3px 4px;
+	width: 220px;
+}
+
+div.interity-form input[type="text"],div.complaint-form select {
+	border: 1px solid #7F9DB9;
+}
+
+.certifycommon .Tahoma {
+	font-family: Tahoma, SimSun, Arial;
+}
+
+.interity-form div.right-text {
+	width: 100px;
+}
+
+.interity-form .line {
+	height: 34px;
+	overflow: hidden;
+}
+
+.cerfways-page .m-l128 {
+	margin: 0 0 0 128px;
+}
+
+.ybtn-8930 {
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	width: 89px;
+}
+
+.ybtn-5930,.ybtn-8930,.ybtn-11930,.ybtn-7725,.ybtn-10325,.ybtn-15036,.bbtn-5025,.bbtn-5730,.bbtn-8530,.bbtn-7325,.bbtn-9725,.bbtn-11330,.addbtn,.gobackbtn
+	{
+	background:
+		url("http://img.china.alibaba.com/images/myalibaba/integrity/common/formbtn-new.gif")
+		no-repeat scroll 0 0 transparent;
+	border: medium none;
+	cursor: pointer;
+	display: block;
+	text-align: center;
+}
+
+.sqmt {
+	background: none repeat scroll 0 0 #FEF8F8;
+	float: right;
+	padding: 8px 0;
+	width: 256px;
+	height:240px;
+}
+#sub_content{
+height:270px;
+}
+.sqmt h3 {
+	background:
+		url("http://style.org.hc360.com/images/my/images/img3/lb.png")
+		no-repeat scroll 5px 4px transparent;
+	border-bottom: 1px solid #FDD3D1;
+	color: #6593CF;
+	font-size: 14px;
+	margin: 0;
+	padding: 10px 0 10px 70px;
+}
+
+.sqmt p {
+	background:
+		url("http://style.org.hc360.com/images/my/images/img3/pankjt.png")
+		no-repeat scroll 15px 4px transparent;
+	padding-left: 35px;
+	width: 190px;
+}

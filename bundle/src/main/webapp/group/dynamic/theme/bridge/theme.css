@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+
+.outBg {
+	background: url(images/outBg.gif) repeat scroll 0 0 transparent;
+}
+
+.inBg {
+	background: url(images/inBg.gif) repeat scroll 0 0 transparent;
+}
+
+.headTopic {
+	background: url(images/banner.jpg) repeat scroll 0 0 transparent;
+	height: 200px;
+}
+
+.topbaner {
+	background: none repeat scroll 0 0 #ccc;
+}
+
+.headerMenuBg {
+	background: url(images/navBg.gif) scroll 0 0 transparent;
+}
+
+.headerMenuBorder {
+	border-style: solid;
+	border-width: 0px 0px 0;
+	height: 34px;
+}
+
+.headerMenuList a {
+	color: #red;
+}
+
+.headerMenuLiCheck {
+	border-color: #5e4e3a;
+	border-style: none;
+}
+.headerMenuLiCheckBg{
+	background: url(images/navBg.gif) scroll 0 0 transparent;
+}
+
+.headerMenuLiCheck a {
+	color: #fff;
+}
+
+.headerMenuBottom {
+	border-bottom-color: #FFFFFF;
+}
+
+.bodyCont {
+	background: url(images/bodyCont.gif) repeat-x scroll 0 0 #d6d6d3;
+	border-color: #d6d6d3;
+	border-style: solid;
+	background-color: #d6d6d3;
+}
+
+.bodyContTitle {
+	background: url(images/titleBg.gif) repeat scroll 0 0;
+	background-color: #51ae00;
+}
+
+.bodyContTitle .titleLinkColor {
+	color: #ffffff;
+}

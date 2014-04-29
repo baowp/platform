@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+/**manage page*/
+#tabContainer ul.list {
+	overflow: auto;
+	zoom: 1;
+}
+
+#tabContainer ul.list li.item {
+	float: left;
+	width: 120px;
+	height: 30px;
+}
+.tabmin_ul{
+	min-height: 50px;
+}
+
+#below_ul{
+	padding-top: 10px;
+	border-top: 1px #A6C9E2 dashed;
+}

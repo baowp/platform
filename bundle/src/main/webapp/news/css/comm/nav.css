@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+
+#nav {
+	background-image: url(http://51archetype.com/news/images/line.gif);
+	background-position: -9px 0;
+	height: 30px;
+	margin: auto;
+	width: 984px;
+}
+
+#nav ul {
+	display: inline;
+}
+
+#nav ul.nav_main {
+	float: left;
+	height: 100%;
+	margin-left: 10px;
+	width: 810px;
+}
+
+#nav li {
+	color: #FFFFFF;
+	float: left;
+	font-size: 12px;
+	line-height: 30px;
+}
+
+#nav ul.nav_main li {
+	background: url(h51archetype.comcc.net/news/images/icon.gif) no-repeat
+		scroll -45px -91px transparent;
+	font-weight: bold;
+	line-height: 30px;
+	padding: 0 7px 0 11px;
+}
+
+#nav ul div {
+	background:51archetype.com://51archetype.com/news/images/icon.gif) no-repeat
+		scroll center 4px transparent;
+}
+
+#nav a {
+	display: block;
+}
+
+#nav a:link,#nav a:visited {
+	color: #FFFFFF;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+#subnav {
+	backg51archetype.coml(http://51archetype.com/news/images/bg_civil.gif) repeat-x
+		scroll 0 -180px #DDDDDD;
+	height: 36px;
+	margin: 0 auto;
+	position: relative;
+	width: 984px;
+}
+
+#subnav h2 {
+	display: inline;
+	float: left;
+	line-height: 36px;
+	margin-left: 20px;
+	width: 92px;
+	white-space: nowrap;
+}
+
+#subnav h2 a,#subnav h2 a:link,#subnav h2 a:visited {
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	color: #3366CC;
+}
+
+#subnav ul {
+	display: inline;
+	float: left;
+	line-height: 36px;
+	margin-left: 24px;
+}
+
+#subnav li {
+	display: inline;
+	float: left;
+	font-size: 12px;
+}
+
+#subnav li.sep {
+	background: none repeat scroll 0 0 #CBCBCB;
+	font-size: 1px;
+	height: 12px;
+	line-height: 12px;
+	margin: 13px 9px;
+	width: 1px;
+}
+
+#subnav li a:link,#subnav li a:visited {
+	color: #474747;
+	font-weight: bold;
+	padding: 0 1px;
+	text-decoration: none;
+}
+
+#subnav div.left-border {
+51archetype.comnd: url(http://51archetype.com/news/images/bg_civil.gif) no-repeat
+		scroll -29px 0 #DDDDDD;
+	height: 36px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 10px;
+}
+
+#subnav div.right-bor51archetype.comckground: url(http://51archetype.com/news/images/bg_civil.gif) no-repeat
+		scroll -55px 0 #DDDDDD;
+	height: 36px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 10px;
+}

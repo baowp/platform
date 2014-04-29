@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+#container_edit_piece {
+	display: none;
+}
+#edit_piece {
+	display: none;
+	right: 12px;
+	position: absolute;
+	top: 2px;
+	z-index:80;
+	width: 50px;
+}
+
+#edit_piece_hidden {
+	display: none;
+}
+
+#edit_piece:hover #edit_piece_hidden{
+	display: block;
+}
+
+#edit_piece_hidden a {
+	text-align: center;
+	display: block;
+}
+
+#show_editBtn input:hover{
+	background:url(/group/dynamic/tool/images/edit/btn_h.png);
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/group/dynamic/tool/images/edit/btn_h.png',sizingMethod='crop');
+}
+#show_editBtn input{
+	width:50px;
+	height:25px;
+	border:none;
+	color:#fff;
+	margin-bottom:3px;
+	display:block;
+	background:url(/group/dynamic/tool/images/edit/btn_e.png) no-repeat scroll 0 0 transparent;
+	_background:none;
+	_filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/group/dynamic/tool/images/edit/btn_e.png',sizingMethod='crop');
+}

@@ -1,0 +1,109 @@
+TD {
+	FONT-SIZE: 12px
+}
+
+A:link {
+	COLOR: #039
+}
+A:visited {
+	COLOR: #039
+}
+A:hover {
+	COLOR: #039; TEXT-DECORATION: none
+}
+
+BODY {
+	font-size:12px; margin:8px 0 0 0;line-height:24px;
+}
+img{ border:0;padding:0;}
+
+form{margin:0;}
+
+.star{ color:#FF0000;}
+
+.tia{ margin:0 auto;background:url(user/images/reg/tbg.gif) no-repeat; width:168px; height:27px; color:#FFFFFF; line-height:27px; font-size:14px; font-weight:bold; text-align:center}
+.tis{width:120px; height:27px; color:#999; line-height:27px; font-size:14px; font-weight:bold;}
+
+.tid{width:160px; height:27px; color:#999; line-height:27px; font-size:14px; font-weight:bold;}
+.tig{width:120px; height:27px; color:#999; line-height:27px; font-size:14px; font-weight:bold;}
+
+.contentBox03{background-color:#FFFFFF;width:750px; height:auto;margin:0px auto 12px auto; border-left:1px solid #D01725;border-right:1px solid #D01725;border-top:3px solid #D01725; border-bottom:4px solid #D01725; padding-bottom:10px;filter:progid:DXImageTransform.Microsoft.Shadow(color=#8E8E8E,direction=135,strength=5);}
+.contentBox03 .reg{ width:710px; height:auto;margin:2px auto 0 auto;}
+.contentBox03 .regcg{ width:700px; height:auto;margin:2px auto 0 auto;}
+.contentBox03 .reg input{border:1px #7F9DB9 solid;}
+
+.contentBox01{background-color:#FFFFFF;width:791px; height:auto;margin:0px auto 12px auto; border-left:1px solid #D01725;border-right:1px solid #D01725;border-top:3px solid #D01725; border-bottom:4px solid #D01725; padding-bottom:10px;filter:progid:DXImageTransform.Microsoft.Shadow(color=#8E8E8E,direction=135,strength=5);}
+
+.contentBox01 .reg{ width:700px; height:auto;margin:2px auto 0 auto;}
+.contentBox01 .regcg{ width:700px; height:auto;margin:2px auto 0 auto;}
+.contentBox01 .reg input{border:1px #7F9DB9 solid;}
+.contentBox{width:791px; height:auto;margin:0px auto 6px auto; border:1px solid #D01725; border-top:4px; padding-bottom:10px;}
+
+.contentBox .reg{ width:700px; height:auto;margin:15px auto 0 auto;}
+
+.contentBox .msg{padding-left:180px; padding-bottom:10px;width:520px;height:auto; line-height:24px;margin:30px auto 10px auto; border-bottom:1px dashed #C9C9C9;font-size:14px; }
+.contentBox .msg span{font-weight:bold; padding-left:40px;background:url(user/images/edit1111.gif) no-repeat; height:20px; font-size:18px; font-family:"����"; color:#FF0000;}
+.contentBox .email{ width:700px; height:auto;margin:0 auto; background:url(user/images/edit22222.gif) no-repeat;}
+.contentBox .emailwin{ width:700px; height:auto;margin:10px auto 0 auto; background:url(user/images/edit3333.gif) no-repeat;}
+.contentBox .emailwin .emt{margin:40px 0 0 200px; padding-left:30px;height:auto;font-size:18px;line-height:24px; background:url(user/images/edit.gif) no-repeat;}
+.contentBox .email .emt{margin:0 0 0 200px;height:auto;font-size:14px;line-height:24px;}
+.contentBox .email .emt .emtbn{ background:url(user/images/reg/semail.gif) no-repeat;width:490px;height:47px;font-size:12px; line-height:47px; margin:10px 0;}
+.contentBox .email .emt .emtbn span{float:left}
+.contentBox .email .emt .s1 {font-size: 12px;color: #878787;}
+
+.sitebox{width:791px; height:auto;margin:10px auto; padding:20px 0 10px 0;border:1px solid #E4E4E4; font-size:20px; font-family:"����";}
+.sitebox .stitletop{width:743px; height:62px;padding-left:15px; vertical-align:middle; line-height:62px;}
+.sitebox .stitletop span{float:left}
+.sitebox .stitle{width:776px; height:25px; font-size:14px; font-weight:bold; color:#ED3439; padding-left:15px; background-color:#F0F0F0; margin:10px auto;font-family:"����";}
+.sitebox .stitle span{ float:left; margin:0 5px;}
+
+.sitebox .stitlebottom{width:743px; height:auto;padding-left:15px;line-height:38px;}
+.sitebox .stitlebottom a{ color:#EB191D;}
+
+.mmtitlebox{width:793px; height:42px;margin:0 auto; background:url(user/images/edit.gif) no-repeat;}
+.mmtitlebox .mmore{float:left;width:140px; height:42px;line-height:42px;padding-left:30px;color:#FFF;font-size:14px;font-weight:bold;}
+.mmtitlebox .mservice{float:left;width:450px; height:42px; margin-left:140px; line-height:42px; font-size:14px;color:#FFF;}
+.mmtitlebox .mservice span{ font-size:12px;}
+
+.mmtbox{width:793px;height:auto;margin:0 auto;clear:both;}
+
+.mmtbox .mboxleft{ float:left;width:260px; height:auto;margin:0 3px 0 0; border:1px solid #E4E4E4; border-top:0px;}
+.mmtbox .mboxleft .lefttitle{ width:260px; height:35px; background:url(user/images/edit.gif) bottom  no-repeat; font-size:14px; font-weight:bold; color:#C83434; text-align:center; margin-top:6px;}
+.mmtbox .mboxleft .leftinfo{width:230px; height:230px;margin:0 auto;}
+.mmtbox .mboxleft .leftinfo span{ color:#676767; line-height:22px;}
+
+.mmtbox .mboxcenter{float:left;width:260px; height:auto;margin:0 4px 0 0;border:1px solid #E4E4E4; border-top:0px;}
+.mmtbox .mboxcenter .centertitle{ width:260px; height:35px; background:url(user/images/edit.gif) bottom  no-repeat; font-size:14px; font-weight:bold; color:#C83434; text-align:center; margin-top:6px;}
+.mmtbox .mboxcenter .centerinfo{width:230px; height:230px;margin:0 auto;}
+.mmtbox .mboxcenter .centerinfo span{ color:#676767; line-height:22px;}
+
+.mmtbox .mboxright{float:left;width:260px; height:auto;margin:0;border:1px solid #E4E4E4; border-top:0px;}
+.mmtbox .mboxright .righttitle{ width:260px; height:35px; background:url(user/images/edit.gif) bottom  no-repeat; font-size:14px; font-weight:bold; color:#C83434; text-align:center; margin-top:6px;}
+.mmtbox .mboxright .rightinfo{width:230px; height:230px;margin:0 auto;}
+.mmtbox .mboxright .rightinfo span{ color:#676767; line-height:22px;}
+
+.regsiter{clear:both;width:793px; height:auto;margin:14px auto 14px auto; font-size:14px; line-height:26px; border-bottom:4px solid #D01725; padding:0 0 15px 0;}
+.regsiter a{font-size:14px; color:#CC3433;}
+
+.footer{ width:100%; height:auto; margin:0 auto;}
+
+.txtsty{ font-size:26px; font-family:"����"; line-height:30px;}
+.txtsty2{ font-size:26px;color:#FF0000;font-family:"����";line-height:30px;}
+.txtsty3{font-size:14px;padding-left:6px;padding-top:5px;}
+.txtsty4{font-size:14px;padding-left:6px; line-height:28px; padding-top:2px;}
+.txtsty5{font-size:14px; font-weight:bold;}
+.txtstrong{font-size:14px;font-weight:bold;}
+.dmbg{background:url(user/images/reg/mousebg.gif) no-repeat;height:249px;width:335px;margin:0 auto; padding:20px 0 0 0;}
+.dmbgnu{height:249px;width:335px;margin:0 auto; padding:20px 0 0 0;}
+.botxx{border-bottom:1px dashed #BFBFBF;}
+.titlebg{background:url(user/images/edit111111.gif) no-repeat;width:90px;height:24px;float:left;cursor:pointer;}
+.titlebgnu{background:url(user/images/edit.gif) no-repeat;width:90px;height:24px;float:left;cursor:pointer;}
+.emtcnf{margin:0 0 0 0;height:auto;font-size:14px;line-height:24px;}
+
+.contentBox02{background-color:#FFFFFF;width:793px; height:auto;margin:10px auto 12px auto;padding-bottom:10px;border-bottom:2px solid #D01725;}
+.bgwhite{background-color:#FFFFFF;}
+.bgred{background-color:#FFEAEA;}
+
+.promptMsg{font:12px '����';font-weight:lighter;color:#00339A;background:url(user/images/edit.gif) no-repeat 0px 2px;padding-left:20px;line-height:14px;height:28px;text-align:left;}
+.promptMsg2{font:12px '����';font-weight:lighter;color:#ff0000;background: url(user/images/pic12.gif) no-repeat 0px 0px;padding-left:20px;line-height:14px;height:28px;text-align:left;}
+.promptMsg3{font:12px '����';font-weight:lighter;color:#5A8F00;background: url(user/images/edit.gif) no-repeat 0px 0px;padding-left:20px;line-height:14px;height:28px;text-align:left;}

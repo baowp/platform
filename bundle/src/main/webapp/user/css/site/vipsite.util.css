@@ -1,0 +1,13 @@
+@CHARSET "UTF-8";
+
+.go-topbtn {
+	background: url("../../images/vipsite/backtop.gif") no-repeat
+		transparent;
+	bottom: 20px;
+	_top: expression(documentElement.scrollTop + documentElement.clientHeight-76);
+	cursor: pointer;
+	height: 56px;
+	position: fixed;
+	_position: absolute;
+	width: 16px;
+}

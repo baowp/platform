@@ -1,0 +1,12 @@
+@CHARSET "UTF-8";
+.box-adder {
+    background-color: #F2F2F2;
+    border: 1px solid #DCDCDC;
+    color: #0066CC;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    height: 35px;
+    line-height: 33px;
+    text-align: center;
+}

@@ -1,0 +1,96 @@
+@CHARSET "UTF-8";
+
+.outBg {
+	background:url(images/outBg.gif) repeat scroll 0 0 transparent;
+}
+
+.inBg {
+	background:url(images/inBg.jpg) repeat scroll 0 0 transparent;
+}
+
+.headTopic {
+	background: url(images/banner.jpg) repeat scroll 0 0 transparent;
+	height: 200px;
+}
+.topbaner {
+	background:#fff none repeat scroll 0 0;
+}
+.chinaname{
+	color:#48932e;
+	}
+.headerMenuBorder {
+	background: url(images/navBg.gif) repeat-x scroll 0 0 transparent;
+
+}
+
+.headerMenuBorder {
+	border-style: solid;
+	border-width: 0px 0px 0;
+	height: 34px;
+}
+
+.headerMenuList a {
+	color:#fff;
+	line-height: 24px;
+}
+
+.headerMenuLiCheck{
+	background:url(images/jz1_lmnBg.gif) repeat-x scroll;
+	line-height: 33px;
+	height:33px;
+	}
+	
+_headerMenuLiCheck{
+	background:url(images/jz1_lmnBg.gif) repeat-x scroll;
+	line-height: 33px;
+	height:33px;
+	padding-top:5px;
+	}
+	
+.headerMenuLi{
+	height: 25px;
+}
+
+.headerMenuLiCheck a {
+	color:#CE6B10;
+}
+
+.headerMenuLi span{
+	line-height:30px;
+}
+.headerMenuLi a:hover{
+	background:url(images/menu_hover.png) no-repeat scroll;	
+}
+
+.headerMenuBottom {
+	border-bottom-color:#FFFFFF;
+}
+
+.bodyCont {
+	background:url(images/bodyCont.gif) repeat-x scroll 0 0 #FFFFFF;
+	border-color:#CCCCCC;
+	border-style: solid;
+	
+}
+
+.bodyContTitle {
+	background: url(images/titleBg.gif) repeat scroll 0 0 transparent;
+}
+
+.bodyContTitle .titleLinkColor {
+	color:#ffffff;
+}
+
+.bodyContContent{
+	color:#0A4F07;
+	
+}
+	
+.bodyContContent a:link{
+	color:#DAB485;
+}
+
+.topicLink {
+    color: #DAB485;
+}
+

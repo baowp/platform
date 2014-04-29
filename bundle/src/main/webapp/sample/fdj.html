@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>图片放大镜的js实现</title>
+<script language="JavaScript" type="text/javascript">
+<!--
+var srcX; //原图大小
+var srcY;
+var bigX; //预览窗大小,可以任意设置
+var bigY;
+var smallX; //缩略图宽度
+var smallY;
+var viewX; //预览范围
+var viewY;
+var bl;//缩小比例
+var border; //边框
+
+window.onload=function ()
+{    
+    var bigbox = document.getElementById("bigbox");
+    var view = document.getElementById("view");
+    var smallpic = document.getElementById("smallpic");
+    var bigpic = document.getElementById("bigpic");
+    
+    
+    //初始设置
+    srcX = smallpic.width; //原图大小
+    srcY = smallpic.height;
+    bigX = 360; //预览窗大小,可以任意设置
+    bigY = 360;
+    smallX = 400; //缩略图宽度
+    smallY = srcY * smallX / srcX;
+    viewX = bigX / srcX * smallX; //预览范围
+    viewY = bigY / srcY * smallY;
+    bl = srcX / smallX;//缩小比例
+    border = 2; //边框
+    
+    bigbox.style.display='none';
+    view.style.display='none';
+    
+    
+    smallpic.width=smallX;
+    smallpic.height=smallY;
+    bigpic.width=srcX ;
+    bigpic.height=srcY ;
+    view.style.width=viewX + 'px';
+    view.style.height=viewY + 'px';
+    bigbox.style.borderWidth=border + 'px';
+        
+    
+    if (window.event) {
+       bigbox.style.width=bigX + border*2 - 20;
+       bigbox.style.height=bigY + border*2 - 20;
+    } else {
+       bigbox.style.width=bigX + 'px';
+       bigbox.style.height=bigY + 'px';
+    }    
+}
+function move(e){
+    var e = window.event?window.event:e;
+    var iebug = 0;
+    var bigbox = document.getElementById("bigbox");
+    var bigpic = document.getElementById("bigpic");
+    var view = document.getElementById("view");
+    var smallpic = document.getElementById("smallpic");
+
+    
+    bigbox.style.display="";
+    view.style.display="";
+    
+    if (window.event) {
+       var vX = e.offsetX - viewX/2;
+       var vY = e.offsetY - viewY/2;
+    } else {
+       var vX = e.pageX - viewX/2 - smallpic.offsetLeft - border;
+       var vY = e.pageY - viewY/2 - smallpic.offsetTop - border;
+       iebug = 2;
+    }
+    if (vX < 0) vX = 0;
+    if (vY < 0) vY = 0;
+    if (vX > smallX - viewX - iebug) vX = smallX - viewX - iebug;
+    if (vY > smallY - viewY - iebug) vY = smallY - viewY - iebug;
+    
+    
+    bigpic.style.marginLeft = - vX * bl + 'px';
+    bigpic.style.marginTop = - vY * bl + 'px';
+    
+    if (window.event) {
+        view.style.left = vX + e.clientX - e.offsetX - 2;
+        view.style.top = vY + e.clientY - e.offsetY - 2;
+        
+        if(e.clientX - e.offsetX > smallpic.offsetWidth || e.clientY - e.offsetY > smallpic.offsetHeight)
+            smallpic.onmouseout();
+    } else {
+        view.style.left = (vX + smallpic.offsetLeft) + 'px';
+        view.style.top = (vY + smallpic.offsetTop) + 'px';    
+    }    
+}
+
+function out()
+{
+    var bigbox = document.getElementById("bigbox");
+    var view = document.getElementById("view");
+    
+    bigbox.style.display="none";
+    view.style.display="none";
+}
+//-->
+</script>
+<style type="text/css">
+<!--
+#smallpic{position:relative}
+#bigbox{border:1px #c33 solid; overflow:hidden}
+#view{border:1px #ddd solid;position:absolute}
+//-->
+</style>
+</head>
+
+<body bgcolor="#999999">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>11</td>
+
+    <td height="100">12</td>
+    <td>13</td>
+  </tr>
+  <tr>
+    <td width="100" height="500" align="right">2123423423
+        </td>
+    <td width="500">sdfsdfsd<img id="smallpic" src="../images/ng.jpg" border="0" onmousemove="move(event)" onmouseout="out()"></td>
+    <td width="500">
+
+<div id="bigbox"><img id="bigpic" src="../images/ng.jpg" border="0"></div>
+<div id="view" onmousemove="move(event)" onmouseout="out()"></div></td>
+  </tr>
+  <tr>
+    <td>31`</td>
+    <td>32</td>
+    <td>33</td>
+  </tr>
+
+</table>
+<br /><br /><br /><br />
+
+
+
+</body>
+</html>

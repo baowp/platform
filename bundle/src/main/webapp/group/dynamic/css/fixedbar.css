@@ -1,0 +1,150 @@
+@CHARSET "UTF-8";
+
+body {
+	padding-top: 28px;
+}
+
+.toolbar_v3 {
+	background: transparent url(../images/bg_toolbar_v3.png)
+		repeat-x scroll left top;
+	height: 28px;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 600;
+	height: auto;
+	line-height: 25px;
+}
+
+* html .toolbar_v3 {
+	position: absolute;
+	top: expression(eval(document.documentElement.scrollTop) );
+	width: expression(eval(document.body.clientWidth) );
+}
+
+.toolbar_v3 * {
+	margin: 0;
+}
+
+.toolbar_v3 .wrap,.divToolbarBody {
+	color: #494846 !important;
+	font-family: Arial, Simsun, "Arial Unicode MS", Mingliu, Helvetica;
+	height: 27px;
+	width: 952px;
+	padding-top: 1px;
+	/**
+	position: relative;
+	z-index: 9999;
+	*/
+}
+
+.toolbar_v3 .wrap .panel_left {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: ;
+	float: left;
+	padding-right: 228px;
+}
+
+.toolbar_v3 .wrap .panel_right {
+	float: right;
+}
+
+.toolbar_v3 .panel_flex {
+	height: 20px;
+	position: absolute;
+	right: 5px;
+	text-align: right;
+	top: 8px;
+	width: 20px;
+	z-index: 99998;
+	text-align: right;
+}
+
+.icon_toolbar_logo,.icon_toolbar_xiaoyou,.icon_toolbar_setting,.icon_toolbar_stopmusic,.icon_toolbar_playmusic,.icon_toolbar_normal,.icon_toolbar_cut,.icon_toolbar_up,.icon_toolbar_down,.icon_toolbar_pause,.icon_toolbar_play,.icon_toolbar_bgm
+	{
+	background-image: url(../images/bg_toolbar_v3.png);
+	height: 16px;
+	width: 16px;
+}
+
+.toolbar_v3 .panel_flex img {
+	cursor: pointer;
+}
+
+.icon_toolbar_up {
+	background-position: -147px -119px;
+	width: 11px;
+}
+
+.icon_toolbar_down {
+	background-position: -163px -119px;
+	width: 11px;
+}
+
+.toolbar_v3 .wrap .mode_other_services {
+	float: right;
+	height: 24px;
+	padding: 2px 8px 0 0;
+	position: relative;
+}
+
+.toolbar_v3 .wrap .bor_r {
+	border-right: 1px solid #D6D6D6;
+	padding-right: 5px;
+}
+
+.toolbar_v3 .wrap .mode_other_services p.other_services {
+	cursor: pointer;
+	display: block;
+	height: 22px;
+	line-height: 24px;
+	overflow: hidden;
+	padding-right: 5px;
+	display: none;
+}
+
+.toolbar_v3 .wrap .mode_other_services p.other_services span {
+	display: block;
+	height: 22px;
+	line-height: 24px;
+	overflow: hidden;
+	padding: 0 0 0 5px;
+}
+
+.toolbar_v3 .log {
+	height: 25px;
+	float: right;
+}
+
+.toolbar_v3 .log ul {
+	overflow: auto;
+	zoom: 1;
+	height: 100%;
+}
+
+.toolbar_v3 .log .loged {
+	float: left;
+	margin-right: 5px;
+}
+
+.toolbar_v3 .log ul.loged {
+	padding-top: 1px;
+}
+
+.toolbar_v3 .log li {
+	float: left;
+	height: 100%;
+	_width: 50px;
+	padding: 0 3px;
+}
+
+.toolbar_v3 .log li div {
+	height: 100%;
+}
+
+.toolbar_v3 .log li div a {
+	cursor: pointer;
+}

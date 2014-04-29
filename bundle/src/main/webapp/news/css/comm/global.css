@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+
+html,body,div,h2,h3,h4,p,td,tr,ul,ol,li,table,dl,dd,dt,img,form {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: arial;
+	font-size: 12px;
+	margin: auto;
+}
+
+ol,ul,li {
+	list-style: none outside none;
+}
+
+a:link,a:visited {
+	color: #0000EE;
+}
+
+a:visited {
+	color: #800080;
+}
+
+h2,h3 {
+	display: inline;
+}
+
+i {
+	color: #9A9A9A;
+	font-size: 12px;
+	font-style: normal;
+	margin-left: 5px;
+}
+img {
+border:1px solid #979797;
+}
+#wrapper {
+	text-align: left;
+	width: 100%;
+}

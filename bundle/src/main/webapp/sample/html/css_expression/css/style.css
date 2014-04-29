@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+.text1 {
+	*color: green;
+	_color:expression('green');
+	_color:expression(color());
+	color: blue;
+}

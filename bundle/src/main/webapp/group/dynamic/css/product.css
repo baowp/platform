@@ -1,0 +1,171 @@
+@CHARSET "UTF-8";
+
+.summary {
+	margin: 8px auto;
+	min-height: 320px;
+	width: 710px;
+	padding-bottom: 20px;
+	overflow: hidden;
+}
+
+.gallery {
+	float: left;
+	width: 300px;
+}
+
+.gallery .booth {
+	border: 1px solid #CDCDCD;
+	position: relative;
+	z-index: 1;
+}
+
+.s300,.s300 a {
+	height: 300px;
+	width: 300px;
+}
+
+.pic a {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+
+*+html .pic a {
+	line-height: 0;
+	display: block;
+	font-size: 270px;
+}
+
+* html .pic a {
+	line-height: 0;
+	display: block;
+	font-size: 270px;
+}
+
+*+html .pic.s40 a {
+	font-size: 36px;
+}
+
+* html .pic.s40 a {
+	font-size: 36px;
+}
+
+.zoom-icon {
+	background: url(../images/product/fdj.png) no-repeat scroll left top
+		transparent;
+	bottom: 0;
+	height: 23px;
+	position: absolute;
+	right: 0;
+	width: 23px;
+}
+
+.zoomer {
+	background: url(../images/product/zoomer.png) repeat scroll left top
+		transparent;
+	cursor: move;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.zooming {
+	background: none repeat scroll 0 0 #FFFFFF;
+	border: 1px solid #CDCDCD;
+	height: 300px;
+	overflow: hidden;
+	position: absolute;
+	width: 413px;
+	z-index: 10;
+}
+
+.none {
+	display: none;
+}
+
+.hidden {
+	visibility: hidden;
+}
+
+.gallery .thumb {
+	margin: 10px 0 0 26px;
+	overflow: hidden;
+}
+
+.gallery .thumb li {
+	float: left;
+	height: 40px;
+	margin: 0 6px 0 0;
+	overflow: hidden;
+	padding: 7px 4px 4px 2px;
+}
+
+.s40,.s40 a {
+	height: 40px;
+	width: 40px;
+}
+
+.gallery .thumb li div {
+	border: 1px solid #CDCDCD;
+}
+
+.gallery .thumb li.selected {
+	background: url(../images/product/xzk.png) no-repeat;
+}
+
+fieldset,img {
+	border: 0 none;
+}
+
+.s40 img {
+	max-height: 40px;
+	max-width: 40px;
+}
+
+.pic a img {
+	vertical-align: middle;
+}
+
+.wangpuOrangebaron {
+	background: url(../images/product/info.jpg) repeat scroll 0 0
+		transparent;
+	border-bottom: 0 solid #FF7300;
+	color: #FFFFFF;
+	font-size: 14px;
+	font-weight: bold;
+	height: 26px;
+	margin-right: 10px;
+	padding-top: 3px;
+	text-align: center;
+	width: 95px;
+}
+
+.bfInfo {
+	padding-left: 8px;
+	text-align: left;
+}
+
+.wangpuAtttilist {
+	background-color: #CCCCCC;
+}
+
+.wangpuAtttilist td {
+	background-color: #FFFFFF;
+	font-size: 12px;
+	line-height: 150%;
+	padding: 4px;
+	text-align: left;
+}
+
+.wangpuAtttilist .title {
+	background-color: #F3F3F3;
+	font-weight: bold;
+	text-align: left;
+	width: 15%;
+}
+
+.productDes {
+	padding: 0px 10px;
+	text-align: left;
+}

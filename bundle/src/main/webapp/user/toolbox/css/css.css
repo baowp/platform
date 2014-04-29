@@ -1,0 +1,237 @@
+body {
+	font-size: 12px;
+}
+
+body,div,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,textarea,p,blockquote,th,td
+	{
+	margin: 0;
+	padding: 0;
+}
+
+#new-content {
+	float: left;
+}
+
+#new-content {
+	float: right;
+	padding-top: 8px;
+	width: 792px;
+}
+
+.favorites {
+	line-height: 1;
+}
+
+.favorites .favorites-header {
+	height: 20px;
+	line-height: 1.2;
+	margin: 8px 0 13px;
+	overflow: hidden;
+}
+
+.favorites .favorites-header h1 {
+	color: #FC7300;
+	float: left;
+	font-family: "ºÚÌå";
+	font-size: 20px;
+	margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+	font-weight: normal;
+}
+
+.favorites .favorites-survey {
+	float: right;
+	padding-right: 46px;
+}
+
+.favorites .favorites-survey a:link,.favorites .favorites-survey a:visited
+	{
+	color: #999999;
+}
+
+.favorites a:link,.favorites a:visited {
+	color: #0F6CE5;
+	text-decoration: none;
+}
+
+.favorites .favorites-survey a {
+	background:
+		url("http://img.china.alibaba.com/cms/upload/work/favorites/icon-survey.png")
+		no-repeat scroll 0 1px transparent;
+	padding-left: 28px;
+}
+
+.favorites .favorites-survey em {
+	color: #666666;
+	font-weight: 700;
+}
+
+address,caption,cite,code,dfn,em,strong,th,var {
+	font-style: normal;
+	font-weight: normal;
+}
+
+.favorites-search {
+	background: none repeat scroll 0 0 #F7FBFE;
+	border: 1px solid #E7F2F8;
+	margin-bottom: 14px;
+	padding: 9px 16px;
+}
+
+.favorites {
+	line-height: 1;
+}
+
+.favorites-search select {
+	width: 72px;
+}
+
+.favorites-search input {
+	width: 240px;
+}
+
+.favorites-tab {
+	border-bottom: 1px solid #B5CEED;
+	display: inline-block;
+	padding-left: 22px;
+	width: 770px;
+}
+
+.favorites-tab li {
+	background-position: 0 -320px;
+	float: left;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 33px;
+	margin-bottom: -1px;
+	margin-right: 6px;
+	padding-left: 30px;
+	position: relative;
+	text-align: center;
+}
+
+.tab-right-unlink {
+	background:
+		url("http://img.china.alibaba.com/images/myalibaba/favorites/bg-tab-right-b.png")
+		no-repeat scroll right bottom transparent;
+	display: inline-block;
+	padding-right: 30px;
+}
+
+.favorites-tab a:hover,.favorites-tab a:active {
+	text-decoration: underline;
+}
+
+.favorites a:hover,.favorites a:active,.favorites .t1 a:hover,.favorites .t1 a:active
+	{
+	color: #FF7300;
+	text-decoration: underline;
+}
+
+.favorites a:link,.favorites a:visited {
+	color: #0F6CE5;
+	text-decoration: none;
+}
+
+a:hover,a:active {
+	color: #FF7300 !important;
+}
+
+a:active {
+	color: #FF7300;
+}
+
+a:link {
+	color: #003366;
+}
+.favorites-tab {
+    border-bottom: 1px solid #B5CEED;
+    display: inline-block;
+    padding-left: 22px;
+    width: 770px;
+}
+.favorites-tab li {
+    background-position: 0 -320px;
+    float: left;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 33px;
+    margin-bottom: -1px;
+    margin-right: 6px;
+    padding-left: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.favorites-tab li.use-help {
+    background: none repeat scroll 0 0 transparent;
+    float: right;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 0;
+}
+.favorites-tab .t1 {
+	background-position: 0 -240px;
+}
+
+.favorites-tab li {
+	background-position: 0 -320px;
+	float: left;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 33px;
+	margin-bottom: -1px;
+	margin-right: 6px;
+	padding-left: 30px;
+	position: relative;
+	text-align: center;
+}
+
+.favorites-button .button-contrast,.favorites-button .button-delete,.favorites-tab li,.favorites-tab .t1
+	{
+	background:
+		url("http://img.china.alibaba.com/images/myalibaba/favorites/favorites-btn.png")
+		no-repeat scroll 0 0 transparent;
+}
+
+.tab-right-link {
+	background:
+		url("http://img.china.alibaba.com/images/myalibaba/favorites/bg-tab-right-a.png")
+		no-repeat scroll right bottom transparent;
+	display: inline-block;
+	padding-right: 30px;
+}
+
+.favorites .t1 a:link,.favorites .t1 a:visited,a.favorites-show-c:link,a.favorites-show-c:visited
+	{
+	color: #0048A3;
+	text-decoration: none;
+}
+
+.favorites-tab li.use-help {
+	background: none repeat scroll 0 0 transparent;
+	float: right;
+	font-size: 12px;
+	font-weight: normal;
+	padding: 0;
+}
+
+.favorites-tab li {
+	background-position: 0 -320px;
+	float: left;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 33px;
+	margin-bottom: -1px;
+	margin-right: 6px;
+	padding-left: 30px;
+	position: relative;
+	text-align: center;
+}
+
+li {
+	list-style: none outside none;
+}

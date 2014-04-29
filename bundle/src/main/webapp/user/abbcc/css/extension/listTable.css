@@ -1,0 +1,42 @@
+@CHARSET "UTF-8";
+
+.listTable {
+border:1px solid #AED8FF;
+border-spacing:0;
+width:100%;
+}
+
+.listTable td{
+ padding:3px 0px;
+}
+
+.listTable tr {
+color:#414141;
+font-size:12px;
+font-weight:normal;
+height:25px;
+line-height:25px;
+}
+
+
+.listTable thead, thead th {
+background:url("th.gif") repeat-x scroll 0 0 #FAFAFA;
+border-bottom:1px solid #CAD1DD;
+border-left:1px solid #CAD1DD;
+height:26px;
+line-height:26px;
+padding:0 6px;
+vertical-align:middle;
+}
+
+.listTable tfoot tr th {
+background:#EDF3FC;
+text-align:right;
+color:#039;
+font-weight:normal;
+padding-right:8px;
+}
+.up{
+ border-left:none;
+}
+

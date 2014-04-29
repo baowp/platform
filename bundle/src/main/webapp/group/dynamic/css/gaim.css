@@ -1,0 +1,19 @@
+@CHARSET "UTF-8";
+.gaim_ul {
+	padding-left: 15px;
+	overflow: hidden;
+	zoom: 1;
+}
+.gaim_ul li {
+	width: 150px;
+	float: left;
+}
+.gaimName {
+	width: 40px;
+	float: left;
+	line-height: 25px;
+}
+.gaimCode {
+	float: left;
+	padding-left: 8px;
+}

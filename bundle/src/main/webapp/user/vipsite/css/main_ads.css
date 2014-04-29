@@ -1,0 +1,60 @@
+@CHARSET "UTF-8";
+
+.jcarousel-container-horizontal {
+    width: 647px;
+    padding: 2px 32px;
+    overflow: hidden;
+}
+.jcarousel-item {
+    height: 160px;
+    width: 160px;
+}
+.jcarousel-item-horizontal {
+    margin-left: 0;
+    margin-right: 3px;
+}
+.jcarousel-clip-horizontal {
+    height:160px;
+    width: 647px;
+}
+.jcarousel-list-horizontal {
+	border: none;
+}
+
+.jcarousel-prev-horizontal {
+    background: url("/main_ads/prev-horizontal.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 32px;
+    left: -3px;
+    position: absolute;
+    top: 65px;
+    width: 35px;
+}
+.jcarousel-prev-disabled-horizontal:active {
+    background-position: -96px 0;
+    cursor: default;
+}
+.jcarousel-prev-horizontal {
+    background: url("../../images/vipsite/main_ads/prev-horizontal.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 32px;
+    left: -3px;
+    position: absolute;
+    top: 65px;
+    width: 35px;
+}
+.jcarousel-next-horizontal {
+    background: url("../../images/vipsite/main_ads/next-horizontal.png") no-repeat scroll 0 0 transparent;
+    cursor: pointer;
+    height: 32px;
+    position: absolute;
+    right: -4px;
+    top: 65px;
+    width: 35px;
+}
+.jcarousel-next-horizontal:hover {
+    background-position: -32px 0;
+}
+.jcarousel-prev-horizontal:hover {
+    background-position: -32px 0;
+}

@@ -1,0 +1,82 @@
+.padtop {
+	padding-top: 3px;
+}
+
+.module .leftCont {
+	float: left;
+	width: 770px;
+	text-align: left;
+}
+
+.module .leftCont .powers {
+	height: 180px;
+}
+
+.module .leftCont .mainpic {
+	float: left;
+}
+
+.module .leftCont .powlist {
+	background: url(../images/pr-5-1.JPG);
+	float: left;
+	margin-left: 15px;
+	width: 515px;
+	height: 170px;
+}
+
+.module .leftCont .powlist dl dt {
+	font-size: 15px;
+	font-weight: bold;
+	padding-left: 8px;
+}
+
+.module .leftCont .powlist dl dd {
+	line-height: 26px;
+	background: url(../images/pr2-1.JPG) no-repeat left center;
+	margin-left: 20px;
+	padding-left: 20px;
+}
+
+.module .leftCont ul li {
+	float: left;
+	text-align: center;
+	width: 125px;
+}
+
+.module .rightCont {
+	width: 180px;
+	float: left;
+}
+
+.module .rightCont .title {
+	background: transparent url(../images/tab_px.gif) repeat-x scroll left
+		center;
+	height: 22px;
+	line-height: 22px;
+	text-align: left;
+	padding-left: 7px;
+}
+
+.module .rightCont .brand {
+	border: thin solid #E4EFF3;
+}
+
+.module .rightCont .brand .list {
+	line-height: 24px;
+	padding: 5px 0;
+	text-align: center;
+}
+
+.module .leftCont  ul,.module .rightCont  ul {
+	overflow: auto;
+	zoom: 1;
+}
+
+.module .rightCont ul li {
+	width: 88px;
+	float: left;
+}
+
+.noborder {
+	border: 0;
+}

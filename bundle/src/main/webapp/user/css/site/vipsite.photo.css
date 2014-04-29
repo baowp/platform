@@ -1,0 +1,97 @@
+@CHARSET "UTF-8";
+
+.mainTextColor {
+	color: #000000;
+}
+
+.rightConteWidth {
+	width: 715px;
+}
+
+.rightConteWidth {
+	width: 740px;
+}
+
+.mainTextColor {
+	color: #000000;
+}
+
+.rightConteWidth {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.rightConteWidth {
+	margin: 0 auto;
+	text-align: center;
+}
+
+#all_album_column .no-albums {
+	display: none;
+	font-weight: bold;
+	margin: 15px;
+}
+
+.mainTextColor {
+	color: #000000;
+}
+
+#all_album_column .albums-list {
+	display: none;
+}
+
+.pro_category {
+	text-align: left;
+}
+
+.pro_category {
+	text-align: left;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.mainTextColor {
+	color: #000000;
+}
+
+ul {
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+}
+
+li.bodyContContentAlbumLi {
+	list-style: none outside none;
+}
+
+li.bodyContContentAlbumLi {
+	background:
+		url("http://img.china.alibaba.com/images/cn/market/danai/090210/album.png")
+		no-repeat scroll 0 0 transparent;
+	height: 200px;
+	width: 140px;
+}
+
+.fl {
+	float: left;
+}
+
+li.bodyContContentAlbumLi .albumCover {
+	
+}
+
+li.bodyContContentAlbumLi .albumCover {
+	display: table-cell;
+	height: 153px;
+	text-align: center;
+	vertical-align: middle;
+	margin:20px auto 0;
+	width: 140px;
+}
+
+.textBox {
+	margin: 5px auto 0;
+	text-align: center;
+}

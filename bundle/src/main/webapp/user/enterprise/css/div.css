@@ -1,0 +1,17 @@
+    body 
+{
+    font:12px MS UI Gothic;
+    margin:0px;
+    text-align:center;
+    
+}
+
+    .tree{ 
+        width:100%;
+    margin:10px auto;
+     border:solid 1px #6699FF; 
+     width:165px; 
+        height:80px;
+    overflow-x:scroll; 
+        overflow-y:auto;  
+    }

@@ -1,0 +1,89 @@
+.gabcont #gallery {
+	overflow: hidden;
+	width: 190px;
+	text-align: center;
+}
+
+.gabcont #slides { /* This is the slide area */
+	height: 160px;
+	/* jQuery changes the width later on to the sum of the widths of all the slides. */
+	width: 640px;
+	overflow: hidden;
+}
+
+.gabcont .slide {
+	float: left;
+	width: 180px;
+	text-align: center;
+	position: relative;
+	left: 10px;
+	*position: static;
+	_position: static;
+}
+
+.gabcont #menu { /* This is the container for the thumbnails */
+	height: 40px;
+	padding-left: 6px;
+}
+
+.gabcont a img {
+	border: none;
+}
+
+.gabcont li {
+	display: inline-block;
+	height: 40px;
+	list-style: none outside none;
+	overflow: hidden;
+	width: 45px;
+	margin-bottom: 0;
+}
+
+.gabcont li.act a {
+	cursor: default;
+}
+
+.gabcont a {
+	color: #0196E3;
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+	width: 160px;
+	height: 160px;
+}
+
+*+html .gabcont a {
+	display: block;
+	font-size: 152px;
+}
+
+* html .gabcont a {
+	display: block;
+	font-size: 152px;
+}
+
+.gabcont li a {
+	display: table-cell;
+	height: 40px;
+	width: 45px;
+}
+
+*+html .gabcont li a {
+	display: block;
+	font-size: 38px;
+}
+
+* html .gabcont li a {
+	display: block;
+	font-size: 38px;
+}
+
+.gabcont li.act,.gabcont li.act:hover {
+	background: url("../images/side_ads/active_bg.png") no-repeat
+		scroll 0 0 transparent;
+}
+
+.gabcont {
+	padding-bottom: 0px;
+	padding-top: 0px;
+}

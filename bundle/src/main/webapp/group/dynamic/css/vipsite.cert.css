@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+.cert ul {
+	overflow: auto;
+	zoom: 1;
+	margin: 1em 0;
+	text-align: center;
+	padding-bottom: 4px;
+}
+
+.cert li {
+	float: left;
+}
+
+.certUl {
+	border-bottom: 1px dashed;
+}
+
+.cert .pic {
+	width: 33%;
+}
+
+.cert .name {
+	width: 33%;
+}
+
+.cert .organize {
+	width: 33%;
+}

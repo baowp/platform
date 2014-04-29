@@ -1,0 +1,59 @@
+@CHARSET "UTF-8";
+
+.editGrid {
+	width: 100%;
+	overflow: hidden;
+}
+
+.editGrid dl {
+	line-height: 27px;
+	margin: 0;
+	clear: both;
+	overflow:hidden;
+}
+
+*+html .editGrid dl {
+	height: auto;
+}
+
+*+html .editGrid dl.expansion {
+	height: 27px;
+}
+
+.editGrid dl dt {
+	text-align: right;
+	width: 10%;
+	padding-right: 8px;
+	float: left;
+}
+
+.editGrid dl dd {
+	width: 88%;
+	float: left;
+	margin-left: 0;
+}
+
+.editGrid textarea {
+	width: 98%;
+	height: 98%;
+}
+
+.editGrid dl.expansion {
+	display: none;
+}
+
+.editGrid .h40 {
+	height: 40px;
+}
+
+.editGrid .h50 {
+	height: 50px;
+}
+
+.editGrid .h90 {
+	height: 90px;
+}
+
+.editGrid .h90 textarea {
+	height: 85px;
+}

@@ -1,0 +1,153 @@
+@CHARSET "UTF-8";
+
+#container {
+	height: 100%;
+	margin: auto;
+	width: 984px;
+	overflow: hidden;
+}
+
+.area {
+	float: left;
+	width: 647px;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.content {
+	float: left;
+	height: 371px;
+	margin-top: 10px;
+	width: 647px;
+}
+
+.content dl {
+	border: 1px solid #B6C7DB;
+	height: 371px;
+	overflow: hidden;
+	width: 645px;
+}
+
+.tit {
+	background: url(http://51archetype.com/news/images/line.gif) repeat scroll
+		0 -31px transparent;
+}
+
+.content .tit a:link,.tit a:hover,.tit a:visited {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.content .tit a.a2:link,.content .tit a.a2:hover,.content .tit a.a2:visited
+	{
+	color: #000000;
+	text-decoration: underline;
+}
+
+.content a.ul:link,.content a.ul:visited {
+	color: #261CDC;
+	text-decoration: none;
+}
+
+.content dt {
+	height: 23px;
+}
+
+.tit div {
+	float: right;
+	line-height: 23px;
+	margin: 0 15px 0 0;
+	padding: 0;
+}
+
+.content dt b {
+	font-size: 14px;
+	line-height: 22px;
+	margin-left: 10px;
+}
+
+.content dd {
+	padding: 10px 5px 0 10px;
+}
+
+.leftCont {
+	float: left;
+	width: 460px;
+}
+
+.leftCont h2 a {
+	padding-left: 5px;
+}
+
+.content a.a1:link,.aside a.a1:link,.content a.a1:visited,.aside a.a1:visited
+	{
+	color: #000000;
+	text-decoration: none;
+}
+
+.content a.a1:hover,.aside a.a1:hover {
+	color: #000000;
+	text-decoration: underline;
+}
+
+.list li {
+	background: url(h51archetype.comcc.net/news/images/icon.gif) no-repeat
+		scroll -20px -75px transparent;
+	height: 20px;
+	line-height: 20px;
+	overflow: hidden;
+	padding-left: 10px;
+}
+
+.list li a {
+	text-decoration: none;
+}
+
+.list li a:hover {
+	text-decoration: underline;
+}
+
+.f14 {
+	font-size: 14px;
+}
+
+.content .li2 {
+	margin: 3px 0 7px 20px;
+}
+
+.list2 {
+	margin-bottom: 10px;
+}
+
+.list2 li {
+	background:51archetype.com://51archetype.com/news/images/icon.gif) no-repeat
+		scroll -21px -73px transparent;
+	font-size: 14px;
+	height: 24px;
+	line-height: 24px;
+	overflow: hidden;
+	padding-left: 10px;
+}
+
+.rightImg {
+	float: right;
+	text-align: center;
+	width: 170px;
+}
+
+.rightImg td a {
+	color: #666666;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.rightImg td {
+	font-size: 14px;
+	height: 160px;
+	padding: 0 4%;
+	vertical-align: bottom;
+}
+
+.rightImg td img {
+	margin-bottom: 5px;
+}

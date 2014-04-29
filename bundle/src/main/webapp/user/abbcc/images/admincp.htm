@@ -1,0 +1,198 @@
+<HTML xmlns="http://www.w3.org/1999/xhtml">
+<HEAD>
+<META content="text/html; charset=utf8" http-equiv=Content-Type>
+<LINK rel=stylesheet type=text/css href="admincp_files/admincp.css">
+<META name=GENERATOR content="MSHTML 8.00.7600.16385">
+</HEAD>
+<BODY>
+<SCRIPT type=text/JavaScript>
+	function redirect(url) {
+		window.location.replace(url);
+	}
+	var admincpfilename = 'admincp.php';
+	if('' != 'no' && !parent.document.getElementById('leftmenu')) {
+		redirect(admincpfilename + '?frames=yes&' + document.URL.substr(document.URL.indexOf(admincpfilename) + 12));
+	}
+	var IMGDIR = 'images/default';
+	var STYLEID = '18'
+	var VERHASH = 'qZs';
+	var IN_ADMINCP = true;
+</SCRIPT>
+
+<SCRIPT type=text/javascript src="admincp_files/common.js"></SCRIPT>
+
+<SCRIPT type=text/JavaScript>
+
+	function checkAll(type, form, value, checkall, changestyle) {
+		var checkall = checkall ? checkall : 'chkall';
+		for(var i = 0; i < form.elements.length; i++) {
+			var e = form.elements[i];
+			if(type == 'option' && e.type == 'radio' && e.value == value && e.disabled != true) {
+				e.checked = true;
+			} else if(type == 'value' && e.type == 'checkbox' && e.getAttribute('chkvalue') == value) {
+				e.checked = form.elements[checkall].checked;
+			} else if(type == 'prefix' && e.name && e.name != checkall && (!value || (value && e.name.match(value)))) {
+				e.checked = form.elements[checkall].checked;
+				if(changestyle && e.parentNode && e.parentNode.tagName.toLowerCase() == 'li') {
+					e.parentNode.className = e.checked ? 'checked' : '';
+				}
+			}
+		}
+	}
+
+	function altStyle(obj) {
+		function altStyleClear(obj) {
+			var input, lis, i;
+			lis = obj.parentNode.getElementsByTagName('li');
+			for(i=0; i < lis.length; i++){
+				lis[i].className = '';
+			}
+		}
+
+		var input, lis, i, cc, o;
+		cc = 0;
+		lis = obj.getElementsByTagName('li');
+		for(i=0; i < lis.length; i++){
+			lis[i].onclick = function(e) {
+				o = is_ie ? event.srcElement.tagName : e.target.tagName;
+				if(cc) {
+					return;
+				}
+				cc = 1;
+				input = this.getElementsByTagName('input')[0];
+				if(input.getAttribute('type') == 'checkbox' || input.getAttribute('type') == 'radio') {
+					if(input.getAttribute('type') == 'radio') {
+						altStyleClear(this);
+					}
+
+					if(is_ie || o != 'INPUT' && input.onclick) {
+						input.click();
+					}
+					if(this.className != 'checked') {
+						this.className = 'checked';
+						input.checked = true;
+					} else {
+						this.className = '';
+						input.checked = false;
+					}
+				}
+			}
+			lis[i].onmouseup = function(e) {
+				cc = 0;
+			}
+		}
+	}
+
+	var addrowdirect = 0;
+	function addrow(obj, type) {
+		var table = obj.parentNode.parentNode.parentNode.parentNode;
+		if(!addrowdirect) {
+			var row = table.insertRow(obj.parentNode.parentNode.parentNode.rowIndex);
+		} else {
+			var row = table.insertRow(obj.parentNode.parentNode.parentNode.rowIndex + 1);
+		}
+		var typedata = rowtypedata[type];
+		for(var i = 0; i <= typedata.length - 1; i++) {
+			var cell = row.insertCell(i);
+			cell.colSpan = typedata[i][0];
+			var tmp = typedata[i][1];
+			if(typedata[i][2]) {
+				cell.className = typedata[i][2];
+			}
+			tmp = tmp.replace(/\{(\d+)\}/g, function($1, $2) {return addrow.arguments[parseInt($2) + 1];});
+			cell.innerHTML = tmp;
+		}
+		addrowdirect = 0;
+	}
+
+	function dropmenu(obj){
+		obj.className = obj.className == 'hasdropmenu' ? 'current' : 'hasdropmenu';
+		$(obj.id + 'child').style.display = $(obj.id + 'child').style.display == 'none' ? '' : 'none';
+	}
+
+	function textareasize(obj) {
+		if(obj.scrollHeight > 70) {
+			obj.style.height = obj.scrollHeight + 'px';
+		}
+	}
+
+	if('' != 'no') _attachEvent(document.documentElement, 'keydown', parent.resetEscAndF5);
+
+	function display_detail(objname) {
+		obj = $(objname);
+		if(obj.style.display == 'none') {
+			obj.style.display = '';
+		} else {
+			obj.style.display = 'none'
+		}
+	}
+</SCRIPT>
+
+<DIV id=append_parent></DIV>
+<DIV id=cpcontainer class=container><SCRIPT type=text/JavaScript>if(parent.$('admincpnav')) parent.$('admincpnav').innerHTML='首页';if(parent.$('add2custom')) parent.$('add2custom').innerHTML=''</SCRIPT>
+
+<DIV class=itemtitle>
+<H3>欢迎进入管理后台</H3>
+</DIV>
+<TABLE class="tb tb2 ">
+	<TBODY>
+		<TR>
+			<TH class=partition>消息中心</TH>
+		</TR>
+		<TR>
+			<TD class=tipsblock>
+			<UL>
+				<table>
+					<tr>
+						<td>留言:
+						<td><a href="message/messagesearchRecv">收到留言(<span
+							class="errorSpan">${recvCount}</span>)</a><a
+							href="message/messagesearchSend">发出留言(<span class="errorSpan">${sendCount}</span>)</a><a
+							href="message/messagesearchNotRead">未读留言(<span
+							class="errorSpan">${notReadCount}</span>)</a></td>
+					</tr>
+					<tr>
+						<td>系统留言:
+						<td><a href="message/messagesearchSysRecv">收到留言(<span
+							class="errorSpan">${recvSysCount}</span>)</a><a
+							href="message/messagesearchSysNotRead">未读留言(<span
+							class="errorSpan">${notReadSysCount}</span>)</a></td>
+					</tr>
+
+				</table>
+			</UL>
+			</TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<TABLE class="tb tb2 noborder mt10">
+	<TBODY>
+		<TR>
+			<TH class=partition>您有<span style="color: red">${hintCount}</span>条提示信息:</TH>
+		</TR>
+		<TR>
+			<TD><s:iterator value="%{#request.hintList}">
+				<div style="color: #f6aa3d; font-size: 12px;"><s:property
+					escape="false" /></div>
+			</s:iterator></TD>
+		</TR>
+	</TBODY>
+</TABLE>
+<DIV id=boardnews></DIV>
+<TABLE class="tb tb2 nobdb fixpadding"></TABLE>
+<TABLE class="tb tb2 fixpadding"?>
+	<TBODY>
+		<TR>
+			<TH class=partition colSpan=3>帮助</TH>
+		</TR>
+		<TR class=hover>
+			无
+		</TR>
+	</TBODY>
+</TABLE>
+
+
+<DIV></DIV>
+<SCRIPT language=JavaScript src="admincp_files/news.htm"></SCRIPT>
+</BODY>
+</HTML>

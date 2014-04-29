@@ -1,0 +1,31 @@
+body{
+   font-family:"宋体";
+   font-size:12px;
+   text-align:center;
+   margin:0px auto;
+   padding:0px;
+   }
+div{margin:0 auto;} 
+.align-center{  
+    margin:0 auto;      /* 居中 这个是必须的，，其它的属性非必须 */  
+    width:500px;        /* 给个宽度 顶到浏览器的两边就看不出居中效果了 */  
+    background:red;     /* 背景色 */  
+    text-align:center;  /* 文字等内容居中 */  
+ }
+a:link {
+	font-family: "宋体";
+	font-size: 12px;
+	font-style: normal;
+	font-weight: normal;
+	background-color: #FFFFFF;
+}
+.font{
+    font-family:"宋体";
+	font-size:12px;
+	color:#FF3300;
+	}
+.font1{
+    font-family:"宋体";
+	font-size:12px;
+	text-align:center;
+	}

@@ -1,0 +1,76 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta content="all" name="robots">
+<meta content="" name="Description">
+<meta content="QQ游戏" name="Keywords">
+<title>QQ游戏</title>
+<style>
+body{padding:0;margin:0;font-family: Arial, Helvetica, sans-serif; color:#313131; font-size:12px;background:transparent;}
+a{color:#313131;}
+a:hover{ color: #CC3300;}
+a:visited{ color:#313131;}
+#newList,ul,li{padding:0;margin:0;}
+.s01{width:285px; height:18px; line-height:18px;overflow:hidden;text-align:left;float:left;display:inline; vertical-align:middle;}
+ul{list-style:none;}
+ul{float:left;width:285px;line-height:18px;overflow:hidden;}
+li{float:left;width:285px;}
+</style>
+<script language="javascript">
+function moveShow(divId,cols,colhight,speed,stopTime)
+{
+	this.speed = speed || 15;
+	this.stopTime = stopTime || 3000;
+	this.cols = cols;
+	this.colhight = colhight;
+	this.div = document.getElementById(divId);
+	      document.getElementById(divId+"_now").innerHTML=document.getElementById(divId+"_first").innerHTML;
+	this.divId = divId;
+	this.reSss = 0;
+	this.sss = 0;
+	this.roll=setInterval("move('"+divId+"')",this.stopTime);
+
+	this.div.onmouseover=function(){var obj = eval('o'+divId);clearInterval(obj.roll);};
+	this.div.onmouseout=function(){var obj = eval('o'+divId);obj.roll=setInterval("move('"+divId+"')",obj.speed);};
+}
+function move(obj,type){
+	if(typeof obj != 'object') obj = eval('o'+obj);
+	clearInterval(obj.roll);
+	obj.sss=obj.div.scrollTop;
+	if(obj.reSss &gt; (obj.cols-1)*obj.colhight &amp;&amp; obj.reSss == obj.sss) obj.sss = obj.cols*obj.colhight;
+	obj.reSss = obj.sss;
+	if(obj.sss&gt;=(obj.cols*obj.colhight))
+	{
+		obj.sss=-1;
+		obj.roll=setInterval("move('"+obj.divId+"')",obj.stopTime);
+	}
+	else if(obj.sss%obj.colhight==0 &amp;&amp; obj.sss &gt; 0 &amp;&amp; obj.sss &lt; obj.cols*obj.colhight)
+	{
+		obj.roll=setInterval("move('"+obj.divId+"')",obj.stopTime)
+	}
+	else
+	{
+		obj.roll=setInterval("move('"+obj.divId+"')",obj.speed);
+	}
+	obj.sss +=1;
+	obj.div.scrollTop=obj.sss;
+}
+</script>
+</head><body>
+<div class="s01" id="retopicmove">
+	<ul id="retopicmove_first">
+		<li>记得本站地址：1314.qq.com，随时回归美丽花园 ！</li>
+		<li>全民种植狂欢日 4月30日-5月3日全天双倍经验</li>
+		<li><a target="_blank" href="http://action.tenpay.com/2010/sx-qqgame-mgxz/">玫瑰小镇财付通支付上线，全场享8.8折！</a></li>
+		<li>嫁接新玩法，奇趣又好玩，赶紧体验吧！</li>
+	</ul>
+	<ul id="retopicmove_now">
+		<li>记得本站地址：1314.qq.com，随时回归美丽花园 ！</li>
+		<li>全民种植狂欢日 4月30日-5月3日全天双倍经验</li>
+		<li><a target="_blank" href="http://action.tenpay.com/2010/sx-qqgame-mgxz/">玫瑰小镇财付通支付上线，全场享8.8折！</a></li>
+		<li>嫁接新玩法，奇趣又好玩，赶紧体验吧！</li>
+	</ul>
+</div>
+<script type="text/javascript">
+     var oretopicmove = new moveShow('retopicmove',3,16);
+</script>
+</body></html>

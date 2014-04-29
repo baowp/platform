@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+.bodyCont, #company_name, .headCont{
+	height: 40px;
+	overflow: hidden;
+}
+.bodyContContent {
+	display:none;
+}

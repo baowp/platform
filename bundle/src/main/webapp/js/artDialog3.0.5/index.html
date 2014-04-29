@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="artDialog.js"></script>
+<script type="text/javascript" src="/js/jquery.js"></script>
+<script>
+(function($){
+	// 改变默认配置
+	var d = $.dialog.defaults;
+	// 预缓存皮肤，数组第一个为默认皮肤
+	d.skin = ['default', 'chrome', 'facebook', 'aero'];
+	// 是否开启特效
+	d.effect = true;
+	// 指定超过此面积的对话框拖动的时候用替身
+	//d.showTemp = 100000;
+	
+})(art);
+$(function(){
+	$("#but").click(function(){
+		art.dialog({
+		    content: '如果定义了回调函数才会出现相应的按钮',
+		    yesFn: function(){
+		    	effectDemo();
+		        //return false; //如果返回false将阻止关闭
+		    },
+		    noFn: true //为true等价于function(){}
+		});
+	})
+})
+// 动画展示皮肤
+		var effectDemo = function(){
+			var d1, d2, d3, d4,
+				count = 0,
+				fns = [
+					function(){
+						count = 0;
+					},
+					
+					function(){
+						d1 = art.dialog({
+							skin: 'aero',
+							content: '消息提醒',
+							left:'center',
+							top:'top',
+							noFn:true
+						});
+					},
+					
+					function(){
+						d1.position('center', 'center');
+						d1.size(200,200)
+						return 2000;
+					}
+				
+				];
+			(function(){
+				count ++;
+				if (!fns[count]) return fns[0];
+
+				var time = fns[count]();
+				time = time || 150;
+				setTimeout(arguments.callee, time);
+			})();
+}
+</script>
+</head>
+<body>
+<input type="button" value="按钮" id="but">
+</body>
+</html>

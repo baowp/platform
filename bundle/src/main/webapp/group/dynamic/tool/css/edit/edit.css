@@ -1,0 +1,33 @@
+@CHARSET "UTF-8";
+.zindex900 {
+    z-index: 89;
+}
+.edit_left {
+    left: 165px;
+    *left: 135px;
+    line-height: 150%;
+    position: absolute;
+    right: 0;
+}
+.editdiv {
+    float: right;
+    margin-top: 3px;
+    width: 55px;
+}
+
+.edit_right {
+	left: 701px;
+	*left: 670px;
+    line-height: 150%;
+    position: absolute;
+    right: 0;
+}
+.edit_top {
+	left: 820px;
+    line-height: 150%;
+    position: absolute;
+    z-index: 1;
+}
+.head_user_defined,.below_user_defined {
+	min-height: 28px;
+}

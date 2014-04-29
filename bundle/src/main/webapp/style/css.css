@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+ font-size:13px;
+ font-family:Arial, Helvetica, sans-serif;
+ padding:0px;
+ margin:0px auto;
+}
+div{
+ margin:0px auto;
+}
+a,a:link{
+ color:#000;
+ text-decoration:none;
+}
+.header_left a:link,.header_right a:link,.header_r a:link{
+ color:#0066FF;
+ border-bottom:#0066ff solid 1px;
+ text-decoration:none;
+}
+.header_left a:visited,.header_right a:visited,.header_r a:visited{
+ color:#0066FF;
+ border-bottom:#0066ff solid 1px;
+ text-decoration:none;
+}
+.searc_top li a,a:link{
+ color:#0066FF;
+ text-decoration:underline;
+}
+.searc_top li a:hover{
+ color:#181818;
+ text-decoration:none;
+}
+#footer span a:link{
+ color:#181818;
+ text-decoration:none;
+}
+#footer span a:hover{
+ color:#0066FF;
+ text-decoration:underline;
+}
+.top_left a:link{
+ color:#000;
+ text-decoration:underline;
+}
+.top_left a:visited{
+ color:#000;
+ text-decoration:underline;
+}
+.g h3 a:visited,.cl h3 a:visited{
+ color:#0066FF;
+ text-decoration:underline;
+}
+.c h3 a:visited{
+ color:#0066FF;
+ text-decoration:none;
+}
+.c h3 a:link{
+ color:#0066FF;
+ text-decoration:none;
+}
+.c h3 a:hover{
+ text-decoration:underline;
+}
+.g h3 a:link,.cl h3 a:link{
+ color:#0066FF;
+ text-decoration:underline;
+}
+em{
+color:#FF3300;
+font-style:normal;
+font-weight:normal;
+}
+.s a:link{
+ color:#0066cc;
+ font-size:12px;
+}
+.s a:visited{
+ color:#0066cc;
+ font-size:12px;
+}
+.x_right a:visited{
+ color:#0066FF;
+ border-bottom:#0066FF solid 1px;
+ text-decoration:none;
+}
+.x_right a:link{
+ color:#0066FF;
+ border-bottom:#0066FF solid 1px;
+ text-decoration:none;
+}
+#fh a:link{
+ color:#666666;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ text-decoration:none;
+}
+#fh a:hover{
+ color:#f60;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ text-decoration:none;
+}
+#fh a:visited{
+ color:#666666;
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ text-decoration:none;
+}
+.shu a:link{
+ color:#000000;
+ text-decoration:none;
+}
+.shu a:hover{
+ color:#fff;
+ text-decoration:none;
+ background:#6DB3D8;
+ display:block;
+}
+.shu a:visited{
+ color:#000000;
+ text-decoration:none;
+}
+.tu{
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:12px;
+ color:#333333;
+ font-weight:bold;
+}
+.tu a:link{
+ color:#0066CC;
+ text-decoration:none;
+ font-weight:normal;
+ font-size:12px;
+}
+.tu a:hover{
+ color:#f60;
+ text-decoration:underline;
+ font-weight:normal;
+ font-size:12px;
+}
+.tu a:visited{
+ color:#0066CC;
+ text-decoration:none;
+ font-weight:normal;
+ font-size:12px;
+}

@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+/**main_message*/
+.tip .error {
+	background: transparent url(../../images/vipsite/1_1245982792953.gif)
+		no-repeat scroll 0 0;
+	color: #C53032;
+	padding-left: 20px;
+}
+
+.leaveWord {
+	min-height: 100px;
+	/**height: 440px;*/
+}
+
+.leaveWord .sendtd {
+	text-align: right;
+	padding-right: 8px;
+	width: 20%;
+}
+
+.leaveWord .sendcont {
+	text-align: left;
+	padding: 3px 0;
+}
+
+.leaveWord .sendTitle,.leaveWord .sendContent {
+	width: 60%;
+}
+
+.leaveWord .tip .error {
+	background-image: none;
+	padding-left: 5px
+}
+
+.leaveWord #codeCell .tip {
+	margin-left: 70px;
+}
+
+.sendSub {
+	margin-top: 12px;
+}
+
+.sendBtn {
+	font-weight: '';
+}
+
+.msgSendSucc {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: transparent url(../../images/vipsite/1000748.gif) no-repeat
+		scroll 0 0 !important;
+	font-family: 黑体;
+	font-size: 32px;
+	font-weight: bold;
+	height: 100px;
+	margin: 30px auto auto;
+	padding-left: 60px;
+	padding-top: 8px;
+	text-align: left;
+	width: 360px;
+	line-height: 20px;
+}
+
+ .grayName{
+ 	color:#ccc;
+ }

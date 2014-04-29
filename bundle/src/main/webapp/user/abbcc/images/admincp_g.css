@@ -1,0 +1,1135 @@
+* {
+	OUTLINE-STYLE: none; OUTLINE-COLOR: invert; OUTLINE-WIDTH: medium; WORD-WRAP: break-word
+}
+BODY {
+	 BACKGROUND: #fff;
+}
+BODY {
+	FONT: 12px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, "宋体", sans-serif; COLOR: #555
+}
+TD {
+	FONT: 12px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, "宋体", sans-serif; COLOR: #555
+}
+INPUT {
+	FONT: 12px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, "宋体", sans-serif; COLOR: #555
+}
+TEXTAREA {
+	FONT: 12px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, "宋体", sans-serif; COLOR: #555
+}
+SELECT {
+	FONT: 12px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, "宋体", sans-serif; COLOR: #555
+}
+BUTTON {
+	FONT: 12px "Lucida Grande", Verdana, Lucida, Helvetica, Arial, "宋体", sans-serif; COLOR: #555
+}
+BODY {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DL {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+DD {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+P {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H1 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H2 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H3 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H4 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H5 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+H6 {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+FIELDSET {
+	PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+UL {
+	LIST-STYLE-TYPE: none
+}
+H1 {
+	FONT-SIZE: 12px
+}
+H2 {
+	FONT-SIZE: 12px
+}
+H3 {
+	FONT-SIZE: 12px
+}
+H4 {
+	FONT-SIZE: 12px
+}
+H5 {
+	FONT-SIZE: 12px
+}
+H6 {
+	FONT-SIZE: 12px
+}
+A {
+	COLOR: #2366a8; TEXT-DECORATION: none
+}
+A:hover {
+	TEXT-DECORATION: underline
+}
+A IMG {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+EM {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+CITE {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+TH {
+	FONT-STYLE: normal; FONT-WEIGHT: normal
+}
+TABLE {
+	BORDER-COLLAPSE: collapse
+}
+TH {
+	TEXT-ALIGN: left
+}
+LABEL {
+	CURSOR: pointer
+}
+TEXTAREA {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #666 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; BACKGROUND: #f9f9f9; COLOR: #333; BORDER-TOP: #666 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 2px
+}
+INPUT {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #666 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; BACKGROUND: #f9f9f9; COLOR: #333; BORDER-TOP: #666 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 2px
+}
+SELECT {
+	BORDER-BOTTOM: #ccc 1px solid; BORDER-LEFT: #666 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 2px; PADDING-RIGHT: 2px; BACKGROUND: #f9f9f9; COLOR: #333; BORDER-TOP: #666 1px solid; BORDER-RIGHT: #ccc 1px solid; PADDING-TOP: 2px
+}
+.txt {
+	VERTICAL-ALIGN: middle
+}
+SELECT {
+	VERTICAL-ALIGN: middle
+}
+.txt:hover {
+	BORDER-BOTTOM-COLOR: #09c; BORDER-TOP-COLOR: #09c; BACKGROUND: #f5f9fd; BORDER-RIGHT-COLOR: #09c; BORDER-LEFT-COLOR: #09c
+}
+.txt:focus {
+	BORDER-BOTTOM-COLOR: #09c; BORDER-TOP-COLOR: #09c; BACKGROUND: #f5f9fd; BORDER-RIGHT-COLOR: #09c; BORDER-LEFT-COLOR: #09c
+}
+TEXTAREA:hover {
+	BORDER-BOTTOM-COLOR: #09c; BORDER-TOP-COLOR: #09c; BACKGROUND: #f5f9fd; BORDER-RIGHT-COLOR: #09c; BORDER-LEFT-COLOR: #09c
+}
+TEXTAREA:focus {
+	BORDER-BOTTOM-COLOR: #09c; BORDER-TOP-COLOR: #09c; BACKGROUND: #f5f9fd; BORDER-RIGHT-COLOR: #09c; BORDER-LEFT-COLOR: #09c
+}
+.txtnobd {
+	BORDER-BOTTOM: #fff 1px solid; BORDER-LEFT: #fff 1px solid; BACKGROUND: #fff; BORDER-TOP: #fff 1px solid; CURSOR: pointer; BORDER-RIGHT: #fff 1px solid
+}
+.radio {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BACKGROUND: none transparent scroll repeat 0% 0%; VERTICAL-ALIGN: middle; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.checkbox {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BACKGROUND: none transparent scroll repeat 0% 0%; VERTICAL-ALIGN: middle; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.checkbox {
+	HEIGHT: 14px
+}
+.btn {
+	BORDER-BOTTOM-COLOR: #666; PADDING-BOTTOM: 1px; BORDER-TOP-COLOR: #ddd; MARGIN: 3px 0px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: #ddd; COLOR: #000; BORDER-RIGHT-COLOR: #666; VERTICAL-ALIGN: middle; BORDER-LEFT-COLOR: #ddd; CURSOR: pointer; PADDING-TOP: 4px
+}
+.uploadbtn {
+	BORDER-BOTTOM-COLOR: #999; BORDER-TOP-COLOR: #999; WIDTH: 250px; BORDER-RIGHT-COLOR: #999; BORDER-LEFT-COLOR: #999
+}
+H3 {
+	MARGIN-BOTTOM: 10px; COLOR: #09c; FONT-SIZE: 14px
+}
+.spectitle {
+	BORDER-BOTTOM: #f66 1px dashed
+}
+.mainhd {
+	POSITION: relative; TEXT-ALIGN: left; LINE-HEIGHT: 88px; BACKGROUND: url(bg_repx_g.gif) repeat-x; HEIGHT: 90px; OVERFLOW: hidden
+}
+.logo {
+	TEXT-INDENT: -9999px; WIDTH: 135px; BACKGROUND: url(logo.gif) no-repeat 15px 13px; HEIGHT: 80px
+}
+.uinfo {
+	Z-INDEX: 4; POSITION: absolute; LINE-HEIGHT: 32px; TOP: 10px; RIGHT: 20px;
+	color:#181818;
+}
+.uinfo A {
+	COLOR: #666 
+}
+.uinfo EM {
+	FONT-WEIGHT: 700; MARGIN-RIGHT: 5px
+}
+.uinfo EM A {
+	TEXT-DECORATION: underline
+}
+.uinfo P {
+	FLOAT: left
+}
+.btnlink A {
+	TEXT-ALIGN: center; WIDTH: 63px; DISPLAY: block; BACKGROUND: url(bg_repno_g.gif) no-repeat -50px -150px; HEIGHT: 32px; MARGIN-LEFT: 15px
+}
+.navbg {
+	Z-INDEX: 1; POSITION: absolute; WIDTH: 6px;  HEIGHT: 37px; TOP: 52px; LEFT: 153px
+}
+.nav {
+	Z-INDEX: 2; POSITION: absolute; WIDTH: 100%; HEIGHT: 75px; TOP: 14px; LEFT: 159px
+}
+.nav UL {
+	Z-INDEX: 4; POSITION: relative; FONT-SIZE: 14px; OVERFLOW: hidden
+}
+.nav LI {
+	LINE-HEIGHT: 43px; BACKGROUND: url(btn_block_g.gif) no-repeat right -115px; FLOAT: left; HEIGHT: 43px
+}
+.nav LI EM {
+	DISPLAY: block
+}
+.nav LI A {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 12px; PADDING-RIGHT: 12px; COLOR: #181818; FONT-WEIGHT: 700; PADDING-TOP: 5px
+}
+.nav LI A:hover {
+	COLOR: #09c; TEXT-DECORATION: none
+}
+.nav LI .diffcolor {
+	COLOR: #f60
+}
+.nav LI.navon {
+	LINE-HEIGHT: 33px; BACKGROUND: url(btn_block_g.gif) no-repeat
+}
+.nav LI.navon EM {
+	DISPLAY: block; BACKGROUND: url(btn_block_g.gif) no-repeat right -50px
+}
+.nav LI.navon EM A {
+	DISPLAY: block; BACKGROUND: url(btn_block_g.gif) no-repeat center bottom; COLOR: #fff
+}
+.nav LI.navon EM A:hover {
+	COLOR: #fff
+}
+.navbd {
+	Z-INDEX: 3; POSITION: absolute; WIDTH: 100%; BACKGROUND: #2863D4; HEIGHT: 5px; CLEAR: both; OVERFLOW: hidden; TOP: 38px
+}
+.currentloca {
+	BORDER-LEFT:#0066CC 1px solid; HEIGHT: 32px; CLEAR: both
+}
+.currentloca P {
+	BORDER-BOTTOM: #fff 2px solid; BORDER-LEFT: #fff 1px solid; LINE-HEIGHT: 25px; PADDING-LEFT: 10px; BACKGROUND: #f2f9fd; BORDER-TOP: #fff 5px solid
+}
+.sitemapbtn {
+	POSITION: absolute; LINE-HEIGHT: 100%; TOP: 50px; RIGHT: 175px
+}
+.sitemapbtn SPAN {
+	MARGIN-RIGHT: 3px
+}
+.menutd {
+	BACKGROUND: url(bg_repx_h_g.gif) #f2f9fd no-repeat right top
+}
+.menu {
+	Z-INDEX: 20; POSITION: relative; WIDTH: 160px
+}
+.menu UL {
+	POSITION: absolute; LIST-STYLE-TYPE: none; WIDTH: 153px; BACKGROUND: url(bg_repx_h_g.gif) #f2f9fd no-repeat 5px -20px; TOP: 10px; RIGHT: 5px
+}
+.menu LI {
+	MARGIN: 0px; HEIGHT: 25px; OVERFLOW: hidden
+}
+.menu LI A {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 30px; PADDING-RIGHT: 0px; DISPLAY: block; BACKGROUND: url(bg_repno_g.gif) no-repeat 15px -43px; COLOR: #203bb5; PADDING-TOP: 5px
+}
+.menu LI A:hover {
+	BACKGROUND: url(bg_repno_g.gif) #eaf4fb no-repeat 15px -43px; COLOR: #2366a8; TEXT-DECORATION: none
+}
+.menu LI A.tabon {
+	BACKGROUND: url(bg_repno_g.gif) #deeffa no-repeat 15px -43px; COLOR: #2366a8; TEXT-DECORATION: none
+}
+.menu LI A.tabon:hover {
+	BACKGROUND: url(bg_repno_g.gif) #deeffa no-repeat 15px -43px; COLOR: #2366a8; TEXT-DECORATION: none
+}
+.mask {
+	BACKGROUND: url(bg_repx_hb.gif) repeat-x; PADDING-TOP: 9px
+}
+.tab1 {
+	MARGIN-BOTTOM: 10px; CLEAR: both; OVERFLOW: hidden
+}
+.tab1 LI {
+	TEXT-ALIGN: center; FLOAT: left; FONT-WEIGHT: 700; MARGIN-RIGHT: 3px
+}
+.tab1 A {
+	LINE-HEIGHT: 26px; DISPLAY: block; COLOR: #666
+}
+.tab1 A SPAN {
+	PADDING-BOTTOM: 0px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; DISPLAY: block; PADDING-TOP: 0px
+}
+.tab1 A:hover {
+	BACKGROUND: url(btn_block_2.gif) no-repeat 0px -52px; COLOR: #09c; TEXT-DECORATION: none
+}
+.tab1 A:hover SPAN {
+	DISPLAY: block; BACKGROUND: url(btn_block_2.gif) no-repeat right -78px
+}
+.tab1 .current {
+	
+}
+.tab1 .current A {
+	BACKGROUND: url(btn_block_2.gif) no-repeat 0px 0px; COLOR: #fff
+}
+.tab1 .current A SPAN {
+	BACKGROUND: url(btn_block_2.gif) no-repeat right -26px
+}
+.tab1 .current A EM {
+	BACKGROUND: url(bg_repno_g.gif) no-repeat 0px -147px; COLOR: #666; MARGIN-LEFT: 3px; MARGIN-RIGHT: -5px
+}
+.tab1 .hasdropmenu {
+	MARGIN-TOP: -1px
+}
+.tab1 .hasdropmenu A EM {
+	BACKGROUND: url(bg_repno_g.gif) no-repeat 0px -197px; COLOR: #fff; MARGIN-LEFT: 3px; MARGIN-RIGHT: -5px
+}
+.dropmenu {
+	BORDER-BOTTOM: #a6c9d7 3px solid; POSITION: absolute; TEXT-ALIGN: left; FILTER: Alpha(opacity=90); BORDER-LEFT: #a6c9d7 3px solid; MARGIN-TOP: 3px; WHITE-SPACE: nowrap; BACKGROUND: #f2f9fd; BORDER-TOP: #a6c9d7 3px solid; BORDER-RIGHT: #a6c9d7 3px solid; opacity: 0.9
+}
+.dropmenu1 {
+	BORDER-BOTTOM: #a6c9d7 3px solid; POSITION: absolute; TEXT-ALIGN: left; FILTER: Alpha(opacity=90); BORDER-LEFT: #a6c9d7 3px solid; MARGIN-TOP: 3px; WHITE-SPACE: nowrap; BACKGROUND: #f2f9fd; BORDER-TOP: #a6c9d7 3px solid; BORDER-RIGHT: #a6c9d7 3px solid; opacity: 0.9
+}
+.dropmenu1 {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.tab1 .dropmenu A {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; BACKGROUND: none transparent scroll repeat 0% 0%; COLOR: #666 !important; FONT-WEIGHT: 400; PADDING-TOP: 2px
+}
+.tab1 .dropmenu A:hover {
+	BACKGROUND: #deeffa
+}
+.copyright {
+	Z-INDEX: 10; POSITION: absolute; TEXT-ALIGN: left; LINE-HEIGHT: 150%; BOTTOM: 3px; FONT-FAMILY: Tahoma; FONT-SIZE: 11px; BORDER-TOP: #ddd 1px dashed; PADDING-TOP: 3px; LEFT: 5px
+}
+.logintb {
+	TEXT-ALIGN: left; MARGIN: 120px auto 0px; WIDTH: 600px
+}
+.login {
+	WIDTH: 310px; PADDING-RIGHT: 30px; BACKGROUND: url(bg_login.gif) no-repeat right 50%; HEIGHT: 150px
+}
+.login H1 {
+	TEXT-INDENT: -9999px; WIDTH: 262px; MARGIN-BOTTOM: 10px; BACKGROUND: url(login_title.gif) no-repeat; HEIGHT: 26px
+}
+.login P {
+	LINE-HEIGHT: 150%
+}
+.logintitle {
+	LINE-HEIGHT: 180%; WIDTH: 60px; FLOAT: left; COLOR: #666; CLEAR: left; FONT-SIZE: 14px; FONT-WEIGHT: 700
+}
+.loginform {
+	LINE-HEIGHT: 180%; WIDTH: 160px; FLOAT: left; FONT-SIZE: 14px
+}
+.loginform .txt {
+	MARGIN-TOP: 2px; WIDTH: 160px
+}
+.loginnofloat {
+	CLEAR: both
+}
+.loginnofloat .btn {
+	MARGIN-LEFT: 60px
+}
+.logintips {
+	LINE-HEIGHT: 160%; MARGIN-LEFT: 25px
+}
+.logintips A {
+	MARGIN: 0px 5px; TEXT-DECORATION: underline
+}
+.footer {
+	
+}
+.footer .copyright {
+	BORDER-BOTTOM: medium none; POSITION: static; TEXT-ALIGN: center; BORDER-LEFT: medium none; MARGIN-TOP: 120px; FONT-SIZE: 12px; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.footer P {
+	DISPLAY: inline
+}
+.container {
+	TEXT-ALIGN: left; PADDING-BOTTOM: 20px; PADDING-LEFT: 20px; PADDING-RIGHT: 20px; PADDING-TOP: 9px
+}
+.itemtitle {
+	LINE-HEIGHT: 20px; MARGIN-BOTTOM: -5px; CLEAR: both; OVERFLOW: hidden
+}
+.itemtitle H3 {
+	FLOAT: left; MARGIN-RIGHT: 20px
+}
+.itemtitle UL {
+	LINE-HEIGHT: 18px; FLOAT: left
+}
+.itemtitle .tab1 {
+	CLEAR: none
+}
+.itemtitle .tab1 A {
+	LINE-HEIGHT: 20px
+}
+.itemtitle .tab1 A SPAN {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 19px; PADDING-LEFT: 7px; PADDING-RIGHT: 7px; PADDING-TOP: 1px
+}
+.itemtitle .tab1 A:hover {
+	BACKGROUND: url(btn_block_3.gif) #f5f5f5 no-repeat 0px -40px; COLOR: #09c
+}
+.itemtitle .tab1 A:hover SPAN {
+	BACKGROUND: url(btn_block_3.gif) no-repeat right -60px
+}
+.itemtitle .tab1 .hasdropmenu A:hover {
+	COLOR: #666
+}
+.itemtitle .tab1 .current A {
+	BACKGROUND: url(btn_block_3.gif) no-repeat 0px 0px
+}
+.itemtitle .tab1 .current A SPAN {
+	BACKGROUND: url(btn_block_3.gif) no-repeat right -20px; COLOR: #fff
+}
+.itemtitle .tab1 .current A:hover SPAN {
+	BACKGROUND: url(btn_block_3.gif) no-repeat right -20px; COLOR: #fff
+}
+.itemtitle .tab1 .dropmenu A {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.itemtitle .tab1 .dropmenu A:hover {
+	BACKGROUND: #deeffa
+}
+.stepstat {
+	MARGIN-BOTTOM: 10px
+}
+.stepstat LI {
+	FLOAT: left; COLOR: #ccc; MARGIN-RIGHT: 15px
+}
+.stepstat .current {
+	COLOR: #090
+}
+.infobox {
+	BORDER-BOTTOM: #deeefa 4px solid; TEXT-ALIGN: center; PADDING-BOTTOM: 30px; PADDING-LEFT: 30px; PADDING-RIGHT: 30px; ZOOM: 1; MARGIN-BOTTOM: 10px; BACKGROUND: #f2f9fd; CLEAR: both; BORDER-TOP: #deeffa 4px solid; PADDING-TOP: 30px
+}
+.infotitle1 {
+	MARGIN-BOTTOM: 10px; COLOR: #09c; FONT-SIZE: 14px; FONT-WEIGHT: 700
+}
+.infotitle2 {
+	MARGIN-BOTTOM: 10px; COLOR: #090; FONT-SIZE: 14px; FONT-WEIGHT: 700
+}
+.infotitle3 {
+	MARGIN-BOTTOM: 10px; COLOR: #c00; FONT-SIZE: 14px; FONT-WEIGHT: 700
+}
+.cachelist {
+	OVERFLOW: hidden
+}
+.cachelist LI {
+	FLOAT: left; MARGIN-RIGHT: 10px
+}
+.colorbox {
+	BORDER-BOTTOM: #deeffa 4px solid; PADDING-BOTTOM: 10px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; ZOOM: 1; BACKGROUND: #f2f9fd; CLEAR: both; BORDER-TOP: #deeffa 4px solid; PADDING-TOP: 10px
+}
+.extcredits {
+	MARGIN: -5px 0px 10px
+}
+.extcredits A {
+	BORDER-BOTTOM: #b6cfd9 1px solid; BORDER-LEFT: #b6cfd9 1px solid; PADDING-BOTTOM: 2px; LINE-HEIGHT: 220%; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; WHITE-SPACE: nowrap; BACKGROUND: #fff; BORDER-TOP: #b6cfd9 1px solid; MARGIN-RIGHT: 5px; BORDER-RIGHT: #b6cfd9 1px solid; PADDING-TOP: 2px
+}
+.jswizard {
+	MARGIN: 10px 0px
+}
+.jswizard IFRAME {
+	BORDER-BOTTOM: #deeffa 1px dashed; BORDER-LEFT: #deeffa 1px dashed; BORDER-TOP: #deeffa 1px dashed; BORDER-RIGHT: #deeffa 1px dashed
+}
+.fileperms {
+	LIST-STYLE-TYPE: disc; MARGIN: 15px
+}
+.fileperms LI {
+	LINE-HEIGHT: 180%
+}
+.tips {
+	COLOR: #999; MARGIN-LEFT: 15px
+}
+.tips2 {
+	LINE-HEIGHT: 180%; COLOR: #999; WORD-BREAK: break-all
+}
+.tb2 .tipsblock {
+	MARGIN-BOTTOM: -10px; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.tipsblock UL {
+	MARGIN-BOTTOM: -11px
+}
+.tipsblock LI {
+	PADDING-BOTTOM: 5px; LINE-HEIGHT: 160%; PADDING-LEFT: 20px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 5px; BACKGROUND: url(bg_repno_g.gif) no-repeat -340px 6px; PADDING-TOP: 0px
+}
+.tips A {
+	MARGIN: 0px 3px; COLOR: #666; TEXT-DECORATION: underline
+}
+.tips2 A {
+	MARGIN: 0px 3px; COLOR: #666; TEXT-DECORATION: underline
+}
+.tipsblock A {
+	MARGIN: 0px 3px; COLOR: #666; TEXT-DECORATION: underline
+}
+.tips A:hover {
+	COLOR: #09c
+}
+.tips2 A:hover {
+	COLOR: #09c
+}
+.tipsblock A:hover {
+	COLOR: #09c
+}
+.tb {
+	MARGIN-TOP: 8px; WIDTH: 100%; CLEAR: both
+}
+.tb TH {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.tb TD {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; PADDING-TOP: 5px
+}
+.tb1 {
+	
+}
+.th11 {
+	WIDTH: 60px; FONT-WEIGHT: 700
+}
+.th12 {
+	WIDTH: 60px; FONT-WEIGHT: 700
+}
+.tb1 .th12 {
+	VERTICAL-ALIGN: top; PADDING-TOP: 7px
+}
+.tb1 .tb2 TH {
+	PADDING-TOP: 0px
+}
+.tb1 .txt {
+	WIDTH: 150px
+}
+.tb1 STRONG {
+	COLOR: #f60; MARGIN-RIGHT: 5px
+}
+.first TD {
+	PADDING-TOP: 13px
+}
+.first .th12 {
+	PADDING-TOP: 15px
+}
+.bdtop TD {
+	BORDER-TOP: #cae4f7 1px dashed
+}
+.bdbot TD {
+	BORDER-BOTTOM: #cae4f7 1px dashed
+}
+.td11 {
+	WIDTH: 350px; VERTICAL-ALIGN: top
+}
+.td11 LI {
+	MARGIN: -3px 10px 7px 0px; FLOAT: left
+}
+.td11 .clear {
+	MARGIN: 0px
+}
+.listtitle {
+	WIDTH: 80px; COLOR: #09c; PADDING-TOP: 6px
+}
+.listtitlelong {
+	WIDTH: 80px; COLOR: #09c; PADDING-TOP: 6px
+}
+.listtitlelong {
+	WIDTH: 100px
+}
+.td11 .txt {
+	WIDTH: 70px
+}
+.td11 .sginput .txt {
+	WIDTH: 150px
+}
+.td12 {
+	
+}
+.td12 LI {
+	FLOAT: left; MARGIN-RIGHT: 10px
+}
+.td12 .radio {
+	MARGIN-TOP: 0px; FLOAT: none
+}
+.td12 LABEL {
+	MARGIN-TOP: 0px; FLOAT: none
+}
+.td12 .txt {
+	WIDTH: 50px
+}
+.checkboxlist {
+	WIDTH: 720px
+}
+.checkboxlist LI {
+	LINE-HEIGHT: 180%; WIDTH: 90px; WHITE-SPACE: nowrap; FLOAT: left; CURSOR: pointer
+}
+.longtxt .txt {
+	WIDTH: 400px
+}
+.tarea {
+	WIDTH: 400px; HEIGHT: 75px
+}
+.tb2 {
+	
+}
+.tb2 TR.hover:hover .tips2 {
+	COLOR: #333
+}
+.tb2 TR.hover:hover TD {
+	BACKGROUND: #f2f9fd
+}
+.tdhover TR:hover TD {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.tdhover TR TD:hover {
+	BACKGROUND: #f2f9fd
+}
+.tb2 TD {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; BORDER-TOP: #deeffb 1px dotted; PADDING-TOP: 5px
+}
+.tb2 TH {
+	PADDING-BOTTOM: 5px; LINE-HEIGHT: 21px; PADDING-LEFT: 0px; PADDING-RIGHT: 5px; FONT-SIZE: 12px; PADDING-TOP: 5px
+}
+.tb2 .txt {
+	WIDTH: 100px; MARGIN-RIGHT: 10px
+}
+.tb2 .txtnobd {
+	WIDTH: 100px; MARGIN-RIGHT: 10px
+}
+.td21 {
+	WIDTH: 150px; FONT-WEIGHT: 700
+}
+.td22 {
+	WIDTH: 100px; FONT-WEIGHT: 700
+}
+.td23 {
+	WIDTH: 100px
+}
+.td24 {
+	WIDTH: 120px
+}
+.td25 {
+	WIDTH: 50px
+}
+.td25 .txt {
+	WIDTH: 40px
+}
+.td26 {
+	
+}
+.td26 .txt {
+	WIDTH: 280px
+}
+.td26 .txtnobd {
+	WIDTH: 280px
+}
+.tb2 .td27 {
+	PADDING-BOTTOM: 3px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; FONT-WEIGHT: 700; PADDING-TOP: 10px
+}
+.tb2 .td27:hover {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.td28 .txt {
+	WIDTH: 40px
+}
+.td29 .txt {
+	WIDTH: 200px
+}
+.staton {
+	TEXT-INDENT: -9999px; WIDTH: 20px; BACKGROUND: url(bg_repno_g.gif) no-repeat -280px -250px; HEIGHT: 17px
+}
+.statoff {
+	TEXT-INDENT: -9999px; BACKGROUND: url(bg_repno_g.gif) no-repeat -250px -347px
+}
+.rowform {
+	WIDTH: 306px; OVERFLOW: auto
+}
+.tb2 .rowform {
+	PADDING-LEFT: 5px
+}
+.rowform .txt {
+	WIDTH: 250px; MARGIN-RIGHT: 10px
+}
+.rowform TEXTAREA {
+	WIDTH: 250px; MARGIN-RIGHT: 10px
+}
+.rowform SELECT {
+	WIDTH: 256px; MARGIN-RIGHT: 10px
+}
+.rowform .radio {
+	MARGIN-TOP: -2px
+}
+.rowform LI {
+	WHITE-SPACE: nowrap; FLOAT: left; MARGIN-RIGHT: 10px
+}
+.rowform .clear {
+	MARGIN-BOTTOM: 10px; FLOAT: none; CLEAR: both
+}
+.rowform .nofloat {
+	CLEAR: both
+}
+.rowform LI {
+	CURSOR: pointer
+}
+.rowform .nofloat LI {
+	MARGIN-BOTTOM: 10px; FLOAT: none; CURSOR: pointer
+}
+.partition {
+	LINE-HEIGHT: 21px; COLOR: #09c; FONT-WEIGHT: 700
+}
+.partition2 {
+	LINE-HEIGHT: 21px; COLOR: #09c; FONT-WEIGHT: 700
+}
+.tb2 .partition {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; BACKGROUND: url(bg_repx_hc.gif) repeat-x 0px -40px; PADDING-TOP: 5px
+}
+.dblist {
+	
+}
+.dblist LI {
+	WIDTH: 168px; WHITE-SPACE: nowrap; MARGIN-BOTTOM: 5px; FLOAT: left; HEIGHT: 20px; CURSOR: pointer
+}
+.cfolder {
+	LINE-HEIGHT: 30px; PADDING-LEFT: 50px; DISPLAY: block; BACKGROUND: url(bg_repno_g.gif) no-repeat -260px -50px; FONT-WEIGHT: 700
+}
+.ofolder {
+	LINE-HEIGHT: 30px; PADDING-LEFT: 50px; DISPLAY: block; BACKGROUND: url(bg_repno_g.gif) no-repeat -260px -50px; FONT-WEIGHT: 700
+}
+.ofolder {
+	BACKGROUND: url(bg_repno_g.gif) no-repeat -260px -100px
+}
+.filenum {
+	MARGIN: 8px 0px 0px 20px
+}
+.files {
+	PADDING-BOTTOM: 1px; PADDING-LEFT: 50px; PADDING-RIGHT: 0px; BACKGROUND: url(bg_repno_g.gif) no-repeat -260px -150px; PADDING-TOP: 1px
+}
+.del {
+	PADDING-LEFT: 18px; BACKGROUND: url(bg_repno_g.gif) no-repeat 0px -286px; COLOR: #e8594d
+}
+.edited {
+	PADDING-LEFT: 18px; BACKGROUND: url(bg_repno_g.gif) no-repeat -100px -386px; COLOR: #e8594d
+}
+.unknown {
+	PADDING-LEFT: 18px; BACKGROUND: url(bg_repno_g.gif) no-repeat -50px -436px; COLOR: #6189b8
+}
+.correct {
+	PADDING-LEFT: 18px; BACKGROUND: url(bg_repno_g.gif) no-repeat 0px -486px; COLOR: #70b759
+}
+.crons {
+	WIDTH: 200px
+}
+.crons .txt {
+	WIDTH: 150px; MARGIN-BOTTOM: 3px
+}
+.node {
+	PADDING-LEFT: 55px; BACKGROUND: url(bg_repno_g.gif) no-repeat -240px -550px
+}
+.board {
+	PADDING-LEFT: 55px; BACKGROUND: url(bg_repno_g.gif) no-repeat -240px -550px
+}
+.node .txt {
+	WIDTH: 250px
+}
+.lastnode .txt {
+	WIDTH: 250px
+}
+.newnode .txt {
+	WIDTH: 250px
+}
+.parentnode .txt {
+	WIDTH: 250px; FONT-WEIGHT: 700
+}
+.parentboard .txt {
+	FONT-WEIGHT: 700
+}
+.lastnode {
+	PADDING-LEFT: 55px; BACKGROUND: url(bg_repno_g.gif) no-repeat -240px -600px
+}
+.lastboard {
+	PADDING-LEFT: 55px; BACKGROUND: url(bg_repno_g.gif) no-repeat -240px -600px
+}
+.childboard {
+	PADDING-LEFT: 110px; BACKGROUND: url(bg_repno_g.gif) no-repeat -185px -550px
+}
+.lastchildboard {
+	PADDING-LEFT: 110px; BACKGROUND: url(bg_repno_g.gif) no-repeat -185px -600px
+}
+.boardattr {
+	POSITION: absolute; MARGIN-TOP: -19px; COLOR: #999; LEFT: 340px
+}
+.colorwd {
+	BORDER-BOTTOM-COLOR: #666; BORDER-TOP-COLOR: #ccc; WIDTH: 40px; FLOAT: left; HEIGHT: 21px; BORDER-RIGHT-COLOR: #666; BORDER-LEFT-COLOR: #ccc
+}
+.tb3 {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; MARGIN-TOP: -15px; BORDER-TOP: medium none; BORDER-RIGHT: medium none
+}
+.tb3 TH {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 10px
+}
+.tb3 TD {
+	PADDING-BOTTOM: 0px; LINE-HEIGHT: 180%; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; PADDING-TOP: 0px
+}
+.custom {
+	BORDER-BOTTOM: #a6c9d7 6px solid; POSITION: relative; BORDER-LEFT: #a6c9d7 6px solid; WIDTH: 900px; BACKGROUND: url(bg_custom.gif) #fff repeat-y right top; OVERFLOW: hidden; BORDER-TOP: #a6c9d7 6px solid; BORDER-RIGHT: #a6c9d7 6px solid
+}
+.cmain {
+	MARGIN-RIGHT: 160px
+}
+.cnote {
+	LINE-HEIGHT: 20px; MARGIN: 15px; COLOR: #ccc
+}
+.cnote LI {
+	FLOAT: left; MARGIN-RIGHT: 15px
+}
+.cmlist {
+	MARGIN: 10px 0px 10px 15px; WIDTH: 710px; TABLE-LAYOUT: fixed; CLEAR: left
+}
+.cmblock {
+	MARGIN-BOTTOM: 10px
+}
+.cmblock LI {
+	LINE-HEIGHT: 150%; WHITE-SPACE: nowrap
+}
+.cmlist A {
+	COLOR: #666
+}
+.cmlist H4 {
+	MARGIN-BOTTOM: 3px; COLOR: #09c
+}
+.cside {
+	TEXT-ALIGN: left; WIDTH: 151px; DISPLAY: inline; FLOAT: right; MARGIN-RIGHT: 5px
+}
+.cside H3 {
+	BORDER-BOTTOM: #a6c9d7 1px solid; POSITION: relative; PADDING-BOTTOM: 0px; LINE-HEIGHT: 28px; PADDING-LEFT: 5px; PADDING-RIGHT: 0px; MARGIN-BOTTOM: 0px; BACKGROUND: url(bg_custom_t.gif) repeat-x; HEIGHT: 28px; PADDING-TOP: 6px
+}
+.ctitle1 {
+	PADDING-LEFT: 25px; DISPLAY: block; BACKGROUND: url(btn_add2menu.gif) no-repeat 0px 5px; HEIGHT: 28px; COLOR: #090; FONT-SIZE: 12px
+}
+.ctitle1:hover {
+	TEXT-DECORATION: none
+}
+.cadmin {
+	POSITION: absolute; PADDING-BOTTOM: 0px; PADDING-LEFT: 10px; PADDING-RIGHT: 10px; COLOR: #666; FONT-SIZE: 12px; TOP: -4px; RIGHT: -5px; FONT-WEIGHT: 400; PADDING-TOP: 10px
+}
+.cslist LI {
+	HEIGHT: 1%
+}
+.cslist LI A {
+	PADDING-BOTTOM: 5px; PADDING-LEFT: 30px; PADDING-RIGHT: 5px; DISPLAY: block; PADDING-TOP: 5px
+}
+.cslist LI A:hover {
+	BACKGROUND: #deeffa; TEXT-DECORATION: none
+}
+.cslist LI .pages {
+	MARGIN-LEFT: 27px
+}
+.cslist LI .pages A {
+	PADDING-BOTTOM: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; DISPLAY: inline; PADDING-TOP: 2px
+}
+.cslist LI .pages A:hover {
+	BACKGROUND: #09c
+}
+.cfixbd {
+	POSITION: absolute; LINE-HEIGHT: 5px; WIDTH: 151px; BOTTOM: 0px; BACKGROUND: #fff; HEIGHT: 5px; FONT-SIZE: 1px; OVERFLOW: hidden; RIGHT: 5px
+}
+.tpllist {
+	LINE-HEIGHT: 180%; LIST-STYLE-TYPE: disc; MARGIN: 10px 15px
+}
+.tpllist2 {
+	LIST-STYLE-TYPE: circle; MARGIN: 5px 25px
+}
+.tpllist3 {
+	LIST-STYLE-TYPE: square; MARGIN: 0px 25px
+}
+.userlist {
+	MARGIN: 10px 0px; OVERFLOW: hidden
+}
+.userlist LI {
+	MARGIN: 0px 10px 10px 0px; WHITE-SPACE: nowrap; FLOAT: left
+}
+.unum {
+	WIDTH: 100%; DISPLAY: block; CLEAR: both; FONT-WEIGHT: 700
+}
+.safelist {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #deeffa 4px solid; PADDING-TOP: 10px
+}
+.safelist LI {
+	LINE-HEIGHT: 160%; PADDING-LEFT: 20px; MARGIN-BOTTOM: 5px; BACKGROUND: url(bg_repno_g.gif) no-repeat -340px 6px
+}
+.safelist P {
+	MARGIN-BOTTOM: 5px
+}
+.safelist .txt {
+	WIDTH: 150px
+}
+.infolist {
+	
+}
+.infolist LI {
+	LINE-HEIGHT: 180%; CLEAR: both
+}
+.infolist EM {
+	WIDTH: 120px; FLOAT: left
+}
+.tb2 .threadopt {
+	BORDER-BOTTOM: #b5cfd9 1px solid; BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.threadtitle {
+	PADDING-BOTTOM: 10px !important; PADDING-LEFT: 10px !important; PADDING-RIGHT: 10px !important; PADDING-TOP: 10px !important
+}
+.nowrap LI {
+	WHITE-SPACE: nowrap; FLOAT: left; MARGIN-RIGHT: 5px
+}
+.pages {
+	MARGIN: 10px 0px; CLEAR: both
+}
+.pages EM {
+	BORDER-BOTTOM: #e5e5e5 1px solid; BORDER-LEFT: #e5e5e5 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; MARGIN-LEFT: 3px; BORDER-TOP: #e5e5e5 1px solid; BORDER-RIGHT: #e5e5e5 1px solid; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.pages A {
+	BORDER-BOTTOM: #e5e5e5 1px solid; BORDER-LEFT: #e5e5e5 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; MARGIN-LEFT: 3px; BORDER-TOP: #e5e5e5 1px solid; BORDER-RIGHT: #e5e5e5 1px solid; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.pages STRONG {
+	BORDER-BOTTOM: #e5e5e5 1px solid; BORDER-LEFT: #e5e5e5 1px solid; PADDING-BOTTOM: 2px; PADDING-LEFT: 5px; PADDING-RIGHT: 5px; MARGIN-LEFT: 3px; BORDER-TOP: #e5e5e5 1px solid; BORDER-RIGHT: #e5e5e5 1px solid; TEXT-DECORATION: none; PADDING-TOP: 2px
+}
+.pages A:hover {
+	BORDER-BOTTOM: #09c 1px solid; BORDER-LEFT: #09c 1px solid; BACKGROUND: #09c; COLOR: #fff; BORDER-TOP: #09c 1px solid; BORDER-RIGHT: #09c 1px solid; TEXT-DECORATION: none
+}
+.pages STRONG {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; BORDER-TOP: medium none; FONT-WEIGHT: 700; BORDER-RIGHT: medium none
+}
+.pages KBD INPUT {
+	WIDTH: 20px; MARGIN-LEFT: 5px; VERTICAL-ALIGN: middle
+}
+.cuspages {
+	LINE-HEIGHT: 200%; MARGIN: 3px 0px
+}
+.cuspages .pages {
+	DISPLAY: inline; CLEAR: none; MARGIN-RIGHT: 10px
+}
+.fixsel SELECT {
+	MARGIN: 3px 5px 3px 0px
+}
+.addtr {
+	LINE-HEIGHT: 25px; PADDING-LEFT: 17px; BACKGROUND: url(bg_repno_g.gif) no-repeat 0px 0px; COLOR: #f60
+}
+.act {
+	MARGIN: 0px 5px; TEXT-DECORATION: underline
+}
+.addchildboard {
+	LINE-HEIGHT: 25px; PADDING-LEFT: 17px; BACKGROUND: url(bg_repno_g.gif) no-repeat 0px -600px; COLOR: #fff
+}
+.addchildboard:hover {
+	COLOR: #f60; TEXT-DECORATION: none
+}
+.switch {
+	COLOR: #09c
+}
+.switch:hover {
+	TEXT-DECORATION: none
+}
+.switch IMG {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 5px
+}
+.lightlink {
+	COLOR: #666; TEXT-DECORATION: underline
+}
+.lightlink2 {
+	COLOR: #666
+}
+.parentlink {
+	COLOR: #09c; TEXT-DECORATION: underline
+}
+.menulink {
+	BACKGROUND: none transparent scroll repeat 0% 0%; TEXT-DECORATION: underline
+}
+.menulink:hover {
+	TEXT-DECORATION: underline !important
+}
+.anno {
+	WIDTH: 200px
+}
+.anno P {
+	MARGIN: 4px 0px
+}
+.anno .txt {
+	WIDTH: 105px; MARGIN-LEFT: 3px
+}
+.difflink {
+	MARGIN: 10px 0px
+}
+.difflink A {
+	COLOR: #666; MARGIN-LEFT: 10px; TEXT-DECORATION: underline
+}
+.devteam {
+	WIDTH: 350px
+}
+.checked {
+	COLOR: #090
+}
+.checked .txt {
+	COLOR: #090
+}
+.lightfont {
+	COLOR: #ccc
+}
+.lightnum {
+	COLOR: #f60
+}
+.error {
+	COLOR: #f00
+}
+.diffcolor2 {
+	COLOR: #090
+}
+.diffcolor3 {
+	COLOR: #09c
+}
+.nomargin {
+	MARGIN: 0px
+}
+.marginleft {
+	MARGIN-LEFT: 20px
+}
+.marginright {
+	MARGIN-RIGHT: 10px
+}
+.margintop {
+	MARGIN-TOP: 10px
+}
+.marginbot {
+	MARGIN-BOTTOM: 10px
+}
+.nobg {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.nobg TD {
+	BACKGROUND: none transparent scroll repeat 0% 0%
+}
+.nobg .td27 {
+	PADDING-LEFT: 5px
+}
+.nobdb {
+	BORDER-BOTTOM: medium none
+}
+.nobdt {
+	BORDER-TOP: medium none
+}
+.noborder {
+	BORDER-BOTTOM: 0px; BORDER-TOP: 0px
+}
+.noborder TD {
+	BORDER-BOTTOM: 0px; BORDER-TOP: 0px
+}
+.noborder TD:hover {
+	COLOR: #000
+}
+.vtop {
+	VERTICAL-ALIGN: top
+}
+.lineheight {
+	LINE-HEIGHT: 150%
+}
+.left {
+	FLOAT: left
+}
+.right {
+	FLOAT: right
+}
+.center {
+	TEXT-ALIGN: center
+}
+.bold {
+	FONT-WEIGHT: 700
+}
+.normal {
+	FONT-WEIGHT: 400
+}
+.clear {
+	CLEAR: both
+}
+.smallfont {
+	FONT-SIZE: 11px
+}
+.smallfont H3 {
+	FONT-SIZE: 12px
+}
+.fixpadding TH {
+	PADDING-LEFT: 5px !important
+}
+.fixpadding TD {
+	PADDING-LEFT: 5px !important
+}
+.news {
+	PADDING-BOTTOM: 10px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px; BORDER-TOP: #deeffa 4px solid; PADDING-TOP: 10px
+}
+#boardnews {
+	PADDING-BOTTOM: 10px
+}
+.diff-deleted {
+	BACKGROUND: #fcc
+}
+.diff-changed {
+	BACKGROUND: #ff9
+}
+.diff-added {
+	BACKGROUND: #cfc
+}
+#calendar_week .dropmenu {
+	BORDER-BOTTOM: medium none; POSITION: relative; TEXT-ALIGN: left; BORDER-LEFT: medium none; MARGIN-TOP: 0px; BORDER-TOP: medium none; BORDER-RIGHT: medium none; TEXT-DECORATION: underline
+}
+.calendar_checked {
+	COLOR: #333
+}
+.calendar_checked A:link {
+	COLOR: #333
+}
+.calendar_checked A:visited {
+	COLOR: #333
+}
+.sub {
+	PADDING-LEFT: 25px !important
+}
+.sub .td27 {
+	PADDING-LEFT: 25px !important
+}
+.sub .rowform {
+	PADDING-LEFT: 25px !important; WIDTH: 281px
+}
+.sub .rowform .txt {
+	WIDTH: 225px
+}
+.sub .rowform TEXTAREA {
+	WIDTH: 225px
+}
+.sub SELECT {
+	WIDTH: 231px
+}
+.mt10 {
+	MARGIN-TOP: 10px
+}
+.mt0 {
+	MARGIN-TOP: 0px
+}
+.header {
+	BORDER-TOP: #deeffb 1px dotted; FONT-WEIGHT: 700
+}
+.header TD {
+	BORDER-TOP: #deeffb 1px dotted; FONT-WEIGHT: 700
+}
+.header TH {
+	BORDER-TOP: #deeffb 1px dotted; FONT-WEIGHT: 700
+}
+.smallefont {
+	FONT-SIZE: 11px
+}

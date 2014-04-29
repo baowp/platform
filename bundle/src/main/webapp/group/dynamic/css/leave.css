@@ -1,0 +1,155 @@
+@CHARSET "UTF-8";
+
+#floatwindow {
+	position: fixed;
+	right: 0;
+	top: 100px;
+	width: 222px;
+	z-index: 90;
+}
+
+* html #floatwindow {
+	position: absolute;
+	top: expression(eval(100 +   document.documentElement.scrollTop) );
+}
+
+#ecustomerboxFF {
+	clear: both;
+	display: block;
+	float: right;
+	width: 23px;
+	max-width: 222px;
+	min-width: 23px;
+	z-index: 90;
+	text-align: left;
+}
+
+* html #ecustomerboxFF {
+	width: 22px;
+}
+
+#ecustomerboxFF .relativediv {
+	position: relative;
+}
+
+#ecustomerboxFF .ecustomerbuttonminFF {
+	background: transparent url(../images/ecsbg1.png) no-repeat
+		scroll -168px -215px;
+	cursor: pointer;
+	height: 90px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 24px;
+	z-index: 90;
+}
+
+#ecustomerboxFF .ecustomerbdFF {
+	border: 1px solid #046B9A;
+	left: 23px;
+	position: absolute;
+	width: 199px;
+	z-index: 80;
+}
+
+#ecustomerboxFF .ECScontent {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	background: transparent url(../images/qyzxbg2.png) repeat-y
+		scroll 0 0;
+}
+
+.ECScontent .EMiddle {
+	border-left: 1px solid #859DBC;
+	border-right: 1px solid #859DBC;
+	padding-bottom: 5px;
+	padding-top: 7px !important;
+	width: 199px;
+	border-left: 0 none;
+	border-right: 0 none;
+}
+
+.ECScontent .dis {
+	color: #A3ADB6;
+	font-size: 12px;
+	margin-left: 9px;
+	margin-top: 5px;
+	display: none;
+}
+
+.ECScontent textarea {
+	border: 1px solid #80AFDD;
+	color: #A3ADB6;
+	font-size: 12px;
+	height: 100px;
+	margin-left: 10px;
+	overflow: hidden;
+	width: 173px;
+}
+
+.ECScontent input {
+	border: 1px solid #80AFDD;
+}
+
+.ECScontent .name {
+	color: #205394;
+	font-size: 12px;
+	margin-left: 10px;
+	margin-top: 7px;
+}
+
+.orange {
+	color: #FF7300;
+}
+
+.ECScontent .inputName {
+	width: 132px;
+}
+
+.ECScontent .inputPhone {
+	width: 107px;
+}
+
+.ECScontent .inputConfir {
+	margin-right: 5px;
+	width: 35px;
+}
+
+.ECScontent .submit {
+	margin-right: 14px;
+	margin-top: 7px;
+	padding-bottom: 8px;
+	padding-top: 6px;
+	text-align: center;
+}
+
+.ECScontent .submit a:link,.ECScontent .submit a:visited {
+	text-decoration: none;
+}
+
+.none {
+	display: none;
+}
+
+#msgBtn {
+	background: transparent url(../images/conbutton1.gif)
+		no-repeat scroll 0 0;
+	color: #FFFFFF;
+	font-weight: bold;
+	padding: 7px 20px 7px 22px;
+}
+
+#leave li.tip {
+	display: inline;
+}
+
+#leave div.error {
+	background: url("../images/1_1245982792953.gif") no-repeat
+		scroll 0 0 transparent;
+	color: #C53032;
+	margin-left: 40px;
+	padding-left: 20px;
+	height: 16px;
+	line-height: 19px;
+}

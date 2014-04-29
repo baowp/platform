@@ -1,0 +1,163 @@
+@CHARSET "UTF-8";
+
+.setTitle {
+	background: url(../images/setTopBg.gif) repeat scroll 0 0;
+	height: 34px;
+	width: 95px;
+}
+
+.setContent {
+	background: url(../images/setbg.gif) repeat-x scroll center bottom;
+	border: 1px solid #8C8A8D;
+	height: 520px;
+	width: 481px;
+}
+
+.nowTopic {
+	background: url(../images/nowTopicBg.gif) repeat-x scroll 0 0;
+	color: #000000;
+	font-weight: normal;
+	height: 116px;
+	line-height: 16px;
+}
+
+.nowTopic_left {
+	float: left;
+	height: 111px;
+	width: 145px;
+}
+
+.nowTopic_leftBg {
+	background: url("../images/editLeftBg.gif") no-repeat left bottom;
+}
+
+.red {
+	color: #FF020B;
+}
+
+.b {
+	font-weight: bold;
+}
+
+.pointer {
+	cursor: pointer;
+}
+
+.nowTopic_middle {
+	float: left;
+	height: 111px;
+	width: 160px;
+}
+
+.n_left {
+	float: left;
+	height: 83px;
+	padding-top: 28px;
+	width: 41px;
+}
+
+.n_middle {
+	float: left;
+	width: 78px;
+}
+
+.n_middle_d {
+	border: 1px solid #E6C06A;
+	margin: 14px 6px 0;
+	width: 64px;
+}
+
+.nowTopicImg {
+	border: 1px solid #DEDEDE;
+	margin: 3px;
+}
+
+.n_right {
+	float: right;
+	height: 83px;
+	padding-top: 28px;
+	width: 41px;
+}
+
+.nowTopic_right {
+	float: left;
+	height: 111px;
+	width: 174px;
+}
+
+.nowTopic_rightBg {
+	background: url("../images/editRightBg.gif") no-repeat right bottom;
+}
+
+.myStyleTitle {
+	background: url(../images/icon1.gif) no-repeat scroll 25px 9px;
+	color: #CA7032;
+}
+
+.pl40px {
+	padding-left: 40px;
+}
+
+.myStyleList {
+	font-weight: normal;
+	margin-left: 32px !important;
+	width: 400px !important;
+}
+
+#myStyleList {
+	height: 90px;
+}
+
+.myStyleList ul li {
+	float: left;
+	margin: 0 8px;
+	width: 64px;
+}
+
+.myStyleList ul li img {
+	border: 1px solid #B2B2B2;
+	margin: 1px;
+	_margin: 0 7px;
+}
+
+#emptyTips {
+	background: url(../images/tipsIcon.gif) no-repeat scroll 0 3px
+		transparent;
+	line-height: 18px;
+	margin-left: 60px !important;
+	margin-top: 25px;
+	padding-left: 30px;
+	width: 262px;
+}
+
+.delTopic {
+	margin-left: 20px;
+	_margin-left: 10px;
+}
+
+.createNewStyle {
+	color: #CA7032;
+	padding-left: 25px;
+}
+
+.styleTemplateList {
+	height: 210px;
+	margin-left: 32px !important;
+	overflow-x: hidden;
+	overflow-y: scroll;
+	width: 420px !important;
+}
+
+.styleTemplateList ul li {
+	color: #000000;
+	float: left;
+	font-weight: normal;
+	margin: 0 8px;
+	_margin: 0 7px;
+	text-align: center;
+	width: 64px;
+}
+
+.styleTemplateList ul li img {
+	border: 1px solid #B2B2B2;
+}

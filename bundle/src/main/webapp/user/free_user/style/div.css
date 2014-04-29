@@ -1,0 +1,320 @@
+@charset "utf-8";
+
+/* CSS Document */
+#nb {
+	width: 950px;
+	padding-bottom: 5px;
+	overflow: hidden;
+}
+
+.header {
+	height: 30px;
+	line-height: 30px;
+	border-bottom: #CCCCCC solid 1px;
+	margin-bottom: 8px;
+	overflow: hidden;
+	clear: both;
+	background: url(../images/nav.jpg) repeat-x scroll 0 0 transparent;
+}
+
+.header_left {
+	width: 950px;
+}
+
+.header ul {
+	list-style: none;
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.header li {
+	float: left;
+	margin: 0px 4px;
+	padding: 0px;
+}
+
+.flash {
+	height: 163px;
+	line-height: 120px;
+	padding-left: 100px;
+	text-align: left;
+	color: #FFFFFF;
+	font-size: 24px;
+	font-weight: bold;
+	background: url(../images/banner.jpg) no-repeat scroll 0 0;
+}
+
+.nav {
+	height: 29px;
+	line-height: 29px;
+	margin-top: 1px;
+	text-align: left;
+	overflow: hidden;
+	margin-bottom: 8px;
+	background: url(../images/nav_bg.gif) repeat-x scroll 0 0 transparent;
+}
+
+ul {
+	list-style: none;
+}
+
+.nav ul {
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.nav li {
+	padding: 0px;
+	margin: 1px 28px;
+	color: #006699;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 13px;
+	float: left;
+}
+
+.advav {
+	clear: both;
+	height: 70px;
+	clear: both;
+	margin: 8px 0px;;
+}
+
+.yu {
+	width: 224px;
+	float: left;
+}
+
+form {
+	padding: 0px;
+	margin: 0px;
+}
+
+.left,.you,.sou {
+	overflow: hidden;
+	clear: both;
+	margin-bottom: 8px;
+	border: #006699 solid 1px;
+}
+
+.left_top,.you_top,.sou_top {
+	height: 28px;
+	line-height: 28px;
+	text-align: left;
+	padding-left: 40px;
+	color: #FFFFFF;
+	font-weight: bold;
+	background: url(../images/l_tbg.gif) no-repeat scroll 0 0 transparent;
+}
+
+.left_contain {
+	padding-top: 6px;
+	overflow: hidden;
+	line-height: 23px;
+	text-align: left;
+}
+
+.left_contain ul {
+	padding: 0px;
+	margin: 0px auto;
+}
+
+.left_contain li span {
+	padding: 2px 3px;
+	margin: 3px;
+	line-height: 23px;
+	height: 23px;
+	vertical-align: middle;
+	text-align: left;
+}
+
+.left_contain li,.you_contain li {
+	border-bottom: 1px dotted #CBCBCB;
+	overflow: hidden;
+	padding: 8px 0;
+	width: 182px;
+}
+
+.you_contain li .image {
+	border: 1px solid #E5E5E5;
+	float: left;
+	height: 64px;
+	margin-right: 4px;
+	overflow: hidden;
+	padding: 1px;
+	text-align: center;
+	width: 64px;
+}
+
+.you_contain li .title {
+	font-weight: normal; } .you_contain   li   .price {
+	font-size: 12px;
+}
+
+.you_contain ul {
+	padding: 0 8px;
+}
+
+.you_contain {
+	padding-bottom: 7px;
+	padding-top: 7px;
+	text-align: left;
+}
+
+.sou_contain {
+	text-align: left;
+	padding-left: 3px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+.contain {
+	border: #006699 solid 1px;
+}
+
+.hj {
+	float: left;
+	width: 706px;
+	overflow: hidden;
+	margin-left: 18px;
+}
+
+.contain_top,.company_top {
+	height: 28px;
+	padding-left: 28px;
+	text-align: left;
+	color: #006699;
+	font-weight: bold;
+	line-height: 28px;
+	background: url(../images/r_tbg.gif) no-repeat scroll 0 0 transparent;
+}
+
+.contain_right {
+	padding: 6px;
+	width: 690px;
+	text-align: center;
+	overflow: hidden;
+}
+
+.contain_right ul {
+	padding: 0px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+.contain_right li {
+	padding: 0px;
+	margin: 5px 13px;
+	float: left;
+	text-align: center;
+	overflow: hidden;
+}
+
+.contain_right p.hn {
+	border: #CCCCCC solid 1px;
+	padding: 3px;
+	height: 92px;
+	width: 90px;
+	margin: 6px;
+	clear: both;
+	text-align: center;
+}
+
+.contain_right p.nh {
+	text-align: center;
+	margin: 0px auto;
+	clear: both;
+	overflow: hidden;
+	display: inline;
+}
+
+.company {
+	margin-top: 8px;
+	clear: both;
+	overflow: hidden;
+	border: #006699 solid 1px;
+}
+
+.contain_right020 {
+	padding: 6px 10px 8px 13px;
+	text-align: left;
+}
+
+.company02 {
+	clear: both;
+	overflow: hidden;
+	border: #006699 solid 1px;
+}
+
+.company_cotain {
+	padding: 5px;
+	line-height: 23px;
+	text-align: left;
+}
+
+.company_cotain01 ul {
+	padding: 0px;
+	margin: 0px auto;
+}
+
+.company_cotain01 li {
+	padding: 0px;
+	margin: 6px 12px;
+	text-align: left;
+}
+
+.copyright {
+	border-top: #006699 2px solid;
+	height: 45px;
+	line-height: 25px;
+	padding-top: 4px;
+	overflow: hidden;
+	clear: both;
+	margin-top: 12px;
+}
+
+.company_cotain p {
+	line-height: 24px;
+}
+
+.company_cotain ul {
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.company_cotain li {
+	padding: 0px;
+}
+
+.company_cotain li a {
+	padding: 0px;
+	width: 590px;
+	border-bottom: #CCCCCC dotted 1px;
+	float: left;
+	margin: 3px 8px;
+}
+
+.company_cotain span {
+	padding: 0px;
+	float: right;
+	border-bottom: #CCCCCC dotted 1px;
+	margin: 3px 8px;
+}
+
+.nav_left {
+	width: 90px;
+	background: #0066CC;
+	color: #FFFFFF;
+	text-align: center;
+	font-weight: bold;
+}
+
+.bottom {
+	height: 26px;
+	line-height: 26px;
+	text-align: right;
+	padding-right: 10px;
+	background: #EAF4FB;
+	overflow: hidden;
+	clear: both;
+}

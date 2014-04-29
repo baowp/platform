@@ -1,0 +1,85 @@
+@CHARSET "UTF-8";
+
+.pagination {
+	margin: 20px 0;
+	line-height: 32px;
+	overflow: auto;
+}
+
+.danaiPageDes {
+	margin-left: 10px;
+}
+
+a.danaiPageUp {
+	background: url(../images/pageNum_bg.gif) repeat scroll 0 0
+		transparent;
+	color: black;
+	display: inline-block;
+	font-family: 微软雅黑;
+	font-size: 15px;
+	font-weight: bold;
+	height: 32px;
+	line-height: 28px;
+	_line-height: 32px;
+	padding-left: 10px;
+	vertical-align: middle;
+	width: 85px;
+}
+
+a.danaiPageUp:hover {
+	background-position: 0 -32px;
+	text-decoration: none;
+}
+
+a.danaiPageDown {
+	background: url(../images/pageNum_bg.gif) repeat scroll 0
+		-64px transparent;
+	color: black;
+	display: inline-block;
+	font-family: 微软雅黑;
+	font-size: 15px;
+	font-weight: bold;
+	height: 32px;
+	line-height: 28px;
+	_line-height: 32px;
+	padding-right: 10px;
+	vertical-align: middle;
+	width: 85px;
+}
+
+a.danaiPageDown:hover {
+	background-position: 0 -96px;
+	text-decoration: none;
+}
+
+a.danaiPageNum {
+	background-color: #FFFFFF;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	height: 22px;
+	line-height: 24px;
+	vertical-align: middle;
+	width: 26px;
+	border: 1px solid #B1B1B1;
+	color: #000000;
+	text-decoration: none;
+}
+
+a.danaiPageNum:hover {
+	border: 1px solid #EF7919;
+	color: #000000;
+	text-decoration: none;
+}
+
+.danaiPageCurrent {
+	background: none repeat scroll 0 0 #EF7919;
+	color: #FFFFFF;
+	display: inline-block;
+	font-size: 16px;
+	font-weight: bold;
+	height: 24px;
+	line-height: 24px;
+	vertical-align: middle;
+	width: 28px;
+}

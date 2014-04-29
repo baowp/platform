@@ -1,0 +1,27 @@
+@CHARSET "UTF-8";
+
+a {
+	color: lime;
+}
+
+.w952 {
+	width: 952px;
+	margin: 0 auto;
+	border: 1px dotted blue;
+}
+
+p {
+	width: 600px
+}
+
+.go-topbtn {
+	background: url("/user/images/vipsite/backtop.gif")
+		no-repeat transparent;
+	bottom: 20px;
+	_top: expression(documentElement.scrollTop + documentElement.clientHeight-76);
+	cursor: pointer;
+	height: 56px;
+	position: fixed;
+	_position: absolute;
+	width: 16px;
+}

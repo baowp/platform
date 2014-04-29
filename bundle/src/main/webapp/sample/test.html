@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="http://cn.easthardware.net/js/jquery.js" /></script>
+<script type="text/javascript">
+var i=1;
+$(function(){
+	$("#but").bind(['click'],function(){
+		$("#d").html(i++);
+	});
+})
+</script>
+</head>
+<body>
+<input id="but" type="button">
+<div id="d"></div>
+</body>
+</html>

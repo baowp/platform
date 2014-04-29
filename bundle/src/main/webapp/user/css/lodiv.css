@@ -1,0 +1,152 @@
+/* CSS Document */
+#nav{
+   width:1001px;
+   height:621px;
+   }
+#nar{
+   width:1001px;
+   height:421px;
+   }
+.align-center{  
+    margin:0 auto; 
+    width:500px;
+    background:red;
+    text-align:center; 
+ }
+#top{
+   height:95px;
+   padding-left:25px;
+   }
+.hv{
+ border-bottom:#C0D9F3 1px solid dotted;
+ height:15px;
+ }
+.mac{
+  height:25px;
+  line-height:25px;
+  text-align:left;
+  padding-left:5px;
+  }
+.top_left{
+   width:163px;
+   height:47px;
+   margin-top:20px;
+   float:left;
+   }
+.top_right{
+   margin-right:23px;
+   margin-top:22px;
+   width:198px;
+   height:50px;
+   line-height:23px;
+   text-align:right;
+   float:right;
+   }
+#center{
+   height:432px;
+   padding-left:25px;
+   padding-right:12px;
+   }
+#cen{
+   height:220px;
+   padding-left:25px;
+   padding-right:12px;
+   }
+#center_left{
+   width:559px;
+   height:432px;
+   margin-right:12px;
+   float:left;
+   }
+.center_left_t{
+   height:226px;
+   }
+.center_left_b{
+   margin-top:13px;
+   height:167px;
+   }
+#center_right{
+   width:391px;
+   height:432px;
+   float:right;
+   }
+.center_right_t{
+   height:300px;
+   background-image:url(../images/login.jpg);
+   }
+.login_t{
+   height:65px;
+   padding-left:41px;
+   padding-top:81px;
+   }
+.login_t01{
+   height:25px;
+   line-height:25px;
+   padding-right:20px;
+   text-align:left;
+   }
+.login_t02{
+   height:25px;
+   line-height:25px;
+   padding-right:20px;
+   margin-top:13px;
+   text-align:left;
+   }
+.form01{
+   height:16px;
+   line-height:16px;
+   }
+.form03{
+   height:16px;
+   line-height:16px;
+   width:75px;
+   }
+.form3{
+   width:20px;
+   height:20px;
+   line-height:20px;
+   float:left;
+   }
+#login_c{
+   margin-top:13px;
+   padding-left:42px;
+   padding-right:20px;
+   height:25px;
+   line-height:25px;
+   }
+#login_c_r{
+   height:25px;
+   line-height:25px;
+   text-align:left;
+   float:left;
+   }
+#login_c_f{
+   height:25px;
+   line-height:25px;
+   width:80px;
+   margin-left:10px;
+   text-align:left;
+   float:left;
+   }
+.login_b{
+   padding-left:53px;
+   margin-top:28px;
+   margin-bottom:34px;
+   padding-right:20px;
+   height:40px;
+   }
+.center_right_b{
+   height:85px;
+   background-image:url(../images/daoying0.jpg);
+   }
+#bottom{
+   height:94px;
+   padding-left:130px;
+   background-repeat:repeat-x;
+   }
+.bottom_center{
+  margin-top:34px;
+  margin-bottom:40px;
+  height:18px;
+  float:left;
+  }
