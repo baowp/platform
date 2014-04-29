@@ -199,6 +199,18 @@
             <groupId>org.eclipse.jetty.diy</groupId>
             <artifactId>diy-server</artifactId>
         </dependency>
+        <!--<dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>javax.servlet.jsp-api</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>jasper</artifactId>
+        </dependency>-->
+        <!--<dependency>
+            <groupId>org.mortbay.jasper</groupId>
+            <artifactId>apache-jsp</artifactId>
+        </dependency>-->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
